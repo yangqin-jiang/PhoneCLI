@@ -1,0 +1,1980 @@
+app: Audio Recorder
+package: com.dimowner.audiorecorder
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Welcome screen for the Audio Recorder app with a 'Get started' button
+    to begin using the application.
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.4995
+    - 0.4827
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recorder
+    - Voice Recorder
+    - 录音机
+    semantic_type: label
+  - text: Get started
+    center:
+    - 0.4995
+    - 0.895
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Start
+    - Begin
+    - 开始
+    semantic_type: button
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Setup
+    center:
+    - 0.2102
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: 'Recording format:'
+    center:
+    - 0.4611
+    - 0.2573
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: M4a
+    center:
+    - 0.113
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Wav
+    center:
+    - 0.3046
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: 3gp
+    center:
+    - 0.4898
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 'Sample rate:'
+    center:
+    - 0.4611
+    - 0.3444
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 44.1kHz
+    center:
+    - 0.1458
+    - 0.4338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 16kHz
+    center:
+    - 0.3324
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 22kHz
+    center:
+    - 0.5583
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 32kHz
+    center:
+    - 0.7843
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 48kHz
+    center:
+    - 0.3889
+    - 0.4338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 8kHz
+    center:
+    - 0.1176
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 'Bitrate:'
+    center:
+    - 0.4611
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 128 kbps
+    center:
+    - 0.6597
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 192 kbps
+    center:
+    - 0.1532
+    - 0.5675
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 256 kbps
+    center:
+    - 0.4282
+    - 0.5675
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 48 kbps
+    center:
+    - 0.1421
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 96 kbps
+    center:
+    - 0.3949
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: 'Channel count:'
+    center:
+    - 0.4611
+    - 0.6119
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Stereo
+    center:
+    - 0.1301
+    - 0.6546
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Mono
+    center:
+    - 0.3519
+    - 0.6546
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Reset
+    center:
+    - 0.2523
+    - 0.9387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Apply
+    center:
+    - 0.7477
+    - 0.9387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  description: Audio recording setup screen allowing users to configure format, sample
+    rate, bitrate, and channel count.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Setup
+    center:
+    - 0.2102
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Settings
+    - Configuration
+    - 设置
+    semantic_type: label
+  - text: 'Recording format:'
+    center:
+    - 0.4611
+    - 0.2573
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Format
+    - Audio Format
+    - 录音格式
+    semantic_type: label
+  - text: M4a
+    center:
+    - 0.112
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - M4A
+    - AAC
+    - .m4a
+    semantic_type: button
+  - text: Wav
+    center:
+    - 0.3056
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - WAV
+    - Wave
+    - .wav
+    semantic_type: button
+  - text: 3gp
+    center:
+    - 0.4898
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 3GP
+    - .3gp
+    semantic_type: button
+  - text: 'Sample rate:'
+    center:
+    - 0.4611
+    - 0.3444
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Sampling Rate
+    - Frequency
+    - 采样率
+    semantic_type: label
+  - text: 44.1kHz
+    center:
+    - 0.1458
+    - 0.4338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 44100Hz
+    - CD Quality
+    semantic_type: button
+  - text: 16kHz
+    center:
+    - 0.3324
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 16000Hz
+    semantic_type: button
+  - text: 22kHz
+    center:
+    - 0.5583
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 22050Hz
+    semantic_type: button
+  - text: 32kHz
+    center:
+    - 0.7843
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 32000Hz
+    semantic_type: button
+  - text: 48kHz
+    center:
+    - 0.3889
+    - 0.4338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 48000Hz
+    - DVD Quality
+    semantic_type: button
+  - text: 8kHz
+    center:
+    - 0.1176
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 8000Hz
+    - Telephone Quality
+    semantic_type: button
+  - text: 'Channel count:'
+    center:
+    - 0.4611
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Channels
+    - Audio Channels
+    - 声道数
+    semantic_type: label
+  - text: Stereo
+    center:
+    - 0.1301
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 2ch
+    - 双声道
+    semantic_type: button
+  - text: Mono
+    center:
+    - 0.3519
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 1ch
+    - Single Channel
+    - 单声道
+    semantic_type: button
+  - text: Reset
+    center:
+    - 0.2523
+    - 0.9387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Restore Defaults
+    - Clear
+    - 重置
+    semantic_type: button
+  - text: Apply
+    center:
+    - 0.7477
+    - 0.9387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Save
+    - Confirm
+    - OK
+    - 应用
+    semantic_type: button
+  description: Audio recording setup screen allowing users to configure format, sample
+    rate, and channel count with Reset and Apply options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Setup
+    center:
+    - 0.2102
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Settings
+    - Configuration
+    - 设置
+    semantic_type: label
+  - text: 'Recording format:'
+    center:
+    - 0.4611
+    - 0.2573
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Audio format
+    - File format
+    - Format
+    - 录音格式
+    semantic_type: label
+  - text: M4a
+    center:
+    - 0.112
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - M4A
+    - AAC
+    - .m4a
+    semantic_type: button
+  - text: Wav
+    center:
+    - 0.3028
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - WAV
+    - Wave
+    - .wav
+    - PCM
+    semantic_type: button
+  - text: 3gp
+    center:
+    - 0.4907
+    - 0.3
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 3GP
+    - .3gp
+    - 3GPP
+    semantic_type: button
+  - text: 'Sample rate:'
+    center:
+    - 0.4611
+    - 0.3444
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Sampling rate
+    - Frequency
+    - Hz
+    - 采样率
+    semantic_type: label
+  - text: 16kHz
+    center:
+    - 0.3333
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 16000 Hz
+    - 16k
+    semantic_type: button
+  - text: 8kHz
+    center:
+    - 0.1176
+    - 0.3871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 8000 Hz
+    - 8k
+    semantic_type: button
+  - text: 'Channel count:'
+    center:
+    - 0.4611
+    - 0.4315
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Channels
+    - Audio channels
+    - 声道数
+    semantic_type: label
+  - text: Mono
+    center:
+    - 0.1241
+    - 0.4742
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Single channel
+    - 1 channel
+    - 单声道
+    semantic_type: button
+  - text: Reset
+    center:
+    - 0.2523
+    - 0.9387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Restore defaults
+    - Clear
+    - 重置
+    semantic_type: button
+  - text: Apply
+    center:
+    - 0.7477
+    - 0.9387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Save
+    - Confirm
+    - OK
+    - 应用
+    semantic_type: button
+  description: Audio recording setup screen allowing users to configure format, sample
+    rate, and channel count with reset and apply options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5023
+    - 0.0844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: setting
+  description: Settings screen for the Audio Recorder app allowing users to configure
+    recording preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete recordings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_13
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete recordings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_17
+  elements:
+  - text: New name
+    center:
+    - 0.2407
+    - 0.25
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Rename
+    - File name
+    - Edit name
+    semantic_type: input
+  - text: Don't ask again
+    center:
+    - 0.5
+    - 0.3592
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Never ask again
+    - Do not show again
+    - Skip next time
+    semantic_type: toggle
+  - text: Cancel
+    center:
+    - 0.5069
+    - 0.4163
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - Exit
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7597
+    - 0.4163
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - OK
+    - Store
+    - Apply
+    semantic_type: button
+  description: A dialog for renaming a recording with input field, save and cancel
+    options, and a 'don't ask again' checkbox.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A menu screen in the Audio Recorder app offering options to access
+    Settings or Delete items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - Voice Recorder
+    - 录音机
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 配置
+    - 设置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Remove
+    - Trash
+    - 删除
+    - Erase
+    semantic_type: button
+  - text: 'Recording: %s'
+    center:
+    - 0.4995
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorded file
+    - Audio clip
+    - 录音
+    semantic_type: label
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access settings, delete recordings, and view a specific recording status.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5
+    - 0.0844
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.312
+    - 0.91
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - Remove
+    - Trash
+    semantic_type: button
+  description: A settings or management screen for the Audio Recorder app featuring
+    options to access Settings and Delete recordings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: New name
+    center:
+    - 0.2407
+    - 0.25
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Rename
+    - File name
+    - Edit name
+    semantic_type: input
+  - text: Don't ask again
+    center:
+    - 0.5
+    - 0.3592
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Never ask again
+    - Do not show again
+    - Skip next time
+    semantic_type: toggle
+  - text: Cancel
+    center:
+    - 0.5069
+    - 0.4163
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - Exit
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7597
+    - 0.4163
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - OK
+    - Store
+    - Apply
+    semantic_type: button
+  description: A dialog for renaming a file with options to save, cancel, or suppress
+    future prompts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Audio Recorder
+    center:
+    - 0.5023
+    - 0.0844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recorder
+    - 录音机
+    - 语音记录器
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.1023
+    - 0.9102
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: button
+  description: Settings page for the Audio Recorder app allowing users to configure
+    recording preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: New name
+    center:
+    - 0.2407
+    - 0.25
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Rename
+    - File name
+    - Edit name
+    semantic_type: input
+  - text: Don't ask again
+    center:
+    - 0.5
+    - 0.3592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Never ask again
+    - Do not show again
+    - Skip next time
+    semantic_type: toggle
+  - text: Cancel
+    center:
+    - 0.5069
+    - 0.4163
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - Exit
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7597
+    - 0.4163
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - OK
+    - Store
+    - Apply
+    semantic_type: button
+  description: Dialog for renaming a recording with input field, save and cancel options,
+    and a 'don't ask again' checkbox.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 808
+    y: 2253
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 227
+    y: 202
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 498
+    y: 617
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 121
+    y: 720
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 330
+    y: 720
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 498
+    y: 826
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 158
+    y: 1041
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 359
+    y: 929
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 603
+    y: 929
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 847
+    y: 929
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 127
+    y: 929
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 380
+    y: 1250
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 329
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 808
+    y: 2253
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 227
+    y: 202
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 121
+    y: 720
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 530
+    y: 720
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 498
+    y: 826
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 498
+    y: 1036
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 272
+    y: 2253
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 720
+    wait: 1.5
+  - action: tap
+    x: 808
+    y: 2253
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 808
+    y: 2253
+    wait: 1.5
+  - action: tap
+    x: 542
+    y: 202
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.dimowner.audiorecorder
+    wait: 0.5
+  - action: launch
+    package: com.dimowner.audiorecorder
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2148
+    wait: 1.5
+  - action: tap
+    x: 808
+    y: 2253
+    wait: 1.5
+  - action: tap
+    x: 110
+    y: 2184
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Start a new audio recording
+- Configure recording format and sample rate
+- Adjust bitrate and channel count settings
+- Rename an existing recording
+- Delete unwanted recordings
+- Access and modify general app settings
+- Reset recording configuration to defaults
+known_limitations:
+- Initial welcome screen requires manual interaction to proceed
+- Multiple redundant screens for settings and content management may cause navigation
+  confusion
+- Renaming dialogs include a 'don't ask again' option that might suppress future prompts
+  unexpectedly

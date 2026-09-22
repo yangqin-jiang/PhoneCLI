@@ -1,0 +1,6377 @@
+app: VLC
+package: org.videolan.vlc
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main browsing screen of the VLC app featuring a search bar, sorting
+    options, and navigation tabs for Video, Audio, Browse, Playlists, and More.
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - search
+    - find
+    - query
+    - 搜索
+    semantic_type: input
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - sort
+    - order by
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - menu
+    - overflow
+    - kebab menu
+    - 更多选项
+    semantic_type: button
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6158
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - media library settings
+    - preferences
+    - go to settings
+    - 媒体库设置
+    semantic_type: link
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - videos
+    - 视频
+    - movie
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - music
+    - audio files
+    - 音频
+    - songs
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - files
+    - network
+    - 浏览
+    - explore
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - playlist
+    - 播放列表
+    - collections
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - additional
+    - 其他
+    - extra
+    semantic_type: tab
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Close
+    - Hide
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Search in current list
+    center:
+    - 0.525
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Filter list
+    - Search here
+    - 当前列表搜索
+    semantic_type: input
+  - text: SEARCH IN ALL MEDIA LIBRARY
+    center:
+    - 0.5
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Global search
+    - Search library
+    - 搜索媒体库
+    - 全库搜索
+    semantic_type: button
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6158
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Library settings
+    - Media preferences
+    - 媒体库设置
+    - 偏好设置
+    semantic_type: link
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Videos
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Music
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Files
+    - 浏览
+    - 文件浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Playlist
+    - 播放列表
+    - 歌单
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Extras
+    - 更多
+    - 其他
+    semantic_type: tab
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Clear search
+    - Delete text
+    - 清除搜索
+    - 清空
+    semantic_type: button
+  description: Search interface within the VLC app allowing users to search the current
+    list or entire media library, with navigation options for Video, Audio, Browse,
+    Playlists, and More.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Length
+    center:
+    - 0.7616
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Recently added
+    center:
+    - 0.7616
+    - 0.1969
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6158
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  description: Main browsing screen of the VLC app displaying media categories like
+    Video, Audio, and Playlists with search and sorting options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Group videos
+    center:
+    - 0.7134
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Display in list
+    center:
+    - 0.7523
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.1969
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6158
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  description: Video browsing screen with search, sorting, and display options, plus
+    a bottom navigation bar for media categories.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Select directories to include in the media library
+    center:
+    - 0.5148
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.294
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  description: Screen for selecting directories to include in the VLC media library,
+    with options for Storages and Local Network.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - search
+    - find
+    - query
+    - 搜索
+    semantic_type: input
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - sort
+    - order
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - menu
+    - overflow
+    - ellipsis
+    - 更多选项
+    semantic_type: button
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - artist
+    - performers
+    - 艺术家
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - artist
+    - performers
+    - 艺术家
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - album
+    - records
+    - 专辑
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - album
+    - records
+    - 专辑
+    semantic_type: tab
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - songs
+    - music
+    - 曲目
+    semantic_type: tab
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - songs
+    - music
+    - 曲目
+    semantic_type: tab
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - genre
+    - categories
+    - 类型
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - genre
+    - categories
+    - 类型
+    semantic_type: tab
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - media library settings
+    - library config
+    - 媒体库设置
+    semantic_type: link
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - videos
+    - movie
+    - 视频
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - music
+    - sound
+    - 音频
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - files
+    - explore
+    - 浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - playlist
+    - collections
+    - 播放列表
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - additional
+    - extra
+    - 更多
+    semantic_type: tab
+  description: Media library browsing screen with tabs for Artists, Albums, Tracks,
+    and Genres, along with search and sort options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - VLC media player
+    - VideoLAN Client
+    semantic_type: label
+  - text: Display in list
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - List view
+    - Show as list
+    - 列表显示
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Options
+    - Menu
+    - 更多选项
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Favourites
+    - Bookmarks
+    - 收藏
+    semantic_type: menu_item
+  - text: Download
+    center:
+    - 0.1546
+    - 0.276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Downloads
+    - 下载
+    semantic_type: menu_item
+  - text: More Actions
+    center:
+    - 0.2861
+    - 0.2871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Actions
+    - More
+    - 更多操作
+    semantic_type: button
+  - text: Movies
+    center:
+    - 0.4648
+    - 0.276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Films
+    - 电影
+    semantic_type: tab
+  - text: Music
+    center:
+    - 0.775
+    - 0.276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Songs
+    - Audio files
+    - 音乐
+    semantic_type: tab
+  - text: Podcasts
+    center:
+    - 0.9963
+    - 0.276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - 播客
+    semantic_type: tab
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.3594
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Storage devices
+    - 存储
+    semantic_type: menu_item
+  - text: Internal memory
+    center:
+    - 0.1546
+    - 0.4902
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Internal storage
+    - Device storage
+    - 内部存储
+    semantic_type: menu_item
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.5735
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - LAN
+    - Network shares
+    - 局域网
+    semantic_type: menu_item
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Videos
+    - 视频
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Music
+    - Sound
+    - 音频
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Browser
+    - 浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Playlist
+    - 播放列表
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Extras
+    - 更多
+    semantic_type: button
+  description: Main browsing screen of the VLC app displaying media categories, storage
+    options, and navigation tabs for accessing videos, audio, and playlists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: SETTINGS
+    center:
+    - 0.2597
+    - 0.1671
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+  - text: ABOUT
+    center:
+    - 0.7403
+    - 0.1671
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Streams
+    center:
+    - 0.1204
+    - 0.2415
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: New stream
+    center:
+    - 0.2324
+    - 0.3681
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  description: Side navigation menu in VLC app providing access to settings, media
+    categories like video and audio, streams, and playlists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Search in current list
+    center:
+    - 0.525
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: SEARCH IN ALL MEDIA LIBRARY
+    center:
+    - 0.5
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6158
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  description: Navigation menu providing access to search, media library preferences,
+    and main sections like Video, Audio, Browse, Playlists, and More.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Close
+    - Hide
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Clear search
+    - Delete text
+    - 清除搜索
+    - 清空
+    semantic_type: button
+  - text: SEARCH IN ALL MEDIA LIBRARY
+    center:
+    - 0.5
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Search all media
+    - Global search
+    - 搜索全部媒体库
+    - 全站搜索
+    semantic_type: input
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Videos
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Music
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Files
+    - 浏览
+    - 文件
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Playlist
+    - 播放列表
+    - 歌单
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Extras
+    - 更多
+    - 其他
+    semantic_type: tab
+  description: Search interface for filtering the media library with category tabs
+    including Video, Audio, Browse, Playlists, and More.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Recently added ▲
+    center:
+    - 0.7616
+    - 0.1971
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Recent
+    - Newest
+    - Latest
+    - 最近添加
+    semantic_type: button
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - VLC Media Player
+    - Videolan Client
+    semantic_type: label
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+    aliases:
+    - Order by
+    - Arrange
+    - 排序方式
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_29
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6158
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - Media Library Settings
+    - Library Preferences
+    - 媒体库设置
+    semantic_type: link
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Videos
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - Music
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Files
+    - 浏览
+    - 文件浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Playlist
+    - 播放列表
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Extras
+    - 更多
+    - 其他
+    semantic_type: tab
+  description: Main media library screen displaying recently added content with sorting,
+    searching, and navigation options for videos, audio, browse, playlists, and more.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - reload
+    - update
+    - sync
+    - 刷新
+    semantic_type: button
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - VLC media player
+    - app name
+    semantic_type: label
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - menu
+    - overflow
+    - kebab menu
+    - 更多选项
+    semantic_type: button
+  - text: SETTINGS
+    center:
+    - 0.2597
+    - 0.1671
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - settings
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: setting
+  - text: ABOUT
+    center:
+    - 0.7403
+    - 0.1671
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - about
+    - info
+    - version
+    - 关于
+    semantic_type: menu_item
+  - text: Streams
+    center:
+    - 0.1204
+    - 0.2415
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - stream list
+    - network streams
+    - 流媒体
+    semantic_type: tab
+  - text: New stream
+    center:
+    - 0.2324
+    - 0.3681
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+    aliases:
+    - add stream
+    - new network stream
+    - 添加流
+    semantic_type: button
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - videos
+    - movie
+    - 视频
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - music
+    - songs
+    - audio files
+    - 音频
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - files
+    - file browser
+    - directory
+    - 浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - playlist
+    - collections
+    - 播放列表
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - more options
+    - additional
+    - 更多
+    semantic_type: button
+  description: Main navigation menu of the VLC app providing access to settings, media
+    categories like video and audio, streams, and playlists.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - VLC media player
+    - Videolan
+    semantic_type: label
+  - text: Display in grid
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Grid view
+    - Show as grid
+    - 网格视图
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Options
+    - Menu
+    - 更多选项
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Favourites
+    - Starred
+    - 收藏
+    semantic_type: tab
+  - text: Download
+    center:
+    - 0.5199
+    - 0.1977
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Downloads
+    - 下载
+    semantic_type: tab
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.2067
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Actions
+    - More
+    - 更多操作
+    semantic_type: button
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.4706
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Storage
+    - SD Card
+    - Internal Storage
+    - 存储
+    semantic_type: menu_item
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.611
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - LAN
+    - Network shares
+    - 局域网
+    semantic_type: menu_item
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Videos
+    - 视频
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Music
+    - Songs
+    - 音频
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Browser
+    - 浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Playlist
+    - 播放列表
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - '...'
+    - Ellipsis
+    - 更多
+    semantic_type: button
+  description: Main browsing screen of the VLC app displaying media categories and
+    storage options for navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.269
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Config
+    - Preferences
+    - 设置
+    - 选项
+    semantic_type: link
+  - text: Search…
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Media library
+    center:
+    - 0.5
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Library
+    - Medialib
+    - 媒体库
+    - 资料库
+    semantic_type: tab
+  - text: Video
+    center:
+    - 0.5
+    - 0.3856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Videos
+    - 影片
+    - 视频
+    semantic_type: tab
+  - text: History
+    center:
+    - 0.5
+    - 0.7356
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Recent
+    - 播放历史
+    - 历史记录
+    semantic_type: menu_item
+  - text: Extra settings
+    center:
+    - 0.5
+    - 0.6019
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_31
+    aliases:
+    - Additional settings
+    - 更多设置
+    - 额外设置
+    semantic_type: setting
+  - text: Interface
+    center:
+    - 0.1162
+    - 0.6506
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_32
+    aliases:
+    - UI
+    - User Interface
+    - 界面
+    - 用户界面
+    semantic_type: setting
+  - text: Subtitles
+    center:
+    - 0.1148
+    - 0.7681
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_33
+    aliases:
+    - Captions
+    - 字幕
+    - CC
+    semantic_type: setting
+  - text: Audio
+    center:
+    - 0.0889
+    - 0.8269
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_34
+    aliases:
+    - Sound
+    - 音频
+    - 声音
+    semantic_type: setting
+  - text: Casting
+    center:
+    - 0.1051
+    - 0.8856
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_35
+    aliases:
+    - Chromecast
+    - 投屏
+    - 串流
+    semantic_type: setting
+  - text: Advanced
+    center:
+    - 0.1245
+    - 0.9444
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+    aliases:
+    - Expert
+    - 高级
+    - 进阶
+    semantic_type: setting
+  description: Settings menu in VLC app with options for media library, interface,
+    subtitles, audio, casting, and advanced settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Streams
+    center:
+    - 0.2694
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Stream
+    - Live Streams
+    - 流媒体
+    - 直播流
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Play Button
+    center:
+    - 0.9028
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Play
+    - Start
+    - 播放
+    - 开始
+    semantic_type: button
+  description: A screen for managing and playing media streams with navigation and
+    options controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Search in current list
+    center:
+    - 0.525
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: SEARCH IN ALL MEDIA LIBRARY
+    center:
+    - 0.5
+    - 0.1933
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_38
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_15
+  description: Search results screen displaying categorized media items including
+    artists, albums, tracks, and genres with options to search the entire library
+    or adjust preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Display in list
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Show all artists
+    center:
+    - 0.694
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.1969
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_16
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6683
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_7
+  description: Artists browsing screen in VLC with options to display, sort, and refresh
+    the list of artists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Display in grid
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Download
+    center:
+    - 0.5199
+    - 0.1977
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.2067
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.4706
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.611
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  description: Main browsing screen of the VLC app displaying media categories and
+    storage options with a grid view toggle.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Display in list
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+  - text: More Actions
+    center:
+    - 0.2861
+    - 0.2871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.3594
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.5669
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  description: Main browsing screen of the VLC app displaying media categories such
+    as Video, Audio, Playlists, and network storage options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Add a server favorite
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+  - text: Display in list
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_19
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Download
+    center:
+    - 0.1546
+    - 0.276
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+  - text: More Actions
+    center:
+    - 0.2861
+    - 0.2871
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Movies
+    center:
+    - 0.4648
+    - 0.276
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+  - text: Music
+    center:
+    - 0.775
+    - 0.276
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_22
+  - text: Podcasts
+    center:
+    - 0.9963
+    - 0.276
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.3594
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Internal memory
+    center:
+    - 0.1546
+    - 0.4902
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_24
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.5735
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_7
+  description: VLC app's main browse screen displaying media categories, storage options,
+    and navigation actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.2875
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Save
+    - Get
+    - 下载
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - Query
+    semantic_type: input
+  - text: Remove from favorites
+    center:
+    - 0.8343
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Unfavorite
+    - Delete favorite
+    - 取消收藏
+    - Remove bookmark
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Menu
+    - Overflow
+    - 更多
+    - Actions
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Browse
+    - File Browser
+    - 浏览
+    - Directory
+    semantic_type: tab
+  - text: Internal memory
+    center:
+    - 0.3343
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Storage
+    - Device Storage
+    - 内部存储
+    - Phone Memory
+    semantic_type: menu_item
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Start
+    - Watch
+    - 播放
+    - Listen
+    semantic_type: button
+  description: File details screen for a downloaded media item with options to play,
+    remove from favorites, or browse internal memory.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Movies
+    center:
+    - 0.256
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Films
+    - Video
+    - 电影
+    - 影片
+    semantic_type: tab
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Network
+    - Browse
+    - 浏览
+    - 网络浏览
+    semantic_type: tab
+  - text: Internal memory
+    center:
+    - 0.3343
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Storage
+    - Device Storage
+    - 内部存储
+    - 本机存储
+    semantic_type: menu_item
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.1746
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - Additional Options
+    - Extra Actions
+    - 更多操作
+    - 其他动作
+    semantic_type: button
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Start
+    - Watch
+    - 播放
+    - 开始
+    semantic_type: button
+  description: File browser screen for the Movies category showing internal memory
+    contents with options to search, browse, or play media files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Music
+    center:
+    - 0.2435
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Audio
+    - Songs
+    - 音乐
+    - 音频
+    semantic_type: tab
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Files
+    - Directory
+    - 浏览
+    - 文件浏览器
+    semantic_type: tab
+  - text: Internal memory
+    center:
+    - 0.3343
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Internal Storage
+    - Device Storage
+    - 内部存储
+    - 本机内存
+    semantic_type: menu_item
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.1746
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional Options
+    - Extra Actions
+    - 更多操作
+    - 其他动作
+    semantic_type: button
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start
+    - Resume
+    - 播放
+    - 开始
+    semantic_type: button
+  description: Music browser screen displaying internal memory contents with search,
+    navigation, and playback controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Podcasts
+    center:
+    - 0.2806
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播客
+    - podcast list
+    - audio feeds
+    semantic_type: tab
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - Find
+    - lookup
+    - search bar
+    semantic_type: input
+  - text: Remove from favorites
+    center:
+    - 0.8343
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Unfavorite
+    - 取消收藏
+    - remove bookmark
+    - delete favorite
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多选项
+    - overflow
+    - three dots
+    - ⋮
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 浏览
+    - file browser
+    - directory view
+    - 网络浏览
+    semantic_type: tab
+  - text: Internal memory
+    center:
+    - 0.3343
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 内部存储
+    - device storage
+    - local storage
+    - phone memory
+    semantic_type: link
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放
+    - start
+    - resume
+    - ▶
+    semantic_type: button
+  description: Podcast details screen allowing users to play episodes, manage favorites,
+    and browse files from internal memory.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Add to favorites
+    center:
+    - 0.8343
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Favorite
+    - Star
+    - 收藏
+    - 添加到收藏夹
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Browse
+    - 浏览
+    - 文件浏览
+    semantic_type: tab
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.1746
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Actions
+    - More
+    - 更多操作
+    - 更多
+    semantic_type: menu_item
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Start
+    - 播放
+    - 开始播放
+    semantic_type: button
+  description: Media detail screen providing options to play, add to favorites, or
+    browse related content for a selected item.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: VLC for Android
+    center:
+    - 0.5
+    - 0.2723
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - VLC
+    - App Name
+    semantic_type: label
+  - text: Official website
+    center:
+    - 0.5583
+    - 0.4765
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Website
+    - Homepage
+    - 官网
+    semantic_type: link
+  - text: Feedback forum
+    center:
+    - 0.5583
+    - 0.5335
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Forum
+    - Community
+    - 反馈论坛
+    semantic_type: link
+  - text: Source code
+    center:
+    - 0.5583
+    - 0.5906
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Code
+    - GitHub
+    - 源代码
+    semantic_type: link
+  - text: Libraries
+    center:
+    - 0.5583
+    - 0.6477
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Third-party libraries
+    - Dependencies
+    - 库
+    semantic_type: link
+  - text: Authors
+    center:
+    - 0.5583
+    - 0.7048
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Contributors
+    - Credits
+    - 作者
+    semantic_type: link
+  description: About screen for VLC for Android displaying links to the official website,
+    feedback forum, source code, libraries, and authors.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Search in current list
+    center:
+    - 0.525
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: SEARCH IN ALL MEDIA LIBRARY
+    center:
+    - 0.5
+    - 0.1933
+    fixed: false
+    found_at_scroll: 0
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  description: Media library browsing screen with categorized lists for Artists, Albums,
+    Tracks, and Genres, along with search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 0
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: true
+    found_at_scroll: 0
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: true
+    found_at_scroll: 0
+  - text: SEARCH IN ALL MEDIA LIBRARY
+    center:
+    - 0.5
+    - 0.1933
+    fixed: true
+    found_at_scroll: 0
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+  description: Search results screen displaying categorized media items including
+    artists, albums, tracks, and genres with a clear query option.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Name
+    center:
+    - 0.7616
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+  - text: File name
+    center:
+    - 0.7616
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+  - text: Length ▲
+    center:
+    - 0.7616
+    - 0.1971
+    fixed: false
+    found_at_scroll: 0
+  - text: Date
+    center:
+    - 0.7616
+    - 0.249
+    fixed: false
+    found_at_scroll: 0
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6683
+    fixed: false
+    found_at_scroll: 1
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  description: Audio library screen displaying media categories like Artists, Albums,
+    and Tracks with sorting and search options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Display in grid
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+  - text: Search…
+    center:
+    - 0.7264
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: Sort by…
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: Artists
+    center:
+    - 0.1083
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: ARTISTS
+    center:
+    - 0.1083
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: Albums
+    center:
+    - 0.3231
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: ALBUMS
+    center:
+    - 0.3231
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: Tracks
+    center:
+    - 0.5333
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: TRACKS
+    center:
+    - 0.5333
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: Genres
+    center:
+    - 0.7398
+    - 0.1408
+    fixed: false
+    found_at_scroll: 1
+  - text: GENRES
+    center:
+    - 0.7398
+    - 0.1406
+    fixed: false
+    found_at_scroll: 1
+  - text: GO TO MEDIALIBRARY PREFERENCES
+    center:
+    - 0.5005
+    - 0.6683
+    fixed: false
+    found_at_scroll: 1
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  description: Media library browsing screen with tabs for Artists, Albums, Tracks,
+    and Genres, along with search, sort, and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Search settings
+    center:
+    - 0.5491
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+  description: Search bar for filtering settings options within the VLC app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: Hardware Acceleration
+    center:
+    - 0.2352
+    - 0.1023
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - HW acceleration
+    - 硬件加速
+    semantic_type: setting
+  - text: Video screen orientation
+    center:
+    - 0.2486
+    - 0.2181
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screen rotation
+    - Orientation lock
+    - 视频方向
+    - 屏幕旋转
+    semantic_type: setting
+  - text: History
+    center:
+    - 0.5
+    - 0.3056
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recent
+    - 历史记录
+    semantic_type: menu_item
+  - text: Playback history
+    center:
+    - 0.181
+    - 0.3544
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Play history
+    - 播放历史
+    semantic_type: setting
+  - text: Video play queue history
+    center:
+    - 0.2495
+    - 0.4344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Video queue
+    - 视频队列历史
+    semantic_type: setting
+  - text: Audio play queue history
+    center:
+    - 0.25
+    - 0.5144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Audio queue
+    - 音频队列历史
+    semantic_type: setting
+  - text: Extra settings
+    center:
+    - 0.5
+    - 0.6019
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional settings
+    - 更多设置
+    semantic_type: menu_item
+  - text: Interface
+    center:
+    - 0.1162
+    - 0.6506
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - UI
+    - User Interface
+    - 界面
+    semantic_type: setting
+  - text: Video
+    center:
+    - 0.0884
+    - 0.7094
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频
+    semantic_type: setting
+  - text: Subtitles
+    center:
+    - 0.1148
+    - 0.7681
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕
+    - CC
+    semantic_type: setting
+  - text: Audio
+    center:
+    - 0.0889
+    - 0.8269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sound
+    - 音频
+    semantic_type: setting
+  - text: Casting
+    center:
+    - 0.1051
+    - 0.8856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Chromecast
+    - 投屏
+    - 串流
+    semantic_type: setting
+  - text: Advanced
+    center:
+    - 0.1245
+    - 0.9444
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - Expert mode
+    semantic_type: setting
+  description: Settings menu in VLC app listing categories like Hardware Acceleration,
+    History, and Interface for user configuration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Interface
+    center:
+    - 0.2773
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Search…
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+  - text: DayNight mode
+    center:
+    - 0.1727
+    - 0.144
+    fixed: false
+    found_at_scroll: 0
+  - text: Follow system mode
+    center:
+    - 0.1963
+    - 0.1665
+    fixed: false
+    found_at_scroll: 0
+  - text: Android TV interface
+    center:
+    - 0.2167
+    - 0.224
+    fixed: false
+    found_at_scroll: 0
+  - text: Change UI to TV adapted theme
+    center:
+    - 0.2806
+    - 0.2465
+    fixed: false
+    found_at_scroll: 0
+  - text: Set locale
+    center:
+    - 0.1231
+    - 0.304
+    fixed: false
+    found_at_scroll: 0
+  - text: Single line list title ellipsize
+    center:
+    - 0.2685
+    - 0.3627
+    fixed: false
+    found_at_scroll: 0
+  - text: Default
+    center:
+    - 0.0935
+    - 0.3852
+    fixed: false
+    found_at_scroll: 0
+  - text: Show headers
+    center:
+    - 0.1611
+    - 0.4427
+    fixed: false
+    found_at_scroll: 0
+  - text: Split lists by headers depending on the sort type
+    center:
+    - 0.4037
+    - 0.4652
+    fixed: false
+    found_at_scroll: 0
+  - text: Show missing media
+    center:
+    - 0.2185
+    - 0.5227
+    fixed: false
+    found_at_scroll: 0
+  - text: Show distant media even if they are not present
+    center:
+    - 0.3991
+    - 0.5452
+    fixed: false
+    found_at_scroll: 0
+  - text: Video
+    center:
+    - 0.5
+    - 0.6102
+    fixed: false
+    found_at_scroll: 0
+  - text: Show seen video marker
+    center:
+    - 0.2491
+    - 0.659
+    fixed: false
+    found_at_scroll: 0
+  - text: Mark a video as seen when you play it until the end
+    center:
+    - 0.4222
+    - 0.6904
+    fixed: false
+    found_at_scroll: 0
+  - text: Video playlist mode
+    center:
+    - 0.2088
+    - 0.7569
+    fixed: false
+    found_at_scroll: 0
+  - text: Play all videos, starting with the one you clicked on
+    center:
+    - 0.4222
+    - 0.7883
+    fixed: false
+    found_at_scroll: 0
+  - text: Video thumbnails
+    center:
+    - 0.1898
+    - 0.8548
+    fixed: false
+    found_at_scroll: 0
+  - text: Show video thumbnails in lists
+    center:
+    - 0.2681
+    - 0.8773
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio
+    center:
+    - 0.5
+    - 0.9423
+    fixed: false
+    found_at_scroll: 0
+  - text: Show last playlist tip
+    center:
+    - 0.2167
+    - 0.6294
+    fixed: false
+    found_at_scroll: 1
+  - text: Shows a tip helping you to resume audio playback on app start
+    center:
+    - 0.4222
+    - 0.6608
+    fixed: false
+    found_at_scroll: 1
+  - text: Audio playlist mode
+    center:
+    - 0.2093
+    - 0.7273
+    fixed: false
+    found_at_scroll: 1
+  - text: Play all audio, starting with the one you clicked on
+    center:
+    - 0.4148
+    - 0.7498
+    fixed: false
+    found_at_scroll: 1
+  - text: Media cover on Lockscreen
+    center:
+    - 0.275
+    - 0.8073
+    fixed: false
+    found_at_scroll: 1
+  - text: When available, set the current media cover art as lockscreen wallpaper
+    center:
+    - 0.4222
+    - 0.8387
+    fixed: false
+    found_at_scroll: 1
+  - text: Seek buttons in notification panel
+    center:
+    - 0.3255
+    - 0.9052
+    fixed: false
+    found_at_scroll: 1
+  - text: Show rewind and fast forward buttons in compact media controls
+    center:
+    - 0.4222
+    - 0.9367
+    fixed: false
+    found_at_scroll: 1
+  description: Settings screen for customizing VLC interface, video, and audio playback
+    behaviors.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Subtitles
+    center:
+    - 0.275
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕
+    - Captions
+    - CC
+    semantic_type: label
+  - text: Search…
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - Find
+    - 查找
+    semantic_type: input
+  - text: Subtitles presets
+    center:
+    - 0.1843
+    - 0.144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕预设
+    - Subtitle templates
+    - 预设
+    semantic_type: menu_item
+  - text: Auto load subtitles
+    center:
+    - 0.2009
+    - 0.2027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自动加载字幕
+    - Auto-load subs
+    - 自动载入
+    semantic_type: toggle
+  - text: Subtitle text encoding
+    center:
+    - 0.2264
+    - 0.2615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕文本编码
+    - Encoding
+    - 字符编码
+    semantic_type: setting
+  - text: Preferred subtitle language
+    center:
+    - 0.2722
+    - 0.3415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 首选字幕语言
+    - Preferred language
+    - 优先语言
+    semantic_type: setting
+  - text: Subtitles font style
+    center:
+    - 0.5
+    - 0.429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕字体样式
+    - Font
+    - 字体
+    semantic_type: setting
+  - text: Subtitles Size
+    center:
+    - 0.1556
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕大小
+    - Font size
+    - 字号
+    semantic_type: setting
+  - text: Bold subtitles
+    center:
+    - 0.1569
+    - 0.5577
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 粗体字幕
+    - Bold
+    - 加粗
+    semantic_type: toggle
+  - text: Color
+    center:
+    - 0.0847
+    - 0.6165
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 颜色
+    - Text color
+    - 字体颜色
+    semantic_type: setting
+  - text: Opacity
+    center:
+    - 0.1046
+    - 0.6665
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 不透明度
+    - Transparency
+    - 透明度
+    semantic_type: setting
+  - text: Subtitles Background
+    center:
+    - 0.5
+    - 0.776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕背景
+    - Background color
+    - 背景色
+    semantic_type: setting
+  - text: Subtitles shadow
+    center:
+    - 0.5
+    - 0.891
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字幕阴影
+    - Shadow
+    - 阴影效果
+    semantic_type: setting
+  - text: Subtitles outline
+    center:
+    - 0.5
+    - 0.7435
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 字幕轮廓
+    - Outline
+    - 描边
+    semantic_type: setting
+  description: Subtitles settings page allowing users to configure subtitle appearance,
+    language preferences, and loading behavior.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio
+    center:
+    - 0.2407
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Search…
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+  - text: Resume playback after a call
+    center:
+    - 0.2866
+    - 0.144
+    fixed: false
+    found_at_scroll: 0
+  - text: Stay in pause otherwise
+    center:
+    - 0.2199
+    - 0.1665
+    fixed: false
+    found_at_scroll: 0
+  - text: Save Playback Speed
+    center:
+    - 0.2227
+    - 0.224
+    fixed: false
+    found_at_scroll: 0
+  - text: Keep playback speed between media
+    center:
+    - 0.3218
+    - 0.2465
+    fixed: false
+    found_at_scroll: 0
+  - text: Stop on application swipe
+    center:
+    - 0.2616
+    - 0.304
+    fixed: false
+    found_at_scroll: 0
+  - text: Stop playback when application is dismissed
+    center:
+    - 0.3787
+    - 0.3265
+    fixed: false
+    found_at_scroll: 0
+  - text: Digital audio output (passthrough)
+    center:
+    - 0.3352
+    - 0.384
+    fixed: false
+    found_at_scroll: 0
+  - text: Preferred audio language
+    center:
+    - 0.256
+    - 0.464
+    fixed: false
+    found_at_scroll: 0
+  - text: Headset
+    center:
+    - 0.5
+    - 0.5515
+    fixed: false
+    found_at_scroll: 0
+  - text: Detect headset
+    center:
+    - 0.1694
+    - 0.6002
+    fixed: false
+    found_at_scroll: 0
+  - text: Detect headset insertion and removal
+    center:
+    - 0.3227
+    - 0.6227
+    fixed: false
+    found_at_scroll: 0
+  - text: Resume on headset insertion
+    center:
+    - 0.2903
+    - 0.6802
+    fixed: false
+    found_at_scroll: 0
+  - text: Pause otherwise
+    center:
+    - 0.1657
+    - 0.7027
+    fixed: false
+    found_at_scroll: 0
+  - text: Controls
+    center:
+    - 0.5
+    - 0.7677
+    fixed: false
+    found_at_scroll: 0
+  - text: Android Auto playback speed
+    center:
+    - 0.2907
+    - 0.8165
+    fixed: false
+    found_at_scroll: 0
+  - text: Show speed control in the overflow menu
+    center:
+    - 0.3519
+    - 0.839
+    fixed: false
+    found_at_scroll: 0
+  - text: Android Auto seek buttons
+    center:
+    - 0.2676
+    - 0.8965
+    fixed: false
+    found_at_scroll: 0
+  - text: Replay Gain
+    center:
+    - 0.5
+    - 0.2881
+    fixed: false
+    found_at_scroll: 1
+  - text: Enable replay gain
+    center:
+    - 0.1958
+    - 0.3369
+    fixed: false
+    found_at_scroll: 1
+  - text: Streams without replay gain information may be quieter due to the default
+      gain
+    center:
+    - 0.4222
+    - 0.3683
+    fixed: false
+    found_at_scroll: 1
+  - text: Replay gain mode
+    center:
+    - 0.1926
+    - 0.4348
+    fixed: false
+    found_at_scroll: 1
+  - text: Replay preamp
+    center:
+    - 0.1681
+    - 0.5506
+    fixed: false
+    found_at_scroll: 1
+  - text: Changes the default target level (89 dB) for streams with replay gain information
+    center:
+    - 0.5
+    - 0.5821
+    fixed: false
+    found_at_scroll: 1
+  - text: Default replay gain
+    center:
+    - 0.2
+    - 0.6485
+    fixed: false
+    found_at_scroll: 1
+  - text: Applies to streams without replay gain information&#10;Set to 0 to disable
+    center:
+    - 0.4218
+    - 0.68
+    fixed: false
+    found_at_scroll: 1
+  - text: Peak protection
+    center:
+    - 0.175
+    - 0.7465
+    fixed: false
+    found_at_scroll: 1
+  - text: Protect against sound clipping
+    center:
+    - 0.2694
+    - 0.769
+    fixed: false
+    found_at_scroll: 1
+  - text: Advanced
+    center:
+    - 0.5
+    - 0.834
+    fixed: false
+    found_at_scroll: 1
+  - text: Audio output
+    center:
+    - 0.15
+    - 0.8827
+    fixed: false
+    found_at_scroll: 1
+  - text: Change the method that VLC uses to output audio
+    center:
+    - 0.4157
+    - 0.9052
+    fixed: false
+    found_at_scroll: 1
+  - text: MIDI SoundFont
+    center:
+    - 0.1778
+    - 0.9623
+    fixed: false
+    found_at_scroll: 1
+  - text: Pick a SoundFont file to play midi audio tracks
+    center:
+    - 0.3875
+    - 0.9456
+    fixed: false
+    found_at_scroll: 2
+  description: Audio settings page in VLC allowing users to configure playback behavior,
+    headset detection, Android Auto controls, and Replay Gain options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Casting
+    center:
+    - 0.262
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Search…
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+  description: Casting screen with a search bar for finding available devices to cast
+    media to.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Advanced
+    center:
+    - 0.2866
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Advanced settings
+    - 高级
+    semantic_type: setting
+  - text: Search…
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Find
+    - 搜索
+    semantic_type: input
+  - text: Performance
+    center:
+    - 0.5
+    - 0.8027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 性能
+    - performance settings
+    semantic_type: setting
+  - text: Developer
+    center:
+    - 0.5
+    - 0.7569
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Developer options
+    - 开发者
+    - dev mode
+    semantic_type: setting
+  description: Advanced settings screen with search functionality and categories for
+    Performance and Developer options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+  - text: Streams
+    center:
+    - 0.2694
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: 'Enter network address: e.g. http://, mms:// or rtsp://'
+    center:
+    - 0.4222
+    - 0.164
+    fixed: false
+    found_at_scroll: 1
+  - text: Play Button
+    center:
+    - 0.9028
+    - 0.1613
+    fixed: false
+    found_at_scroll: 1
+  description: Screen for entering a network stream URL with an input field and play
+    button to start streaming.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Search media
+    center:
+    - 0.5486
+    - 0.0898
+    fixed: false
+    found_at_scroll: 0
+  description: Search interface for finding media files within the VLC app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: Add a server favorite
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+  - text: Display in grid
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 1
+  - text: Download
+    center:
+    - 0.5199
+    - 0.1977
+    fixed: false
+    found_at_scroll: 1
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.2067
+    fixed: false
+    found_at_scroll: 1
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.4706
+    fixed: false
+    found_at_scroll: 1
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.611
+    fixed: false
+    found_at_scroll: 1
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+  description: VLC app's main browsing interface with navigation tabs for Video, Audio,
+    Browse, Playlists, and options to manage servers and favorites.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Add a server favorite
+    center:
+    - 0.7523
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - add favorite
+    - bookmark server
+    - save server
+    semantic_type: button
+  - text: Refresh
+    center:
+    - 0.7523
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - reload
+    - update
+    - sync
+    semantic_type: button
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - VLC media player
+    - app name
+    semantic_type: label
+  - text: Display in grid
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - grid view
+    - tile view
+    - show as grid
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - options
+    - menu
+    - ellipsis
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - bookmarks
+    - starred
+    - preferred
+    semantic_type: tab
+  - text: Download
+    center:
+    - 0.5199
+    - 0.1977
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - save offline
+    - get
+    - download file
+    semantic_type: button
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.2067
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - actions
+    - operations
+    - additional options
+    semantic_type: menu_item
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.4706
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - storage devices
+    - drives
+    - media storage
+    semantic_type: menu_item
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.611
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - LAN
+    - local network
+    - network shares
+    - SMB
+    semantic_type: menu_item
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - videos
+    - movie
+    - film
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - music
+    - songs
+    - audio files
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - files
+    - file browser
+    - explore
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - playlist
+    - collections
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - more items
+    - see more
+    - additional
+    semantic_type: button
+  description: VLC app's main browsing interface with navigation tabs for Video, Audio,
+    Browse, Playlists, and options to manage servers, favorites, and storage.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: ftp://
+    center:
+    - 0.5
+    - 0.5394
+    fixed: false
+    found_at_scroll: 0
+  - text: FTP
+    center:
+    - 0.1264
+    - 0.5992
+    fixed: false
+    found_at_scroll: 0
+  - text: 'Port:'
+    center:
+    - 0.8319
+    - 0.5994
+    fixed: false
+    found_at_scroll: 0
+  - text: Server address (domain name or IP)
+    center:
+    - 0.5
+    - 0.6644
+    fixed: false
+    found_at_scroll: 0
+  - text: Username
+    center:
+    - 0.5
+    - 0.731
+    fixed: false
+    found_at_scroll: 0
+  - text: Folder path (optional)
+    center:
+    - 0.5
+    - 0.7977
+    fixed: false
+    found_at_scroll: 0
+  - text: Server name, for convenience
+    center:
+    - 0.5
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+  - text: CANCEL
+    center:
+    - 0.6014
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+  - text: OK
+    center:
+    - 0.8542
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+  description: FTP connection configuration screen allowing users to input server
+    address, port, credentials, and folder path to add an FTP server.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+  - text: Search in current list
+    center:
+    - 0.5639
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.8847
+    - 0.0831
+    fixed: true
+    found_at_scroll: 1
+  description: Search interface within the current media list allowing users to filter
+    content, play results, or clear the query.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.2875
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save
+    - 下载
+    - 保存
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Add to favorites
+    center:
+    - 0.8343
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Favorite
+    - Star
+    - 收藏
+    - 添加到喜爱
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Start
+    - 播放
+    - 开始
+    semantic_type: button
+  description: Media details screen providing options to play, download, add to favorites,
+    or search for related content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Sort by…
+    center:
+    - 0.7
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order by
+    - Arrange by
+    - 排序方式
+    semantic_type: menu_item
+  - text: Scan this folder
+    center:
+    - 0.7389
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Scan folder
+    - Rescan directory
+    - 扫描此文件夹
+    semantic_type: button
+  - text: Add to playlist
+    center:
+    - 0.7
+    - 0.1969
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Append to playlist
+    - 加入播放列表
+    - 添加到歌单
+    semantic_type: button
+  - text: Show all files
+    center:
+    - 0.6806
+    - 0.249
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display all files
+    - 显示所有文件
+    semantic_type: toggle
+  - text: Show hidden files
+    center:
+    - 0.6806
+    - 0.301
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display hidden files
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: Refresh
+    center:
+    - 0.7389
+    - 0.3531
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reload
+    - Update
+    - 刷新
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Go back
+    - Up
+    - 返回上一级
+    semantic_type: button
+  - text: Movies
+    center:
+    - 0.256
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Films
+    - Videos
+    - 电影
+    semantic_type: tab
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Remove from favorites
+    center:
+    - 0.8343
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Unfavorite
+    - Delete from favorites
+    - 取消收藏
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - File Browser
+    - Navigation
+    - 浏览器
+    semantic_type: tab
+  - text: Internal memory
+    center:
+    - 0.3343
+    - 0.1292
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Internal storage
+    - Device storage
+    - 内部存储
+    semantic_type: link
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.1746
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Additional actions
+    - 更多操作
+    semantic_type: menu_item
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Start
+    - Watch
+    - 播放
+    semantic_type: button
+  description: Context menu for a media file in the VLC browser offering actions like
+    Play, Add to playlist, and file management options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_45
+  elements:
+  - text: VLC
+    center:
+    - 0.2014
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - VLC media player
+    - Videolan
+    semantic_type: label
+  - text: Display in list
+    center:
+    - 0.844
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List view
+    - Show as list
+    - 列表视图
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Options
+    - Menu
+    - 更多选项
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1287
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Favourites
+    - Starred
+    - 收藏
+    semantic_type: tab
+  - text: More Actions
+    center:
+    - 0.2861
+    - 0.2871
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Actions
+    - More
+    - 更多操作
+    semantic_type: button
+  - text: Storages
+    center:
+    - 0.1259
+    - 0.3594
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Storage
+    - SD Card
+    - Internal Storage
+    - 存储
+    semantic_type: menu_item
+  - text: Local Network
+    center:
+    - 0.1796
+    - 0.5735
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - LAN
+    - Network Shares
+    - 局域网
+    semantic_type: menu_item
+  - text: Video
+    center:
+    - 0.1
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Videos
+    - 视频
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.3
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Songs
+    - 音频
+    semantic_type: tab
+  - text: Browse
+    center:
+    - 0.5
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Files
+    - Browser
+    - 浏览
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.7
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Playlist
+    - 播放列表
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.9
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Extras
+    - Additional
+    - 更多
+    semantic_type: button
+  description: Main browsing screen of the VLC app displaying media categories and
+    storage options for navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_46
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - Hide
+    - Minimize
+    - 收起
+    semantic_type: button
+  - text: Search in current list
+    center:
+    - 0.5639
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Filter
+    - Find
+    - 搜索
+    semantic_type: input
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.1746
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Options
+    - Menu
+    - More
+    - 更多操作
+    semantic_type: button
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start
+    - Resume
+    - 播放
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8847
+    - 0.0831
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Clear search
+    - Reset
+    - Delete text
+    - 清除
+    semantic_type: button
+  description: Search interface within the current list allowing users to filter content,
+    play results, or clear the query.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_47
+  elements:
+  - text: Sort by…
+    center:
+    - 0.7
+    - 0.0927
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序方式
+    - order by
+    - sort order
+    semantic_type: menu_item
+  - text: Scan this folder
+    center:
+    - 0.7389
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 扫描此文件夹
+    - scan directory
+    - rescan folder
+    semantic_type: button
+  - text: Add to playlist
+    center:
+    - 0.7
+    - 0.1969
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加到播放列表
+    - add to queue
+    - enqueue
+    semantic_type: button
+  - text: Show all files
+    center:
+    - 0.6806
+    - 0.249
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示所有文件
+    - show everything
+    - display all
+    semantic_type: toggle
+  - text: Show hidden files
+    center:
+    - 0.6806
+    - 0.301
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示隐藏文件
+    - show dotfiles
+    - visible hidden
+    semantic_type: toggle
+  - text: Refresh
+    center:
+    - 0.7389
+    - 0.3531
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 刷新
+    - reload
+    - update list
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 向上导航
+    - go back
+    - parent directory
+    - 返回上一级
+    semantic_type: button
+  - text: Music
+    center:
+    - 0.2435
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 音乐
+    - audio
+    - songs
+    semantic_type: tab
+  - text: Search…
+    center:
+    - 0.7069
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: Remove from favorites
+    center:
+    - 0.8343
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 取消收藏
+    - unfavorite
+    - remove from liked
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - overflow menu
+    - kebab menu
+    - three dots
+    semantic_type: button
+  - text: Browser
+    center:
+    - 0.1023
+    - 0.1292
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 浏览
+    - file browser
+    - directory view
+    semantic_type: tab
+  - text: Internal memory
+    center:
+    - 0.3343
+    - 0.1292
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 内部存储
+    - internal storage
+    - device storage
+    - 手机存储
+    semantic_type: link
+  - text: More Actions
+    center:
+    - 0.9417
+    - 0.1746
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多操作
+    - additional actions
+    - more
+    semantic_type: menu_item
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 播放
+    - start
+    - resume
+    semantic_type: button
+  description: Context menu for a music file or folder in the VLC browser, offering
+    actions like play, add to playlist, and file management options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_48
+  elements:
+  - text: Play
+    center:
+    - 0.5778
+    - 0.6369
+    fixed: false
+    found_at_scroll: 0
+  - text: Append
+    center:
+    - 0.5778
+    - 0.6981
+    fixed: false
+    found_at_scroll: 0
+  - text: Add to favorites
+    center:
+    - 0.5778
+    - 0.7594
+    fixed: false
+    found_at_scroll: 0
+  - text: Scan this folder
+    center:
+    - 0.5778
+    - 0.8206
+    fixed: false
+    found_at_scroll: 0
+  - text: Delete
+    center:
+    - 0.5778
+    - 0.8819
+    fixed: false
+    found_at_scroll: 0
+  - text: Add this folder
+    center:
+    - 0.5778
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  description: Context menu for a folder in VLC offering options to play, append,
+    favorite, scan, delete, or add the folder.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - Hide
+    - Minimize
+    - 收起
+    semantic_type: button
+  - text: Search in current list
+    center:
+    - 0.5639
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Filter
+    - Find
+    - 在当前列表中搜索
+    semantic_type: input
+  - text: Podcasts
+    center:
+    - 0.5741
+    - 0.1292
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 播客
+    - Podcast
+    - Audio Shows
+    semantic_type: tab
+  - text: Play
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start
+    - 播放
+    - Resume
+    - Watch
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8847
+    - 0.0831
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Clear search
+    - Reset
+    - 删除查询
+    - Clear text
+    semantic_type: button
+  description: Search interface within the Podcasts section allowing users to filter
+    the current list by entering a query.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 972
+    y: 2264
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 706
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 662
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 502
+    y: 662
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 837
+    y: 662
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1076
+    y: 662
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 1176
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 972
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 800
+    y: 401
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 567
+    y: 200
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 338
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1445
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 126
+    y: 1562
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 124
+    y: 1843
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 96
+    y: 1984
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 114
+    y: 2126
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 136
+    y: 390
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 134
+    y: 2266
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1478
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 706
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 784
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 464
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 912
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 222
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 764
+    y: 201
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 901
+    y: 201
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 110
+    y: 310
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 502
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 764
+    y: 201
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 502
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 502
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 419
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: org.videolan.vlc
+    wait: 0.5
+  - action: launch
+    package: org.videolan.vlc
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 837
+    y: 662
+    wait: 1.5
+  - action: tap
+    x: 764
+    y: 201
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Browse and play video files
+- Browse and play audio tracks
+- Search the media library
+- Create and manage playlists
+- Add network streams or directories
+- Adjust playback settings like subtitles and audio
+- Sort media by artist, album, or genre
+- Manage favorite media items
+known_limitations:
+- Settings menu is nested within side navigation and may require multiple taps to
+  access
+- Directory selection for library inclusion requires manual navigation through storage
+  options
+- Search functionality is split between specific list filtering and global library
+  search

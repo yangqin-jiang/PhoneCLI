@@ -1,0 +1,4705 @@
+app: Simple SMS Messenger
+package: com.simplemobiletools.smsmessenger
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main screen of the Simple SMS Messenger app featuring a search bar,
+    settings access, and additional options.
+  elements:
+  - text: Search
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 搜索
+    - 查找
+    - search bar
+    semantic_type: input
+  - text: Settings
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 设置
+    - preferences
+    - config
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: Settings
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    semantic_type: link
+  - text: About
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 关于
+    - app info
+    - version
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: button
+  - text: Start a conversation
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 开始对话
+    - new message
+    - compose
+    semantic_type: button
+  description: Main screen of the Simple SMS Messenger app featuring a search bar,
+    settings access, and an option to start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: COLOR CUSTOMIZATION
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Customize colors
+    center:
+    - 0.1861
+    - 0.2123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: GENERAL
+    center:
+    - 0.5269
+    - 0.274
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Language
+    center:
+    - 0.1287
+    - 0.3302
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Change date and time format
+    center:
+    - 0.2755
+    - 0.4123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Manage blocked numbers
+    center:
+    - 0.2509
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Manage blocked keywords
+    center:
+    - 0.2569
+    - 0.5431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.604
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: NOTIFICATIONS
+    center:
+    - 0.5269
+    - 0.6823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+  - text: Customize notifications
+    center:
+    - 0.2329
+    - 0.7431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: Lock screen notification visibility
+    center:
+    - 0.3009
+    - 0.804
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: OUTGOING MESSAGES
+    center:
+    - 0.5269
+    - 0.8823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: Show a character counter at writing messages
+    center:
+    - 0.5
+    - 0.9454
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: Remove accents and diacritics at sending messages
+    center:
+    - 0.5
+    - 0.9946
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: Send message on pressing Enter
+    center:
+    - 0.5
+    - 0.3367
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+  - text: Enable delivery reports
+    center:
+    - 0.5
+    - 0.4067
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+  - text: Send long messages as MMS
+    center:
+    - 0.5
+    - 0.4767
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_16
+  - text: Send group messages as MMS
+    center:
+    - 0.5
+    - 0.5467
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_17
+  - text: Resize sent MMS images
+    center:
+    - 0.2454
+    - 0.6098
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: RECYCLE BIN
+    center:
+    - 0.5269
+    - 0.6881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: Move items into the Recycle Bin instead of deleting
+    center:
+    - 0.5
+    - 0.7512
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: SECURITY
+    center:
+    - 0.5269
+    - 0.8152
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: Password protect the whole application
+    center:
+    - 0.5
+    - 0.8783
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.9423
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: Export messages
+    center:
+    - 0.5
+    - 0.9962
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+  - text: Import messages
+    center:
+    - 0.5
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_18
+  description: Settings page for Simple SMS Messenger with options for color customization,
+    general preferences, notifications, message handling, recycle bin, security, and
+    data migration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Show archived conversations
+    center:
+    - 0.6194
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - View archived chats
+    - Display archived messages
+    - 显示归档对话
+    semantic_type: setting
+  - text: Search
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_17
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Settings
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_17
+    aliases:
+    - Preferences
+    - Configuration
+    - 设置
+    - 选项
+    semantic_type: link
+  - text: About
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_17
+    aliases:
+    - App Info
+    - Version
+    - 关于
+    - 应用信息
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_17
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  description: Settings menu page with options for archived conversations, search,
+    settings, about, and more options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: SUPPORT
+    center:
+    - 0.2625
+    - 0.1606
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Support Section
+    - Help & Support
+    semantic_type: label
+  - text: HELP US
+    center:
+    - 0.2551
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Contribute
+    - Assist Us
+    semantic_type: label
+  - text: Donate
+    center:
+    - 0.5681
+    - 0.484
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Donation
+    - Give Money
+    - 赞助
+    semantic_type: link
+  - text: SOCIAL
+    center:
+    - 0.2463
+    - 0.5573
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Social Media
+    - Community
+    semantic_type: label
+  - text: Facebook
+    center:
+    - 0.5681
+    - 0.6123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - FB
+    - 脸书
+    semantic_type: link
+  - text: GitHub
+    center:
+    - 0.5681
+    - 0.6823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Github
+    - Code Repository
+    semantic_type: link
+  - text: Reddit
+    center:
+    - 0.5681
+    - 0.7523
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Reddit Community
+    semantic_type: link
+  - text: Telegram
+    center:
+    - 0.5681
+    - 0.8223
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - TG
+    - 电报
+    semantic_type: link
+  - text: OTHER
+    center:
+    - 0.2426
+    - 0.8956
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Miscellaneous
+    - More
+    semantic_type: label
+  - text: Privacy policy
+    center:
+    - 0.5681
+    - 0.9506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Privacy Policy
+    - 隐私政策
+    - Data Privacy
+    semantic_type: link
+  - text: About
+    center:
+    - 0.5588
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - About App
+    - 应用信息
+    - App Info
+    semantic_type: link
+  - text: Third party licences
+    center:
+    - 0.5681
+    - 0.7977
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - Licenses
+    - Open Source Licenses
+    - 第三方许可
+    semantic_type: link
+  - text: Made with ❤️ in Slovakia
+    center:
+    - 0.5681
+    - 0.939
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - Credits
+    - Developer Info
+    semantic_type: label
+  description: Support and information screen with options to donate, access social
+    media links, and view legal or app details.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Show archived conversations
+    center:
+    - 0.6194
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_22
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+  - text: Settings
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_21
+  - text: About
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_21
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_21
+  description: Settings menu page with options for archived conversations, search,
+    settings, about, and more.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: New conversation
+    center:
+    - 0.3481
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - 新建对话
+    - new message
+    - start chat
+    - compose
+    semantic_type: button
+  - text: Add Contact or Number…
+    center:
+    - 0.5
+    - 0.1496
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 添加联系人或号码
+    - add recipient
+    - select contact
+    - enter number
+    semantic_type: input
+  description: Screen for initiating a new conversation by adding a contact or entering
+    a phone number.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Close
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  description: A minimal screen featuring only a Close button, likely serving as an
+    empty state or dismissal interface.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9417
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  description: Search interface for finding messages or contacts within the app
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Todo
+    - Task
+    - 任务
+    - 待办
+    semantic_type: label
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Revert
+    - 撤销
+    - 回退
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Restore
+    - 重做
+    - 恢复
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Display mode
+    - 视图模式
+    - 显示方式
+    semantic_type: setting
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Store
+    - 保存
+    - 存储
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Menu
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Toggle done
+    center:
+    - 0.0588
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Mark complete
+    - 标记完成
+    - 切换状态
+    semantic_type: toggle
+  - text: Add context
+    center:
+    - 0.1764
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Add tag
+    - 添加上下文
+    - 添加标签
+    semantic_type: button
+  - text: Add project
+    center:
+    - 0.294
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Create project
+    - 添加项目
+    - 新建工程
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.4116
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Importance
+    - 优先级
+    - 重要程度
+    semantic_type: setting
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Remove lines
+    - 删除行
+    - 移除
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Launch URL
+    - 打开链接
+    - 访问网址
+    semantic_type: link
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Add attachment
+    - 附件
+    - 添加文件
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Function key
+    - 特殊键
+    - 功能键
+    semantic_type: button
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Clear done
+    - 归档已完成任务
+    - 清理
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Documents
+    - 文件
+    - 文档
+    semantic_type: menu_item
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Quick Note
+    - 速记
+    - 快速笔记
+    semantic_type: menu_item
+  - text: More
+    center:
+    - 0.875
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Additional
+    - 更多
+    - 其他
+    semantic_type: button
+  description: Toolbar or menu screen providing various task management and editing
+    actions such as undo, redo, save, search, and priority settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Lisää estetty numero
+    center:
+    - 0.5
+    - 0.3187
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Hallitse estettyjä numeroita
+    center:
+    - 0.4519
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Estä viestit tallentamattomista yhteystiedoista
+    center:
+    - 0.4222
+    - 0.1562
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Estä viestit piilotetuista numeroista
+    center:
+    - 0.4222
+    - 0.2223
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  description: Blocked numbers settings screen allowing users to add blocked numbers,
+    manage the block list, and configure filters for messages from unsaved or hidden
+    contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: Takaisin
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: Hallitse estettyjä avainsanoja
+    center:
+    - 0.475
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Lisää estetty avainsana
+    center:
+    - 0.9412
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  description: Screen for managing blocked keywords with an option to add new ones.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Takaisin
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_26
+  - text: Asetukset
+    center:
+    - 0.2583
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_27
+  - text: VÄRIEN MUKAUTUS
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Muokkaa sovelluksen värejä
+    center:
+    - 0.2676
+    - 0.2123
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: YLEISTÄ
+    center:
+    - 0.5269
+    - 0.274
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Kieli
+    center:
+    - 0.0861
+    - 0.3302
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Vaihda päivämäärän ja kellonajan muotoa
+    center:
+    - 0.3699
+    - 0.4123
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Hallitse estettyjä numeroita
+    center:
+    - 0.2625
+    - 0.4777
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Hallitse estettyjä avainsanoja
+    center:
+    - 0.2759
+    - 0.5431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Fonttikoko
+    center:
+    - 0.1343
+    - 0.604
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: ILMOITUKSET
+    center:
+    - 0.5269
+    - 0.6823
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_29
+  - text: Mukauta ilmoituksia
+    center:
+    - 0.2069
+    - 0.7431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_30
+  - text: Lukitusnäytön ilmoitusten näkyvyys
+    center:
+    - 0.3222
+    - 0.804
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_31
+  - text: Lähettäjä ja viesti
+    center:
+    - 0.1838
+    - 0.8252
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_32
+  - text: LÄHTEVÄT VIESTIT
+    center:
+    - 0.5269
+    - 0.8823
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Näytä merkkimäärä kirjoittaessasi viestejä
+    center:
+    - 0.5
+    - 0.9454
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Poista aksentit ja diakriittiset merkit lähetettäessä viestejä
+    center:
+    - 0.5
+    - 0.9946
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_28
+  - text: Lähetä viesti Enter-näppäimellä
+    center:
+    - 0.5
+    - 0.3312
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: Ota käyttöön viestin toimitustiedot
+    center:
+    - 0.5
+    - 0.4012
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: Lähetä pitkät viestit MMS:nä
+    center:
+    - 0.5
+    - 0.4713
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: Lähetä ryhmäviestit MMS:nä
+    center:
+    - 0.5
+    - 0.5413
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: Lähetettyjen MMS-kuvien koon muuttaminen
+    center:
+    - 0.3917
+    - 0.6044
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: ROSKAKORI
+    center:
+    - 0.5269
+    - 0.6827
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_34
+  - text: Siirrä kohteet roskakoriin poistamisen sijaan
+    center:
+    - 0.5
+    - 0.7458
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_34
+  - text: TURVALLISUUS
+    center:
+    - 0.5269
+    - 0.8098
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_35
+  - text: Suojaa koko sovellus salasanalla
+    center:
+    - 0.5
+    - 0.8729
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_36
+  - text: YHDISTÄMINEN
+    center:
+    - 0.5269
+    - 0.9369
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: Vie viestejä
+    center:
+    - 0.5
+    - 0.9935
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_33
+  - text: Tuo viestejä
+    center:
+    - 0.5
+    - 0.941
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_37
+  description: Settings screen for Simple SMS Messenger allowing customization of
+    colors, general preferences, notifications, outgoing messages, trash bin, security,
+    and data import/export.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Takaisin
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_38
+  - text: Asetukset
+    center:
+    - 0.2583
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: VÄRIEN MUKAUTUS
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Muokkaa sovelluksen värejä
+    center:
+    - 0.2676
+    - 0.2123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: YLEISTÄ
+    center:
+    - 0.5269
+    - 0.274
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Kieli
+    center:
+    - 0.0861
+    - 0.3302
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Vaihda päivämäärän ja kellonajan muotoa
+    center:
+    - 0.3699
+    - 0.4123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Hallitse estettyjä numeroita
+    center:
+    - 0.2625
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Hallitse estettyjä avainsanoja
+    center:
+    - 0.2759
+    - 0.5431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Fonttikoko
+    center:
+    - 0.1343
+    - 0.604
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: ILMOITUKSET
+    center:
+    - 0.5269
+    - 0.6823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+  - text: Mukauta ilmoituksia
+    center:
+    - 0.2069
+    - 0.7431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+  - text: Lukitusnäytön ilmoitusten näkyvyys
+    center:
+    - 0.3222
+    - 0.804
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+  - text: Lähettäjä ja viesti
+    center:
+    - 0.1838
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+  - text: LÄHTEVÄT VIESTIT
+    center:
+    - 0.5269
+    - 0.8823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+  - text: Näytä merkkimäärä kirjoittaessasi viestejä
+    center:
+    - 0.5
+    - 0.9454
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+  - text: Poista aksentit ja diakriittiset merkit lähetettäessä viestejä
+    center:
+    - 0.5
+    - 0.9946
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Lähetä viesti Enter-näppäimellä
+    center:
+    - 0.5
+    - 0.3362
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Ota käyttöön viestin toimitustiedot
+    center:
+    - 0.5
+    - 0.4062
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Lähetä pitkät viestit MMS:nä
+    center:
+    - 0.5
+    - 0.4763
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Lähetä ryhmäviestit MMS:nä
+    center:
+    - 0.5
+    - 0.5463
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Lähetettyjen MMS-kuvien koon muuttaminen
+    center:
+    - 0.3917
+    - 0.6094
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: ROSKAKORI
+    center:
+    - 0.5269
+    - 0.6877
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_46
+  - text: Siirrä kohteet roskakoriin poistamisen sijaan
+    center:
+    - 0.5
+    - 0.7508
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_46
+  - text: TURVALLISUUS
+    center:
+    - 0.5269
+    - 0.8148
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_47
+  - text: Suojaa koko sovellus salasanalla
+    center:
+    - 0.5
+    - 0.8779
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_48
+  - text: YHDISTÄMINEN
+    center:
+    - 0.5269
+    - 0.9419
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Vie viestejä
+    center:
+    - 0.5
+    - 0.996
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Tuo viestejä
+    center:
+    - 0.5
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_49
+  description: Settings screen for Simple SMS Messenger allowing customization of
+    colors, general preferences, notifications, outgoing messages, trash bin, security,
+    and data import/export.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: SMS Messenger
+    center:
+    - 0.5
+    - 0.3515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Simple SMS
+    - Messenger
+    - 短信
+    - 消息
+    semantic_type: label
+  - text: Categories
+    center:
+    - 0.5097
+    - 0.5635
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Folders
+    - Groups
+    - 分类
+    - 类别
+    semantic_type: tab
+  - text: Allow notification dot
+    center:
+    - 0.2889
+    - 0.6798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notification badge
+    - Badge icon
+    - 允许通知圆点
+    - 角标
+    semantic_type: toggle
+  description: Settings screen for SMS Messenger allowing users to manage categories
+    and notification dot preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Open
+    center:
+    - 0.1917
+    - 0.4406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Launch
+    - Start
+    - 打开
+    semantic_type: button
+  - text: Uninstall
+    center:
+    - 0.5
+    - 0.4406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Remove
+    - Delete app
+    - 卸载
+    semantic_type: button
+  - text: Force stop
+    center:
+    - 0.8083
+    - 0.4406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Stop
+    - Kill process
+    - 强制停止
+    semantic_type: button
+  - text: Additional settings in the app
+    center:
+    - 0.375
+    - 0.5298
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - In-app settings
+    - App settings
+    - 应用内设置
+    semantic_type: link
+  - text: Notifications
+    center:
+    - 0.1972
+    - 0.5944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Alerts
+    - 通知
+    semantic_type: setting
+  - text: Permissions
+    center:
+    - 0.1931
+    - 0.6802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Access rights
+    - 权限
+    semantic_type: setting
+  - text: Storage &amp; cache
+    center:
+    - 0.2356
+    - 0.766
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Storage and cache
+    - Disk space
+    - 存储和缓存
+    semantic_type: setting
+  - text: Mobile data &amp; Wi‑Fi
+    center:
+    - 0.2685
+    - 0.8519
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Data usage
+    - Network
+    - 移动数据和Wi-Fi
+    semantic_type: setting
+  - text: Screen time
+    center:
+    - 0.1875
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Usage time
+    - Digital wellbeing
+    - 屏幕使用时间
+    semantic_type: setting
+  - text: App battery usage
+    center:
+    - 0.2569
+    - 0.3044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Battery
+    - Power consumption
+    - 应用电池用量
+    semantic_type: setting
+  - text: Language
+    center:
+    - 0.1662
+    - 0.3902
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - App language
+    - 语言
+    semantic_type: setting
+  - text: Open by default
+    center:
+    - 0.2287
+    - 0.476
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Default opens
+    - 默认打开
+    semantic_type: setting
+  - text: Allow app to open supported links
+    center:
+    - 0.3167
+    - 0.5015
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Open links
+    - Deep linking
+    - 允许打开支持的链接
+    semantic_type: toggle
+  - text: SMS app
+    center:
+    - 0.1556
+    - 0.5619
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Default SMS
+    - Texting app
+    - 短信应用
+    semantic_type: setting
+  - text: Unused app settings
+    center:
+    - 0.5097
+    - 0.6523
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Inactive app settings
+    - 未使用的应用设置
+    semantic_type: setting
+  - text: Pause app activity if unused
+    center:
+    - 0.363
+    - 0.704
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Hibernate app
+    - 暂停应用活动
+    semantic_type: toggle
+  - text: Remove permissions, delete temporary files, and stop notifications
+    center:
+    - 0.4227
+    - 0.7383
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Reset app preferences
+    - Clear app data
+    - 重置应用偏好设置
+    semantic_type: button
+  - text: Advanced
+    center:
+    - 0.5097
+    - 0.8123
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - More settings
+    - 高级
+    semantic_type: setting
+  - text: Alarms &amp; reminders
+    center:
+    - 0.2731
+    - 0.864
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Alarms and reminders
+    - 闹钟和提醒
+    semantic_type: setting
+  description: System app info screen for Simple SMS Messenger displaying management
+    options like permissions, storage, and notifications.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: SMS Messenger
+    center:
+    - 0.5
+    - 0.2169
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Simple SMS
+    - Messenger
+    - 短信
+    semantic_type: label
+  - text: Suggested
+    center:
+    - 0.5
+    - 0.2969
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recommended
+    - Suggestions
+    - 推荐
+    semantic_type: tab
+  - text: All regions
+    center:
+    - 0.5
+    - 0.4152
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Global
+    - Worldwide
+    - 所有地区
+    semantic_type: tab
+  description: SMS Messenger screen displaying suggested content with a region filter
+    option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_17
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Language
+    center:
+    - 0.1662
+    - 0.3902
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lang
+    - 语言
+    - Locale
+    semantic_type: setting
+  - text: Open by default
+    center:
+    - 0.2287
+    - 0.476
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default opening
+    - 默认打开
+    semantic_type: setting
+  - text: SMS app
+    center:
+    - 0.1556
+    - 0.5619
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Messaging app
+    - 短信应用
+    - Default SMS
+    semantic_type: setting
+  - text: Unused app settings
+    center:
+    - 0.5097
+    - 0.6523
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Unused apps
+    - 未使用的应用设置
+    semantic_type: setting
+  - text: Advanced
+    center:
+    - 0.5097
+    - 0.8123
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - More
+    - 高级
+    - Advanced settings
+    semantic_type: setting
+  description: Settings menu displaying options for Language, Open by default, SMS
+    app, Unused app settings, and Advanced configurations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: SMS Messenger
+    center:
+    - 0.4694
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Simple SMS Messenger
+    - Messenger
+    - Messages
+    semantic_type: label
+  description: Main screen of the SMS Messenger app displaying the app title and a
+    navigation option to go back.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Task
+    - 任务
+    - 待办
+    semantic_type: label
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Revert
+    - 撤销
+    - 回退
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Repeat
+    - 重做
+    - 恢复
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Display mode
+    - 视图模式
+    - 显示方式
+    semantic_type: setting
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Store
+    - 保存
+    - 存储
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Toggle done
+    center:
+    - 0.0588
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Mark complete
+    - 标记完成
+    - 切换状态
+    semantic_type: toggle
+  - text: Add context
+    center:
+    - 0.1764
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add tag
+    - 添加上下文
+    - 添加标签
+    semantic_type: button
+  - text: Add project
+    center:
+    - 0.294
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Create project
+    - 添加项目
+    - 新建工程
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.4116
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Importance
+    - 优先级
+    - 重要程度
+    semantic_type: setting
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Remove lines
+    - 删除行
+    - 移除
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Launch URL
+    - 打开链接
+    - 访问网址
+    semantic_type: link
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add attachment
+    - 附件
+    - 添加文件
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Function key
+    - 特殊键
+    - 功能键
+    semantic_type: button
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Clear done
+    - 归档已完成任务
+    - 清理
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - 文件
+    - 文档
+    semantic_type: menu_item
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Quick Note
+    - 快速笔记
+    - 便签
+    semantic_type: menu_item
+  - text: More
+    center:
+    - 0.875
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Additional
+    - 更多
+    - 其他
+    semantic_type: button
+  description: Toolbar or menu interface providing text editing, task management,
+    and file attachment actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: بحث
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - البحث
+    - ابحث
+    semantic_type: input
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Setup
+    - إعداد
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - About
+    - Info
+    - Information
+    - حول التطبيق
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow menu
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen of Simple SMS Messenger offering options to search,
+    access settings, view about info, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Return
+    - رجوع
+    semantic_type: button
+  - text: بحث
+    center:
+    - 0.6421
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Find
+    - بحث عن
+    semantic_type: input
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Preferences
+    - Configurations
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - معلومات
+    - نبذة
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ رسالة
+    semantic_type: button
+  description: Main menu screen providing access to search, settings, about info,
+    and starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: إظهار المحادثات المؤرشفة
+    center:
+    - 0.2634
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: بحث
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: false
+    found_at_scroll: 1
+  description: App menu screen providing options to show archived chats, search, access
+    settings and about info, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: العودة
+    center:
+    - 0.9319
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Return
+    - رجوع
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.7685
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Preferences
+    - Configurations
+    - إعدادات التطبيق
+    semantic_type: setting
+  description: Settings screen with a back navigation option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: إظهار المحادثات المؤرشفة
+    center:
+    - 0.2634
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: بحث
+    center:
+    - 0.6421
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 1
+  description: Main menu or settings overlay in Simple SMS Messenger offering options
+    to show archived chats, search, access settings, about info, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: العودة
+    center:
+    - 0.9319
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+  - text: محادثة جديدة
+    center:
+    - 0.7222
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+  - text: إضافة جهة اتصال أو رقم …
+    center:
+    - 0.5
+    - 0.1496
+    fixed: false
+    found_at_scroll: 0
+  description: New conversation screen allowing users to add a contact or phone number
+    to start messaging.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_26
+  elements:
+  - text: إظهار المحادثات المؤرشفة
+    center:
+    - 0.2634
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 1
+  description: Settings menu in Simple SMS Messenger with options to show archived
+    chats, return, view about info, access more options, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: SUPPORT
+    center:
+    - 0.7375
+    - 0.1606
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help
+    - Assistance
+    - Support Center
+    semantic_type: link
+  - text: HELP US
+    center:
+    - 0.7449
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Donate
+    - Contribute
+    - Support Development
+    semantic_type: button
+  - text: SOCIAL
+    center:
+    - 0.7537
+    - 0.5573
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Community
+    - Social Media
+    - Connect
+    semantic_type: link
+  - text: OTHER
+    center:
+    - 0.7574
+    - 0.8956
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Miscellaneous
+    - More
+    - Additional
+    semantic_type: setting
+  description: Support and social links page with sections for help, social media,
+    and other resources.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about section, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_29
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to Settings, About, and starting
+    a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_30
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about page, additional
+    options, and starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to Settings, About, and options
+    to start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_32
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to settings, about section, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen with options to return, access settings, view about
+    info, see more options, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_34
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about info, additional
+    options, and starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to Settings, About, and starting
+    a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to Settings, About, and options
+    to start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_37
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to settings, about section, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: إظهار المحادثات المؤرشفة
+    center:
+    - 0.2634
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 1
+  description: Settings menu in Simple SMS Messenger with options to show archived
+    chats, return, access settings, about, more options, and start a conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen with options to return, access settings, view about
+    info, see more options, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_40
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about section, and
+    option to start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_41
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about section, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen with options to return, access settings, view about
+    info, see more options, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about section, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to Settings, About, and starting
+    a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_45
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen with options to return, access settings, view about
+    info, see more options, and start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - بدء رسالة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to settings, about info, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_47
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to Settings, About, and starting
+    a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_48
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - رجوع
+    - Return
+    semantic_type: button
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Configurations
+    - Preferences
+    - إعدادات التطبيق
+    semantic_type: link
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - About
+    - About App
+    - Info
+    - معلومات
+    semantic_type: link
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Menu
+    - Overflow
+    - خيارات إضافية
+    semantic_type: button
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Start conversation
+    - New message
+    - Compose
+    - ابدأ محادثة جديدة
+    semantic_type: button
+  description: Main menu screen providing navigation to Settings, About, and options
+    to start a new conversation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: العودة
+    center:
+    - 0.9125
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: الإعدادات
+    center:
+    - 0.3227
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: حول
+    center:
+    - 0.2051
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: المزيد من الخيارات
+    center:
+    - 0.0977
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: بدء محادثة
+    center:
+    - 0.4995
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+  description: Main menu screen providing navigation to settings, about section, and
+    starting a new conversation.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 476
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 201
+    y: 510
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 139
+    y: 792
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 298
+    y: 990
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 271
+    y: 1146
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 278
+    y: 1304
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 252
+    y: 1784
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 808
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1144
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1312
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 265
+    y: 1464
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 276
+    y: 862
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 1162
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 604
+    y: 212
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 201
+    y: 510
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 271
+    y: 1146
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 534
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 279
+    y: 212
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 364
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 223
+    y: 1784
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 348
+    y: 1930
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 198
+    y: 1980
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 795
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 1944
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2095
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 132
+    y: 1450
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2258
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 364
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 223
+    y: 1784
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 348
+    y: 1930
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 198
+    y: 1980
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 2118
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 807
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 1650
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 1956
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2107
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.simplemobiletools.smsmessenger
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.smsmessenger
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1638
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2258
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Start a new conversation with a contact or phone number
+- Search for specific messages or contacts
+- Access and modify app settings such as notifications and appearance
+- Block specific phone numbers or keywords
+- View and manage archived conversations
+- Customize color themes and general preferences
+- Manage the recycle bin for deleted messages
+- Export or import message data
+- View app information and support resources
+known_limitations:
+- Settings are distributed across multiple nested menus, requiring navigation through
+  several screens to find specific options like blocked keywords or category management
+- The app features multiple similar main menu overlays (screens 20-29) which may cause
+  confusion regarding the primary entry point for actions like starting a new conversation
+- Some advanced configurations and system-level permissions are handled in separate
+  system info screens rather than within the app's native settings interface

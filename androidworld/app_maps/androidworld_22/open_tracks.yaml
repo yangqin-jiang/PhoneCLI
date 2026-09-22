@@ -1,0 +1,41 @@
+app: Open Tracks Sports Tracker
+package: de.dennisguse.opentracks
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Introductory screen displaying the app's privacy-focused value proposition.
+  elements:
+  - text: OpenTracks is a sport tracking application that completely respects your
+      privacy.
+    center:
+    - 0.5
+    - 0.6694
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: de.dennisguse.opentracks
+    wait: 0.5
+  - action: launch
+    package: de.dennisguse.opentracks
+    wait: 3.0
+launch_behavior: always_home
+common_tasks:
+- Start a new track recording
+- Stop and save the current track
+- View list of past activities
+- View track details on a map
+- Export track data to file formats like GPX or KML
+- Configure sensor settings (e.g., GPS, heart rate)
+- Manage app permissions and privacy settings
+- Delete recorded tracks
+- Share track statistics with others
+known_limitations:
+- Introductory privacy screen may appear on first launch requiring dismissal
+- Map rendering depends on external map provider availability
+- Background recording requires specific battery optimization exemptions

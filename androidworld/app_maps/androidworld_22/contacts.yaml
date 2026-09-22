@@ -1,0 +1,4152 @@
+app: Contacts
+package: com.google.android.contacts
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Contacts app main screen featuring a search bar, contact lists, and
+    navigation options like Create contact and Fix & manage.
+  elements:
+  - text: Allow
+    center:
+    - 0.5
+    - 0.5435
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Grant permission
+    - Accept
+    - 允许
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.609
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Deny
+    - Reject
+    - 禁止
+    - 拒绝
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - Find contact
+    - Lookup
+    - 搜索联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1074
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 侧边栏
+    - 导航菜单
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2231
+    - 0.1508
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Device contacts
+    - Local contacts
+    - 手机通讯录
+    semantic_type: tab
+  - text: Email contacts
+    center:
+    - 0.6028
+    - 0.1508
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Account contacts
+    - Gmail contacts
+    - 邮件联系人
+    semantic_type: tab
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.8381
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Address book
+    - 通讯录
+    - 联系人列表
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Suggestions
+    - Featured
+    - 精选
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Tools
+    - Utilities
+    - 修复与管理
+    - 管理工具
+    semantic_type: tab
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Find contact
+    - Lookup
+    - 搜索联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1074
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 侧边栏
+    - 导航菜单
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2231
+    - 0.1508
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Device contacts
+    - Local contacts
+    - 手机联系人
+    semantic_type: tab
+  - text: Email contacts
+    center:
+    - 0.6028
+    - 0.1508
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Account contacts
+    - Cloud contacts
+    - 邮箱联系人
+    semantic_type: tab
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.8381
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Address book
+    - 通讯录
+    - 联系人列表
+    semantic_type: label
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Suggestions
+    - Updates
+    - 动态
+    - 推荐
+    semantic_type: menu_item
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Fix and manage
+    - Manage contacts
+    - 整理与管理
+    - 工具
+    semantic_type: menu_item
+  description: Main contacts screen displaying contact lists, search functionality,
+    and management options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 搜索联系人
+    - find contacts
+    - search bar
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1074
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 打开导航抽屉
+    - menu
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8991
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Phone contacts
+    center:
+    - 0.2231
+    - 0.1508
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 手机联系人
+    - local contacts
+    - device contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6028
+    - 0.1508
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 邮件联系人
+    - email addresses
+    - Gmail contacts
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.8991
+    - 0.1508
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 公司
+    - organization
+    - employer
+    semantic_type: label
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - 清除文本
+    - clear search
+    - delete input
+    - 清空
+    semantic_type: button
+  description: Contacts search screen displaying filtered results from phone, email,
+    and company sources with options to clear text or access settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Find contact
+    - Lookup
+    - 搜索联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1074
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 侧边栏
+    - 导航菜单
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2231
+    - 0.1508
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Mobile contacts
+    - SIM contacts
+    - 手机联系人
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6028
+    - 0.1508
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Google contacts
+    - Gmail contacts
+    - 邮箱联系人
+    semantic_type: menu_item
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.8381
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Address book
+    - 通讯录
+    - 联系人列表
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Suggestions
+    - Updates
+    - 动态
+    - 推荐
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Fix and manage
+    - Tools
+    - Manage contacts
+    - 整理与管理
+    semantic_type: tab
+  - text: Device
+    center:
+    - 0.4106
+    - 0.1588
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - On device
+    - Local storage
+    - 设备联系人
+    semantic_type: menu_item
+  - text: Labels
+    center:
+    - 0.4222
+    - 0.2213
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Groups
+    - Tags
+    - 标签
+    - 分组
+    semantic_type: menu_item
+  - text: Create label
+    center:
+    - 0.4222
+    - 0.2737
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - New label
+    - Add group
+    - 新建标签
+    semantic_type: button
+  description: Contacts management screen featuring a search bar, contact lists categorized
+    by type, and options to create contacts or labels.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Find contact
+    - Lookup
+    - 搜索联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1074
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 侧边栏
+    - 导航菜单
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2454
+    - 0.1508
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Device contacts
+    - Local contacts
+    - 手机联系人
+    semantic_type: tab
+  - text: Email contacts
+    center:
+    - 0.6472
+    - 0.1508
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Account contacts
+    - Gmail contacts
+    - 邮箱联系人
+    semantic_type: tab
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.8381
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    - + Contact
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Address book
+    - 通讯录
+    - 联系人列表
+    semantic_type: label
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Suggestions
+    - Featured
+    - 精选
+    - 推荐
+    semantic_type: menu_item
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Fix and manage
+    - Tools
+    - Manage contacts
+    - 修复与管理
+    - 管理工具
+    semantic_type: menu_item
+  description: Main contacts screen displaying contact lists, search functionality,
+    and management options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Cancel
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: Create contact
+    center:
+    - 0.3278
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - New contact
+    - Add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7764
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Store
+    - Confirm
+    - 保存
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Menu
+    - Overflow
+    - ⋮
+    - 更多选项
+    semantic_type: button
+  - text: Add contact photo
+    center:
+    - 0.4995
+    - 0.211
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Set photo
+    - Upload image
+    - 添加联系人照片
+    semantic_type: button
+  - text: Add photo
+    center:
+    - 0.4995
+    - 0.2915
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Insert image
+    - Choose picture
+    - 添加照片
+    semantic_type: button
+  - text: Show more name fields
+    center:
+    - 0.9319
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Expand name
+    - Additional name fields
+    - 显示更多姓名字段
+    semantic_type: button
+  - text: Show dropdown menu
+    center:
+    - 0.4843
+    - 0.6913
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Open selector
+    - Expand list
+    - 显示下拉菜单
+    semantic_type: button
+  - text: Show date picker
+    center:
+    - 0.8056
+    - 0.9442
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Select date
+    - Open calendar
+    - 显示日期选择器
+    semantic_type: button
+  - text: More fields
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_26
+    aliases:
+    - Additional info
+    - Extra details
+    - 更多字段
+    semantic_type: button
+  description: Contact creation form allowing users to input details, add a photo,
+    and access additional fields.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Find contacts
+    - Contact search
+    - 搜索联系人
+    semantic_type: input
+  - text: Search
+    center:
+    - 0.1074
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.3931
+    - 0.1521
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Starred
+    - Pinned
+    - 收藏
+    - 常用联系人
+    semantic_type: tab
+  - text: Add
+    center:
+    - 0.8931
+    - 0.1496
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Create
+    - New
+    - 添加
+    - 新建
+    semantic_type: button
+  - text: Add favorites
+    center:
+    - 0.5
+    - 0.3038
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Star contact
+    - Pin contact
+    - 添加收藏
+    semantic_type: button
+  - text: Recents
+    center:
+    - 0.4227
+    - 0.3933
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Recent calls
+    - Call history
+    - 最近通话
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9227
+    - 0.3931
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Viewed recently
+    center:
+    - 0.3199
+    - 0.465
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Recently viewed
+    - Last viewed
+    - 最近查看
+    semantic_type: label
+  - text: Added recently
+    center:
+    - 0.6852
+    - 0.465
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Recently added
+    - New contacts
+    - 最近添加
+    semantic_type: label
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Address book
+    - Phonebook
+    - 通讯录
+    - 联系人列表
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Featured
+    - Suggestions
+    - 精选
+    - 推荐
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Fix and manage
+    - Tools
+    - 修复与管理
+    - 管理工具
+    semantic_type: tab
+  description: Main contacts screen with search bar, favorites section, and navigation
+    tabs for Recents, Contacts, Highlights, and Fix & manage.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Import from file
+    center:
+    - 0.2597
+    - 0.235
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - import contacts
+    - restore from file
+    - 导入联系人
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7403
+    - 0.235
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - config
+    semantic_type: setting
+  - text: Other tools
+    center:
+    - 0.5
+    - 0.3038
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 更多工具
+    - utilities
+    - additional features
+    semantic_type: menu_item
+  - text: Blocked numbers
+    center:
+    - 0.5
+    - 0.3527
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - blocked contacts
+    - 黑名单
+    - spam list
+    - call blocking
+    semantic_type: link
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 联系人
+    - address book
+    - people
+    - phonebook
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 推荐
+    - suggestions
+    - featured
+    - discover
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 修复与管理
+    - manage contacts
+    - cleanup
+    - merge duplicates
+    semantic_type: tab
+  description: Settings and management menu for the Contacts app featuring options
+    like import, blocked numbers, and fix tools.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Close
+    center:
+    - 0.1069
+    - 0.1585
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  description: A minimal screen or overlay containing only a Close button, likely
+    used to dismiss a dialog or return to the previous view.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+  description: File browsing screen displaying large and recent files in a grid view
+    with search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 最近文件
+    - recent documents
+    - latest files
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 网格视图
+    - grid layout
+    - tile view
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 显示根目录
+    - show root directories
+    - display roots
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 最近
+    - recents
+    - history
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 更多选项
+    - more
+    - overflow menu
+    - three dots
+    semantic_type: button
+  description: File management screen displaying recent files in a grid view with
+    search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Sort
+    - Order by
+    - 排序方式
+    semantic_type: menu_item
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Display hidden files
+    - Hidden files
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - Grid
+    - Thumbnail view
+    - 网格视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - Display roots
+    - Root directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Recents
+    - Recently used
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: File management interface with sorting, view toggles, and search options
+    for navigating files and roots.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 最近文件
+    - recent documents
+    - latest files
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 网格视图
+    - grid layout
+    - thumbnails
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 显示根目录
+    - show root directories
+    - display roots
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 最近
+    - recents
+    - history
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Open from
+    center:
+    - 0.1769
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 打开自
+    - browse
+    - select source
+    semantic_type: menu_item
+  description: File browser screen displaying recent files in a grid view with options
+    to search, change views, and open files from different sources.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Documents
+    center:
+    - 0.1361
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    semantic_type: tab
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Big files
+    - Huge files
+    - 大文件
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - List mode
+    - 列表视图
+    - 列表模式
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Display roots
+    - 显示根目录
+    - 显示根路径
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  description: File management screen displaying documents and large files with options
+    for list view, search, and navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 下载
+    - download folder
+    semantic_type: menu_item
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 大文件
+    - big files
+    semantic_type: menu_item
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 下载中的文件
+    - downloaded files
+    semantic_type: label
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 列表视图
+    - list mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 显示根目录
+    - show root directories
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - ⋮
+    semantic_type: button
+  description: File management screen displaying downloaded files with options for
+    list view, search, and filtering by file size.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - list mode
+    - detailed view
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - display roots
+    - show root directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.2972
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - downloaded files
+    - 下载
+    - downloads folder
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    - magnifying glass
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - more
+    - overflow menu
+    - three dots
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  description: File browser screen displaying a list view of storage roots including
+    Downloads, with search and more options functionality.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Open from
+    center:
+    - 0.1769
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Documents
+    center:
+    - 0.4083
+    - 0.2065
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+  description: File picker interface for selecting documents from recent files or
+    other sources, featuring a search bar and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+  description: File management screen displaying large files in a grid view with options
+    for searching, filtering by recency, and accessing more actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Files
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - File Manager
+    - Documents
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Grid
+    - Thumbnail view
+    - 网格视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Display root directories
+    - Show storage roots
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - History
+    - Latest files
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: File browser screen displaying files in a grid view with options for
+    recent files, search, and root directory navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Files
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 文件
+    - File Manager
+    - 我的文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 网格视图
+    - 缩略图模式
+    - grid layout
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 显示根目录
+    - 显示存储位置
+    - show root directories
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 最近
+    - 最近文件
+    - recent files
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 搜索
+    - 查找
+    - search bar
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 更多选项
+    - 菜单
+    - more
+    - overflow menu
+    semantic_type: button
+  - text: Open from
+    center:
+    - 0.1769
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 打开自
+    - 来源
+    - open from location
+    semantic_type: label
+  - text: Documents
+    center:
+    - 0.4083
+    - 0.2065
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 文档
+    - documents folder
+    semantic_type: menu_item
+  - text: Downloads
+    center:
+    - 0.4083
+    - 0.2677
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 下载
+    - downloads folder
+    semantic_type: menu_item
+  description: File picker interface for selecting documents or downloads with grid
+    view and search options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 搜索
+    - search bar
+    - find
+    semantic_type: input
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_37
+    aliases:
+    - 文件
+    - documents
+    - file list
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_38
+    aliases:
+    - 网格视图
+    - grid layout
+    - tile view
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_39
+    aliases:
+    - 清除
+    - clear search
+    - reset
+    semantic_type: button
+  description: File search results page displaying files in a grid view with options
+    to clear the query or change the view layout.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File browsing screen displaying large files in a grid view with options
+    to go back or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File browsing screen displaying large files in a grid view with options
+    to navigate back or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File browsing screen displaying large files in a grid view with options
+    to go back or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File search results page displaying large files in a grid view with
+    options to clear the query or navigate back.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File browsing screen displaying large files in a grid view with options
+    to go back or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File search results screen displaying large files in a grid view with
+    options to clear the query or navigate back.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Big files
+    - Huge files
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Documents
+    - All files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Grid
+    - Thumbnail view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Clear search
+    - Delete text
+    - 清除搜索
+    semantic_type: button
+  description: File selection screen displaying large files in a grid view with options
+    to go back or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - big files
+    - large attachments
+    - 大文件
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - documents
+    - all files
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - grid layout
+    - tile view
+    - 网格视图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    semantic_type: button
+  description: File search results screen displaying large files in a grid view with
+    options to clear the query or navigate back.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list mode
+    - detailed view
+    - 列表视图
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - display root directories
+    - show parent folders
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    - magnifying glass
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    - actions
+    semantic_type: button
+  description: A contacts list view with search functionality, root visibility toggle,
+    and additional options menu.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list mode
+    - detailed view
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - display roots
+    - show directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    - magnifying glass
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    - three dots
+    semantic_type: button
+  - text: Open from
+    center:
+    - 0.1769
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - browse
+    - select source
+    - choose location
+    - 打开方式
+    semantic_type: button
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - history
+    - latest
+    - 最近
+    - recent files
+    semantic_type: tab
+  - text: Downloads
+    center:
+    - 0.4083
+    - 0.2677
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - downloaded files
+    - 下载
+    - downloads folder
+    semantic_type: menu_item
+  description: File picker interface for selecting a contact source with options like
+    Recent and Downloads.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - search bar
+    - find contacts
+    - query
+    semantic_type: input
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 列表视图
+    - list mode
+    - view as list
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 清除
+    - clear search
+    - delete text
+    - reset
+    semantic_type: button
+  description: Contact search results page displaying a list of contacts matching
+    the query with options to clear the search or change view.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort
+    - Order by
+    - 排序方式
+    semantic_type: menu_item
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display hidden files
+    - Hidden files
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - List mode
+    - 列表视图
+    - 列表模式
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Display root directories
+    - Root folders
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  description: File management settings screen with options for sorting, view mode,
+    and visibility toggles.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - search bar
+    - find contacts
+    - query
+    semantic_type: input
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 列表视图
+    - list mode
+    - view as list
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 清除
+    - clear search
+    - delete text
+    - reset
+    semantic_type: button
+  description: Contact search results screen displaying a list of contacts matching
+    the query with options to clear the search or change view.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  description: A settings or view options menu for a file manager allowing users to
+    toggle display preferences like list view, hidden files, and root visibility.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort
+    - Order by
+    - 排序方式
+    semantic_type: menu_item
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display hidden files
+    - 隐藏文件
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 列表视图
+    - 列表模式
+    - list mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 显示根目录
+    - 显示根路径
+    - display root directories
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 搜索
+    - 查找
+    - search bar
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - 菜单
+    - more
+    - overflow menu
+    semantic_type: button
+  description: A settings or view options menu for a file manager allowing users to
+    adjust sorting, visibility, and layout preferences.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+  - text: This week
+    center:
+    - 0.5
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 1
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 1
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  description: File management screen displaying sorting options, view toggles, and
+    recent file categories with a search bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: A list view screen displaying large files from the Downloads folder
+    with options to navigate back or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: File management screen displaying large files and downloads in a grid
+    view with search and navigation controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - search bar
+    - find contacts
+    - query
+    semantic_type: input
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 网格视图
+    - grid layout
+    - tile view
+    semantic_type: toggle
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 清除
+    - clear search
+    - reset
+    - delete text
+    semantic_type: button
+  description: Contact search results page displaying a grid of contacts with options
+    to clear the query or switch views.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: File management screen displaying large files and downloads in a grid
+    view with search and navigation controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: File browser screen displaying large files and downloads in a grid
+    view with navigation and search controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_42
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: File management screen displaying large files and downloads in a list
+    view with search and navigation controls.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1304
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 900
+    y: 2232
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 971
+    y: 212
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 651
+    y: 362
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1006
+    y: 212
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 531
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 657
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 265
+    y: 362
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 699
+    y: 362
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 838
+    y: 211
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 506
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 700
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 1006
+    y: 862
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 523
+    y: 1659
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 870
+    y: 2266
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2264
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 651
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 193
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 531
+    wait: 1.5
+  - action: tap
+    x: 216
+    y: 446
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 531
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 531
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 531
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 657
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 657
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 954
+    y: 184
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 241
+    y: 362
+    wait: 1.5
+  - action: tap
+    x: 116
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 954
+    y: 184
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 838
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 476
+    y: 462
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 838
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 954
+    y: 462
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 838
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 996
+    y: 191
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 506
+    wait: 1.5
+  - action: tap
+    x: 216
+    y: 320
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 506
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 462
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 944
+    y: 2012
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 506
+    wait: 1.5
+  - action: tap
+    x: 954
+    y: 462
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Search for a contact by name, email, or company
+- Create a new contact with details and photo
+- View and scroll through the main contacts list
+- Manage blocked numbers and import contacts
+- Fix and manage duplicate or missing contact info
+- Access favorites and recent interactions
+- Select files for contact attachments or imports
+known_limitations:
+- File selection screens (screens 9-28) appear disjointed from core contact tasks,
+  potentially confusing users during import/attachment flows
+- Settings and management options are nested within a specific 'Fix & manage' tab
+  rather than being globally accessible
+- Search results may require manual clearing of text to return to the full list view

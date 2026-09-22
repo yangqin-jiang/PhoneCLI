@@ -1,0 +1,7030 @@
+app: Markor
+package: net.gsantner.markor
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main file browser screen in Markor app with options to sort, search,
+    create files/folders, and navigate between Files, To-Do, and QuickNote sections.
+  elements:
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - navigate
+    - jump to
+    - goto
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - order by
+    - arrange
+    - sorting options
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - find
+    - lookup
+    - query
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - ⋮
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - new
+    - add
+    - create
+    - plus button
+    - +
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - documents
+    - file manager
+    - 文件
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - todo
+    - tasks
+    - checklist
+    - 待办
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - quick note
+    - scratchpad
+    - memo
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - additional
+    - extra
+    - 更多
+    semantic_type: tab
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - navigate to
+    - jump to
+    - goto
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - order by
+    - arrange by
+    - sorting options
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - find
+    - lookup
+    - query
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - ⋮
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - new
+    - add
+    - create
+    - plus button
+    - +
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - documents
+    - file manager
+    - 文件
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+    aliases:
+    - todo
+    - tasks
+    - checklist
+    - 待办
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - quick note
+    - scratchpad
+    - memo
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - additional
+    - extra
+    - 更多
+    semantic_type: button
+  description: Main file browser screen in Markor with navigation tabs for Files,
+    To-Do, and QuickNote, plus options to search, sort, and create new items.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Name
+    center:
+    - 0.7519
+    - 0.0835
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文件名
+    - 名称
+    - filename
+    semantic_type: label
+  - text: Date
+    center:
+    - 0.7519
+    - 0.136
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 日期
+    - 时间
+    - date modified
+    - modified
+    semantic_type: label
+  - text: Size
+    center:
+    - 0.7519
+    - 0.1885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 大小
+    - 文件大小
+    - file size
+    semantic_type: label
+  - text: MIME type
+    center:
+    - 0.7519
+    - 0.241
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 类型
+    - 文件类型
+    - mime
+    - content type
+    semantic_type: label
+  - text: Folder first
+    center:
+    - 0.7519
+    - 0.2935
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文件夹优先
+    - 目录置顶
+    - folders on top
+    semantic_type: toggle
+  - text: Reverse order
+    center:
+    - 0.7519
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 倒序
+    - 反向排序
+    - descending
+    - reverse sort
+    semantic_type: toggle
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 跳转
+    - 前往
+    - navigate to
+    - goto
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - 排序
+    - 排序方式
+    - sort order
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 搜索
+    - 查找
+    - find
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - 更多选项
+    - 菜单
+    - overflow menu
+    - three dots
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - 新建
+    - 创建
+    - new
+    - add
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 文件
+    - 文档
+    - documents
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - 待办
+    - 任务
+    - todo list
+    - tasks
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - 快速笔记
+    - 速记
+    - quick note
+    - memo
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 更多
+    - 其他
+    - additional
+    semantic_type: menu_item
+  description: Main file browser screen displaying a list of files and folders with
+    sorting, searching, and creation options, along with bottom navigation tabs for
+    Files, To-Do, QuickNote, and More.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Search
+    center:
+    - 0.5
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Regex search
+    center:
+    - 0.5
+    - 0.4825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Regular Expression
+    - 正则表达式
+    - regex
+    semantic_type: toggle
+  - text: Case sensitive
+    center:
+    - 0.5
+    - 0.5258
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Match case
+    - 区分大小写
+    - case-sensitive
+    semantic_type: toggle
+  - text: Search in content
+    center:
+    - 0.5
+    - 0.5692
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - Search file content
+    - 在内容中搜索
+    - 全文搜索
+    semantic_type: toggle
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Cancel
+    - 取消
+    - Close
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8537
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Confirm
+    - 确定
+    - Apply
+    semantic_type: button
+  description: Search configuration dialog allowing users to set regex, case sensitivity,
+    and content search options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Import from device
+    center:
+    - 0.7815
+    - 0.0835
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - import files
+    - load from storage
+    - 导入文件
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7815
+    - 0.136
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: setting
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - app name
+    - home
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - navigate to
+    - jump to
+    - goto
+    - 跳转
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - order by
+    - arrange
+    - 排序方式
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - overflow menu
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - new item
+    - add file
+    - 新建
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - documents
+    - file manager
+    - 文件
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - todo list
+    - tasks
+    - 待办事项
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - quick note
+    - scratchpad
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - additional
+    - extra
+    - 更多
+    semantic_type: button
+  description: Main file browser screen in Markor app displaying files, folders, and
+    navigation options with search, sort, and creation features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: FOLDER
+    center:
+    - 0.1588
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Directory
+    - Folder name
+    - 文件夹
+    semantic_type: input
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Cancel
+    - Dismiss
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8537
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    semantic_type: button
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - App Name
+    - Markor Editor
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Navigate to
+    - Jump to
+    - 前往
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - Order by
+    - Arrange by
+    - 排序方式
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - New
+    - Add
+    - 新建
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Documents
+    - 文件
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Todo
+    - Tasks
+    - 待办事项
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - Quick Note
+    - Memo
+    - 快速笔记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - Additional
+    - 更多
+    semantic_type: button
+  description: File browser screen in Markor app displaying folders and files with
+    options to sort, search, create new items, and navigate to specific locations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - navigate to
+    - jump to
+    - go to folder
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - order by
+    - sort order
+    - sorting
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - find
+    - lookup
+    - search files
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - overflow menu
+    - three dots
+    - menu
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - new
+    - add
+    - create
+    - new file
+    - new folder
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - file browser
+    - documents
+    - files tab
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - todo
+    - tasks
+    - to-do list
+    - checklist
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - quick note
+    - scratchpad
+    - note
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - additional
+    - extras
+    - more options
+    semantic_type: tab
+  description: Main file browser screen in Markor with navigation tabs, search, sort
+    options, and a button to create new files or folders.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Todo
+    - Task
+    - Tasks
+    - 待办
+    - 任务
+    semantic_type: tab
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Revert
+    - 撤销
+    - 回退
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Restore
+    - 重做
+    - 恢复
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Display mode
+    - Preview
+    - Edit
+    - 视图模式
+    - 显示模式
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Store
+    - 保存
+    - 存储
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Toggle done
+    center:
+    - 0.0588
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Check
+    - Complete
+    - Mark done
+    - 标记完成
+    - 勾选
+    semantic_type: button
+  - text: Add context
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Context
+    - '@context'
+    - 添加上下文
+    semantic_type: button
+  - text: Add project
+    center:
+    - 0.294
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Project
+    - +project
+    - 添加项目
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.4116
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - Importance
+    - Level
+    - 优先级
+    - 重要程度
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Remove lines
+    - Cut
+    - 删除行
+    - 剪切
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Launch URL
+    - Visit
+    - 打开链接
+    - 访问
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Insert file
+    - Add attachment
+    - 附件
+    - 插入文件
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - Keyboard shortcut
+    - Macro
+    - 特殊键
+    - 快捷键
+    semantic_type: button
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Archive
+    - Move done
+    - 归档已完成任务
+    - 存档
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Documents
+    - Notes
+    - 文件
+    - 文档
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Quick Note
+    - Scratchpad
+    - 快速笔记
+    - 便签
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Additional
+    - Extra
+    - 更多
+    semantic_type: button
+  description: Toolbar interface in Markor's To-Do mode providing text editing, task
+    management, and navigation actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: QuickNote
+    center:
+    - 0.1546
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 快速笔记
+    - quick note
+    - scratchpad
+    semantic_type: button
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 撤销
+    - undo action
+    - revert
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 重做
+    - redo action
+    - restore
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 视图模式
+    - display mode
+    - preview mode
+    - edit mode
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 保存
+    - store
+    - write file
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Check list
+    center:
+    - 0.0588
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 复选框列表
+    - todo list
+    - checkbox list
+    - 任务列表
+    semantic_type: button
+  - text: Unordered list
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 无序列表
+    - bullet list
+    - bullets
+    semantic_type: button
+  - text: Bold
+    center:
+    - 0.294
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 加粗
+    - strong
+    - B
+    semantic_type: button
+  - text: Italic
+    center:
+    - 0.4116
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 斜体
+    - emphasis
+    - I
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 删除行
+    - remove lines
+    - cut lines
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 打开链接
+    - visit url
+    - browse link
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 附件
+    - insert file
+    - add attachment
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 特殊键
+    - special character
+    - symbol
+    semantic_type: button
+  - text: Date and time
+    center:
+    - 0.9704
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - 日期和时间
+    - timestamp
+    - insert date
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文件
+    - documents
+    - file browser
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 待办
+    - tasks
+    - todo
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 更多
+    - additional
+    - extra
+    semantic_type: button
+  - text: Gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_35
+    aliases:
+    - '>'
+    - greater than
+    - quote level 1
+    semantic_type: button
+  - text: Gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_36
+    aliases:
+    - '>>'
+    - double greater than
+    - quote level 2
+    semantic_type: button
+  description: Markdown editor screen for QuickNote with a comprehensive toolbar for
+    formatting, inserting elements, and managing files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: More
+    center:
+    - 0.0958
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Markor
+    center:
+    - 0.2366
+    - 0.144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+  - text: Rate this app
+    center:
+    - 0.2884
+    - 0.2427
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+  - text: Settings
+    center:
+    - 0.2463
+    - 0.3023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Help / FAQ
+    center:
+    - 0.2671
+    - 0.3619
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+  - text: Contribute
+    center:
+    - 0.5097
+    - 0.4202
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Report bugs
+    center:
+    - 0.281
+    - 0.4648
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+  - text: Translate
+    center:
+    - 0.2556
+    - 0.5635
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+  - text: Project Team
+    center:
+    - 0.5097
+    - 0.6431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Community
+    center:
+    - 0.5097
+    - 0.7852
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Join the Community
+    center:
+    - 0.3481
+    - 0.8298
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+  - text: Contributors
+    center:
+    - 0.2829
+    - 0.8894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Licenses
+    center:
+    - 0.5097
+    - 0.4519
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_40
+  - text: Project License
+    center:
+    - 0.3079
+    - 0.4965
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_41
+  - text: Open Source Licenses
+    center:
+    - 0.3667
+    - 0.5773
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_42
+  - text: Source Code
+    center:
+    - 0.2847
+    - 0.6369
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_37
+  - text: Copy build information
+    center:
+    - 0.3708
+    - 0.7356
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_43
+  description: A settings and information menu in the Markor app offering options
+    for rating, configuration, help, community engagement, and project details.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Recently viewed documents
+    center:
+    - 0.7204
+    - 0.241
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+  - text: Popular documents
+    center:
+    - 0.7204
+    - 0.2935
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+  - text: Favourites
+    center:
+    - 0.7204
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+  - text: Notebook
+    center:
+    - 0.7204
+    - 0.3985
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+  description: Main file browser screen displaying document categories, navigation
+    options, and quick access actions for creating or managing files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Name
+    center:
+    - 0.7519
+    - 0.0835
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文件名
+    - 名称
+    - filename
+    semantic_type: label
+  - text: Date
+    center:
+    - 0.7519
+    - 0.136
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 日期
+    - 时间
+    - modified date
+    - last modified
+    semantic_type: label
+  - text: Size
+    center:
+    - 0.7519
+    - 0.1885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 大小
+    - 文件大小
+    - file size
+    semantic_type: label
+  - text: MIME type
+    center:
+    - 0.7519
+    - 0.241
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 类型
+    - 文件类型
+    - mime
+    semantic_type: label
+  - text: Folder first
+    center:
+    - 0.7519
+    - 0.2935
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文件夹优先
+    - 目录优先
+    - folders on top
+    semantic_type: toggle
+  - text: Reverse order
+    center:
+    - 0.7519
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 倒序
+    - 反向排序
+    - descending
+    semantic_type: toggle
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 跳转
+    - 前往
+    - navigate to
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - 排序
+    - 排序方式
+    - order by
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 搜索
+    - 查找
+    - find
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - 更多选项
+    - 菜单
+    - options
+    - overflow menu
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - 新建
+    - 创建
+    - new
+    - add
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 文件
+    - 文档
+    - documents
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - 待办
+    - 任务
+    - todo list
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - 快速笔记
+    - 速记
+    - quick note
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 更多
+    - 其他
+    - additional
+    semantic_type: menu_item
+  description: File management screen displaying a list of files and folders with
+    sorting, searching, and creation options, along with bottom navigation tabs for
+    Files, To-Do, QuickNote, and More.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Import from device
+    center:
+    - 0.7815
+    - 0.0835
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - import
+    - load file
+    - upload
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7815
+    - 0.136
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: setting
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - app name
+    - home
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - navigate
+    - jump to
+    - goto
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - order by
+    - arrange
+    - sorting options
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - overflow menu
+    - three dots
+    - additional actions
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - new
+    - add
+    - create
+    - 新建
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - documents
+    - file manager
+    - 文件
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - todo
+    - tasks
+    - checklist
+    - 待办
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - quick note
+    - scratchpad
+    - memo
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - additional
+    - extra
+    - 更多
+    semantic_type: button
+  description: Main file browser screen in Markor app displaying navigation tabs,
+    file management actions, and a list of files or folders.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Type
+    center:
+    - 0.1093
+    - 0.441
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - File Type
+    - Document Type
+    - 类型
+    semantic_type: label
+  - text: Template
+    center:
+    - 0.1394
+    - 0.494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 模版
+    - 模板
+    - Template File
+    semantic_type: label
+  - text: FOLDER
+    center:
+    - 0.1588
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Folder
+    - Directory
+    - 文件夹
+    - 目录
+    semantic_type: label
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Cancel
+    - 取消
+    - Dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8537
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Confirm
+    - 确定
+    - Done
+    - Apply
+    semantic_type: button
+  - text: Markor
+    center:
+    - 0.1181
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - App Name
+    - 马克尔
+    semantic_type: label
+  - text: Go to
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Navigate to
+    - Jump to
+    - 前往
+    - 转到
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - Order by
+    - Arrange by
+    - 排序方式
+    - 排序
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - New
+    - Add
+    - 新建
+    - 创建文件
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Documents
+    - 文件
+    - 文档
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Todo
+    - Tasks
+    - 待办事项
+    - 任务
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - Quick Note
+    - 快速笔记
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - Additional
+    - 更多
+    - 其他
+    semantic_type: tab
+  description: File management screen in Markor app allowing users to create new files
+    or folders, sort, search, and navigate through directories.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_48
+  - text: Gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_49
+  description: A toolbar interface in the Markor app providing text editing actions,
+    navigation options, and file management tools.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: QuickNote
+    center:
+    - 0.1546
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 快速笔记
+    - 速记
+    - quick note
+    semantic_type: button
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 撤销
+    - revert
+    - back
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 重做
+    - 恢复
+    - forward
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视图模式
+    - display mode
+    - preview mode
+    - 编辑模式
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - write
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - 查找
+    - find
+    - query
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - additional settings
+    semantic_type: button
+  - text: Check list
+    center:
+    - 0.0588
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 复选框列表
+    - 任务列表
+    - checkbox list
+    - todo list
+    semantic_type: button
+  - text: Unordered list
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 无序列表
+    - bullet list
+    - 项目符号列表
+    semantic_type: button
+  - text: Bold
+    center:
+    - 0.294
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 加粗
+    - 粗体
+    - strong
+    semantic_type: button
+  - text: Italic
+    center:
+    - 0.4116
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 斜体
+    - emphasize
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 删除行
+    - remove lines
+    - cut lines
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开链接
+    - visit link
+    - browse url
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 附件
+    - 插入文件
+    - add file
+    - insert attachment
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 特殊键
+    - special character
+    - symbol key
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件
+    - documents
+    - file manager
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 待办
+    - tasks
+    - todo
+    - 任务
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多
+    - additional
+    - extra
+    semantic_type: button
+  description: Markdown editor screen for QuickNote with a comprehensive toolbar for
+    formatting, list management, and file operations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Search
+    center:
+    - 0.5
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Regex search
+    center:
+    - 0.5
+    - 0.4825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Regular expression
+    - 正则表达式
+    - regex
+    semantic_type: toggle
+  - text: Case sensitive
+    center:
+    - 0.5
+    - 0.5258
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Match case
+    - 区分大小写
+    - case-sensitive
+    semantic_type: toggle
+  - text: Search in content
+    center:
+    - 0.5
+    - 0.5692
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search file content
+    - 搜索内容
+    - 全文搜索
+    semantic_type: toggle
+  - text: Stop search after first match
+    center:
+    - 0.5231
+    - 0.6125
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - First match only
+    - 找到第一个后停止
+    - stop on first
+    semantic_type: toggle
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    - abort
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8537
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - 确定
+    - apply
+    semantic_type: button
+  description: Search configuration dialog allowing users to set regex, case sensitivity,
+    and content search options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_17
+  elements:
+  - text: Import from device
+    center:
+    - 0.5
+    - 0.1031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - import file
+    - upload
+    - load from storage
+    - 导入
+    semantic_type: button
+  - text: Folder ..
+    center:
+    - 0.5
+    - 0.2129
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - parent directory
+    - up one level
+    - go up
+    - ..
+    - 上级目录
+    semantic_type: link
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.9194
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - abort
+    - dismiss
+    - 取消
+    semantic_type: button
+  description: File import dialog allowing the user to select a file or folder from
+    the device storage.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2662
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    semantic_type: link
+  - text: General
+    center:
+    - 0.2412
+    - 0.144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通用
+    - general settings
+    - common
+    semantic_type: setting
+  - text: Files and folders
+    center:
+    - 0.3009
+    - 0.1665
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件和文件夹
+    - file management
+    - storage
+    semantic_type: setting
+  - text: Other
+    center:
+    - 0.2222
+    - 0.2248
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 其他
+    - misc
+    - additional
+    semantic_type: setting
+  - text: Miscellaneous
+    center:
+    - 0.2847
+    - 0.2473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 杂项
+    - misc
+    - various
+    semantic_type: setting
+  - text: Edit mode
+    center:
+    - 0.2625
+    - 0.3056
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑模式
+    - editing
+    - write mode
+    semantic_type: setting
+  - text: Editor Settings
+    center:
+    - 0.2866
+    - 0.3281
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑器设置
+    - editor config
+    - writing settings
+    semantic_type: setting
+  - text: View mode
+    center:
+    - 0.2713
+    - 0.3865
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 查看模式
+    - preview mode
+    - reading mode
+    semantic_type: setting
+  - text: Display converted markup
+    center:
+    - 0.3731
+    - 0.409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示转换后的标记
+    - rendered view
+    - preview
+    semantic_type: toggle
+  - text: Format
+    center:
+    - 0.5097
+    - 0.466
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 格式
+    - file format
+    - syntax
+    semantic_type: label
+  - text: Markdown
+    center:
+    - 0.2667
+    - 0.5106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - MD
+    - markdown syntax
+    - .md
+    semantic_type: menu_item
+  - text: todo.txt
+    center:
+    - 0.2426
+    - 0.5702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - todo
+    - task list
+    - plain text todo
+    semantic_type: menu_item
+  - text: Wikitext
+    center:
+    - 0.244
+    - 0.6298
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - wiki
+    - mediawiki
+    - wikitext syntax
+    semantic_type: menu_item
+  - text: Plain Text
+    center:
+    - 0.2597
+    - 0.6894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 纯文本
+    - txt
+    - text file
+    semantic_type: menu_item
+  - text: AsciiDoc
+    center:
+    - 0.2514
+    - 0.749
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - adoc
+    - asciidoc syntax
+    - .adoc
+    semantic_type: menu_item
+  - text: Essential
+    center:
+    - 0.5097
+    - 0.8073
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 基本
+    - core
+    - basic
+    semantic_type: setting
+  - text: Theme
+    center:
+    - 0.2347
+    - 0.8519
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - appearance
+    - skin
+    semantic_type: setting
+  - text: System
+    center:
+    - 0.2319
+    - 0.8744
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 系统
+    - system default
+    - device theme
+    semantic_type: menu_item
+  - text: Language
+    center:
+    - 0.2606
+    - 0.9327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 语言
+    - locale
+    - app language
+    semantic_type: setting
+  description: Settings screen in Markor app with categories like General, Files and
+    folders, Edit mode, View mode, Format, Theme, and Language for customization.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Name
+    center:
+    - 0.5
+    - 0.214
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 文件名
+    - 标题
+    - filename
+    - title
+    semantic_type: input
+  - text: .md
+    center:
+    - 0.7292
+    - 0.23
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Markdown
+    - markdown file
+    - md extension
+    semantic_type: label
+  - text: Type
+    center:
+    - 0.1093
+    - 0.2702
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 类型
+    - file type
+    - format
+    semantic_type: label
+  - text: Template
+    center:
+    - 0.1394
+    - 0.3231
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 模板
+    - template file
+    - 模版
+    semantic_type: menu_item
+  - text: FOLDER
+    center:
+    - 0.1588
+    - 0.4633
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - directory
+    - dir
+    - folder name
+    semantic_type: input
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.4633
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - cancel button
+    - dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8537
+    - 0.4633
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 确定
+    - confirm
+    - done
+    - save
+    semantic_type: button
+  - text: gt
+    center:
+    - 0.3458
+    - 0.23
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - '>'
+    - greater than
+    - quote level 1
+    semantic_type: other
+  - text: gt gt
+    center:
+    - 0.3458
+    - 0.23
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - '>>'
+    - double greater than
+    - quote level 2
+    semantic_type: other
+  - text: gt gt gt
+    center:
+    - 0.3458
+    - 0.23
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - '>>>'
+    - triple greater than
+    - quote level 3
+    semantic_type: other
+  description: Dialog for creating a new file or folder with fields for name, extension,
+    type, and location selection.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Browse todo
+    center:
+    - 0.5
+    - 0.3477
+    fixed: false
+    found_at_scroll: 0
+  - text: Priority
+    center:
+    - 0.5
+    - 0.3929
+    fixed: false
+    found_at_scroll: 0
+  - text: Due date
+    center:
+    - 0.5
+    - 0.4467
+    fixed: false
+    found_at_scroll: 0
+  - text: Project
+    center:
+    - 0.5
+    - 0.5004
+    fixed: false
+    found_at_scroll: 0
+  - text: Context
+    center:
+    - 0.5
+    - 0.5542
+    fixed: false
+    found_at_scroll: 0
+  - text: Advanced filtering
+    center:
+    - 0.5
+    - 0.6079
+    fixed: false
+    found_at_scroll: 0
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+  description: A filtering menu for browsing todos with options to filter by priority,
+    due date, project, context, and advanced criteria.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Tasks
+    - Checklist
+    - 待办事项
+    semantic_type: tab
+  - text: Edit mode
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Edit
+    - Editing
+    - 编辑模式
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - Options
+    - 更多选项
+    semantic_type: button
+  - text: Rotate
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screen rotation
+    - Orientation
+    - 旋转
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - File Manager
+    - 文件
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Quick Note
+    - Scratchpad
+    - 速记
+    semantic_type: menu_item
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional
+    - Extra
+    - 更多
+    semantic_type: button
+  description: Main dashboard of the Markor app providing access to To-Do lists, file
+    management, QuickNote, and editing tools.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Search documents
+    center:
+    - 0.5
+    - 0.284
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find files
+    - Document search
+    - 搜索文档
+    semantic_type: input
+  - text: Search
+    center:
+    - 0.4514
+    - 0.3275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: button
+  - text: SEARCH / REPLACE
+    center:
+    - 0.2509
+    - 0.3904
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find and Replace
+    - Replace text
+    - 查找/替换
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.3904
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Abort
+    - Dismiss
+    - 取消
+    semantic_type: button
+  - text: OK (0)
+    center:
+    - 0.8537
+    - 0.3904
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Apply
+    - 确定
+    semantic_type: button
+  description: Search and replace dialog for finding and replacing text within documents.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: File settings
+    center:
+    - 0.7426
+    - 0.0835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - file preferences
+    - document settings
+    - 文件设置
+    semantic_type: setting
+  - text: Share
+    center:
+    - 0.7426
+    - 0.136
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - send
+    - export
+    - 分享
+    semantic_type: button
+  - text: Tools
+    center:
+    - 0.7426
+    - 0.1885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - utilities
+    - 工具
+    semantic_type: menu_item
+  - text: Info
+    center:
+    - 0.7815
+    - 0.241
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - information
+    - details
+    - about
+    - 信息
+    semantic_type: button
+  - text: Reload
+    center:
+    - 0.7815
+    - 0.2935
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - refresh
+    - reload file
+    - 刷新
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7815
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: setting
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - todo
+    - task list
+    - 待办事项
+    semantic_type: tab
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - revert
+    - 撤销
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - restore
+    - 重做
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - display mode
+    - view type
+    - 视图模式
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - store
+    - 保存
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - overflow menu
+    - additional actions
+    - 更多选项
+    semantic_type: menu_item
+  - text: Toggle done
+    center:
+    - 0.0588
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - mark complete
+    - check off
+    - 切换完成
+    semantic_type: toggle
+  - text: Add context
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - add tag
+    - add @context
+    - 添加上下文
+    semantic_type: button
+  - text: Add project
+    center:
+    - 0.294
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - add +project
+    - add category
+    - 添加项目
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.4116
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - importance
+    - level
+    - 优先级
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - remove lines
+    - cut lines
+    - 删除行
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - launch url
+    - open hyperlink
+    - 打开链接
+    semantic_type: link
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - insert file
+    - add attachment
+    - 附件
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - special character
+    - insert symbol
+    - 特殊键
+    semantic_type: button
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - move done items
+    - archive todos
+    - 归档已完成任务
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - documents
+    - file browser
+    - 文件
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - quick note
+    - scratchpad
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - additional
+    - extra
+    - 更多
+    semantic_type: menu_item
+  description: A comprehensive toolbar or menu in the Markor app providing file management,
+    editing tools, view options, and To-Do specific actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: Insert contexts
+    center:
+    - 0.5
+    - 0.244
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - insert context
+    - add context
+    - context insertion
+    semantic_type: button
+  - text: Search / Custom
+    center:
+    - 0.4514
+    - 0.2875
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search or custom
+    - find/custom
+    - query/custom
+    semantic_type: input
+  - text: home
+    center:
+    - 0.5
+    - 0.3358
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - homepage
+    - main
+    - 首页
+    semantic_type: tab
+  - text: shop
+    center:
+    - 0.5
+    - 0.3762
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - store
+    - marketplace
+    - 商店
+    semantic_type: tab
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.43
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - abort
+    - dismiss
+    - 取消
+    semantic_type: button
+  description: Context insertion dialog allowing the user to search or select from
+    predefined contexts like 'home' and 'shop'.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Insert contexts
+    center:
+    - 0.5
+    - 0.244
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - insert context
+    - add context
+    - 插入上下文
+    semantic_type: menu_item
+  - text: Search / Custom
+    center:
+    - 0.4514
+    - 0.2875
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search or custom
+    - find/custom
+    - 搜索/自定义
+    semantic_type: tab
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.43
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - abort
+    - dismiss
+    - 取消
+    semantic_type: button
+  - text: OK (0)
+    center:
+    - 0.8537
+    - 0.43
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ok
+    - confirm
+    - accept
+    - 确定
+    semantic_type: button
+  description: A dialog for inserting contexts with search functionality and confirmation
+    controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_26
+  elements:
+  - text: Priority
+    center:
+    - 0.5
+    - 0.2944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Importance
+    - Urgency
+    - Level
+    semantic_type: label
+  - text: CANCEL
+    center:
+    - 0.812
+    - 0.7212
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - Dismiss
+    - Close
+    - Abort
+    semantic_type: button
+  description: A dialog or action sheet displaying a 'Priority' option and a 'CANCEL'
+    button, likely for setting task priority.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Color
+    center:
+    - 0.5259
+    - 0.5929
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - colour
+    - font color
+    - text color
+    - 颜色
+    semantic_type: button
+  - text: Insert Link
+    center:
+    - 0.5259
+    - 0.6467
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - add link
+    - hyperlink
+    - insert url
+    - 插入链接
+    semantic_type: button
+  - text: File
+    center:
+    - 0.5259
+    - 0.7004
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - document
+    - attachment
+    - insert file
+    - 文件
+    semantic_type: button
+  - text: Image
+    center:
+    - 0.5259
+    - 0.7542
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - photo
+    - picture
+    - insert image
+    - 图片
+    semantic_type: button
+  - text: Audio
+    center:
+    - 0.5259
+    - 0.8079
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sound
+    - music
+    - insert audio
+    - 音频
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.9221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - dismiss
+    - abort
+    - 取消
+    semantic_type: button
+  description: A media insertion dialog allowing the user to select a file type such
+    as Color, Link, File, Image, or Audio, with an option to cancel.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_28
+  elements:
+  - text: Special Key
+    center:
+    - 0.5
+    - 0.2644
+    fixed: true
+    found_at_scroll: 0
+  - text: Page Up (Page Up)
+    center:
+    - 0.5
+    - 0.3096
+    fixed: false
+    found_at_scroll: 0
+  - text: Page Down (Page Down)
+    center:
+    - 0.5
+    - 0.3633
+    fixed: false
+    found_at_scroll: 0
+  - text: Line Start (Pos Home)
+    center:
+    - 0.5
+    - 0.4171
+    fixed: false
+    found_at_scroll: 0
+  - text: Line End (Pos End)
+    center:
+    - 0.5
+    - 0.4708
+    fixed: false
+    found_at_scroll: 0
+  - text: Move text one line up
+    center:
+    - 0.5
+    - 0.5246
+    fixed: false
+    found_at_scroll: 0
+  - text: Move text one line down
+    center:
+    - 0.5
+    - 0.5783
+    fixed: false
+    found_at_scroll: 0
+  - text: Document Start
+    center:
+    - 0.5
+    - 0.6321
+    fixed: false
+    found_at_scroll: 0
+  - text: Document End
+    center:
+    - 0.5
+    - 0.6858
+    fixed: false
+    found_at_scroll: 0
+  - text: Select all (Ctrl+A)
+    center:
+    - 0.5
+    - 0.7154
+    fixed: false
+    found_at_scroll: 0
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.7517
+    fixed: true
+    found_at_scroll: 0
+  - text: Tabulator
+    center:
+    - 0.5
+    - 0.2854
+    fixed: false
+    found_at_scroll: 1
+  - text: Search
+    center:
+    - 0.5
+    - 0.315
+    fixed: false
+    found_at_scroll: 1
+  - text: Zero-width space
+    center:
+    - 0.5
+    - 0.3688
+    fixed: false
+    found_at_scroll: 1
+  - text: Break page (PDF/Printing)
+    center:
+    - 0.5
+    - 0.4225
+    fixed: false
+    found_at_scroll: 1
+  - text: Ohm (Ω)
+    center:
+    - 0.5
+    - 0.4763
+    fixed: false
+    found_at_scroll: 1
+  - text: Punctuation mark (»«)
+    center:
+    - 0.5
+    - 0.53
+    fixed: false
+    found_at_scroll: 1
+  - text: Shrug (¯_(ツ)_/¯)
+    center:
+    - 0.5
+    - 0.5837
+    fixed: false
+    found_at_scroll: 1
+  - text: Continued overline (‾‾‾‾)
+    center:
+    - 0.5
+    - 0.6375
+    fixed: false
+    found_at_scroll: 1
+  - text: Select current line(s)
+    center:
+    - 0.5
+    - 0.6913
+    fixed: false
+    found_at_scroll: 1
+  description: A special keys menu in Markor providing quick access to navigation,
+    selection, and symbol insertion options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Move done tasks to specified file in same folder
+    center:
+    - 0.5
+    - 0.2575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Archive completed tasks
+    - Relocate finished items
+    - Move completed tasks
+    semantic_type: setting
+  - text: CANCEL
+    center:
+    - 0.6824
+    - 0.4263
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - Dismiss
+    - Close
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8537
+    - 0.4263
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Accept
+    - Apply
+    - Done
+    - 确定
+    semantic_type: button
+  description: Confirmation dialog to move completed tasks to a specified file in
+    the same folder, with Cancel and OK options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_30
+  elements:
+  - text: Table of contents
+    center:
+    - 0.5
+    - 0.094
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - TOC
+    - Outline
+    - 目录
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.4514
+    - 0.1375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: FILTER
+    center:
+    - 0.1495
+    - 0.2004
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Filter
+    - 筛选
+    - 过滤
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.2004
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    - Close
+    semantic_type: button
+  description: A table of contents screen with search and filter options for navigating
+    document sections.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: QuickNote
+    center:
+    - 0.1546
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 快速笔记
+    - 速记
+    - quick note
+    semantic_type: tab
+  - text: Edit mode
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑模式
+    - edit
+    - editing
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - 查找
+    - find
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow menu
+    semantic_type: button
+  - text: Jump to bottom
+    center:
+    - 0.0588
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 跳到底部
+    - scroll to end
+    - go to bottom
+    semantic_type: button
+  - text: Table of contents
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 目录
+    - TOC
+    - outline
+    semantic_type: button
+  - text: Rotate
+    center:
+    - 0.294
+    - 0.8885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 旋转
+    - screen rotation
+    - orientation
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件
+    - documents
+    - file manager
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 待办
+    - todo list
+    - tasks
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多
+    - additional
+    - extra
+    semantic_type: button
+  description: QuickNote editing screen with toolbar options for search, formatting,
+    and navigation within the note content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Search documents
+    center:
+    - 0.5
+    - 0.284
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find files
+    - Document search
+    - 搜索文档
+    semantic_type: input
+  - text: Search
+    center:
+    - 0.4514
+    - 0.3275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: button
+  - text: SEARCH / REPLACE
+    center:
+    - 0.2509
+    - 0.3904
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find and Replace
+    - Replace
+    - 查找/替换
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.3904
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - Dismiss
+    - 取消
+    semantic_type: button
+  description: Search and replace interface for finding and modifying text within
+    documents.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: File settings
+    center:
+    - 0.7426
+    - 0.0835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件设置
+    - file config
+    - document settings
+    semantic_type: menu_item
+  - text: Share
+    center:
+    - 0.7426
+    - 0.136
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - send
+    - export
+    semantic_type: button
+  - text: Tools
+    center:
+    - 0.7426
+    - 0.1885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 工具
+    - utilities
+    - features
+    semantic_type: menu_item
+  - text: Info
+    center:
+    - 0.7815
+    - 0.241
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 信息
+    - details
+    - about
+    - 详情
+    semantic_type: button
+  - text: Reload
+    center:
+    - 0.7815
+    - 0.2935
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 刷新
+    - refresh
+    - reload file
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7815
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - config
+    - options
+    semantic_type: setting
+  - text: QuickNote
+    center:
+    - 0.1546
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 快速笔记
+    - quick note
+    - scratchpad
+    semantic_type: button
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 撤销
+    - revert
+    - back
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 重做
+    - restore
+    - forward
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 视图模式
+    - display mode
+    - preview
+    - edit mode
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 保存
+    - store
+    - write
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - overflow menu
+    - kebab menu
+    - additional actions
+    semantic_type: button
+  - text: Check list
+    center:
+    - 0.0588
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 复选列表
+    - checkbox list
+    - task list
+    - todo list
+    semantic_type: button
+  - text: Unordered list
+    center:
+    - 0.1764
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 无序列表
+    - bullet list
+    - bullets
+    semantic_type: button
+  - text: Bold
+    center:
+    - 0.294
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 粗体
+    - strong
+    - B
+    semantic_type: button
+  - text: Italic
+    center:
+    - 0.4116
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 斜体
+    - emphasis
+    - I
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 删除行
+    - remove lines
+    - cut lines
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 打开链接
+    - visit url
+    - browse
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 附件
+    - insert file
+    - add attachment
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 特殊键
+    - special character
+    - symbol
+    semantic_type: button
+  - text: Date and time
+    center:
+    - 0.9704
+    - 0.8885
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 日期和时间
+    - timestamp
+    - insert date
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 文件
+    - documents
+    - file browser
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 待办
+    - tasks
+    - todo
+    - checklist
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多
+    - additional
+    - extra
+    semantic_type: button
+  description: A comprehensive toolbar or menu in the Markor app providing access
+    to file operations, text formatting, view settings, and navigation options.
+  scrollable: true
+  scroll_direction: horizontal
+- id: screen_34
+  elements:
+  - text: Format
+    center:
+    - 0.1681
+    - 0.3044
+    fixed: false
+    found_at_scroll: 0
+  - text: Choose format
+    center:
+    - 0.8528
+    - 0.341
+    fixed: false
+    found_at_scroll: 0
+  - text: Date only
+    center:
+    - 0.2944
+    - 0.4208
+    fixed: false
+    found_at_scroll: 0
+  - text: Time only
+    center:
+    - 0.7056
+    - 0.4208
+    fixed: false
+    found_at_scroll: 0
+  - text: Last used
+    center:
+    - 0.2944
+    - 0.4733
+    fixed: false
+    found_at_scroll: 0
+  - text: Get format instead date or time
+    center:
+    - 0.5
+    - 0.5171
+    fixed: false
+    found_at_scroll: 0
+  - text: Date
+    center:
+    - 0.1398
+    - 0.5669
+    fixed: false
+    found_at_scroll: 0
+  - text: Pick date
+    center:
+    - 0.2944
+    - 0.6079
+    fixed: false
+    found_at_scroll: 0
+  - text: Pick time
+    center:
+    - 0.7056
+    - 0.6079
+    fixed: false
+    found_at_scroll: 0
+  - text: Always use current date &amp; time
+    center:
+    - 0.5
+    - 0.6517
+    fixed: false
+    found_at_scroll: 0
+  - text: HELP
+    center:
+    - 0.1722
+    - 0.7142
+    fixed: false
+    found_at_scroll: 0
+  - text: CANCEL
+    center:
+    - 0.6565
+    - 0.7142
+    fixed: false
+    found_at_scroll: 0
+  - text: OK
+    center:
+    - 0.8278
+    - 0.7142
+    fixed: false
+    found_at_scroll: 0
+  description: A dialog for configuring date and time format options with choices
+    like Date only, Time only, and Last used.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: QuickNote
+    center:
+    - 0.1546
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 快速笔记
+    - 速记
+    - quick note
+    semantic_type: button
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 撤销
+    - undo action
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 重做
+    - redo action
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 视图模式
+    - display mode
+    - preview mode
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - save file
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - 查找
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow menu
+    semantic_type: button
+  - text: Check list
+    center:
+    - 0.0588
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 复选框列表
+    - todo list
+    - checkbox list
+    semantic_type: button
+  - text: Unordered list
+    center:
+    - 0.1764
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 无序列表
+    - bullet list
+    - ul
+    semantic_type: button
+  - text: Bold
+    center:
+    - 0.294
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 粗体
+    - strong text
+    semantic_type: button
+  - text: Italic
+    center:
+    - 0.4116
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 斜体
+    - emphasized text
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除行
+    - remove lines
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 打开链接
+    - open url
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 附件
+    - insert file
+    - add attachment
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 特殊键
+    - special character
+    - symbol key
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 文件
+    - documents
+    - file manager
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 待办
+    - tasks
+    - todo
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多
+    - additional options
+    semantic_type: button
+  - text: Gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - '>'
+    - greater than
+    - quote level 1
+    semantic_type: button
+  - text: Gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - '>>'
+    - double greater than
+    - quote level 2
+    semantic_type: button
+  - text: Gt gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - '>>>'
+    - triple greater than
+    - quote level 3
+    semantic_type: button
+  description: QuickNote editing screen with a rich text toolbar for formatting, list
+    management, and file operations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 撤销
+    - revert
+    - go back
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 重做
+    - restore
+    - forward
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 视图模式
+    - display mode
+    - preview
+    - edit mode
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - write
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - actions
+    semantic_type: button
+  - text: Gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - '>'
+    - greater than
+    - heading 1
+    - quote
+    semantic_type: button
+  - text: Check list
+    center:
+    - 0.0588
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 任务列表
+    - todo list
+    - checkbox list
+    - checklist
+    semantic_type: button
+  - text: Unordered list
+    center:
+    - 0.1764
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 无序列表
+    - bullet list
+    - bullets
+    semantic_type: button
+  - text: Bold
+    center:
+    - 0.294
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 加粗
+    - strong
+    - B
+    semantic_type: button
+  - text: Italic
+    center:
+    - 0.4116
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 斜体
+    - emphasis
+    - I
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 删除行
+    - remove lines
+    - cut lines
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 打开链接
+    - visit URL
+    - browse
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 附件
+    - insert file
+    - add attachment
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 特殊键
+    - special character
+    - symbols
+    semantic_type: button
+  - text: Date and time
+    center:
+    - 0.9704
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 日期和时间
+    - timestamp
+    - insert date
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 文件
+    - documents
+    - file manager
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 待办
+    - tasks
+    - todo
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多
+    - additional
+    - extra
+    semantic_type: button
+  - text: Gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - '>>'
+    - greater greater
+    - heading 2
+    semantic_type: button
+  - text: Gt gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - '>>>'
+    - heading 3
+    - triple greater
+    semantic_type: button
+  - text: Gt gt gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - '>>>>'
+    - heading 4
+    - quadruple greater
+    semantic_type: button
+  description: A formatting and action toolbar in the Markor app providing text editing
+    options like bold, italic, lists, undo/redo, and file navigation.
+  scrollable: true
+  scroll_direction: horizontal
+- id: screen_37
+  elements:
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - 首页
+    - main screen
+    semantic_type: tab
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - tabs
+    - tab switcher
+    - 标签页
+    - 切换标签
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - 更多
+    - options
+    - overflow menu
+    semantic_type: button
+  - text: Learn more
+    center:
+    - 0.2611
+    - 0.4631
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 了解更多
+    - help
+    - info
+    - documentation
+    semantic_type: link
+  - text: Back to safety
+    center:
+    - 0.5019
+    - 0.8581
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 返回安全模式
+    - cancel
+    - go back
+    - abort
+    semantic_type: button
+  - text: Advanced
+    center:
+    - 0.5019
+    - 0.9237
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 高级
+    - advanced settings
+    - expert mode
+    semantic_type: setting
+  description: A security warning screen offering options to go back, proceed with
+    advanced settings, or learn more about the risk.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: 'Try:'
+    center:
+    - 0.5019
+    - 0.459
+    fixed: false
+    found_at_scroll: 0
+  - text: Reload
+    center:
+    - 0.5019
+    - 0.8581
+    fixed: false
+    found_at_scroll: 0
+  - text: Details
+    center:
+    - 0.5019
+    - 0.9237
+    fixed: false
+    found_at_scroll: 0
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  description: A browser-like interface within Markor displaying action buttons for
+    reloading, viewing details, and managing tabs or options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: Contributors
+    center:
+    - 0.5
+    - 0.1052
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - contributors list
+    - team members
+    - developers
+    semantic_type: link
+  - text: OK
+    center:
+    - 0.8537
+    - 0.9221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - confirm
+    - accept
+    - done
+    - 确定
+    semantic_type: button
+  description: A dialog or screen displaying the list of contributors with an OK button
+    to dismiss it.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: More
+    center:
+    - 0.0958
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多
+    - more options
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: menu_item
+  - text: Community
+    center:
+    - 0.5097
+    - 0.2502
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 社区
+    - community group
+    semantic_type: link
+  - text: Join the Community
+    center:
+    - 0.3481
+    - 0.2948
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 加入社区
+    - join community
+    semantic_type: link
+  - text: Contributors
+    center:
+    - 0.2829
+    - 0.3544
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 贡献者
+    - developers
+    - credits
+    semantic_type: link
+  - text: Licenses
+    center:
+    - 0.5097
+    - 0.4519
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 许可证
+    - license info
+    semantic_type: link
+  - text: Open Source Licenses
+    center:
+    - 0.3667
+    - 0.5773
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开源许可证
+    - OSS licenses
+    semantic_type: link
+  - text: Source Code
+    center:
+    - 0.2847
+    - 0.6369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 源代码
+    - github
+    - repo
+    semantic_type: link
+  - text: Copy build information
+    center:
+    - 0.3708
+    - 0.7356
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 复制构建信息
+    - copy build info
+    - debug info
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件
+    - documents
+    - notes
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 待办
+    - todo list
+    - tasks
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 快速笔记
+    - quick note
+    - scratchpad
+    semantic_type: tab
+  description: A menu screen displaying app information, community links, and navigation
+    options for Files, To-Do, and QuickNote.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: OK
+    center:
+    - 0.8537
+    - 0.9221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    - 确认
+    semantic_type: button
+  description: A minimal dialog or confirmation screen containing a single 'OK' button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Licenses
+    center:
+    - 0.5
+    - 0.1052
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - License
+    - Open Source Licenses
+    - Legal
+    - 版权许可
+    - 许可证
+    semantic_type: link
+  - text: OK
+    center:
+    - 0.8537
+    - 0.9221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Accept
+    - Done
+    - 确定
+    - 确认
+    semantic_type: button
+  description: Licenses dialog displaying legal information with an OK button to dismiss.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: OK
+    center:
+    - 0.8537
+    - 0.9221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 'Yes'
+    - 确定
+    semantic_type: button
+  description: A minimal dialog or confirmation screen containing a single 'OK' button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Go to
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Navigate to
+    - Jump to
+    - Go to folder
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order by
+    - Arrange by
+    - Sorting options
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow menu
+    - Three dots
+    - ⋮
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New
+    - Add
+    - Create
+    - New file
+    - New folder
+    - +
+    - 新建
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - File Manager
+    - 文件
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Tasks
+    - Checklist
+    - 待办事项
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Quick Note
+    - Scratchpad
+    - Memo
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional
+    - Extras
+    - 更多
+    semantic_type: menu_item
+  description: Main file browser screen displaying navigation options, sorting controls,
+    and a list of files and folders including To-Do and QuickNote.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Go to
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Navigate to
+    - Jump to
+    - Go to folder
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order by
+    - Arrange by
+    - Sorting options
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - Three dots
+    - ⋮
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New
+    - Add
+    - Create
+    - New file
+    - New folder
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - File Manager
+    - Notes
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Tasks
+    - Checklist
+    - 待办
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Quick Note
+    - Scratchpad
+    - Memo
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Options
+    - Additional
+    - 更多
+    semantic_type: menu_item
+  description: Main file browser screen displaying a list of files and folders with
+    options to sort, create new items, and navigate to QuickNote or To-Do sections.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_46
+  elements:
+  - text: Go to
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Navigate to
+    - Jump to
+    - 前往
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order by
+    - Arrange by
+    - 排序方式
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: Create a new file or folder
+    center:
+    - 0.8931
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New
+    - Add
+    - 新建
+    - 创建
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - 文件
+    - 笔记列表
+    semantic_type: tab
+  - text: To-Do
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Tasks
+    - 待办事项
+    - 清单
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Quick Note
+    - 快速笔记
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional
+    - 更多
+    - 其他
+    semantic_type: tab
+  description: Main file browser screen displaying a list of files and folders with
+    options to sort, create new items, and navigate to To-Do or QuickNote sections.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Import from device
+    center:
+    - 0.5
+    - 0.1031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - import files
+    - load from storage
+    - 导入文件
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.838
+    - 0.9194
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - dismiss
+    - abort
+    - 取消
+    semantic_type: button
+  description: A dialog screen for importing files from the device with a cancel option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_48
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Tasks
+    - Checklist
+    - 待办事项
+    semantic_type: tab
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Revert
+    - 撤销
+    - 回退
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Restore
+    - 重做
+    - 恢复
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Display mode
+    - Preview
+    - Edit mode
+    - 视图模式
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Store
+    - 保存
+    - 存储
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 查找
+    - 搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Keyboard shortcuts
+    - Special keys
+    - 特殊按键
+    semantic_type: button
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Archive done
+    - 归档已完成任务
+    - 清理完成项
+    semantic_type: menu_item
+  - text: Files
+    center:
+    - 0.125
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - 文件
+    - 文档
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Quick Note
+    - 快速笔记
+    - 速记
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Additional
+    - 更多
+    semantic_type: button
+  - text: Gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - '>'
+    - Greater than
+    - 右尖括号
+    semantic_type: button
+  - text: Gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - '>>'
+    - Double greater than
+    - 双右尖括号
+    semantic_type: button
+  - text: Gt gt gt
+    center:
+    - 0.5
+    - 0.3175
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - '>>>'
+    - Triple greater than
+    - 三右尖括号
+    semantic_type: button
+  description: A toolbar interface in the Markor app providing text editing actions,
+    view controls, and navigation options for managing notes and to-do lists.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: To-Do
+    center:
+    - 0.1046
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Todo
+    - Task
+    - Checklist
+    - 待办
+    semantic_type: tab
+  - text: Undo
+    center:
+    - 0.4653
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Revert
+    - 撤销
+    - 回退
+    semantic_type: button
+  - text: Redo
+    center:
+    - 0.5625
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Repeat
+    - 重做
+    - 恢复
+    semantic_type: button
+  - text: View mode
+    center:
+    - 0.6597
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Display mode
+    - Preview
+    - Edit mode
+    - 视图模式
+    semantic_type: toggle
+  - text: Save
+    center:
+    - 0.7569
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Store
+    - 保存
+    - 存盘
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8542
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 查找
+    - 搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Toggle done
+    center:
+    - 0.0588
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Mark complete
+    - Check off
+    - 标记完成
+    - 勾选
+    semantic_type: button
+  - text: Add context
+    center:
+    - 0.1764
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Context
+    - Tag
+    - 添加上下文
+    - 标签
+    semantic_type: button
+  - text: Add project
+    center:
+    - 0.294
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Project
+    - Category
+    - 添加项目
+    - 分类
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.4116
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Importance
+    - Level
+    - 优先级
+    - 重要程度
+    semantic_type: button
+  - text: Delete lines
+    center:
+    - 0.5292
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Remove lines
+    - Cut
+    - 删除行
+    - 剪切
+    semantic_type: button
+  - text: Open link
+    center:
+    - 0.6468
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Launch URL
+    - Visit
+    - 打开链接
+    - 访问
+    semantic_type: button
+  - text: Attach
+    center:
+    - 0.7644
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Insert file
+    - Add attachment
+    - 附件
+    - 插入文件
+    semantic_type: button
+  - text: Special Key
+    center:
+    - 0.8819
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Symbol
+    - Character
+    - 特殊键
+    - 符号
+    semantic_type: button
+  - text: Archive completed tasks
+    center:
+    - 0.9704
+    - 0.5469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Archive done
+    - Move to archive
+    - 归档已完成任务
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.125
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Documents
+    - Notes
+    - 文件
+    - 文档
+    semantic_type: tab
+  - text: QuickNote
+    center:
+    - 0.625
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Scratchpad
+    - Memo
+    - 快速笔记
+    - 便签
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.6015
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Extras
+    - Additional
+    - 更多
+    semantic_type: button
+  description: Toolbar interface in Markor providing text editing, formatting, and
+    file management actions for notes and to-do lists.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 818
+    y: 201
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 922
+    y: 201
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2074
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 135
+    y: 2264
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 818
+    y: 201
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 964
+    y: 2074
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 922
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1366
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 844
+    y: 200
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 844
+    y: 326
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2074
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 964
+    y: 2074
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 113
+    y: 202
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 922
+    y: 201
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 190
+    y: 2132
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 317
+    y: 2132
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 444
+    y: 2132
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 826
+    y: 2132
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 952
+    y: 2132
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1048
+    y: 2132
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 167
+    y: 202
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 922
+    y: 201
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 1048
+    y: 2132
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 762
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 675
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 762
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 256
+    y: 346
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 312
+    y: 582
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: tap
+    x: 306
+    y: 2134
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 550
+    y: 1084
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 332
+    y: 1192
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 396
+    y: 1386
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 945
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 400
+    y: 1766
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 778
+    y: 578
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 778
+    y: 704
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 778
+    y: 831
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 844
+    y: 200
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 762
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: net.gsantner.markor
+    wait: 0.5
+  - action: launch
+    package: net.gsantner.markor
+    wait: 3.0
+  - action: tap
+    x: 712
+    y: 201
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 405
+    y: 2264
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 762
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Create new markdown files or folders
+- Edit text using the QuickNote feature
+- Manage and check off To-Do list items
+- Search for files or content using regex options
+- Sort files and folders by name, date, or size
+- Insert images, links, or other media into documents
+- Configure app settings such as theme and language
+- Filter To-Do items by priority, due date, or context
+- Import existing files from device storage
+known_limitations:
+- Advanced search configuration (regex, case sensitivity) is hidden within a dialog
+  rather than directly on the main screen
+- Some file management actions like moving completed tasks require navigating through
+  confirmation dialogs
+- Context and priority insertion for To-Dos requires opening specific modal dialogs

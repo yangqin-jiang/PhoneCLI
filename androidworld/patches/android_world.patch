@@ -1,0 +1,171 @@
+diff --git a/android_world/env/android_world_controller.py b/android_world/env/android_world_controller.py
+--- a/android_world/env/android_world_controller.py
++++ b/android_world/env/android_world_controller.py
+@@ -25,6 +25,7 @@ from absl import logging
+ from android_env import env_interface
+ from android_env import loader
+ from android_env.components import config_classes
++from android_env.proto import adb_pb2
+ from android_env.proto.a11y import android_accessibility_forest_pb2
+ from android_env.wrappers import a11y_grpc_wrapper
+ from android_env.wrappers import base_wrapper
+@@ -140,13 +141,63 @@ class A11yMethod(enum.Enum):
+ def apply_a11y_forwarder_app_wrapper(
+     env: env_interface.AndroidEnvInterface, install_a11y_forwarding_app: bool
+ ) -> env_interface.AndroidEnvInterface:
+-  return a11y_grpc_wrapper.A11yGrpcWrapper(
++  wrapped_env = a11y_grpc_wrapper.A11yGrpcWrapper(
+       env,
+       install_a11y_forwarding=install_a11y_forwarding_app,
+       start_a11y_service=True,
+       enable_a11y_tree_info=True,
+       latest_a11y_info_only=True,
+   )
++  # When AndroidEnv connects to an already-running emulator, its relaunch
++  # counter remains zero.  A11yGrpcWrapper.reset() therefore skips
++  # _configure_grpc(), leaving the on-device forwarder pointed at the random
++  # host port used by an earlier (now dead) Python process.  Explicitly enable
++  # the service and publish this wrapper's current host/port on every new
++  # connection.
++  enable_response = wrapped_env.execute_adb_call(
++      adb_pb2.AdbRequest(
++          settings=adb_pb2.AdbRequest.SettingsRequest(
++              name_space=adb_pb2.AdbRequest.SettingsRequest.Namespace.SECURE,
++              put=adb_pb2.AdbRequest.SettingsRequest.Put(
++                  key='accessibility_enabled', value='1'
++              ),
++          )
++      )
++  )
++  if (
++      isinstance(enable_response, adb_pb2.AdbResponse)
++      and enable_response.status != adb_pb2.AdbResponse.Status.OK
++  ):
++    raise RuntimeError(
++        'Could not enable accessibility service: '
++        f'{enable_response}.'
++    )
++
++  # A Wi-Fi benchmark may intentionally disable the guest's networking.  If
++  # the forwarder uses a normal guest-to-host TCP route, that also cuts off the
++  # accessibility tree that the agent needs for its next observation.  For a
++  # loopback gRPC host, carry the connection over ADB instead; adb reverse is
++  # independent of the emulated Wi-Fi and remains available while Wi-Fi is off.
++  # pylint: disable=protected-access
++  grpc_host = wrapped_env._grpc_host
++  grpc_port = wrapped_env._port
++  # pylint: enable=protected-access
++  if grpc_host in ('127.0.0.1', 'localhost'):
++    reverse_response = adb_utils.issue_generic_request(
++        [
++            'reverse',
++            f'tcp:{grpc_port}',
++            f'tcp:{grpc_port}',
++        ],
++        wrapped_env,
++    )
++    if reverse_response.status != adb_pb2.AdbResponse.Status.OK:
++      raise RuntimeError(
++          'Could not configure the ADB reverse tunnel for accessibility: '
++          f'{reverse_response}.'
++      )
++  wrapped_env._configure_grpc()  # pylint: disable=protected-access
++  return wrapped_env
+ 
+ 
+ class AndroidWorldController(base_wrapper.BaseWrapper):
+diff --git a/android_world/env/android_world_controller_test.py b/android_world/env/android_world_controller_test.py
+--- a/android_world/env/android_world_controller_test.py
++++ b/android_world/env/android_world_controller_test.py
+@@ -40,10 +40,10 @@ class AndroidWorldControllerTest(absltest.TestCase):
+ 
+   def setUp(self):
+     super().setUp()
+-    mock_issue_generic_request = self.enter_context(
++    self.mock_issue_generic_request = self.enter_context(
+         mock.patch.object(adb_utils, 'issue_generic_request')
+     )
+-    mock_issue_generic_request.return_value = (
++    self.mock_issue_generic_request.return_value = (
+         fake_adb_responses.create_successful_generic_response(
+             'Physical size: 100x200'
+         )
+@@ -55,6 +55,8 @@ class AndroidWorldControllerTest(absltest.TestCase):
+             spec=a11y_grpc_wrapper.A11yGrpcWrapper,
+         )
+     )
++    self.mock_a11y_wrapper.return_value._grpc_host = '10.0.2.2'
++    self.mock_a11y_wrapper.return_value._port = 12345
+ 
+     self.table_name = 'events'
+ 
+@@ -95,6 +97,19 @@ class AndroidWorldControllerTest(absltest.TestCase):
+     )
+     env._env.reset.assert_called_once()
+ 
++  def test_initialization_uses_adb_reverse_for_loopback_a11y(self):
++    mock_base_env = mock.Mock(spec=env_interface.AndroidEnvInterface)
++    wrapped_env = self.mock_a11y_wrapper.return_value
++    wrapped_env._grpc_host = '127.0.0.1'
++    wrapped_env._port = 12345
++
++    android_world_controller.AndroidWorldController(mock_base_env)
++
++    self.mock_issue_generic_request.assert_called_with(
++        ['reverse', 'tcp:12345', 'tcp:12345'], wrapped_env
++    )
++    wrapped_env._configure_grpc.assert_called_once()
++
+   def test_screen_size(self):
+     mock_base_env = mock.Mock(spec=env_interface.AndroidEnvInterface)
+ 
+diff --git a/android_world/suite_utils.py b/android_world/suite_utils.py
+--- a/android_world/suite_utils.py
++++ b/android_world/suite_utils.py
+@@ -453,17 +453,35 @@ def run(
+   def run_episode(task: task_eval.TaskEval) -> episode_runner.EpisodeResult:
+     if demo_mode:
+       _display_goal(agent.env, task)
+-    return episode_runner.run_episode(
+-        goal=task.goal,
+-        agent=agent,
+-        max_n_steps=_allocate_step_budget(task.complexity),
+-        start_on_home_screen=task.start_on_home_screen,
+-        termination_fn=(
+-            miniwob_base.is_episode_terminated
+-            if task.name.lower().startswith('miniwob')
+-            else None
+-        ),
+-    )
++    prepare_for_task = getattr(agent, 'prepare_for_task', None)
++    if prepare_for_task is not None:
++      prepare_for_task(task)
++    try:
++      result = episode_runner.run_episode(
++          goal=task.goal,
++          agent=agent,
++          max_n_steps=_allocate_step_budget(task.complexity),
++          start_on_home_screen=task.start_on_home_screen,
++          termination_fn=(
++              miniwob_base.is_episode_terminated
++              if task.name.lower().startswith('miniwob')
++              else None
++          ),
++      )
++    except Exception as error:
++      on_task_end = getattr(agent, 'on_task_end', None)
++      if on_task_end is not None:
++        on_task_end(task, {
++            'is_successful': None,
++            'episode_length': None,
++            'run_time': None,
++            'exception_info': repr(error),
++        })
++      raise
++    on_task_end = getattr(agent, 'on_task_end', None)
++    if on_task_end is not None:
++      on_task_end(task, result)
++    return result
+ 
+   if demo_mode:
+     adb_utils.send_android_intent(

@@ -1,0 +1,6301 @@
+app: Chrome
+package: com.android.chrome
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Chrome new tab page featuring a search bar, Google Lens options, sync
+    prompt, and Discover feed content.
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - search box
+    - 输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - voice input
+    - speak to search
+    - microphone
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - image search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Discover settings
+    - feed options
+    - customize discover
+    - 发现选项
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.8926
+    - 0.6654
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.7812
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Enable sync
+    - Sign in to sync
+    - Activate synchronization
+    - 开启同步
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Homepage
+    - Start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Tab switcher
+    - Overview
+    - Recent tabs
+    - 标签页概览
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Menu
+    - Three dots
+    - Overflow menu
+    - 更多选项
+    semantic_type: button
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 主页
+    - 首页
+    - home page
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - tabs
+    - tab switcher
+    - 切换标签页
+    - 关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - menu
+    - 更多选项
+    - 更多
+    - three dots
+    semantic_type: button
+  - text: Learn more
+    center:
+    - 0.2611
+    - 0.4631
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 了解详情
+    - 更多信息
+    - learn more about this
+    semantic_type: link
+  - text: Back to safety
+    center:
+    - 0.5019
+    - 0.8581
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 返回安全页面
+    - go back
+    - return
+    semantic_type: button
+  - text: Advanced
+    center:
+    - 0.5019
+    - 0.9237
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 高级
+    - advanced settings
+    - show advanced
+    semantic_type: button
+  description: Chrome security warning screen offering options to go back, proceed
+    via advanced settings, or learn more about the risk.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Safe Browsing
+    center:
+    - 0.3472
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 安全浏览
+    - Security
+    - Privacy protection
+    semantic_type: setting
+  - text: Help &amp; feedback
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Help and feedback
+    - 帮助与反馈
+    - Support
+    - FAQ
+    semantic_type: link
+  - text: Enhanced protection
+    center:
+    - 0.3338
+    - 0.1373
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 增强型保护
+    - High security
+    - Maximum protection
+    semantic_type: toggle
+  - text: Expand
+    center:
+    - 0.9394
+    - 0.1837
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 展开
+    - Show more
+    - Details
+    - Arrow down
+    semantic_type: button
+  - text: Standard protection
+    center:
+    - 0.3273
+    - 0.2756
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 标准保护
+    - Default protection
+    - Recommended
+    semantic_type: toggle
+  - text: No protection (not recommended)
+    center:
+    - 0.45
+    - 0.3781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 无保护
+    - Disable Safe Browsing
+    - 'Off'
+    - 不推荐
+    semantic_type: toggle
+  description: Safe Browsing settings page allowing users to select between Enhanced,
+    Standard, or No protection levels.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - search box
+    - 输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - voice input
+    - speak to search
+    - microphone
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - image search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Discover settings
+    - feed options
+    - customize discover
+    - 发现选项
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.8926
+    - 0.6654
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.7758
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Enable sync
+    - Sign in to sync
+    - Activate synchronization
+    - 开启同步
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Homepage
+    - Start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Tab switcher
+    - Recent tabs
+    - Overview
+    - 切换标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Menu
+    - Overflow menu
+    - Three dots
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, Google Lens options, and
+    a scrollable Discover feed.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: New tab
+    center:
+    - 0.2546
+    - 0.1681
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - new page
+    - open new tab
+    - add tab
+    - 新建标签页
+    semantic_type: button
+  - text: Close New tab tab
+    center:
+    - 0.4315
+    - 0.1683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - close tab
+    - dismiss tab
+    - remove tab
+    - 关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    - 设置菜单
+    semantic_type: button
+  description: A new tab screen in Chrome with options to close the tab or access
+    more settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Forward
+    center:
+    - 0.4218
+    - 0.0858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - go forward
+    - next page
+    - 前进
+    semantic_type: button
+  - text: Bookmark
+    center:
+    - 0.5468
+    - 0.0858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - add bookmark
+    - save page
+    - 收藏
+    - 加入书签
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.6718
+    - 0.0858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - save file
+    - 下载
+    semantic_type: button
+  - text: Page info
+    center:
+    - 0.7972
+    - 0.0858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - page details
+    - site information
+    - 页面信息
+    semantic_type: menu_item
+  - text: Refresh
+    center:
+    - 0.9231
+    - 0.0858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - reload
+    - refresh page
+    - 刷新
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1383
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - open new tab
+    - new page
+    - 新建标签页
+    semantic_type: button
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.1908
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - incognito mode
+    - private browsing
+    - 无痕模式
+    - 隐私浏览
+    semantic_type: button
+  - text: History
+    center:
+    - 0.5333
+    - 0.2554
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - browsing history
+    - 历史记录
+    semantic_type: menu_item
+  - text: Downloads
+    center:
+    - 0.5685
+    - 0.3079
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - download manager
+    - 下载内容
+    semantic_type: menu_item
+  - text: Bookmarks
+    center:
+    - 0.5694
+    - 0.3604
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - saved pages
+    - favorites
+    - 书签
+    semantic_type: menu_item
+  - text: Recent tabs
+    center:
+    - 0.5741
+    - 0.4129
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - recently closed
+    - open tabs
+    - 最近标签页
+    semantic_type: menu_item
+  - text: Desktop site
+    center:
+    - 0.6046
+    - 0.4775
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - desktop version
+    - request desktop site
+    - 桌面版网站
+    semantic_type: toggle
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.5421
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.6125
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - support
+    - help center
+    - 帮助与反馈
+    semantic_type: menu_item
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - voice input
+    - speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - feed
+    - news feed
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - customize feed
+    - discover settings
+    - 发现选项
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.8926
+    - 0.6654
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - dismiss
+    - exit
+    - 关闭
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.7758
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - enable sync
+    - sign in to sync
+    - 开启同步
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - homepage
+    - start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - tab switcher
+    - overview
+    - 切换标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - menu
+    - overflow menu
+    - more
+    - 更多选项
+    semantic_type: button
+  description: Chrome browser menu displaying navigation options, account settings,
+    and tools like bookmarks, history, and new tab creation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: 'Navigate: Facebook: m.facebook.com'
+    center:
+    - 0.1648
+    - 0.1798
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Facebook
+    center:
+    - 0.1648
+    - 0.2131
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: YouTube: m.youtube.com'
+    center:
+    - 0.388
+    - 0.1798
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: YouTube
+    center:
+    - 0.388
+    - 0.2131
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: Amazon.com: www.amazon.com'
+    center:
+    - 0.6111
+    - 0.1798
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Amazon.com
+    center:
+    - 0.6111
+    - 0.2131
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: Wikipedia: en.m.wikipedia.org'
+    center:
+    - 0.8343
+    - 0.1798
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Wikipedia
+    center:
+    - 0.8343
+    - 0.2131
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: ESPN.com: www.espn.com'
+    center:
+    - 0.1648
+    - 0.2706
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: ESPN.com
+    center:
+    - 0.1648
+    - 0.304
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: Yahoo: www.yahoo.com'
+    center:
+    - 0.388
+    - 0.2706
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Yahoo
+    center:
+    - 0.388
+    - 0.304
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: eBay: m.ebay.com'
+    center:
+    - 0.6111
+    - 0.2706
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: eBay
+    center:
+    - 0.6111
+    - 0.304
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 'Navigate: Instagram: www.instagram.com'
+    center:
+    - 0.8343
+    - 0.2706
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Instagram
+    center:
+    - 0.8343
+    - 0.304
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.5852
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.5854
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Close
+    center:
+    - 0.8926
+    - 0.6425
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.7529
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Search or type web address
+    center:
+    - 0.4273
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Start voice search
+    center:
+    - 0.8056
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.9222
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: 'Refine: gta 6 release date'
+    center:
+    - 0.9417
+    - 0.2065
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+  - text: 'Refine: gta 6'
+    center:
+    - 0.9417
+    - 0.2677
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+  - text: 'Refine: gta 5'
+    center:
+    - 0.9417
+    - 0.329
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.084
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_9
+  description: Chrome new tab page displaying frequently visited sites, a search bar
+    with autocomplete suggestions for 'gta 6', and options to enable sync or access
+    Discover content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: While using the app
+    center:
+    - 0.5
+    - 0.4977
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Allow only while in use
+    - Use app permission
+    - 应用使用时允许
+    semantic_type: button
+  - text: Only this time
+    center:
+    - 0.5
+    - 0.5631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - One-time permission
+    - 单次允许
+    - 仅这一次
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.6285
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Deny
+    - 拒绝
+    - 禁止
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.5852
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.5854
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Discover settings
+    - Feed options
+    - 发现页设置
+    semantic_type: menu_item
+  - text: Search or type web address
+    center:
+    - 0.4273
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - URL bar
+    - Address bar
+    - 搜索或输入网址
+    - Omnibox
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.8056
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_24
+    aliases:
+    - Voice input
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.9222
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Google Lens
+    - Visual search
+    - 相机搜索
+    - 镜头搜索
+    semantic_type: button
+  - text: 'Refine: gta 6 release date'
+    center:
+    - 0.9417
+    - 0.2065
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_9
+    aliases:
+    - gta 6 release date
+    - GTA VI launch
+    semantic_type: link
+  - text: 'Refine: gta 6'
+    center:
+    - 0.9417
+    - 0.2677
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_9
+    aliases:
+    - gta 6
+    - GTA VI
+    semantic_type: link
+  - text: 'Refine: gta 5'
+    center:
+    - 0.9417
+    - 0.329
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_9
+    aliases:
+    - gta 5
+    - GTA V
+    semantic_type: link
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.084
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_9
+    aliases:
+    - Clear text
+    - Delete
+    - 清除输入
+    semantic_type: button
+  description: Chrome new tab page with search bar, voice/camera search options, and
+    recent query suggestions overlaid by a location permission dialog.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Forward
+    center:
+    - 0.4218
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - go forward
+    - next page
+    - 前进
+    semantic_type: button
+  - text: Bookmark
+    center:
+    - 0.5468
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - add bookmark
+    - save page
+    - 收藏
+    - 加入书签
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.6718
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - save file
+    - 下载
+    semantic_type: button
+  - text: Page info
+    center:
+    - 0.7972
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - page details
+    - site information
+    - 页面信息
+    semantic_type: menu_item
+  - text: Refresh
+    center:
+    - 0.9231
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - reload
+    - refresh page
+    - 刷新
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - open new tab
+    - new page
+    - 新建标签页
+    semantic_type: button
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - incognito mode
+    - private browsing
+    - 无痕模式
+    - 隐私浏览
+    semantic_type: button
+  - text: History
+    center:
+    - 0.5333
+    - 0.2783
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - browsing history
+    - 历史记录
+    semantic_type: menu_item
+  - text: Downloads
+    center:
+    - 0.5685
+    - 0.3308
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - download manager
+    - 下载内容
+    semantic_type: menu_item
+  - text: Bookmarks
+    center:
+    - 0.5694
+    - 0.3833
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - saved pages
+    - favorites
+    - 书签
+    semantic_type: menu_item
+  - text: Recent tabs
+    center:
+    - 0.5741
+    - 0.4358
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - recently closed
+    - open tabs
+    - 最近标签页
+    semantic_type: menu_item
+  - text: Desktop site
+    center:
+    - 0.6046
+    - 0.5004
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - desktop version
+    - request desktop site
+    - 桌面版网站
+    semantic_type: toggle
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.565
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.6125
+    - 0.6175
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - support
+    - help center
+    - 帮助与反馈
+    semantic_type: menu_item
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - voice input
+    - speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - feed
+    - news feed
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_26
+    aliases:
+    - customize feed
+    - discover settings
+    - 发现选项
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - homepage
+    - start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_27
+    aliases:
+    - tab switcher
+    - overview
+    - 切换标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - menu
+    - overflow menu
+    - 更多选项
+    semantic_type: button
+  description: Chrome browser menu displaying navigation options, history, bookmarks,
+    settings, and search tools.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: 'Navigate: Facebook: m.facebook.com'
+    center:
+    - 0.1648
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Facebook
+    center:
+    - 0.1648
+    - 0.236
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: YouTube: m.youtube.com'
+    center:
+    - 0.388
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: YouTube
+    center:
+    - 0.388
+    - 0.236
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: Amazon.com: www.amazon.com'
+    center:
+    - 0.6111
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Amazon.com
+    center:
+    - 0.6111
+    - 0.236
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: Wikipedia: en.m.wikipedia.org'
+    center:
+    - 0.8343
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Wikipedia
+    center:
+    - 0.8343
+    - 0.236
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: ESPN.com: www.espn.com'
+    center:
+    - 0.1648
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: ESPN.com
+    center:
+    - 0.1648
+    - 0.3269
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: Yahoo: www.yahoo.com'
+    center:
+    - 0.388
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Yahoo
+    center:
+    - 0.388
+    - 0.3269
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: eBay: m.ebay.com'
+    center:
+    - 0.6111
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: eBay
+    center:
+    - 0.6111
+    - 0.3269
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Navigate: Instagram: www.instagram.com'
+    center:
+    - 0.8343
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Instagram
+    center:
+    - 0.8343
+    - 0.3269
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Refine: gta 6 release date'
+    center:
+    - 0.9417
+    - 0.2294
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Refine: gta 6'
+    center:
+    - 0.9417
+    - 0.2906
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: 'Refine: gta 5'
+    center:
+    - 0.9417
+    - 0.3519
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+  description: A screen displaying a list of frequently visited websites and a Discover
+    section with search refinement options for 'gta 6'.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - search box
+    - 输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - voice input
+    - speak to search
+    - microphone
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - image search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Discover settings
+    - feed options
+    - customize discover
+    - 发现选项
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Homepage
+    - start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Tab switcher
+    - open tabs
+    - tab overview
+    - 切换标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Menu
+    - three dots
+    - overflow menu
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, Google Lens and voice search
+    options, and a scrollable Discover feed.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: While using the app
+    center:
+    - 0.5
+    - 0.4977
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Allow only while using
+    - App usage only
+    - 使用时允许
+    semantic_type: button
+  - text: Only this time
+    center:
+    - 0.5
+    - 0.5631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - One time only
+    - Just once
+    - 仅这一次
+    - 单次允许
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.6285
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Deny
+    - Block
+    - 拒绝
+    - 不允许
+    semantic_type: button
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - Address bar
+    - URL bar
+    - Omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_29
+    aliases:
+    - Voice search
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Google Lens
+    - Lens search
+    - Camera search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - Discover settings
+    - Feed options
+    - 发现页设置
+    semantic_type: menu_item
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Homepage
+    - 主页
+    semantic_type: tab
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Tab switcher
+    - Overview
+    - Tabs
+    - 切换标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - Menu
+    - Three dots
+    - Overflow menu
+    - 更多选项
+    semantic_type: button
+  description: Chrome browser home screen featuring a search bar, Google Lens and
+    voice search options, and the Discover feed.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Search with any image
+    center:
+    - 0.4995
+    - 0.5385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Visual Search
+    - Image Search
+    - Lens
+    - Google Lens
+    semantic_type: button
+  - text: Privacy Policy and Terms of Service apply.
+    center:
+    - 0.3773
+    - 0.6173
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Terms
+    - Legal
+    - Privacy Notice
+    - TOS
+    semantic_type: link
+  - text: Open photo gallery
+    center:
+    - 0.5
+    - 0.665
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Gallery
+    - Photos
+    - Albums
+    - Select Image
+    semantic_type: button
+  description: Image search interface allowing users to upload or select an image
+    from the gallery for visual search.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_13
+  elements:
+  - text: Learn more
+    center:
+    - 0.8102
+    - 0.5494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - More info
+    - Details
+    - 了解更多
+    semantic_type: link
+  - text: Turn off
+    center:
+    - 0.8102
+    - 0.6019
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Disable
+    - Deactivate
+    - 关闭
+    semantic_type: button
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_32
+    aliases:
+    - Address bar
+    - URL bar
+    - Omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_33
+    aliases:
+    - Voice search
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_34
+    aliases:
+    - Google Lens
+    - Lens
+    - Camera search
+    - 视觉搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_31
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_35
+    aliases:
+    - Discover settings
+    - Feed options
+    - 发现页选项
+    semantic_type: menu_item
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_31
+    aliases:
+    - Homepage
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Tabs
+    - Tab switcher
+    - 标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+    aliases:
+    - Menu
+    - Overflow menu
+    - Three dots
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, Google Lens options, and
+    a Discover feed for browsing content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: New tab
+    center:
+    - 0.0681
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - new page
+    - open new tab
+    - 新建标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - menu
+    - overflow menu
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: Undo
+    center:
+    - 0.8931
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - revert
+    - 撤销
+    semantic_type: button
+  description: A transient overlay or snackbar providing options to open a new tab,
+    access more actions, or undo the previous operation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - new page
+    - open new tab
+    - add tab
+    - 新建标签页
+    semantic_type: button
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - incognito mode
+    - private browsing
+    - 隐身模式
+    - 无痕浏览
+    semantic_type: button
+  - text: Close all tabs
+    center:
+    - 0.5875
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - close tabs
+    - dismiss all
+    - clear tabs
+    - 关闭所有标签页
+    semantic_type: button
+  - text: Group tabs
+    center:
+    - 0.5671
+    - 0.2662
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - tab groups
+    - organize tabs
+    - create group
+    - 标签组
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.3187
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - preferences
+    - options
+    - configuration
+    - 设置
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_37
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  description: Chrome tab management menu offering options to create new tabs, close
+    all tabs, group tabs, and access settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.4241
+    - 0.19
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - search box
+    - 输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.8338
+    - 0.1898
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - voice input
+    - speak to search
+    - microphone
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.9218
+    - 0.1898
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - image search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.3719
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    - 发现
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.3721
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Discover settings
+    - feed options
+    - customize discover
+    - 发现设置
+    semantic_type: menu_item
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Tab switcher
+    - Overview
+    - Recent tabs
+    - 标签页概览
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Menu
+    - Three dots
+    - Overflow menu
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, Google Lens and voice search
+    options, and a Discover feed for content recommendations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: New Incognito tab
+    center:
+    - 0.5
+    - 0.5556
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - New private tab
+    - 新建无痕标签页
+    - Incognito window
+    semantic_type: button
+  - text: Learn more
+    center:
+    - 0.1648
+    - 0.6717
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - More info
+    - 了解详情
+    - Read more
+    semantic_type: link
+  - text: Block third-party cookies
+    center:
+    - 0.4417
+    - 0.7356
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Block 3rd party cookies
+    - 阻止第三方 Cookie
+    - Disable third-party cookies
+    semantic_type: toggle
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Homepage
+    - 主页
+    - Start page
+    semantic_type: tab
+  - text: Incognito mode
+    center:
+    - 0.1662
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Private browsing
+    - 无痕模式
+    - Private mode
+    semantic_type: setting
+  - text: Search or type web address
+    center:
+    - 0.4764
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - URL bar
+    - 地址栏
+    - Omnibox
+    - Search bar
+    semantic_type: input
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - Tab switcher
+    - Tabs overview
+    - 切换标签页
+    - Tab manager
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Menu
+    - 更多选项
+    - Three dots
+    - Overflow menu
+    semantic_type: button
+  description: Chrome Incognito mode start page with a search bar, cookie settings,
+    and tab management options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: History
+    center:
+    - 0.1259
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 浏览记录
+    - 历史记录
+    - browsing history
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.931
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - 关闭
+    - dismiss
+    - exit
+    semantic_type: button
+  description: History screen displaying browsing history with a close button to exit.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Downloads
+    center:
+    - 0.1741
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: menu_item
+  - text: Settings
+    center:
+    - 0.8134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 设置
+    - preferences
+    - config
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.931
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 关闭
+    - dismiss
+    - exit
+    semantic_type: button
+  - text: Files that you download appear here
+    center:
+    - 0.5
+    - 0.544
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 下载的文件显示在这里
+    - no downloads yet
+    semantic_type: label
+  description: Downloads management screen displaying a list of downloaded files with
+    options to access Settings or close the view.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Bookmarks
+    center:
+    - 0.175
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 收藏
+    - 书签
+    - favorites
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 搜索
+    - 查找
+    - find
+    semantic_type: input
+  - text: Close dialog
+    center:
+    - 0.931
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 关闭对话框
+    - dismiss
+    - cancel dialog
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.8926
+    - 0.1629
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 关闭
+    - dismiss
+    - exit
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.2733
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开启同步
+    - enable sync
+    - sync data
+    semantic_type: button
+  - text: Reading list
+    center:
+    - 0.588
+    - 0.3548
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - 阅读列表
+    - read later
+    - saved articles
+    semantic_type: menu_item
+  - text: Mobile bookmarks
+    center:
+    - 0.588
+    - 0.4248
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - 手机书签
+    - mobile favorites
+    - device bookmarks
+    semantic_type: menu_item
+  description: Bookmarks management screen displaying search, sync options, reading
+    list, and mobile bookmarks.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Recently closed
+    center:
+    - 0.5194
+    - 0.1723
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - recent tabs
+    - closed tabs
+    - 最近关闭的标签页
+    semantic_type: menu_item
+  - text: Show full history
+    center:
+    - 0.5685
+    - 0.2315
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - history
+    - view all history
+    - 浏览记录
+    - 历史记录
+    semantic_type: link
+  - text: Other devices
+    center:
+    - 0.5194
+    - 0.2906
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - tabs from other devices
+    - synced tabs
+    - 其他设备
+    semantic_type: menu_item
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.4717
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - enable sync
+    - sign in to sync
+    - 开启同步
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - homepage
+    - start page
+    - 主页
+    semantic_type: tab
+  - text: Search or type web address
+    center:
+    - 0.4759
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - address bar
+    - URL bar
+    - omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - tab switcher
+    - open tabs
+    - 切换或关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - menu
+    - three dots
+    - overflow menu
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, recently closed tabs section,
+    and navigation controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2731
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 设置
+    - Preferences
+    - Options
+    - 配置
+    semantic_type: label
+  - text: Help &amp; feedback
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Help and feedback
+    - 帮助与反馈
+    - Support
+    - FAQ
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.8926
+    - 0.1629
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - 关闭
+    - Dismiss
+    - Exit
+    - Cancel
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.2733
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - Enable sync
+    - 开启同步
+    - Sync data
+    - Activate sync
+    semantic_type: button
+  - text: Google services
+    center:
+    - 0.313
+    - 0.361
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Services
+    - 谷歌服务
+    - GMS
+    - Google account services
+    semantic_type: setting
+  - text: Basics
+    center:
+    - 0.5
+    - 0.4135
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 基础
+    - Basic settings
+    - General
+    - 基本设置
+    semantic_type: label
+  - text: Search engine
+    center:
+    - 0.1606
+    - 0.4798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索引擎
+    - Default search
+    - Search provider
+    - 搜索
+    semantic_type: setting
+  - text: Passwords
+    center:
+    - 0.1361
+    - 0.561
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 密码
+    - Password manager
+    - Saved passwords
+    - Passkeys
+    semantic_type: setting
+  - text: Payment methods
+    center:
+    - 0.1972
+    - 0.621
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支付方式
+    - Credit cards
+    - 付款资料
+    - Cards
+    semantic_type: setting
+  - text: Addresses and more
+    center:
+    - 0.2176
+    - 0.681
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地址和其他信息
+    - Autofill
+    - Address book
+    - 个人信息
+    semantic_type: setting
+  - text: Privacy and security
+    center:
+    - 0.2116
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私和安全
+    - Security
+    - Privacy settings
+    - 安全与隐私
+    semantic_type: setting
+  - text: Safety check
+    center:
+    - 0.1495
+    - 0.801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安全检查
+    - Security check
+    - Privacy checkup
+    - 安全检测
+    semantic_type: setting
+  - text: Notifications
+    center:
+    - 0.1495
+    - 0.861
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通知
+    - Alerts
+    - Push notifications
+    - 消息通知
+    semantic_type: setting
+  - text: Theme
+    center:
+    - 0.0986
+    - 0.921
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - Appearance
+    - Dark mode
+    - 界面主题
+    semantic_type: setting
+  - text: Advanced
+    center:
+    - 0.5
+    - 0.9627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - Advanced settings
+    - More settings
+    - 进阶
+    semantic_type: label
+  - text: Homepage
+    center:
+    - 0.1343
+    - 0.6219
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 主页
+    - Home page
+    - Start page
+    - 首页
+    semantic_type: setting
+  - text: Accessibility
+    center:
+    - 0.1477
+    - 0.7031
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 无障碍
+    - Accessiblity settings
+    - 辅助功能
+    - A11y
+    semantic_type: setting
+  - text: Site settings
+    center:
+    - 0.1463
+    - 0.7631
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 网站设置
+    - Site permissions
+    - Content settings
+    - 站点权限
+    semantic_type: setting
+  - text: Languages
+    center:
+    - 0.1347
+    - 0.8231
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 语言
+    - Language settings
+    - Translate
+    - 语种
+    semantic_type: setting
+  - text: Downloads
+    center:
+    - 0.1361
+    - 0.8831
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 下载
+    - Download manager
+    - Offline files
+    - 下载内容
+    semantic_type: setting
+  - text: About Chrome
+    center:
+    - 0.1634
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 关于 Chrome
+    - Version info
+    - Chrome 版本
+    - App info
+    semantic_type: menu_item
+  description: Chrome settings menu listing various configuration options such as
+    sync, privacy, and advanced features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.5
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - Assistance
+    - 帮助
+    - 帮助中心
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Search help
+    center:
+    - 0.5
+    - 0.1596
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Search
+    - Find
+    - 搜索帮助
+    - 查找
+    semantic_type: input
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - All topics
+    - View all
+    - 浏览所有文章
+    - 查看全部
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.5634
+    - 0.3719
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Feedback
+    - Report issue
+    - 发送反馈
+    - 意见反馈
+    semantic_type: button
+  description: Help center screen with search functionality, article browsing, and
+    feedback options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+  - text: Try again
+    center:
+    - 0.5005
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: true
+    found_at_scroll: 1
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: true
+    found_at_scroll: 1
+  - text: Search or type web address
+    center:
+    - 0.4273
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Start voice search
+    center:
+    - 0.8056
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: true
+    found_at_scroll: 2
+  description: Chrome new tab page featuring a Google search bar with voice and Lens
+    options, alongside a Discover feed section.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - 首页
+    - homepage
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Tabs
+    - 标签页
+    - tab switcher
+    - 切换标签
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多
+    - 菜单
+    - overflow menu
+    - three dots
+    semantic_type: button
+  - text: Reload
+    center:
+    - 0.5019
+    - 0.8581
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Refresh
+    - 刷新
+    - reload page
+    - 重新加载
+    semantic_type: button
+  - text: Details
+    center:
+    - 0.5019
+    - 0.9237
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 详情
+    - 详细信息
+    - info
+    - details view
+    semantic_type: link
+  description: Chrome browser main screen displaying the current webpage with navigation
+    controls for reloading, viewing details, and managing tabs.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Add to Home screen
+    center:
+    - 0.3333
+    - 0.456
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Install app
+    - Create shortcut
+    - 添加到主屏幕
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.6144
+    - 0.5771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: Add
+    center:
+    - 0.8477
+    - 0.5771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - OK
+    - 添加
+    semantic_type: button
+  - text: Web View
+    center:
+    - 0.5
+    - 0.5135
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Browser view
+    - Page content
+    - 网页视图
+    semantic_type: other
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Homepage
+    - Start page
+    - 主页
+    semantic_type: tab
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Tab overview
+    - Tabs manager
+    - 切换或关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: 'Try:'
+    center:
+    - 0.5019
+    - 0.459
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Suggestion
+    - Recommendation
+    - 尝试：
+    semantic_type: label
+  - text: Reload
+    center:
+    - 0.5019
+    - 0.8581
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Refresh
+    - Reload page
+    - 重新加载
+    semantic_type: button
+  - text: Details
+    center:
+    - 0.5019
+    - 0.9237
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - More info
+    - View details
+    - 详情
+    semantic_type: link
+  description: A dialog prompt allowing the user to add the current webpage to their
+    device's home screen with options to confirm or cancel.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Connection is not secure
+    center:
+    - 0.388
+    - 0.1317
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Not secure
+    - Insecure connection
+    - 不安全连接
+    semantic_type: label
+  - text: Cookies and site data
+    center:
+    - 0.3611
+    - 0.2498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Site data
+    - Cache and cookies
+    - Cookie settings
+    - 网站数据和Cookie
+    semantic_type: menu_item
+  description: Security information screen displaying connection status and cookies/site
+    data details.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_28
+  elements:
+  - text: Forward
+    center:
+    - 0.4218
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Go forward
+    - Next page
+    - 前进
+    semantic_type: button
+  - text: Bookmark
+    center:
+    - 0.5468
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add bookmark
+    - Save page
+    - 收藏
+    - 加入书签
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.6718
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save file
+    - 下载
+    semantic_type: button
+  - text: Page info
+    center:
+    - 0.7972
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Site information
+    - Security details
+    - 页面信息
+    semantic_type: menu_item
+  - text: Refresh
+    center:
+    - 0.9231
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reload
+    - Update page
+    - 刷新
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open new tab
+    - 新建标签页
+    semantic_type: menu_item
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Incognito
+    - Private browsing
+    - 无痕模式
+    - 隐私浏览
+    semantic_type: menu_item
+  - text: History
+    center:
+    - 0.5333
+    - 0.2783
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Browsing history
+    - 历史记录
+    semantic_type: menu_item
+  - text: Downloads
+    center:
+    - 0.5685
+    - 0.3308
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Download manager
+    - 下载内容
+    semantic_type: menu_item
+  - text: Bookmarks
+    center:
+    - 0.5694
+    - 0.3833
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Saved pages
+    - 收藏夹
+    semantic_type: menu_item
+  - text: Recent tabs
+    center:
+    - 0.5741
+    - 0.4358
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recently closed
+    - 最近打开的标签页
+    semantic_type: menu_item
+  - text: Share…
+    center:
+    - 0.6727
+    - 0.5004
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Send to
+    - 分享
+    semantic_type: menu_item
+  - text: Find in page
+    center:
+    - 0.5759
+    - 0.5529
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search on page
+    - 页面内搜索
+    semantic_type: menu_item
+  - text: Add to Home screen
+    center:
+    - 0.6477
+    - 0.6054
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Install app
+    - Create shortcut
+    - 添加到主屏幕
+    semantic_type: menu_item
+  - text: Desktop site
+    center:
+    - 0.6046
+    - 0.6579
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Request desktop site
+    - 桌面版网站
+    semantic_type: toggle
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.7225
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.6125
+    - 0.775
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - Help and feedback
+    - 帮助与反馈
+    semantic_type: menu_item
+  description: Chrome browser menu displaying a list of navigation, management, and
+    configuration options such as New tab, History, Bookmarks, and Settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+  - text: Try again
+    center:
+    - 0.5005
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  description: Chrome new tab page featuring a search bar, Google Lens options, and
+    the Discover feed.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Allow
+    center:
+    - 0.5
+    - 0.5565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Grant
+    - Permit
+    - 同意
+    - 允许
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.6219
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Deny
+    - Reject
+    - 拒绝
+    - 不允许
+    semantic_type: button
+  - text: Search with your camera
+    center:
+    - 0.5
+    - 0.2275
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Camera search
+    - Visual search
+    - 镜头搜索
+    - 相机搜索
+    semantic_type: label
+  - text: Go to settings
+    center:
+    - 0.5
+    - 0.5979
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Open settings
+    - Settings
+    - 设置
+    - 前往设置
+    semantic_type: link
+  - text: Try it on a sample image
+    center:
+    - 0.5
+    - 0.7906
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Demo
+    - Sample
+    - 试用示例图片
+    - 尝试示例
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dismiss
+    - Exit
+    - 关闭
+    - 取消
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9319
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  - text: Lens
+    center:
+    - 0.587
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Google Lens
+    - 视觉搜索
+    - 镜头
+    semantic_type: menu_item
+  description: Camera permission dialog for Google Lens offering options to allow,
+    deny, or try a sample image.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - search box
+    - 网址栏
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - voice input
+    - speak to search
+    - microphone
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Lens
+    - camera search
+    - visual search
+    - image search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover - off
+    center:
+    - 0.1481
+    - 0.6081
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Feed
+    - news feed
+    - content recommendations
+    - 发现
+    semantic_type: toggle
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Discover settings
+    - feed preferences
+    - customize discover
+    semantic_type: menu_item
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - homepage
+    - start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tab overview
+    - open tabs
+    - tab switcher
+    - 标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - three dots
+    - overflow menu
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, Google Lens and voice search
+    options, and navigation controls for tabs and settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_32
+  elements:
+  - text: 'Navigate: Facebook: m.facebook.com'
+    center:
+    - 0.1648
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: YouTube: m.youtube.com'
+    center:
+    - 0.388
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: Amazon.com: www.amazon.com'
+    center:
+    - 0.6111
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: Wikipedia: en.m.wikipedia.org'
+    center:
+    - 0.8343
+    - 0.2027
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: ESPN.com: www.espn.com'
+    center:
+    - 0.1648
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: Yahoo: www.yahoo.com'
+    center:
+    - 0.388
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: eBay: m.ebay.com'
+    center:
+    - 0.6111
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+  - text: 'Navigate: Instagram: www.instagram.com'
+    center:
+    - 0.8343
+    - 0.2935
+    fixed: true
+    found_at_scroll: 0
+  - text: Discover - off
+    center:
+    - 0.1481
+    - 0.6081
+    fixed: true
+    found_at_scroll: 0
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: true
+    found_at_scroll: 0
+  - text: Search or type web address
+    center:
+    - 0.4273
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: Start voice search
+    center:
+    - 0.8056
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: 'Refine: gta 6 release date'
+    center:
+    - 0.9417
+    - 0.2294
+    fixed: false
+    found_at_scroll: 1
+  - text: 'Refine: gta 6'
+    center:
+    - 0.9417
+    - 0.2906
+    fixed: false
+    found_at_scroll: 1
+  - text: 'Refine: gta 5'
+    center:
+    - 0.9417
+    - 0.3519
+    fixed: false
+    found_at_scroll: 1
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: true
+    found_at_scroll: 1
+  description: Chrome new tab page featuring a search bar with voice and lens options,
+    search suggestions for 'gta 6', and a grid of frequently visited website shortcuts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+  - text: Try again
+    center:
+    - 0.5005
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+  - text: Discover - off
+    center:
+    - 0.1481
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  description: Chrome new tab page featuring a search bar, Google Lens options, and
+    navigation controls with a retry prompt.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_34
+  elements:
+  - text: Open photo gallery
+    center:
+    - 0.5
+    - 0.5979
+    fixed: false
+    found_at_scroll: 0
+  - text: Close
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9319
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Lens
+    center:
+    - 0.587
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  description: Image preview screen with options to open the photo gallery, close
+    the view, access more options, or use Lens.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Learn more
+    center:
+    - 0.8102
+    - 0.5494
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - More info
+    - Details
+    - 了解更多
+    semantic_type: link
+  - text: Turn on
+    center:
+    - 0.8102
+    - 0.6019
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Enable
+    - Activate
+    - 开启
+    - 打开
+    semantic_type: button
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Address bar
+    - URL bar
+    - Omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Voice search
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Google Lens
+    - Visual search
+    - Camera search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover - off
+    center:
+    - 0.1481
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Discover feed
+    - News feed
+    - 发现
+    semantic_type: toggle
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Discover settings
+    - Feed preferences
+    - 发现设置
+    semantic_type: menu_item
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Homepage
+    - 主页
+    semantic_type: tab
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Tabs
+    - Tab switcher
+    - 标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: Chrome new tab page featuring a search bar, Google Lens, and Discover
+    feed controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Forward
+    center:
+    - 0.4218
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - go forward
+    - next page
+    - 前进
+    semantic_type: button
+  - text: Bookmark
+    center:
+    - 0.5468
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - add bookmark
+    - save page
+    - 收藏
+    - 加入书签
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.6718
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save file
+    - 下载
+    semantic_type: button
+  - text: Page info
+    center:
+    - 0.7972
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - page details
+    - site information
+    - 网页信息
+    semantic_type: menu_item
+  - text: Refresh
+    center:
+    - 0.9231
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - reload
+    - reload page
+    - 刷新
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - open new tab
+    - new page
+    - 新建标签页
+    semantic_type: button
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - incognito mode
+    - private browsing
+    - 无痕模式
+    - 隐私浏览
+    semantic_type: button
+  - text: History
+    center:
+    - 0.5333
+    - 0.2783
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - browsing history
+    - 历史记录
+    semantic_type: menu_item
+  - text: Downloads
+    center:
+    - 0.5685
+    - 0.3308
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - download manager
+    - 下载内容
+    semantic_type: menu_item
+  - text: Bookmarks
+    center:
+    - 0.5694
+    - 0.3833
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - saved pages
+    - favorites
+    - 书签
+    semantic_type: menu_item
+  - text: Recent tabs
+    center:
+    - 0.5741
+    - 0.4358
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recently closed
+    - open tabs
+    - 最近打开的标签页
+    semantic_type: menu_item
+  - text: Desktop site
+    center:
+    - 0.6046
+    - 0.5004
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - desktop version
+    - PC mode
+    - 桌面版网站
+    semantic_type: toggle
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - preferences
+    - options
+    - 设置
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.6125
+    - 0.6175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - support
+    - help center
+    - 帮助与反馈
+    semantic_type: menu_item
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - voice input
+    - speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover - off
+    center:
+    - 0.1481
+    - 0.6081
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - feed disabled
+    - content recommendations off
+    - 发现功能已关闭
+    semantic_type: label
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Discover settings
+    - feed preferences
+    - 发现设置
+    semantic_type: menu_item
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - homepage
+    - start page
+    - 主页
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - tab switcher
+    - overview
+    - 切换或关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow menu
+    - three dots
+    - 更多选项
+    semantic_type: button
+  description: Chrome browser menu displaying navigation options, tab management,
+    settings, and search tools.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new page
+    - open tab
+    - add tab
+    - 新建标签页
+    semantic_type: button
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - incognito
+    - private browsing
+    - private tab
+    - 无痕模式
+    - 隐私标签页
+    semantic_type: button
+  - text: Close all tabs
+    center:
+    - 0.5875
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close tabs
+    - dismiss all
+    - clear tabs
+    - 关闭所有标签页
+    semantic_type: button
+  - text: Group tabs
+    center:
+    - 0.5671
+    - 0.2662
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tab groups
+    - organize tabs
+    - group
+    - 标签组
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.3187
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - preferences
+    - options
+    - configuration
+    - 设置
+    semantic_type: menu_item
+  - text: Close New tab tab
+    center:
+    - 0.4315
+    - 0.1683
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - close tab
+    - dismiss tab
+    - remove tab
+    - 关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    - 更多
+    semantic_type: button
+  description: Tab management menu offering options to create new tabs, group or close
+    tabs, and access settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Cancel
+    center:
+    - 0.4801
+    - 0.5696
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: Close all tabs
+    center:
+    - 0.7708
+    - 0.5696
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close tabs
+    - Clear tabs
+    - 关闭所有标签页
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.2546
+    - 0.1681
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add tab
+    - Open new tab
+    - 新建标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: Tab management menu offering options to cancel, close all tabs, open
+    a new tab, or access more options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: Multi-select mode
+    center:
+    - 0.5
+    - 0.5135
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - batch select
+    - selection mode
+    - 多选模式
+    semantic_type: setting
+  - text: Close
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - dismiss
+    - cancel
+    - 关闭
+    - exit
+    semantic_type: button
+  - text: Select tabs
+    center:
+    - 0.3093
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - choose tabs
+    - pick tabs
+    - 选择标签页
+    semantic_type: button
+  - text: Group
+    center:
+    - 0.8931
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tab group
+    - create group
+    - 分组
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.2546
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - add tab
+    - open new tab
+    - 新建标签页
+    - + tab
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  description: Tab management screen in multi-select mode allowing users to group,
+    close, or create new tabs.
+  scrollable: true
+  scroll_direction: horizontal
+- id: screen_40
+  elements:
+  - text: New Incognito tab
+    center:
+    - 0.5
+    - 0.5556
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Incognito mode
+    - Private browsing
+    - 无痕模式
+    - 隐私浏览
+    semantic_type: button
+  - text: Learn more
+    center:
+    - 0.1648
+    - 0.6717
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - More info
+    - Details
+    - 了解详情
+    - 更多信息
+    semantic_type: link
+  - text: Block third-party cookies
+    center:
+    - 0.4417
+    - 0.7356
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Disable third-party cookies
+    - 阻止第三方 Cookie
+    - 拦截第三方饼干
+    semantic_type: toggle
+  - text: Search or type web address
+    center:
+    - 0.5199
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - URL bar
+    - Address bar
+    - Omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Clear text
+    - Delete
+    - X button
+    - 清除输入
+    semantic_type: button
+  description: Chrome Incognito mode screen with options to open a new tab, manage
+    cookie settings, and enter a web address.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_41
+  elements:
+  - text: New Incognito tab
+    center:
+    - 0.2546
+    - 0.1681
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new private tab
+    - open incognito
+    - 新建无痕标签页
+    semantic_type: button
+  - text: Standard tabs
+    center:
+    - 0.4412
+    - 0.1044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - normal tabs
+    - regular tabs
+    - 标准标签页
+    semantic_type: tab
+  - text: Incognito tabs
+    center:
+    - 0.5588
+    - 0.1044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - private tabs
+    - secret tabs
+    - 无痕标签页
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - three dots
+    semantic_type: button
+  description: Tab switcher screen allowing users to manage and switch between standard
+    and incognito tabs or open a new incognito tab.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_42
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Downloads
+    center:
+    - 0.3102
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Download manager
+    - 下载
+    - 下载内容
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help and feedback
+    - Support
+    - 帮助与反馈
+    - Feedback
+    semantic_type: menu_item
+  - text: Download location
+    center:
+    - 0.2
+    - 0.144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save to
+    - Storage location
+    - 下载位置
+    - 存储路径
+    semantic_type: setting
+  - text: Ask where to save files
+    center:
+    - 0.2352
+    - 0.2431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Prompt for download location
+    - Always ask
+    - 询问保存位置
+    - 每次询问
+    semantic_type: toggle
+  description: Downloads settings page allowing users to configure download location
+    and file saving preferences.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Go back
+    center:
+    - 0.0782
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: Reading list
+    center:
+    - 0.3134
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Saved pages
+    - Read later
+    - 阅读列表
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: input
+  - text: Close dialog
+    center:
+    - 0.931
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel dialog
+    - 关闭对话框
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.8926
+    - 0.1629
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Exit
+    - X
+    - 关闭
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.2733
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Enable sync
+    - Activate synchronization
+    - 开启同步
+    semantic_type: button
+  description: Reading list screen with search functionality and sync option
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_44
+  elements:
+  - text: Recently closed
+    center:
+    - 0.5194
+    - 0.1723
+    fixed: false
+    found_at_scroll: 0
+  - text: Show full history
+    center:
+    - 0.5685
+    - 0.2315
+    fixed: false
+    found_at_scroll: 0
+  - text: Other devices
+    center:
+    - 0.5194
+    - 0.2906
+    fixed: false
+    found_at_scroll: 0
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: Search or type web address
+    center:
+    - 0.4759
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  description: Chrome new tab page featuring a search bar, recently closed tabs, and
+    navigation options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_45
+  elements:
+  - text: Web View
+    center:
+    - 0.5
+    - 0.5135
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - browser view
+    - webpage
+    - content area
+    semantic_type: other
+  - text: Share…
+    center:
+    - 0.7083
+    - 0.1688
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - share page
+    - send link
+    - 分享
+    semantic_type: button
+  - text: Copy link
+    center:
+    - 0.825
+    - 0.1688
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - copy URL
+    - 复制链接
+    - duplicate link
+    semantic_type: button
+  - text: Edit
+    center:
+    - 0.9417
+    - 0.1688
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - modify
+    - 编辑
+    - change
+    semantic_type: button
+  - text: Search or type web address
+    center:
+    - 0.4273
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - URL bar
+    - address bar
+    - omnibox
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.8056
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - voice input
+    - speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - 镜头搜索
+    semantic_type: button
+  - text: Clear input
+    center:
+    - 0.9222
+    - 0.1069
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - clear text
+    - delete
+    - 清除
+    - remove text
+    semantic_type: button
+  description: Chrome browser address bar interface with search input, voice and camera
+    search options, and a context menu for sharing or editing the URL.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Recent tabs
+    center:
+    - 0.2546
+    - 0.1681
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - History
+    - 最近标签页
+    - 历史标签
+    semantic_type: tab
+  - text: Close Recent tabs tab
+    center:
+    - 0.4315
+    - 0.1683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭最近标签页
+    - Dismiss recent tabs
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.7352
+    - 0.1681
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新建标签页
+    - Open new tab
+    - + Tab
+    semantic_type: tab
+  - text: Close New tab tab
+    center:
+    - 0.912
+    - 0.1683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭新标签页
+    - Dismiss new tab
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多选项
+    - ⋮
+    - Overflow menu
+    semantic_type: button
+  description: Tab switcher screen displaying recent and new tabs with options to
+    close tabs or access more actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Forward
+    center:
+    - 0.4218
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+  - text: Bookmark
+    center:
+    - 0.5468
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+  - text: Download
+    center:
+    - 0.6718
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+  - text: Page info
+    center:
+    - 0.7972
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+  - text: Refresh
+    center:
+    - 0.9231
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+  - text: History
+    center:
+    - 0.5333
+    - 0.2783
+    fixed: false
+    found_at_scroll: 0
+  - text: Downloads
+    center:
+    - 0.5685
+    - 0.3308
+    fixed: false
+    found_at_scroll: 0
+  - text: Bookmarks
+    center:
+    - 0.5694
+    - 0.3833
+    fixed: false
+    found_at_scroll: 0
+  - text: Recent tabs
+    center:
+    - 0.5741
+    - 0.4358
+    fixed: false
+    found_at_scroll: 0
+  - text: Desktop site
+    center:
+    - 0.6046
+    - 0.5004
+    fixed: false
+    found_at_scroll: 0
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.565
+    fixed: false
+    found_at_scroll: 0
+  - text: Help &amp; feedback
+    center:
+    - 0.6125
+    - 0.6175
+    fixed: false
+    found_at_scroll: 0
+  - text: Recently closed
+    center:
+    - 0.5194
+    - 0.1723
+    fixed: false
+    found_at_scroll: 1
+  - text: Tap to collapse
+    center:
+    - 0.9319
+    - 0.1723
+    fixed: false
+    found_at_scroll: 1
+  - text: Show full history
+    center:
+    - 0.5685
+    - 0.2315
+    fixed: false
+    found_at_scroll: 1
+  - text: Other devices
+    center:
+    - 0.5194
+    - 0.2906
+    fixed: false
+    found_at_scroll: 1
+  - text: Tap to expand
+    center:
+    - 0.9319
+    - 0.2906
+    fixed: false
+    found_at_scroll: 1
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Search or type web address
+    center:
+    - 0.4759
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 1
+  description: Chrome browser menu displaying navigation options, history, bookmarks,
+    and settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2731
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - Options
+    semantic_type: label
+  - text: Help &amp; feedback
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Help and feedback
+    - 帮助与反馈
+    - Support
+    semantic_type: menu_item
+  - text: You and Google
+    center:
+    - 0.5
+    - 0.134
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 你与 Google
+    - Account
+    - Profile
+    semantic_type: setting
+  - text: Turn on sync
+    center:
+    - 0.2852
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开启同步
+    - Enable sync
+    - Sign in to sync
+    semantic_type: button
+  - text: Sync and personalize across devices
+    center:
+    - 0.4542
+    - 0.2227
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 跨设备同步
+    - Sync settings
+    - Personalization
+    semantic_type: label
+  - text: Google services
+    center:
+    - 0.313
+    - 0.2835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google 服务
+    - Services
+    - Google Apps
+    semantic_type: setting
+  - text: Basics
+    center:
+    - 0.5
+    - 0.336
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 基础
+    - Basic settings
+    - General
+    semantic_type: label
+  - text: Search engine
+    center:
+    - 0.1606
+    - 0.4023
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索引擎
+    - Default search
+    - Search provider
+    semantic_type: setting
+  - text: Google
+    center:
+    - 0.0931
+    - 0.4248
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 谷歌
+    - Google Search
+    semantic_type: label
+  - text: Passwords
+    center:
+    - 0.1361
+    - 0.4835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 密码
+    - Password manager
+    - Saved passwords
+    semantic_type: setting
+  - text: Payment methods
+    center:
+    - 0.1972
+    - 0.5435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支付方式
+    - Credit cards
+    - 付款资料
+    semantic_type: setting
+  - text: Addresses and more
+    center:
+    - 0.2176
+    - 0.6035
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地址及其他信息
+    - Autofill
+    - Addresses
+    semantic_type: setting
+  - text: Privacy and security
+    center:
+    - 0.2116
+    - 0.6635
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私和安全
+    - Security
+    - Privacy settings
+    semantic_type: setting
+  - text: Safety check
+    center:
+    - 0.1495
+    - 0.7235
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安全检查
+    - Security check
+    - Privacy checkup
+    semantic_type: menu_item
+  - text: Notifications
+    center:
+    - 0.1495
+    - 0.7835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通知
+    - Alerts
+    - Push notifications
+    semantic_type: setting
+  - text: Theme
+    center:
+    - 0.0986
+    - 0.8435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - Appearance
+    - Dark mode
+    semantic_type: setting
+  - text: Advanced
+    center:
+    - 0.5
+    - 0.8935
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - Advanced settings
+    - More settings
+    semantic_type: label
+  - text: Homepage
+    center:
+    - 0.1343
+    - 0.9598
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - Home page
+    - Start page
+    semantic_type: setting
+  - text: 'On'
+    center:
+    - 0.0597
+    - 0.9727
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开启
+    - Enabled
+    - Active
+    semantic_type: label
+  - text: Accessibility
+    center:
+    - 0.1477
+    - 0.7031
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 无障碍
+    - Accessibilité
+    - A11y
+    semantic_type: setting
+  - text: Site settings
+    center:
+    - 0.1463
+    - 0.7631
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 网站设置
+    - Permissions
+    - Site permissions
+    semantic_type: setting
+  - text: Languages
+    center:
+    - 0.1347
+    - 0.8231
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 语言
+    - Language settings
+    - Translate
+    semantic_type: setting
+  - text: Downloads
+    center:
+    - 0.1361
+    - 0.8831
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 下载内容
+    - Download manager
+    - Files
+    semantic_type: setting
+  - text: About Chrome
+    center:
+    - 0.1634
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 关于 Chrome
+    - Version
+    - Chrome info
+    semantic_type: menu_item
+  description: Chrome Settings page displaying a comprehensive list of configuration
+    options including sync, privacy, appearance, and advanced features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_49
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  description: A screen with a 'Navigate up' button, likely serving as a header or
+    navigation control within the Chrome app.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 118
+    y: 1460
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 282
+    y: 1112
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 542
+    y: 2060
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 838
+    y: 784
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 784
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 466
+    y: 404
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 206
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 726
+    y: 458
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 576
+    y: 613
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 739
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 615
+    y: 865
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 620
+    y: 991
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 586
+    y: 1301
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 662
+    y: 1427
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1194
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 118
+    y: 1460
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 282
+    y: 1112
+    wait: 1.5
+  - action: tap
+    x: 996
+    y: 256
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 838
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1194
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 784
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1596
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  - action: tap
+    x: 875
+    y: 1445
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 410
+    y: 784
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 838
+    y: 784
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 964
+    y: 784
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 63
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 1460
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 466
+    y: 404
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 634
+    y: 513
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 612
+    y: 639
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 726
+    y: 458
+    wait: 1.5
+  - action: tap
+    x: 514
+    y: 256
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 726
+    y: 458
+    wait: 1.5
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 739
+    wait: 1.5
+  - action: tap
+    x: 878
+    y: 201
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 615
+    y: 865
+    wait: 1.5
+  - action: tap
+    x: 635
+    y: 852
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 620
+    y: 991
+    wait: 1.5
+  - action: tap
+    x: 561
+    y: 698
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 620
+    y: 991
+    wait: 1.5
+  - action: tap
+    x: 514
+    y: 256
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 620
+    y: 991
+    wait: 1.5
+  - action: tap
+    x: 891
+    y: 256
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 620
+    y: 991
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 586
+    y: 1301
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 391
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.android.chrome
+    wait: 0.5
+  - action: launch
+    package: com.android.chrome
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 586
+    y: 1301
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 656
+    wait: 1.5
+launch_behavior: resume_last
+common_tasks:
+- Search the web using text, voice, or Google Lens
+- Open and manage multiple browser tabs
+- Browse the Discover feed for content recommendations
+- Access and manage browsing history
+- Save and organize bookmarks
+- View and manage downloaded files
+- Switch to Incognito mode for private browsing
+- Configure Safe Browsing and privacy settings
+- Add a webpage shortcut to the device home screen
+known_limitations:
+- Security warning screens interrupt navigation and require manual user intervention
+  to proceed
+- Location permission dialogs can overlay and obscure search suggestions on the new
+  tab page
+- Some configuration options are nested deep within the multi-level settings menu
+- Transient snackbars may disappear quickly before users can act on undo options

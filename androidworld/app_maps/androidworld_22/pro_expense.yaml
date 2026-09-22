@@ -1,0 +1,89 @@
+app: Pro Expense
+package: com.arduia.expense
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Home screen displaying financial totals for income and outcome in USD.
+  elements:
+  - text: Home
+    center:
+    - 0.2421
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 主页
+    - 首页
+    - Dashboard
+    semantic_type: tab
+  - text: Totals
+    center:
+    - 0.1185
+    - 0.154
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 总计
+    - 总额
+    - Summary
+    semantic_type: label
+  - text: INCOME
+    center:
+    - 0.1551
+    - 0.225
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 收入
+    - 进账
+    - Earnings
+    semantic_type: label
+  - text: USD
+    center:
+    - 0.162
+    - 0.2506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 美元
+    - $
+    - US Dollar
+    semantic_type: label
+  - text: OUTCOME
+    center:
+    - 0.1685
+    - 0.2946
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 支出
+    - 花费
+    - Expense
+    - Outgoing
+    semantic_type: label
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.arduia.expense
+    wait: 0.5
+  - action: launch
+    package: com.arduia.expense
+    wait: 3.0
+launch_behavior: always_home
+common_tasks:
+- Add a new expense
+- Add a new income entry
+- View financial totals for income and outcome
+- Categorize transactions
+- Review transaction history
+- Set a budget limit
+- Export financial data
+- Manage payment accounts

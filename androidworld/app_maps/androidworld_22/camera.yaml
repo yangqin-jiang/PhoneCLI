@@ -1,0 +1,99 @@
+app: Camera
+package: com.android.camera2
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Camera interface with shutter button and options menu for capturing
+    photos.
+  elements:
+  - text: Options
+    center:
+    - 0.9116
+    - 0.8025
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Settings
+    - More
+    - Menu
+    - 选项
+    - 设置
+    semantic_type: button
+  - text: Shutter
+    center:
+    - 0.5
+    - 0.9081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Capture
+    - Take Photo
+    - Shoot
+    - 快门
+    - 拍照按钮
+    semantic_type: button
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Shutter
+    center:
+    - 0.5
+    - 0.9081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - capture button
+    - take photo
+    - shoot
+    - 拍照按钮
+    semantic_type: button
+  - text: Options
+    center:
+    - 0.9116
+    - 0.8025
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - settings
+    - more
+    - menu
+    - 选项
+    semantic_type: button
+  description: Camera capture screen with a shutter button and options for taking
+    photos.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.android.camera2
+    wait: 0.5
+  - action: launch
+    package: com.android.camera2
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.android.camera2
+    wait: 0.5
+  - action: launch
+    package: com.android.camera2
+    wait: 3.0
+  - action: tap
+    x: 984
+    y: 1926
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Take a photo
+- Switch between front and rear cameras
+- Toggle flash mode
+- Access camera settings
+- View recent photos in gallery
+- Change camera mode (e.g., video, portrait)
+- Adjust zoom level

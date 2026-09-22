@@ -1,0 +1,6038 @@
+app: Joplin
+package: net.cozic.joplin
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, and app settings.
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Navigation Drawer
+    - Menu
+    - 侧边栏
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0727
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Home Icon
+    - Notes Icon
+    - 主页图标
+    semantic_type: button
+  - text: All notes
+    center:
+    - 0.4537
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 全部笔记
+    - 所有笔记
+    - Notes List
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 搜索
+    - Find
+    - 查找
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Search Icon
+    - Magnifying Glass
+    - 搜索图标
+    semantic_type: button
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 排序方式
+    - Order By
+    - Sort Options
+    semantic_type: menu_item
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.186
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 新建笔记本
+    - Add Notebook
+    - 创建笔记本
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Add Icon
+    - Plus Sign
+    - 添加图标
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Notebook Icon
+    - Folder Icon
+    - 笔记本图标
+    semantic_type: label
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 笔记本
+    - Folders
+    - Notebooks List
+    semantic_type: tab
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Trash Icon
+    - Delete Icon
+    - 回收站图标
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 回收站
+    - Deleted Notes
+    - Bin
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Tag Icon
+    - Label Icon
+    - 标签图标
+    semantic_type: label
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 新建笔记本
+    - Create Notebook
+    - 新增笔记本
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Settings Icon
+    - Gear Icon
+    - 设置图标
+    semantic_type: button
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 标签
+    - Labels
+    - Categories
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Sync Icon
+    - Refresh Icon
+    - 同步图标
+    semantic_type: button
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 设置
+    - Settings
+    - Preferences
+    - 配置
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Menu Icon
+    - More Options
+    - 更多选项
+    semantic_type: button
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 同步
+    - Sync
+    - Update Data
+    semantic_type: button
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Sidebar
+    center:
+    - 0.6708
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.6801
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: All notes
+    center:
+    - 0.8792
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.8134
+    - 0.186
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: 
+    center:
+    - 0.0727
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: All notes
+    center:
+    - 0.4537
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.8171
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 
+    center:
+    - 0.9394
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0996
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Back
+    center:
+    - 0.062
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Clear
+    center:
+    - 0.9426
+    - 0.1327
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.4437
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.444
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.4833
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.4835
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.5225
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.5227
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.596
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Sort notes by
+    center:
+    - 0.5005
+    - 0.3265
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: All notes
+    center:
+    - 0.4537
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.186
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - side menu
+    - navigation drawer
+    - hamburger menu
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0727
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - menu icon
+    - hamburger
+    - sidebar toggle
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - return
+    - previous
+    - go back
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - back arrow
+    - left arrow
+    - navigate back
+    semantic_type: button
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0819
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - save
+    - update
+    - apply changes
+    semantic_type: button
+  - text: 
+    center:
+    - 0.1727
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - save icon
+    - disk icon
+    - confirm
+    semantic_type: button
+  - text: Edit notebook
+    center:
+    - 0.6324
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - modify notebook
+    - rename notebook
+    - edit folder
+    semantic_type: button
+  - text: ▼
+    center:
+    - 0.9222
+    - 0.1923
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - dropdown
+    - expand
+    - show more
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - edit icon
+    - pencil
+    - modify
+    semantic_type: button
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - notes list
+    - all items
+    - every note
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - notes icon
+    - document list
+    - all notes
+    semantic_type: label
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - folders
+    - notebook list
+    - categories
+    semantic_type: tab
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - notebook icon
+    - folder icon
+    - stack
+    semantic_type: label
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - deleted notes
+    - recycle bin
+    - wastebasket
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.4437
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - trash icon
+    - delete bin
+    - recycle
+    semantic_type: label
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.444
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - create notebook
+    - add folder
+    - new category
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.4833
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - add icon
+    - plus
+    - create new
+    semantic_type: button
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.4835
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - labels
+    - keywords
+    - tag list
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.5225
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - tag icon
+    - hashtag
+    - label icon
+    semantic_type: label
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.5227
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - settings
+    - options
+    - preferences
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.0681
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - settings icon
+    - gear
+    - cog
+    semantic_type: button
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.596
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - sync
+    - synchronize
+    - update data
+    semantic_type: button
+  description: Sidebar navigation menu providing access to notebooks, tags, trash,
+    and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Navigation Drawer
+    - Menu
+    - 侧边栏
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Menu Icon
+    - Hamburger
+    - Open Sidebar
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Deleted Notes
+    - Bin
+    - 回收站
+    semantic_type: link
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Search Icon
+    - Magnifying Glass
+    - Find
+    semantic_type: button
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Order By
+    - Arrange
+    - 排序方式
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Sort Icon
+    - Filter
+    - Order
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - New Notebook
+    - Add Folder
+    - 新建笔记本
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Back Arrow
+    - Navigate Back
+    - 返回箭头
+    semantic_type: button
+  - text: Tags
+    center:
+    - 0.5741
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Labels
+    - Categories
+    - 标签
+    semantic_type: link
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Tag Icon
+    - Label Icon
+    - 标签图标
+    semantic_type: button
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Notes List
+    - Every Note
+    - 所有笔记
+    semantic_type: link
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Note Icon
+    - Document
+    - 笔记图标
+    semantic_type: button
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Folders
+    - Collections
+    - 笔记本
+    semantic_type: link
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Notebook Icon
+    - Folder Icon
+    - 笔记本图标
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Expand
+    - Collapse
+    - Toggle
+    semantic_type: button
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Create Notebook
+    - Add Folder
+    - 新建笔记本
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Add Icon
+    - Plus
+    - Create
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Settings Icon
+    - Gear
+    - 配置
+    semantic_type: button
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Settings
+    - Preferences
+    - 设置
+    semantic_type: link
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Sync Icon
+    - Refresh
+    - 同步
+    semantic_type: button
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Sync
+    - Update
+    - 同步
+    semantic_type: button
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, search, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Configuration
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: 
+    center:
+    - 0.0671
+    - 0.1487
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+  - text: General
+    center:
+    - 0.5491
+    - 0.1365
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+  - text: Language, date format
+    center:
+    - 0.5491
+    - 0.1604
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+  - text: 
+    center:
+    - 0.0671
+    - 0.2242
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Appearance
+    center:
+    - 0.5491
+    - 0.2119
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Themes, editor font
+    center:
+    - 0.5491
+    - 0.236
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: 
+    center:
+    - 0.0671
+    - 0.2996
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Synchronisation
+    center:
+    - 0.5491
+    - 0.2873
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Sync, encryption, proxy
+    center:
+    - 0.5491
+    - 0.3115
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: 
+    center:
+    - 0.0671
+    - 0.375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Plugins
+    center:
+    - 0.5491
+    - 0.3627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Enable or disable plugins
+    center:
+    - 0.5491
+    - 0.3869
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: 
+    center:
+    - 0.0671
+    - 0.4506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+  - text: Markdown
+    center:
+    - 0.5491
+    - 0.4385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+  - text: Media player, math, diagrams, table of contents
+    center:
+    - 0.5491
+    - 0.4627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+  - text: 
+    center:
+    - 0.0671
+    - 0.5262
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: Note
+    center:
+    - 0.5491
+    - 0.514
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: Geolocation, spellcheck, editor toolbar, image resize
+    center:
+    - 0.5491
+    - 0.5381
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: 
+    center:
+    - 0.0671
+    - 0.6017
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Note History
+    center:
+    - 0.5491
+    - 0.5894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Toggle note history, keep notes for
+    center:
+    - 0.5491
+    - 0.6135
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: 
+    center:
+    - 0.0671
+    - 0.6771
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: Tools
+    center:
+    - 0.5491
+    - 0.6648
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: Logs, profiles, sync status
+    center:
+    - 0.5491
+    - 0.689
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: 
+    center:
+    - 0.0671
+    - 0.7525
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Export
+    center:
+    - 0.5491
+    - 0.7402
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Export your data
+    center:
+    - 0.5491
+    - 0.7642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: 
+    center:
+    - 0.0671
+    - 0.8279
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: More information
+    center:
+    - 0.5491
+    - 0.8156
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: Donate, website
+    center:
+    - 0.5491
+    - 0.8398
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  description: Settings screen displaying configuration categories such as General,
+    Appearance, Synchronisation, Plugins, and Markdown.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Navigation drawer
+    - Menu
+    - 侧边栏
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Menu icon
+    - Hamburger menu
+    - Open sidebar
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Deleted notes
+    - Recycle bin
+    - 垃圾桶
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: button
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Search icon
+    - Magnifying glass
+    semantic_type: button
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - Order by
+    - Arrange notes
+    - 排序方式
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Sort icon
+    - Filter icon
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - New notebook
+    - Add folder
+    - 新建笔记本
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Back arrow
+    - Navigate back
+    semantic_type: button
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Update
+    - Apply
+    - 保存更改
+    semantic_type: button
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Save icon
+    - Checkmark
+    semantic_type: button
+  - text: Synchronisation
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Sync
+    - 同步
+    semantic_type: setting
+  - text: Synchronisation target
+    center:
+    - 0.2713
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Sync destination
+    - Cloud provider
+    - 同步目标
+    semantic_type: setting
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.146
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Dropdown
+    - Expand
+    - Select
+    semantic_type: button
+  - text: Synchronisation interval
+    center:
+    - 0.2713
+    - 0.2198
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Sync frequency
+    - Auto-sync time
+    - 同步间隔
+    semantic_type: setting
+  - text: Synchronise only over WiFi connection
+    center:
+    - 0.4435
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Sync on WiFi only
+    - Restrict sync to WiFi
+    - 仅WiFi同步
+    semantic_type: toggle
+  - text: ENCRYPTION CONFIG
+    center:
+    - 0.5
+    - 0.3577
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - Encryption settings
+    - Master password config
+    - 加密配置
+    semantic_type: setting
+  - text: '&#983903;'
+    center:
+    - 0.2926
+    - 0.4154
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Lock icon
+    - Security icon
+    - Encryption status
+    semantic_type: label
+  - text: Show Advanced Settings
+    center:
+    - 0.5269
+    - 0.4156
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Advanced options
+    - More settings
+    - 显示高级设置
+    semantic_type: button
+  description: Synchronization settings page allowing users to configure sync targets,
+    intervals, WiFi-only restrictions, and encryption options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Sidebar
+    center:
+    - 0.6708
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: 
+    center:
+    - 0.6801
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Trash
+    center:
+    - 0.8792
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.8134
+    - 0.0996
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Back
+    center:
+    - 0.6694
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: 
+    center:
+    - 0.6681
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Search
+    center:
+    - 0.8778
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: 
+    center:
+    - 0.0681
+    - 0.4437
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.444
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: 
+    center:
+    - 0.0681
+    - 0.4833
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.4835
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: 
+    center:
+    - 0.0681
+    - 0.5225
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.5227
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: 
+    center:
+    - 0.0681
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.596
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  description: Sidebar navigation menu providing access to notebooks, tags, trash,
+    search, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Clear
+    center:
+    - 0.9426
+    - 0.1331
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  description: Sidebar menu providing navigation to notes, notebooks, tags, trash,
+    search, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Sort notes by
+    center:
+    - 0.5005
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - sort order
+    - order by
+    - sorting
+    semantic_type: menu_item
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - navigation drawer
+    - side menu
+    - menu
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - menu icon
+    - hamburger
+    - sidebar toggle
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - deleted notes
+    - recycle bin
+    - trash can
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - find
+    - lookup
+    - magnifying glass
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - search icon
+    - magnifier
+    - find
+    semantic_type: button
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - new note
+    - add note
+    - create
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - new notebook
+    - add notebook
+    - create folder
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - return
+    - previous
+    - go back
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - back arrow
+    - return icon
+    - navigate back
+    semantic_type: button
+  - text: Clear
+    center:
+    - 0.9426
+    - 0.1331
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - reset
+    - delete text
+    - empty
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - clear icon
+    - close
+    - cancel
+    semantic_type: button
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - notes
+    - all items
+    - home
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - filter
+    - funnel
+    - sort
+    semantic_type: button
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - folders
+    - collections
+    - notebooks list
+    semantic_type: tab
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - trash icon
+    - delete
+    - bin
+    semantic_type: label
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - add
+    - plus
+    - new
+    semantic_type: button
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - create notebook
+    - add folder
+    - new collection
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - settings
+    - gear
+    - options
+    semantic_type: button
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - labels
+    - categories
+    - tag list
+    semantic_type: tab
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - tag icon
+    - label icon
+    - hashtag
+    semantic_type: label
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - settings
+    - preferences
+    - options
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - sync icon
+    - refresh
+    - update
+    semantic_type: button
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - sync
+    - synchronize
+    - update data
+    semantic_type: button
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, search, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Select parent notebook
+    center:
+    - 0.513
+    - 0.2385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: Edit notebook
+    center:
+    - 0.6324
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: ▼
+    center:
+    - 0.9222
+    - 0.1927
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+  description: Sidebar menu for navigating notebooks, tags, and settings, with options
+    to create new notebooks or synchronize data.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Sidebar
+    center:
+    - 0.6708
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6801
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.8792
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.8134
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.6694
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6681
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Tags
+    center:
+    - 0.8778
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar navigation menu providing access to notebooks, tags, trash,
+    and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Sort notes by
+    center:
+    - 0.5005
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Tags
+    center:
+    - 0.5741
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, search, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Sort notes by
+    center:
+    - 0.5005
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort order
+    - note sorting
+    - order notes
+    semantic_type: menu_item
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - navigation drawer
+    - side menu
+    - hamburger menu
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu icon
+    - hamburger
+    - sidebar toggle
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - deleted notes
+    - recycle bin
+    - trash can
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - magnifying glass
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search icon
+    - magnifier
+    - find
+    semantic_type: button
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new notebook
+    - add folder
+    - create directory
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new notebook
+    - add notebook
+    - create folder
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - return
+    - previous
+    - go back
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back arrow
+    - return icon
+    - navigate back
+    semantic_type: button
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save
+    - update
+    - apply changes
+    semantic_type: button
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save icon
+    - disk
+    - floppy disk
+    semantic_type: button
+  - text: Configuration
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - settings
+    - preferences
+    - options
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.0671
+    - 0.1487
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - settings icon
+    - gear
+    - cog
+    semantic_type: button
+  - text: General
+    center:
+    - 0.5491
+    - 0.1365
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - general settings
+    - basic
+    - common
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.2242
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - appearance icon
+    - theme
+    - display
+    semantic_type: label
+  - text: Appearance
+    center:
+    - 0.5491
+    - 0.2119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - theme
+    - look and feel
+    - display settings
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.2996
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync icon
+    - refresh
+    - synchronize
+    semantic_type: label
+  - text: Synchronisation
+    center:
+    - 0.5491
+    - 0.2873
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync
+    - synchronization
+    - cloud sync
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - plugins icon
+    - extensions
+    - addons
+    semantic_type: label
+  - text: Plugins
+    center:
+    - 0.5491
+    - 0.3627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - extensions
+    - addons
+    - modules
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.4506
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - markdown icon
+    - code
+    - text format
+    semantic_type: label
+  - text: Markdown
+    center:
+    - 0.5491
+    - 0.4385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - md
+    - markup
+    - text formatting
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.5262
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - note icon
+    - document
+    - file
+    semantic_type: label
+  - text: Note
+    center:
+    - 0.5491
+    - 0.514
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - notes
+    - entry
+    - document
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.6017
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - history icon
+    - clock
+    - time
+    semantic_type: label
+  - text: Note History
+    center:
+    - 0.5491
+    - 0.5894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - version history
+    - revisions
+    - past versions
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.6771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tools icon
+    - wrench
+    - utilities
+    semantic_type: label
+  - text: Tools
+    center:
+    - 0.5491
+    - 0.6648
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - utilities
+    - advanced
+    - maintenance
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.7525
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - export icon
+    - share
+    - download
+    semantic_type: label
+  - text: Export
+    center:
+    - 0.5491
+    - 0.7402
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save as
+    - download
+    - backup
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0671
+    - 0.8279
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - info icon
+    - about
+    - help
+    semantic_type: label
+  - text: More information
+    center:
+    - 0.5491
+    - 0.8156
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - about
+    - details
+    - info
+    semantic_type: link
+  description: Settings screen displaying configuration categories such as General,
+    Appearance, Synchronisation, and Plugins.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0535
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.059
+    fixed: true
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0996
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0819
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+  - text: Configuration
+    center:
+    - 0.5718
+    - 0.0821
+    fixed: true
+    found_at_scroll: 0
+  - text: Search...
+    center:
+    - 0.5
+    - 0.141
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar navigation menu providing access to Trash, Search, sorting
+    options, notebook creation, and configuration settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: General
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Language
+    center:
+    - 0.2713
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.146
+    fixed: false
+    found_at_scroll: 0
+  - text: Date format
+    center:
+    - 0.2713
+    - 0.2198
+    fixed: false
+    found_at_scroll: 0
+  - text: Time format
+    center:
+    - 0.2713
+    - 0.2931
+    fixed: false
+    found_at_scroll: 0
+  - text: Use biometrics to secure access to the app (Beta)
+    center:
+    - 0.4435
+    - 0.3692
+    fixed: false
+    found_at_scroll: 0
+  - text: Automatically delete notes in the trash after a number of days
+    center:
+    - 0.4435
+    - 0.5204
+    fixed: false
+    found_at_scroll: 0
+  - text: Keep notes in the trash for
+    center:
+    - 0.2713
+    - 0.5885
+    fixed: false
+    found_at_scroll: 0
+  description: General settings page allowing users to configure language, date/time
+    formats, biometric security, and trash retention policies.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Appearance
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Theme
+    center:
+    - 0.2713
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.146
+    fixed: false
+    found_at_scroll: 0
+  - text: Automatically switch theme to match system theme
+    center:
+    - 0.4435
+    - 0.2225
+    fixed: false
+    found_at_scroll: 0
+  - text: Editor font size
+    center:
+    - 0.2713
+    - 0.2902
+    fixed: false
+    found_at_scroll: 0
+  - text: Editor font
+    center:
+    - 0.2713
+    - 0.3556
+    fixed: false
+    found_at_scroll: 0
+  description: Appearance settings screen allowing users to customize theme, font
+    size, and font style.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - navigation drawer
+    - side menu
+    - 侧边栏
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu icon
+    - hamburger
+    - sidebar toggle
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recycle Bin
+    - Deleted Notes
+    - 垃圾桶
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search icon
+    - magnifying glass
+    semantic_type: button
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order by
+    - Arrange notes
+    - 排序方式
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort icon
+    - filter icon
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New Notebook
+    - Add Notebook
+    - 新建笔记本
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back arrow
+    - navigate back
+    semantic_type: button
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save
+    - Update
+    - 保存更改
+    semantic_type: button
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save icon
+    - disk icon
+    semantic_type: button
+  - text: Plugins
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Extensions
+    - Add-ons
+    - 插件
+    semantic_type: setting
+  - text: search
+    center:
+    - 0.0634
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: clear
+    center:
+    - 0.9375
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - reset
+    - delete text
+    - 清除
+    semantic_type: button
+  - text: Install from file
+    center:
+    - 0.5
+    - 0.2144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Load plugin
+    - Import plugin
+    - 从文件安装
+    semantic_type: button
+  - text: '&#983903;'
+    center:
+    - 0.2926
+    - 0.2558
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - install icon
+    - download icon
+    semantic_type: button
+  - text: Show Advanced Settings
+    center:
+    - 0.5269
+    - 0.256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Advanced Options
+    - Expert Settings
+    - 显示高级设置
+    semantic_type: toggle
+  description: Plugins management screen allowing users to search, install from file,
+    and configure advanced settings for Joplin plugins.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: true
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: true
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: true
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: true
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: true
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+  - text: Markdown
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+  - text: Enable soft breaks
+    center:
+    - 0.4435
+    - 0.1427
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable typographer support
+    center:
+    - 0.4435
+    - 0.2073
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable Linkify
+    center:
+    - 0.4435
+    - 0.2719
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable math expressions
+    center:
+    - 0.4435
+    - 0.3365
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable Fountain syntax support
+    center:
+    - 0.4435
+    - 0.401
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable Mermaid diagrams support
+    center:
+    - 0.4435
+    - 0.4656
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable audio player
+    center:
+    - 0.4435
+    - 0.5302
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable video player
+    center:
+    - 0.4435
+    - 0.5948
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable ==mark== syntax
+    center:
+    - 0.4435
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable footnotes
+    center:
+    - 0.4435
+    - 0.724
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable table of contents extension
+    center:
+    - 0.4435
+    - 0.7885
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable ~sub~ syntax
+    center:
+    - 0.4435
+    - 0.8531
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable ^sup^ syntax
+    center:
+    - 0.4435
+    - 0.9177
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable deflist syntax
+    center:
+    - 0.4435
+    - 0.9721
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable abbreviation syntax
+    center:
+    - 0.4435
+    - 0.7473
+    fixed: false
+    found_at_scroll: 1
+  - text: Enable markdown emoji
+    center:
+    - 0.4435
+    - 0.8119
+    fixed: false
+    found_at_scroll: 1
+  - text: Enable ++insert++ syntax
+    center:
+    - 0.4435
+    - 0.8765
+    fixed: false
+    found_at_scroll: 1
+  - text: Enable multimarkdown table extension
+    center:
+    - 0.4435
+    - 0.941
+    fixed: false
+    found_at_scroll: 1
+  description: Settings screen for configuring Markdown rendering options with various
+    toggle switches.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Note
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save geo-location with notes
+    center:
+    - 0.4435
+    - 0.1427
+    fixed: false
+    found_at_scroll: 0
+  - text: Use the plain text editor
+    center:
+    - 0.4435
+    - 0.2073
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable spellcheck in the text editor
+    center:
+    - 0.4435
+    - 0.3452
+    fixed: false
+    found_at_scroll: 0
+  - text: Enable the Markdown toolbar
+    center:
+    - 0.4435
+    - 0.4098
+    fixed: false
+    found_at_scroll: 0
+  - text: 'Resize large images:'
+    center:
+    - 0.2713
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+  - text: Always ask
+    center:
+    - 0.7032
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+  - text: Shrink large images before adding them to notes.
+    center:
+    - 0.5
+    - 0.5244
+    fixed: false
+    found_at_scroll: 0
+  - text: Voice typing language files (URL)
+    center:
+    - 0.2667
+    - 0.5879
+    fixed: false
+    found_at_scroll: 0
+  - text: Leave it blank to download the language files from the default website
+    center:
+    - 0.5
+    - 0.651
+    fixed: false
+    found_at_scroll: 0
+  description: Settings screen for configuring note-taking preferences such as geo-location,
+    editor type, spellcheck, and image resizing.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Navigation Drawer
+    - Menu
+    - 侧边栏
+    semantic_type: menu_item
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu Icon
+    - Hamburger
+    - Drawer Toggle
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recycle Bin
+    - Deleted Notes
+    - 垃圾桶
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search Icon
+    - Magnifying Glass
+    semantic_type: button
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order By
+    - Arrange Notes
+    - 排序方式
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort Icon
+    - Filter Icon
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New Notebook
+    - Add Folder
+    - 新建笔记本
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back Arrow
+    - Navigate Back
+    semantic_type: button
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Update
+    - Apply
+    - 保存更改
+    semantic_type: button
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save Icon
+    - Checkmark
+    semantic_type: button
+  - text: Note History
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Version History
+    - Revisions
+    - 笔记历史
+    semantic_type: link
+  - text: Enable note history
+    center:
+    - 0.4435
+    - 0.1427
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Turn on History
+    - Activate Versions
+    - 启用笔记历史
+    semantic_type: toggle
+  - text: Keep note history for
+    center:
+    - 0.2713
+    - 0.2035
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - History Retention
+    - Duration
+    - 保留时长
+    semantic_type: setting
+  description: Settings screen for configuring note history retention and managing
+    notebook actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Tools
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: MANAGE PROFILES
+    center:
+    - 0.5
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+  - text: FIX SEARCH INDEX
+    center:
+    - 0.5
+    - 0.3644
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar menu providing navigation to Trash and Search, options for
+    sorting notes, creating notebooks, and accessing tools like profile management
+    and search index fixing.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Export
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: EXPORT ALL NOTES AS JEX
+    center:
+    - 0.5
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+  - text: Share a copy of all notes in a file format that can be imported by Joplin
+      on a computer.
+    center:
+    - 0.5
+    - 0.2008
+    fixed: false
+    found_at_scroll: 0
+  - text: EXPORT DEBUG REPORT
+    center:
+    - 0.5
+    - 0.2735
+    fixed: false
+    found_at_scroll: 0
+  - text: EXPORT PROFILE
+    center:
+    - 0.5
+    - 0.3465
+    fixed: false
+    found_at_scroll: 0
+  - text: 'For debugging purpose only: export your profile to an external SD card.'
+    center:
+    - 0.5
+    - 0.3962
+    fixed: false
+    found_at_scroll: 0
+  description: Export settings screen offering options to export all notes as JEX,
+    share a copy, or export debug profile.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: More information
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: '- Storage: to allow attaching files to notes and to enable filesystem synchronisation.'
+    center:
+    - 0.4935
+    - 0.2246
+    fixed: false
+    found_at_scroll: 0
+  - text: '- Camera: to allow taking a picture and attaching it to a note.'
+    center:
+    - 0.4935
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+  - text: '- Location: to allow attaching geo-location information to a note.'
+    center:
+    - 0.4935
+    - 0.335
+    fixed: false
+    found_at_scroll: 0
+  - text: Make a donation
+    center:
+    - 0.1866
+    - 0.4033
+    fixed: false
+    found_at_scroll: 0
+  - text: Joplin website
+    center:
+    - 0.1676
+    - 0.4621
+    fixed: false
+    found_at_scroll: 0
+  - text: Privacy Policy
+    center:
+    - 0.1625
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar menu providing navigation to Trash and Search, options to create
+    notebooks or sort notes, and links for permissions info, donations, and policies.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Sidebar
+    center:
+    - 0.6708
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6801
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.8792
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.8134
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.6694
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6681
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.7898
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.7801
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronisation
+    center:
+    - 0.9361
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronisation target
+    center:
+    - 0.8218
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronisation interval
+    center:
+    - 0.8218
+    - 0.2198
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronise only over WiFi connection
+    center:
+    - 0.8218
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+  - text: ENCRYPTION CONFIG
+    center:
+    - 0.8315
+    - 0.3577
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#983903;'
+    center:
+    - 0.9
+    - 0.4154
+    fixed: false
+    found_at_scroll: 0
+  - text: Show Advanced Settings
+    center:
+    - 0.9708
+    - 0.4156
+    fixed: false
+    found_at_scroll: 0
+  description: Synchronization settings page allowing users to configure sync targets,
+    intervals, WiFi-only restrictions, and encryption options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Sort notes by
+    center:
+    - 0.5005
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronisation
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronisation target
+    center:
+    - 0.2713
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.146
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronisation interval
+    center:
+    - 0.2713
+    - 0.2198
+    fixed: false
+    found_at_scroll: 0
+  - text: ENCRYPTION CONFIG
+    center:
+    - 0.5
+    - 0.3577
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#983903;'
+    center:
+    - 0.2926
+    - 0.4154
+    fixed: false
+    found_at_scroll: 0
+  - text: Show Advanced Settings
+    center:
+    - 0.5269
+    - 0.4156
+    fixed: false
+    found_at_scroll: 0
+  description: Synchronization settings screen allowing users to configure sync targets,
+    intervals, and encryption options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 1
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 1
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 1
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 1
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 1
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 1
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 1
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 1
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: false
+    found_at_scroll: 1
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+  - text: Synchronisation
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: false
+    found_at_scroll: 1
+  - text: Synchronisation target
+    center:
+    - 0.2713
+    - 0.1465
+    fixed: false
+    found_at_scroll: 1
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.146
+    fixed: false
+    found_at_scroll: 1
+  - text: Synchronisation interval
+    center:
+    - 0.2713
+    - 0.2198
+    fixed: false
+    found_at_scroll: 1
+  - text: Synchronise only over WiFi connection
+    center:
+    - 0.4435
+    - 0.2894
+    fixed: false
+    found_at_scroll: 1
+  - text: ENCRYPTION CONFIG
+    center:
+    - 0.5
+    - 0.3577
+    fixed: false
+    found_at_scroll: 1
+  - text: '&#983903;'
+    center:
+    - 0.2926
+    - 0.4154
+    fixed: false
+    found_at_scroll: 1
+  - text: Show Advanced Settings
+    center:
+    - 0.5269
+    - 0.4156
+    fixed: false
+    found_at_scroll: 1
+  description: Synchronization settings page allowing users to configure sync targets,
+    intervals, WiFi-only restrictions, and encryption options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Encryption Config
+    center:
+    - 0.5741
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: https://joplinapp.org/help/apps/sync/e2ee
+    center:
+    - 0.4991
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+  - text: Status
+    center:
+    - 0.5
+    - 0.2502
+    fixed: false
+    found_at_scroll: 0
+  - text: ENABLE ENCRYPTION
+    center:
+    - 0.5
+    - 0.3269
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, search, and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Sidebar
+    center:
+    - 0.0634
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Navigation Drawer
+    - Menu
+    - 侧边栏
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0727
+    - 0.0592
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu Icon
+    - Hamburger
+    - Open Sidebar
+    semantic_type: button
+  - text: Trash
+    center:
+    - 0.4537
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Deleted Notes
+    - Recycle Bin
+    - 废纸篓
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8176
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: input
+  - text: 
+    center:
+    - 0.8171
+    - 0.0592
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Search Icon
+    - Magnifying Glass
+    semantic_type: button
+  - text: Sort notes by
+    center:
+    - 0.9394
+    - 0.0537
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Order By
+    - Arrange Notes
+    - 排序方式
+    semantic_type: setting
+  - text: 
+    center:
+    - 0.9394
+    - 0.0592
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Sort Icon
+    - Filter Icon
+    semantic_type: button
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.5
+    - 0.0998
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New Notebook
+    - Add Folder
+    - 新建笔记本
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.062
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: 
+    center:
+    - 0.0606
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back Arrow
+    - Navigate Back
+    semantic_type: button
+  - text: Save changes
+    center:
+    - 0.1824
+    - 0.0823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Update
+    - Apply
+    - 保存更改
+    semantic_type: button
+  - text: 
+    center:
+    - 0.1727
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Save Icon
+    - Checkmark
+    semantic_type: button
+  - text: Synchronisation
+    center:
+    - 0.5718
+    - 0.0825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Sync
+    - Data Sync
+    - 同步
+    semantic_type: setting
+  - text: Synchronisation target
+    center:
+    - 0.2713
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sync Target
+    - Cloud Service
+    - 同步目标
+    semantic_type: setting
+  - text: ▼
+    center:
+    - 0.9204
+    - 0.146
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dropdown
+    - Expand
+    - Select
+    semantic_type: button
+  - text: Synchronisation interval
+    center:
+    - 0.2713
+    - 0.2198
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sync Frequency
+    - Auto-sync Time
+    - 同步间隔
+    semantic_type: setting
+  - text: Synchronise only over WiFi connection
+    center:
+    - 0.4435
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - WiFi Only Sync
+    - No Mobile Data Sync
+    - 仅WiFi同步
+    semantic_type: toggle
+  - text: ENCRYPTION CONFIG
+    center:
+    - 0.5
+    - 0.3577
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Encryption Settings
+    - E2EE Config
+    - 加密配置
+    semantic_type: setting
+  - text: '&#983901;'
+    center:
+    - 0.3
+    - 0.4154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lock Icon
+    - Security
+    - Encryption Status
+    semantic_type: label
+  - text: Hide Advanced Settings
+    center:
+    - 0.5273
+    - 0.4156
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Collapse Advanced
+    - Show Less
+    - 隐藏高级设置
+    semantic_type: button
+  - text: Attachment download behaviour
+    center:
+    - 0.2713
+    - 0.4967
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Download Attachments
+    - Media Sync Policy
+    - 附件下载行为
+    semantic_type: setting
+  - text: Max concurrent connections
+    center:
+    - 0.2713
+    - 0.6579
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Connection Limit
+    - Parallel Threads
+    - 最大并发连接数
+    semantic_type: setting
+  - text: Proxy enabled
+    center:
+    - 0.4435
+    - 0.7294
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Use Proxy
+    - Enable Proxy
+    - 启用代理
+    semantic_type: toggle
+  - text: Proxy URL
+    center:
+    - 0.2667
+    - 0.8056
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Proxy Address
+    - Server URL
+    - 代理地址
+    semantic_type: input
+  - text: Proxy timeout (seconds)
+    center:
+    - 0.2713
+    - 0.9081
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Timeout Duration
+    - Connection Timeout
+    - 代理超时时间
+    semantic_type: input
+  - text: Fail-safe
+    center:
+    - 0.4435
+    - 0.9656
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Safety Mode
+    - Fallback
+    - 故障保护
+    semantic_type: setting
+  description: Synchronization settings page allowing users to configure sync targets,
+    intervals, encryption, and proxy options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Sidebar
+    center:
+    - 0.6708
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6801
+    - 0.0592
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.8792
+    - 0.0537
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.8134
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+  - text: Back
+    center:
+    - 0.6694
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6681
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8778
+    - 0.0825
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+  - text: All notes
+    center:
+    - 0.3343
+    - 0.0894
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar navigation menu providing access to Trash, Notebooks, Tags,
+    and synchronization settings.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 883
+    y: 196
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 1014
+    y: 196
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 446
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 1980
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2250
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 883
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 68
+    y: 128
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 883
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 883
+    y: 128
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 883
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 1014
+    y: 128
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 996
+    y: 462
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 1980
+    wait: 1.5
+  - action: tap
+    x: 68
+    y: 129
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 1980
+    wait: 1.5
+  - action: tap
+    x: 1014
+    y: 129
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 1014
+    y: 129
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 1014
+    y: 142
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 357
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 538
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 900
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 1082
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 1263
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 1444
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 1625
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 1806
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2074
+    wait: 1.5
+  - action: tap
+    x: 73
+    y: 1987
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2250
+    wait: 1.5
+  - action: tap
+    x: 68
+    y: 129
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2250
+    wait: 1.5
+  - action: tap
+    x: 1014
+    y: 129
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2250
+    wait: 1.5
+  - action: tap
+    x: 994
+    y: 350
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2250
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 858
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 68
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 2250
+    wait: 1.5
+  - action: tap
+    x: 316
+    y: 997
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: net.cozic.joplin
+    wait: 0.5
+  - action: launch
+    package: net.cozic.joplin
+    wait: 3.0
+  - action: tap
+    x: 883
+    y: 196
+    wait: 1.5
+  - action: tap
+    x: 68
+    y: 128
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 214
+    wait: 1.5
+launch_behavior: resume_last
+common_tasks:
+- Create a new note
+- Organize notes into notebooks
+- Tag notes for categorization
+- Search for specific notes or content
+- Synchronize notes with cloud storage
+- Configure synchronization settings
+- Customize app appearance and theme
+- Manage installed plugins
+- Export notes to JEX format
+- Restore deleted notes from trash
+known_limitations:
+- Sidebar navigation menu is heavily used and may require multiple taps to reach deep
+  settings
+- Plugin installation requires manual file selection or searching within a dedicated
+  screen
+- Synchronization configuration involves multiple sub-screens for targets, intervals,
+  and encryption
+- Some advanced settings like Markdown rendering and note history are buried in separate
+  configuration pages

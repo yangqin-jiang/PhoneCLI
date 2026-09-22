@@ -1,0 +1,9527 @@
+app: Dialer
+package: com.google.android.dialer
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main dialer screen featuring a keypad, search bar, and tabs for Favorites,
+    Recents, and Contacts.
+  elements:
+  - text: Add a favorite
+    center:
+    - 0.5005
+    - 0.6208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Choose a contact
+    center:
+    - 0.3602
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Select contact
+    - Pick contact
+    - 选择联系人
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.9412
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Find contacts
+    - Contact search
+    - 搜索联系人
+    semantic_type: input
+  description: Contact selection screen with a search bar and a list of contacts to
+    choose from.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - delete
+    - del
+    - remove
+    - 退格
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - '1'
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - '2'
+    - two
+    - abc
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - '2'
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - abc
+    - letters
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - '3'
+    - three
+    - def
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - '3'
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - def
+    - letters
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - '4'
+    - four
+    - ghi
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - '4'
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - ghi
+    - letters
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - '5'
+    - five
+    - jkl
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - '5'
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - jkl
+    - letters
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - '6'
+    - six
+    - mno
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - '6'
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - mno
+    - letters
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - '7'
+    - seven
+    - pqrs
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - '7'
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - pqrs
+    - letters
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - '8'
+    - eight
+    - tuv
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - '8'
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - tuv
+    - letters
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - '9'
+    - nine
+    - wxyz
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - '9'
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - wxyz
+    - letters
+    semantic_type: label
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    - operator
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - plus
+    - international
+    - add
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - hash
+    - pound
+    - sharp
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - phone
+    - dial
+    - call button
+    - 拨打
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - more
+    - options
+    - 更多选项
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - create contact
+    - 新建联系人
+    semantic_type: menu_item
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_19
+    aliases:
+    - add to existing
+    - save to contact
+    - 添加到联系人
+    semantic_type: menu_item
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: menu_item
+  description: Numeric keypad screen for dialing phone numbers with digits 0-9, special
+    characters, and a backspace button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 搜索联系人和地点
+    - search
+    - find contacts
+    semantic_type: input
+  - text: Dismiss
+    center:
+    - 0.6014
+    - 0.2408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 关闭
+    - cancel
+    - ignore
+    semantic_type: button
+  - text: Allow
+    center:
+    - 0.8347
+    - 0.2408
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 允许
+    - grant permission
+    - accept
+    semantic_type: button
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 开始语音搜索
+    - voice input
+    - speak to search
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 更多选项
+    - menu
+    - overflow menu
+    semantic_type: button
+  - text: Add a favorite
+    center:
+    - 0.5005
+    - 0.6713
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 添加收藏
+    - add to favorites
+    - star contact
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.9169
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 拨号盘
+    - keypad
+    - dial pad
+    - number pad
+    semantic_type: button
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - 清除文本
+    - delete text
+    - clear input
+    semantic_type: button
+  description: Dialer keypad screen with search bar, voice search, and options to
+    add favorites or manage contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Google icon
+    - G logo
+    semantic_type: label
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - EN-US
+    - American English
+    - 英语(美国)
+    semantic_type: label
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - dial pad
+    - number pad
+    - keyboard
+    - 拨号盘
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Voice search
+    - Microphone
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Starred
+    - 收藏
+    - 常用联系人
+    semantic_type: tab
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Call history
+    - Recent calls
+    - 通话记录
+    semantic_type: tab
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Address book
+    - People
+    - 联系人
+    semantic_type: tab
+  description: Main dialer screen featuring a keypad, search bar, and navigation tabs
+    for Favorites, Recents, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Call history
+    center:
+    - 0.7134
+    - 0.0975
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Settings
+    center:
+    - 0.7134
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: Help &amp; feedback
+    center:
+    - 0.7134
+    - 0.2025
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Add a favorite
+    center:
+    - 0.5005
+    - 0.6208
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_21
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+  description: Main dialer screen featuring a keypad, search bar, and navigation tabs
+    for Recents, Contacts, and Favorites.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Make a call
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - call
+    - dial
+    - phone
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - keypad
+    - dial pad
+    - number pad
+    - 键盘
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - search
+    - find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - voice search
+    - speech search
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - more
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - favourites
+    - starred
+    - 收藏
+    semantic_type: tab
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - recent calls
+    - call history
+    - 通话记录
+    semantic_type: tab
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - address book
+    - people
+    - 联系人
+    semantic_type: tab
+  description: Main dialer screen featuring a numeric keypad for making calls, a search
+    bar, and navigation tabs for Favorites, Recents, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Create new contact
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Keypad
+    - Dial pad
+    - Number pad
+    - 拨号盘
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Voice search
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Starred
+    - 收藏
+    - 常用联系人
+    semantic_type: tab
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Call history
+    - Recent calls
+    - 通话记录
+    semantic_type: tab
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Address book
+    - Phonebook
+    - 通讯录
+    - 联系人
+    semantic_type: tab
+  description: Main dialer screen featuring a keypad for making calls, a search bar
+    for contacts and places, and navigation tabs for Favorites, Recents, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.5778
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Clear search
+    center:
+    - 0.9319
+    - 0.0881
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_34
+    aliases:
+    - Clear
+    - Delete search
+    - 清除搜索
+    semantic_type: button
+  description: Contact search interface allowing users to find contacts by typing
+    a query, with options to navigate back or clear the search.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    - 添加联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - update contact
+    - append to contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    - 发消息
+    semantic_type: button
+  description: Context menu for a phone number offering actions such as calling, creating
+    or adding to a contact, and sending a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - save to contact
+    - update contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  description: Context menu for a phone number offering actions such as calling, creating
+    or adding to a contact, and sending a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    - 添加联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - save to contact
+    - update contact
+    - 添加到联系人
+    - 保存至联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    - 发消息
+    semantic_type: button
+  description: Context menu for a phone number offering actions such as calling, creating
+    or adding to a contact, and sending a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - save to contact
+    - update contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  description: Context menu for a phone number offering actions such as calling, creating
+    or adding to a contact, and sending a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_13
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    - 添加联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - save to contact
+    - update contact
+    - 添加到联系人
+    - 保存至联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_37
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    - 发消息
+    semantic_type: button
+  description: Context menu for a phone number offering actions such as calling, creating
+    or adding to a contact, and sending a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - save to contact
+    - update contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  description: Context menu for a phone number offering actions such as calling, creating
+    or adding to a contact, and sending a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - more
+    - ⋮
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - delete
+    - remove
+    - ⌫
+    - erase
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - '2'
+    - dial 2
+    - key 2
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - '3'
+    - dial 3
+    - key 3
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - '4'
+    - dial 4
+    - key 4
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - '5'
+    - dial 5
+    - key 5
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - '6'
+    - dial 6
+    - key 6
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - '7'
+    - dial 7
+    - key 7
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - '8'
+    - dial 8
+    - key 8
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - '9'
+    - dial 9
+    - key 9
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - letters
+    - alphabetic
+    semantic_type: label
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - plus
+    - international prefix
+    - '00'
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - hash
+    - pound
+    - octothorpe
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - phone
+    - dial
+    - make call
+    - 📞
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - new contact
+    - add contact
+    - create contact
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - save to contact
+    - update contact
+    - assign to contact
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - message
+    semantic_type: button
+  description: Dialer keypad screen for entering phone numbers with options to call,
+    create new contact, add to existing contact, or send a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - overflow
+    - more
+    - ⋮
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - delete
+    - remove
+    - ⌫
+    - clear
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - add
+    - positive sign
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - number sign
+    - octothorpe
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - phone
+    - dial
+    - make call
+    - voice call
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - new contact
+    - add contact
+    - create contact
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - add to existing
+    - link to contact
+    - append to contact
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - message
+    semantic_type: button
+  description: Dialer keypad screen with options to call, create or add to contacts,
+    and send a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_17
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.5
+    - 0.5283
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - 井号
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - remove
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1,
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - ABC
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 2,ABC
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 2,ABC
+    - letters
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - DEF
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 3,DEF
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 3,DEF
+    - letters
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - GHI
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 4,GHI
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 4,GHI
+    - letters
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - JKL
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 5,JKL
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 5,JKL
+    - letters
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - MNO
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 6,MNO
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 6,MNO
+    - letters
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - PQRS
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 7,PQRS
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 7,PQRS
+    - letters
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - TUV
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 8,TUV
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 8,TUV
+    - letters
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - WXYZ
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 9,WXYZ
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 9,WXYZ
+    - letters
+    semantic_type: label
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - add
+    - 加号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: menu_item
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - save to contact
+    - 添加到联系人
+    semantic_type: menu_item
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: menu_item
+  description: Dialer keypad screen for entering phone numbers with numeric buttons
+    and a backspace option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Add to contacts
+    center:
+    - 0.1847
+    - 0.5437
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create contact
+    - New contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.9023
+    - 0.5437
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - Store
+    - Confirm
+    semantic_type: button
+  - text: First name
+    center:
+    - 0.4954
+    - 0.6294
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Given name
+    - 名
+    - Forename
+    semantic_type: input
+  - text: Last name
+    center:
+    - 0.4954
+    - 0.7065
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Surname
+    - Family name
+    - 姓
+    semantic_type: input
+  - text: Mobile
+    center:
+    - 0.3347
+    - 0.8694
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Phone
+    - Cell
+    - 手机号码
+    - Telephone
+    semantic_type: input
+  - text: Show dropdown menu
+    center:
+    - 0.4843
+    - 0.8692
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Expand
+    - More options
+    - 显示下拉菜单
+    - Toggle menu
+    semantic_type: button
+  - text: More details
+    center:
+    - 0.1574
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional info
+    - 更多详情
+    - Expand fields
+    semantic_type: button
+  - text: Add to existing
+    center:
+    - 0.8208
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Link to contact
+    - Merge
+    - 添加到现有联系人
+    semantic_type: button
+  description: Contact creation screen allowing users to input name and mobile number
+    details with options to save or add to existing contacts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Add to existing contact
+    center:
+    - 0.5097
+    - 0.54
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Link to contact
+    - Merge with contact
+    - 添加到现有联系人
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.5925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find contact
+    - Lookup
+    - 搜索联系人
+    - 查找联系人
+    semantic_type: input
+  - text: Create a new contact
+    center:
+    - 0.5
+    - 0.6525
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New contact
+    - Add contact
+    - 新建联系人
+    - 添加联系人
+    semantic_type: button
+  description: Contact management screen allowing users to add a number to an existing
+    contact, search contacts, or create a new contact.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Dial number
+    center:
+    - 0.7264
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 拨号
+    - call
+    - phone number
+    - keypad
+    semantic_type: input
+  - text: Add Person
+    center:
+    - 0.844
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加联系人
+    - add contact
+    - new contact
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Attachment
+    center:
+    - 0.0685
+    - 0.6058
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 附件
+    - attach file
+    - add media
+    semantic_type: button
+  - text: Type a message…
+    center:
+    - 0.5
+    - 0.6058
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 输入消息
+    - enter text
+    - message field
+    semantic_type: input
+  - text: SMS
+    center:
+    - 0.9315
+    - 0.6058
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 短信
+    - text message
+    - send sms
+    semantic_type: button
+  description: Messaging interface for composing and sending an SMS with options to
+    add contacts or attachments.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+  - text: Search contacts &amp; places
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: Add a favorite
+    center:
+    - 0.5005
+    - 0.6713
+    fixed: true
+    found_at_scroll: 0
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.9169
+    fixed: true
+    found_at_scroll: 0
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  description: Dialer keypad screen with search bar, voice search, and options to
+    add favorites or clear text.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索联系人和地点
+    - find contacts
+    - search bar
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 语音搜索
+    - voice input
+    - speak to search
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Add a favorite
+    center:
+    - 0.5005
+    - 0.6713
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加收藏
+    - star contact
+    - add to favorites
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.9169
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 键盘
+    - dial pad
+    - number pad
+    - 拨号盘
+    semantic_type: button
+  description: Dialer keypad screen with search bar, voice search, and options to
+    add favorites or access more settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: Close
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  - text: Call history
+    center:
+    - 0.2861
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recents
+    - Recent calls
+    - 通话记录
+    semantic_type: tab
+  - text: All
+    center:
+    - 0.25
+    - 0.1496
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 全部
+    - 所有通话
+    semantic_type: tab
+  - text: Missed
+    center:
+    - 0.75
+    - 0.1496
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Missed calls
+    - 未接来电
+    semantic_type: tab
+  description: Call history screen displaying tabs to filter calls by All or Missed
+    status.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2731
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: label
+  - text: ASSISTIVE
+    center:
+    - 0.5681
+    - 0.1604
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 辅助功能
+    - assistive features
+    semantic_type: label
+  - text: Caller ID &amp; spam
+    center:
+    - 0.3222
+    - 0.21
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 来电显示与垃圾电话
+    - caller id and spam
+    - spam protection
+    semantic_type: menu_item
+  - text: GENERAL
+    center:
+    - 0.5681
+    - 0.2771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通用
+    - general settings
+    semantic_type: label
+  - text: Accessibility
+    center:
+    - 0.2861
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 无障碍
+    - accessibility settings
+    semantic_type: menu_item
+  - text: Assisted dialing
+    center:
+    - 0.3144
+    - 0.3867
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 辅助拨号
+    - assisted dial
+    semantic_type: menu_item
+  - text: Blocked numbers
+    center:
+    - 0.3296
+    - 0.4467
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 阻止的号码
+    - blocked contacts
+    - blacklist
+    semantic_type: menu_item
+  - text: Calls
+    center:
+    - 0.2181
+    - 0.5067
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通话
+    - call settings
+    semantic_type: menu_item
+  - text: Display options
+    center:
+    - 0.3111
+    - 0.5667
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示选项
+    - display settings
+    semantic_type: menu_item
+  - text: Nearby places
+    center:
+    - 0.3028
+    - 0.6267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 附近地点
+    - nearby locations
+    semantic_type: menu_item
+  - text: Quick responses
+    center:
+    - 0.3236
+    - 0.6867
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 快速回复
+    - quick reply
+    semantic_type: menu_item
+  - text: Sounds and vibration
+    center:
+    - 0.3625
+    - 0.7467
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 声音和振动
+    - sound & vibration
+    - ringtone
+    semantic_type: menu_item
+  - text: Voicemail
+    center:
+    - 0.2597
+    - 0.8067
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 语音信箱
+    - voicemail settings
+    semantic_type: menu_item
+  - text: ADVANCED
+    center:
+    - 0.5681
+    - 0.8738
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - advanced settings
+    semantic_type: label
+  - text: Caller ID announcement
+    center:
+    - 0.3889
+    - 0.9233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 来电播报
+    - announce caller id
+    semantic_type: toggle
+  - text: Flip To Silence
+    center:
+    - 0.3028
+    - 0.9833
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 翻转静音
+    - flip to mute
+    semantic_type: toggle
+  description: Settings page for the Dialer app listing various configuration options
+    grouped by categories such as Assistive, General, and Advanced.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Official website
+    center:
+    - 0.5583
+    - 0.4765
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Website
+    - Homepage
+    - 官网
+    - 主页
+    semantic_type: link
+  - text: Feedback forum
+    center:
+    - 0.5583
+    - 0.5335
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Forum
+    - Community
+    - 反馈论坛
+    - 讨论区
+    semantic_type: link
+  - text: Source code
+    center:
+    - 0.5583
+    - 0.5906
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Code
+    - GitHub
+    - 源代码
+    - 源码
+    semantic_type: link
+  - text: Libraries
+    center:
+    - 0.5583
+    - 0.6477
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dependencies
+    - Third-party libs
+    - 库
+    - 依赖库
+    semantic_type: link
+  - text: Authors
+    center:
+    - 0.5583
+    - 0.7048
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Contributors
+    - Developers
+    - 作者
+    - 贡献者
+    semantic_type: link
+  - text: Help
+    center:
+    - 0.5005
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Support
+    - FAQ
+    - 帮助
+    - 支持
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+  - text: Search help
+    center:
+    - 0.5
+    - 0.1596
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Search
+    - Find help
+    - 搜索帮助
+    - 查找
+    semantic_type: input
+  - text: Popular help resources
+    center:
+    - 0.2185
+    - 0.2221
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Top articles
+    - Common issues
+    - 热门帮助资源
+    - 常见问题
+    semantic_type: label
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - All articles
+    - View all
+    - 浏览所有文章
+    - 查看全部
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.5634
+    - 0.3719
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Report issue
+    - Contact us
+    - 发送反馈
+    - 报告问题
+    semantic_type: button
+  description: Help and support screen providing access to official resources, documentation,
+    feedback options, and a search function.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Make a call
+    center:
+    - 0.5
+    - 0.6713
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - call
+    - dial
+    - phone
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.9169
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - keypad
+    - dial pad
+    - number pad
+    - 键盘
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search
+    - find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - voice search
+    - speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - clear
+    - delete
+    - remove text
+    - 清除
+    semantic_type: button
+  description: Dialer keypad screen for making calls with search, voice input, and
+    navigation options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+  - text: Try again
+    center:
+    - 0.5005
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+  - text: Calls you make will show up here
+    center:
+    - 0.5
+    - 0.571
+    fixed: false
+    found_at_scroll: 1
+  - text: Make a call
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 1
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+  description: Dialer app main screen with a keypad, search bar, and navigation tabs
+    for Favorites, Recents, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_28
+  elements:
+  - text: Call history
+    center:
+    - 0.7134
+    - 0.0975
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recents
+    - Recent calls
+    - 通话记录
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.7134
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - Config
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.7134
+    - 0.2025
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - 帮助与反馈
+    - Help
+    - Feedback
+    semantic_type: menu_item
+  - text: Make a call
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dial
+    - Call
+    - 拨打电话
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Keypad
+    - Dial pad
+    - Number pad
+    - 拨号盘
+    semantic_type: tab
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Voice dial
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - Three dots
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Starred
+    - 收藏
+    - Important contacts
+    semantic_type: tab
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Call history
+    - Recent calls
+    - 最近通话
+    semantic_type: tab
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Address book
+    - Phonebook
+    - 联系人
+    semantic_type: tab
+  description: Main dialer screen featuring a keypad, search bar, and navigation tabs
+    for Recents, Favorites, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_29
+  elements:
+  - text: Cancel
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: Create contact
+    center:
+    - 0.3278
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New contact
+    - Add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7764
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Store
+    - Confirm
+    - 保存
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - ⋮
+    - 更多选项
+    semantic_type: button
+  - text: Add contact photo
+    center:
+    - 0.4995
+    - 0.211
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Set photo
+    - Upload image
+    - 添加联系人照片
+    semantic_type: button
+  - text: Add photo
+    center:
+    - 0.4995
+    - 0.2915
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Choose photo
+    - Select image
+    - 添加照片
+    semantic_type: button
+  - text: First name
+    center:
+    - 0.4954
+    - 0.3656
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Given name
+    - Forename
+    - 名
+    semantic_type: input
+  - text: Last name
+    center:
+    - 0.4954
+    - 0.4427
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Surname
+    - Family name
+    - 姓
+    semantic_type: input
+  - text: Show more name fields
+    center:
+    - 0.9319
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Expand names
+    - Additional name fields
+    - 显示更多姓名栏位
+    semantic_type: button
+  - text: Company
+    center:
+    - 0.4954
+    - 0.5285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Organization
+    - Business
+    - 公司
+    semantic_type: input
+  - text: Phone
+    center:
+    - 0.4954
+    - 0.6144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Telephone
+    - Number
+    - 电话
+    semantic_type: input
+  - text: Mobile
+    center:
+    - 0.3347
+    - 0.6915
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cell
+    - Cellphone
+    - 手机
+    semantic_type: label
+  - text: Show dropdown menu
+    center:
+    - 0.4843
+    - 0.6913
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open menu
+    - Select type
+    - 显示下拉菜单
+    semantic_type: button
+  - text: Email
+    center:
+    - 0.4954
+    - 0.7794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - E-mail
+    - Mail address
+    - 电子邮件
+    semantic_type: input
+  - text: Home
+    center:
+    - 0.3213
+    - 0.8565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Residence
+    - 住宅
+    semantic_type: label
+  - text: Significant date
+    center:
+    - 0.4954
+    - 0.9435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Important date
+    - Anniversary
+    - 重要日期
+    semantic_type: input
+  - text: Show date picker
+    center:
+    - 0.8056
+    - 0.9442
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Select date
+    - Calendar
+    - 显示日期选择器
+    semantic_type: button
+  - text: Birthday
+    center:
+    - 0.3213
+    - 0.8619
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Date of birth
+    - DOB
+    - 生日
+    semantic_type: input
+  - text: More fields
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Additional info
+    - Extra details
+    - 更多字段
+    semantic_type: button
+  description: Contact creation form allowing users to input personal details such
+    as name, phone number, email, and company information.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Create new contact
+    center:
+    - 0.5
+    - 0.6713
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New Contact
+    - Add Contact
+    - 新建联系人
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.9169
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Keypad
+    - Dial Pad
+    - Number Pad
+    - 拨号盘
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Go Back
+    - 返回
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Find Contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Voice Search
+    - Speak to Search
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Clear
+    - Delete Text
+    - X
+    - 清除
+    semantic_type: button
+  description: Dialer keypad screen with search bar, voice search, and options to
+    create a new contact or access more settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+  - text: Try again
+    center:
+    - 0.5005
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+  - text: Your contacts are just a tap away here
+    center:
+    - 0.5
+    - 0.571
+    fixed: false
+    found_at_scroll: 1
+  - text: Create new contact
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 1
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+  description: Dialer app home screen featuring a keypad, search bar, and navigation
+    tabs for Favorites, Recents, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_32
+  elements:
+  - text: Call history
+    center:
+    - 0.7134
+    - 0.0975
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recents
+    - Recent calls
+    - 通话记录
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.7134
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - Config
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.7134
+    - 0.2025
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - 帮助与反馈
+    - Help and feedback
+    semantic_type: menu_item
+  - text: Create new contact
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add contact
+    - 新建联系人
+    - New contact
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dialpad
+    - Keypad
+    - 拨号盘
+    - Number pad
+    semantic_type: tab
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Search
+    - 搜索联系人
+    - Find contacts
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Voice search
+    - 语音搜索
+    - Speak to search
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - 更多选项
+    - Overflow menu
+    - Three dots
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 收藏
+    - Starred
+    - Favorite contacts
+    semantic_type: tab
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Call history
+    - 最近通话
+    - Recent calls
+    semantic_type: tab
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 联系人
+    - Address book
+    - People
+    semantic_type: tab
+  description: Main dialer screen featuring a keypad, search bar, and navigation tabs
+    for Recents, Favorites, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.5005
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - Assistance
+    - FAQ
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - ⋮
+    - More
+    semantic_type: button
+  - text: Search help
+    center:
+    - 0.5
+    - 0.1596
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Find help
+    - Query
+    semantic_type: input
+  - text: Popular help resources
+    center:
+    - 0.2185
+    - 0.2221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Top articles
+    - Common issues
+    - Trending help
+    semantic_type: label
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - View all
+    - All topics
+    - Full list
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.5634
+    - 0.3719
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Report issue
+    - Give feedback
+    - Contact us
+    semantic_type: button
+  description: Help center screen providing search functionality, popular resources,
+    and article browsing options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Help &amp; feedback
+    center:
+    - 0.7523
+    - 0.0971
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help and feedback
+    - Support
+    - 帮助与反馈
+    semantic_type: link
+  - text: Cancel
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: Create contact
+    center:
+    - 0.3278
+    - 0.0881
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - New contact
+    - Add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7764
+    - 0.0879
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Store
+    - Confirm
+    - 保存
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0879
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Add contact photo
+    center:
+    - 0.4995
+    - 0.211
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Set photo
+    - Upload image
+    - 添加联系人照片
+    semantic_type: button
+  - text: Add photo
+    center:
+    - 0.4995
+    - 0.2915
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Choose photo
+    - Select image
+    - 添加照片
+    semantic_type: button
+  - text: First name
+    center:
+    - 0.4954
+    - 0.3656
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Given name
+    - 名
+    semantic_type: input
+  - text: Last name
+    center:
+    - 0.4954
+    - 0.4427
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Surname
+    - Family name
+    - 姓
+    semantic_type: input
+  - text: Show more name fields
+    center:
+    - 0.9319
+    - 0.359
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Expand name
+    - Additional name fields
+    - 显示更多姓名栏位
+    semantic_type: button
+  - text: Company
+    center:
+    - 0.4954
+    - 0.5285
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Organization
+    - Employer
+    - 公司
+    semantic_type: input
+  - text: Phone
+    center:
+    - 0.4954
+    - 0.6144
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Telephone
+    - Number
+    - 电话
+    semantic_type: input
+  - text: Mobile
+    center:
+    - 0.3347
+    - 0.6915
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Cell
+    - 手机
+    semantic_type: label
+  - text: Show dropdown menu
+    center:
+    - 0.4843
+    - 0.6913
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Open menu
+    - Select type
+    - 显示下拉菜单
+    semantic_type: button
+  - text: Email
+    center:
+    - 0.4954
+    - 0.7794
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - E-mail
+    - Mail address
+    - 电子邮件
+    semantic_type: input
+  - text: Home
+    center:
+    - 0.3213
+    - 0.8565
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Residence
+    - 住宅
+    semantic_type: label
+  - text: Significant date
+    center:
+    - 0.4954
+    - 0.9435
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Important date
+    - 纪念日
+    semantic_type: input
+  - text: Show date picker
+    center:
+    - 0.8056
+    - 0.9442
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Select date
+    - Calendar
+    - 显示日期选择器
+    semantic_type: button
+  - text: Birthday
+    center:
+    - 0.3213
+    - 0.8619
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Date of birth
+    - DOB
+    - 生日
+    semantic_type: input
+  - text: More fields
+    center:
+    - 0.5
+    - 0.9431
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Additional info
+    - Extra details
+    - 更多字段
+    semantic_type: button
+  description: Contact creation form allowing users to input personal details such
+    as name, phone number, email, and photo.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: Add 2-sec pause
+    center:
+    - 0.2384
+    - 0.5938
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 2s pause
+    - add pause
+    - insert pause
+    semantic_type: button
+  - text: Add wait
+    center:
+    - 0.2384
+    - 0.6462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - wait
+    - add waiting time
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - more
+    - options
+    - menu
+    - ⋮
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - delete
+    - remove
+    - ⌫
+    - del
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - dial
+    - phone call
+    - make call
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - new contact
+    - add contact
+    - create contact
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - save to contact
+    - add to existing contact
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - send SMS
+    - text
+    - message
+    semantic_type: button
+  description: Dialer keypad screen with options to add pauses, waits, create or add
+    to contacts, send messages, and initiate calls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: Cancel
+    center:
+    - 0.7736
+    - 0.5396
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.5
+    - 0.6208
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    semantic_type: button
+  - text: key pad
+    center:
+    - 0.8736
+    - 0.8273
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dialpad
+    - Keypad
+    - Number pad
+    - 拨号盘
+    semantic_type: button
+  - text: Search contacts &amp; places
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7856
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Voice search
+    - Speak to search
+    - 语音搜索
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9028
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.1667
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Starred
+    - 收藏
+    semantic_type: tab
+  - text: Recents
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Call history
+    - Recent calls
+    - 通话记录
+    semantic_type: tab
+  - text: Contacts
+    center:
+    - 0.8333
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Address book
+    - Phonebook
+    - 联系人
+    semantic_type: tab
+  description: Dialer app main screen featuring a keypad, search bar, and navigation
+    tabs for Favorites, Recents, and Contacts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_37
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    semantic_type: button
+  - text: Dial number
+    center:
+    - 0.7264
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Call
+    - Phone
+    - 拨号
+    - 打电话
+    semantic_type: input
+  - text: Add Person
+    center:
+    - 0.844
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add Contact
+    - New Contact
+    - 添加联系人
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Attachment
+    center:
+    - 0.0685
+    - 0.6058
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Attach
+    - File
+    - 附件
+    semantic_type: button
+  - text: SMS
+    center:
+    - 0.9315
+    - 0.6058
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Text
+    - Message
+    - 短信
+    - 消息
+    semantic_type: button
+  description: Message composition screen for sending SMS with options to add recipients,
+    attach files, and dial a number.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - del
+    - ⌫
+    - 清除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1,
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - abc
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 2,ABC
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 2,ABC
+    - letters
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - def
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 3,DEF
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 3,DEF
+    - letters
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - ghi
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 4,GHI
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 4,GHI
+    - letters
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - jkl
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 5,JKL
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 5,JKL
+    - letters
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - mno
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 6,MNO
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 6,MNO
+    - letters
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - pqrs
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 7,PQRS
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 7,PQRS
+    - letters
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - tuv
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 8,TUV
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 8,TUV
+    - letters
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - wxyz
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 9,WXYZ
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 9,WXYZ
+    - letters
+    semantic_type: label
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - international prefix
+    - +
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - '#'
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - call button
+    - 拨打
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: menu_item
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - add to existing
+    - update contact
+    - 添加到联系人
+    semantic_type: menu_item
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - SMS
+    - text
+    - send text
+    - 发送短信
+    semantic_type: menu_item
+  description: Numeric keypad screen for entering phone numbers with digits 0-9, special
+    characters, and a backspace button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - remove
+    - ⌫
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - abc
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - abc
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - def
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - def
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - ghi
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - ghi
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - jkl
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - jkl
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - mno
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - mno
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - pqrs
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - pqrs
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - tuv
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - tuv
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - wxyz
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - wxyz
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - add
+    - '*'
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - sharp
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - make call
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - ⋮
+    - more
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - new contact
+    - add contact
+    - create contact
+    semantic_type: menu_item
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - add to existing
+    - link to contact
+    semantic_type: menu_item
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - SMS
+    - text
+    - send text
+    semantic_type: menu_item
+  description: Numeric keypad screen for dialing phone numbers with digits 0-9, special
+    characters, and a backspace button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_40
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - save to contact
+    - add to existing
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - del
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1,
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - ABC
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 2,ABC
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - DEF
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 3,DEF
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - GHI
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 4,GHI
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - JKL
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 5,JKL
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - MNO
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 6,MNO
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - PQRS
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 7,PQRS
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - TUV
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 8,TUV
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - WXYZ
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 9,WXYZ
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - international prefix
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  description: Dialer keypad screen with numeric input buttons and options to create
+    a contact, add to a contact, send a message, or access more options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_41
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New Contact
+    - Add Contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add to existing contact
+    - Link to contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - Text
+    - Send SMS
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - ⋮
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Back
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Phone
+    - Dial
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  description: Call confirmation screen allowing the user to call a number, create
+    a new contact, add to an existing contact, or send a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - save to contact
+    - add to existing
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - remove digit
+    - 退格
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1,
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - ABC
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 2,ABC
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - DEF
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 3,DEF
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - GHI
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 4,GHI
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - JKL
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 5,JKL
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - MNO
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 6,MNO
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - PQRS
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 7,PQRS
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - TUV
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 8,TUV
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - WXYZ
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 9,WXYZ
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - international prefix
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - 拨打
+    semantic_type: button
+  description: Dialer keypad screen for entering phone numbers with options to create
+    a new contact, add to an existing contact, or send a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - save to contact
+    - add to existing
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - del
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1,
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - ABC
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 2,ABC
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - DEF
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 3,DEF
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - GHI
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 4,GHI
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - JKL
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 5,JKL
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - MNO
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 6,MNO
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - PQRS
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 7,PQRS
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - TUV
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 8,TUV
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - WXYZ
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 9,WXYZ
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - international prefix
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  description: Dialer keypad screen for entering phone numbers with options to create
+    a new contact, add to an existing contact, or send a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New Contact
+    - Add Contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add to Existing
+    - Update Contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - Text
+    - Message
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - '...'
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Back
+    - 删除
+    - 退格
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - Voicemail
+    - 语音信箱
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - One
+    - 一
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - Two
+    - 二
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Two
+    - 二
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 2
+    - 字母
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - Three
+    - 三
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Three
+    - 三
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 3
+    - 字母
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - Four
+    - 四
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Four
+    - 四
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 4
+    - 字母
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - Five
+    - 五
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Five
+    - 五
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 5
+    - 字母
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - Six
+    - 六
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Six
+    - 六
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 6
+    - 字母
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - Seven
+    - 七
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Seven
+    - 七
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 7
+    - 字母
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - Eight
+    - 八
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Eight
+    - 八
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 8
+    - 字母
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - Nine
+    - 九
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Nine
+    - 九
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 9
+    - 字母
+    semantic_type: label
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Zero
+    - O
+    - 零
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Plus
+    - International
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Hash
+    - Pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dial
+    - Phone
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  description: Dialer keypad screen with numeric input, backspace, and options to
+    create contact, add to contact, send message, or access more options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_45
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New Contact
+    - Add Contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add to Existing
+    - Append to Contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - Text
+    - Message
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - More
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Back
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - One
+    - 一
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - One
+    - '1'
+    - 一
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - Two
+    - ABC
+    - 二
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Two
+    - '2'
+    - 二
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - Two
+    - 二
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - Three
+    - DEF
+    - 三
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Three
+    - '3'
+    - 三
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - Three
+    - 三
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - Four
+    - GHI
+    - 四
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Four
+    - '4'
+    - 四
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - Four
+    - 四
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - Five
+    - JKL
+    - 五
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Five
+    - '5'
+    - 五
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - Five
+    - 五
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - Six
+    - MNO
+    - 六
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Six
+    - '6'
+    - 六
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - Six
+    - 六
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - Seven
+    - PQRS
+    - 七
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Seven
+    - '7'
+    - 七
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - Seven
+    - 七
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - Eight
+    - TUV
+    - 八
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Eight
+    - '8'
+    - 八
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - Eight
+    - 八
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - Nine
+    - WXYZ
+    - 九
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Nine
+    - '9'
+    - 九
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - Nine
+    - 九
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Zero
+    - '0'
+    - 零
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Plus
+    - International
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Hash
+    - Pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dial
+    - Phone
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  description: Dialer keypad screen for entering phone numbers with options to create
+    contacts, send messages, or access more actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - save to contact
+    - add to existing
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - del
+    - 退格
+    - 删除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1,
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - ABC
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 2,ABC
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - DEF
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 3,DEF
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - GHI
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 4,GHI
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - JKL
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 5,JKL
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - MNO
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 6,MNO
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - PQRS
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 7,PQRS
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - TUV
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 8,TUV
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - WXYZ
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 9,WXYZ
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - international prefix
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - 拨打
+    - 呼叫
+    semantic_type: button
+  description: Dialer keypad screen for entering phone numbers with options to create
+    contacts, send messages, or access more actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_47
+  elements:
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - New Contact
+    - Add Contact
+    - 新建联系人
+    semantic_type: button
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add to Existing
+    - Save to Contact
+    - 添加到联系人
+    semantic_type: button
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - Text
+    - Message
+    - 发送短信
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Back
+    - 删除
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - Voicemail
+    - 语音信箱
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - One
+    - 一
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - Two
+    - 二
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Two
+    - 二
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 2
+    - 字母
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - Three
+    - 三
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Three
+    - 三
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 3
+    - 字母
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - Four
+    - 四
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Four
+    - 四
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 4
+    - 字母
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - Five
+    - 五
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Five
+    - 五
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 5
+    - 字母
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - Six
+    - 六
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Six
+    - 六
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 6
+    - 字母
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - Seven
+    - 七
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Seven
+    - 七
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 7
+    - 字母
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - Eight
+    - 八
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Eight
+    - 八
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 8
+    - 字母
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - Nine
+    - 九
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Nine
+    - 九
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Letters 9
+    - 字母
+    semantic_type: label
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Zero
+    - 零
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Plus
+    - International
+    - 加号
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Hash
+    - Pound
+    - 井号
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dial
+    - Phone
+    - 拨打
+    semantic_type: button
+  description: Dialer keypad screen for entering phone numbers with options to create
+    a contact, add to a contact, or send a message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_48
+  elements:
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - more
+    - ⋮
+    semantic_type: button
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - remove
+    - ⌫
+    - clear digit
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - digit 1
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - abc
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - digit 2
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - abc
+    - letters for 2
+    semantic_type: label
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - def
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - digit 3
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - def
+    - letters for 3
+    semantic_type: label
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - ghi
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - digit 4
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - ghi
+    - letters for 4
+    semantic_type: label
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - jkl
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - digit 5
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - jkl
+    - letters for 5
+    semantic_type: label
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - mno
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - digit 6
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - mno
+    - letters for 6
+    semantic_type: label
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - pqrs
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - digit 7
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - pqrs
+    - letters for 7
+    semantic_type: label
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - tuv
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - digit 8
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - tuv
+    - letters for 8
+    semantic_type: label
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - wxyz
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - digit 9
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - wxyz
+    - letters for 9
+    semantic_type: label
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - digit 0
+    - operator
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - international prefix
+    - '00'
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - octothorpe
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - make call
+    - 📞
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - new contact
+    - add contact
+    - save as new
+    semantic_type: menu_item
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - update contact
+    - append to contact
+    - add to existing
+    semantic_type: menu_item
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - SMS
+    - text
+    - send SMS
+    - message
+    semantic_type: menu_item
+  description: Dialer keypad screen for entering phone numbers with numeric buttons
+    and a backspace option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: backspace
+    center:
+    - 0.9319
+    - 0.5283
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - delete
+    - del
+    - remove
+    - 退格
+    semantic_type: button
+  - text: 1,
+    center:
+    - 0.1792
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '1'
+    - one
+    - voicemail
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.1787
+    - 0.5956
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - one
+    - '1'
+    semantic_type: button
+  - text: 2,ABC
+    center:
+    - 0.4991
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '2'
+    - two
+    - abc
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.4981
+    - 0.5958
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - two
+    - '2'
+    semantic_type: button
+  - text: ABC
+    center:
+    - 0.4986
+    - 0.624
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - abc
+    - letters
+    semantic_type: button
+  - text: 3,DEF
+    center:
+    - 0.8194
+    - 0.6079
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '3'
+    - three
+    - def
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.819
+    - 0.5962
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - three
+    - '3'
+    semantic_type: button
+  - text: DEF
+    center:
+    - 0.8194
+    - 0.6244
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - def
+    - letters
+    semantic_type: button
+  - text: 4,GHI
+    center:
+    - 0.1792
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '4'
+    - four
+    - ghi
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.1792
+    - 0.6748
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - four
+    - '4'
+    semantic_type: button
+  - text: GHI
+    center:
+    - 0.1792
+    - 0.7027
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - ghi
+    - letters
+    semantic_type: button
+  - text: 5,JKL
+    center:
+    - 0.4991
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '5'
+    - five
+    - jkl
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.4986
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - five
+    - '5'
+    semantic_type: button
+  - text: JKL
+    center:
+    - 0.4991
+    - 0.7033
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - jkl
+    - letters
+    semantic_type: button
+  - text: 6,MNO
+    center:
+    - 0.8194
+    - 0.6871
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '6'
+    - six
+    - mno
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.8194
+    - 0.6752
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - six
+    - '6'
+    semantic_type: button
+  - text: MNO
+    center:
+    - 0.8194
+    - 0.7031
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - mno
+    - letters
+    semantic_type: button
+  - text: 7,PQRS
+    center:
+    - 0.1792
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '7'
+    - seven
+    - pqrs
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.1787
+    - 0.754
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - '7'
+    semantic_type: button
+  - text: PQRS
+    center:
+    - 0.1792
+    - 0.7821
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - pqrs
+    - letters
+    semantic_type: button
+  - text: 8,TUV
+    center:
+    - 0.4991
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '8'
+    - eight
+    - tuv
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.4991
+    - 0.7546
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - '8'
+    semantic_type: button
+  - text: TUV
+    center:
+    - 0.4991
+    - 0.7825
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - tuv
+    - letters
+    semantic_type: button
+  - text: 9,WXYZ
+    center:
+    - 0.8194
+    - 0.7662
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '9'
+    - nine
+    - wxyz
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.8194
+    - 0.7544
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - '9'
+    semantic_type: button
+  - text: WXYZ
+    center:
+    - 0.8194
+    - 0.7823
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - wxyz
+    - letters
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.4991
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - zero
+    - '0'
+    semantic_type: button
+  - text: +
+    center:
+    - 0.4986
+    - 0.8619
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - plus
+    - add
+    - +
+    semantic_type: button
+  - text: '#'
+    center:
+    - 0.8194
+    - 0.8454
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound
+    - '#'
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.5
+    - 0.9298
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dial
+    - phone
+    - call button
+    - 拨打
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.0681
+    - 0.5283
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    semantic_type: button
+  - text: Create new contact
+    center:
+    - 0.3685
+    - 0.0796
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - new contact
+    - add contact
+    - 新建联系人
+    semantic_type: menu_item
+  - text: Add to a contact
+    center:
+    - 0.3412
+    - 0.1321
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - save to contact
+    - add to existing
+    - 添加到联系人
+    semantic_type: menu_item
+  - text: Send a message
+    center:
+    - 0.3407
+    - 0.1846
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - SMS
+    - text
+    - send text
+    - 发送短信
+    semantic_type: menu_item
+  description: Numeric keypad screen for entering phone numbers with digits 0-9, special
+    characters, and a backspace button.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1490
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 848
+    y: 212
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 975
+    y: 212
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2232
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1490
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1459
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 539
+    y: 1459
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 1459
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1649
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 539
+    y: 1649
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 1649
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 538
+    y: 2068
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 2029
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 398
+    y: 191
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 369
+    y: 317
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 368
+    y: 443
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 650
+    y: 578
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1611
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 975
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 770
+    y: 234
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 975
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 770
+    y: 360
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 975
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 770
+    y: 486
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 848
+    y: 212
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 975
+    y: 212
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1490
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 212
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 848
+    y: 212
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 975
+    y: 212
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1490
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 624
+    y: 212
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1490
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1006
+    y: 212
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1459
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 1268
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1459
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 539
+    y: 1649
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 368
+    y: 443
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 1649
+    wait: 1.5
+  - action: tap
+    x: 1006
+    y: 1268
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 1006
+    y: 1268
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 539
+    y: 1459
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 1459
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1649
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 1649
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 539
+    y: 1839
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 1839
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 538
+    y: 2068
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1839
+    wait: 1.5
+  - action: tap
+    x: 885
+    y: 2029
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.google.android.dialer
+    wait: 0.5
+  - action: launch
+    package: com.google.android.dialer
+    wait: 3.0
+  - action: tap
+    x: 944
+    y: 1986
+    wait: 1.5
+  - action: tap
+    x: 538
+    y: 2068
+    wait: 1.5
+  - action: tap
+    x: 1006
+    y: 1268
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Dial a phone number using the keypad
+- Search for contacts by name or number
+- View recent call history
+- Access favorite contacts
+- Create a new contact
+- Add a number to an existing contact
+- Send an SMS message
+- Configure dialer settings
+- Use voice search to find contacts
+known_limitations:
+- Context menus for phone numbers may require multiple taps to access specific actions
+  like messaging or saving
+- Settings and help options are nested deep within the menu structure
+- Search functionality is split between the main keypad screen and dedicated contact
+  search interfaces

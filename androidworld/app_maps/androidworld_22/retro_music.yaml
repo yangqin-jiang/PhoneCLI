@@ -1,0 +1,3101 @@
+app: Retro Music
+package: code.name.monkey.retromusic
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main home screen of the Retro Music app featuring navigation options,
+    personalized sections, and library categories like Songs, Albums, Artists, and
+    Playlists.
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Retro Music
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - App Name
+    - Title
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.9412
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: link
+  - text: Welcome,
+    center:
+    - 0.2542
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Greeting
+    - Hello
+    semantic_type: label
+  - text: History
+    center:
+    - 0.2597
+    - 0.239
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Recently Played
+    - Recent
+    - 历史记录
+    semantic_type: menu_item
+  - text: Last added
+    center:
+    - 0.7403
+    - 0.239
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Recently Added
+    - Newest
+    - 最近添加
+    semantic_type: menu_item
+  - text: Most played
+    center:
+    - 0.2597
+    - 0.3123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Top Played
+    - Frequent
+    - 最常播放
+    semantic_type: menu_item
+  - text: Shuffle
+    center:
+    - 0.7403
+    - 0.3123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Random Play
+    - 随机播放
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recommendations
+    - Suggested
+    - 推荐
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Tracks
+    - Music
+    - 歌曲
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Singers
+    - Performers
+    - 艺术家
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Lists
+    - 歌单
+    semantic_type: tab
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.5093
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.1088
+    - 0.155
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Tracks
+    - Music
+    - 歌曲
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.3264
+    - 0.155
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Singers
+    - Performers
+    - 艺人
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5565
+    - 0.155
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Records
+    - LPs
+    - 专辑
+    semantic_type: tab
+  - text: Album artist
+    center:
+    - 0.8361
+    - 0.155
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Album Artist
+    - 唱片艺术家
+    semantic_type: tab
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Recommended
+    - Suggestions
+    - 为你推荐
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Lists
+    - Collections
+    - 播放列表
+    semantic_type: tab
+  description: Main navigation screen of the Retro Music app featuring a search bar
+    and menu options for Songs, Artists, Albums, Album artist, For you, and Playlists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Settings
+    center:
+    - 0.2435
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - configuration
+    semantic_type: setting
+  - text: Look and feel
+    center:
+    - 0.5657
+    - 0.1527
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 外观
+    - 主题
+    - theme
+    - UI style
+    - visuals
+    semantic_type: menu_item
+  - text: Now playing
+    center:
+    - 0.5657
+    - 0.2348
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 当前播放
+    - playing screen
+    - player interface
+    - now playing screen
+    semantic_type: menu_item
+  - text: Audio
+    center:
+    - 0.5657
+    - 0.3169
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 音频
+    - sound
+    - audio settings
+    - sound quality
+    semantic_type: menu_item
+  - text: Personalize
+    center:
+    - 0.5657
+    - 0.4169
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 个性化
+    - customization
+    - customize
+    - personalization
+    semantic_type: menu_item
+  - text: Images
+    center:
+    - 0.5657
+    - 0.499
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 图片
+    - artwork
+    - album art
+    - images settings
+    semantic_type: menu_item
+  - text: Notification
+    center:
+    - 0.5657
+    - 0.581
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 通知
+    - notifications
+    - alert settings
+    semantic_type: menu_item
+  - text: Other
+    center:
+    - 0.5657
+    - 0.6631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 其他
+    - miscellaneous
+    - misc
+    - advanced
+    semantic_type: menu_item
+  - text: Backup &amp; Restore
+    center:
+    - 0.5657
+    - 0.7452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 备份与恢复
+    - backup and restore
+    - data backup
+    - restore data
+    semantic_type: menu_item
+  - text: About
+    center:
+    - 0.5657
+    - 0.8273
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 关于
+    - app info
+    - version
+    - about app
+    semantic_type: menu_item
+  description: Settings menu listing various configuration categories such as Look
+    and feel, Audio, and Backup & Restore.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: History
+    center:
+    - 0.2273
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Recent
+    - Playback history
+    - 播放历史
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: History screen displaying the user's listening history with navigation
+    and options menu.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  description: A screen with a 'Navigate up' button, likely serving as a header or
+    back navigation control within the app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  description: A screen with a 'Navigate up' button, likely serving as a header or
+    back navigation control within the app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Tracks
+    - Music
+    - 歌曲
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Random play
+    - 随机播放
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recommended
+    - Discover
+    - 为你推荐
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Singers
+    - Performers
+    - 艺术家
+    - 歌手
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Lists
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  description: Main library screen displaying navigation categories such as Songs,
+    Albums, Artists, and Playlists for browsing music content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Albums
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Album
+    - 唱片
+    - 专辑
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Random play
+    - 随机播放
+    - 混洗
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recommended
+    - 为你推荐
+    - 发现
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Tracks
+    - 音乐
+    - 歌曲
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Artist
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Playlist
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  description: Main library screen displaying navigation tabs for Albums, Songs, Artists,
+    and Playlists with shuffle and menu options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Artists
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Artist
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Random play
+    - 随机播放
+    - 混洗
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recommended
+    - 为你推荐
+    - 发现
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Tracks
+    - 歌曲
+    - 音乐
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Album
+    - 专辑
+    - 唱片
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Playlist
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  description: Main library screen displaying navigation tabs for Artists, Songs,
+    Albums, and Playlists with shuffle and options controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Playlists
+    center:
+    - 0.5005
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Playlist
+    - 播放列表
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recommended
+    - 为你推荐
+    - 推荐
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Tracks
+    - 音乐
+    - 歌曲
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 专辑
+    - 唱片
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  description: Main library screen displaying navigation tabs for Playlists, Songs,
+    Albums, and Artists to browse music content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.5093
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: input
+  - text: Songs
+    center:
+    - 0.1088
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Tracks
+    - Music
+    - 歌曲
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.3264
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Singers
+    - Performers
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5565
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Records
+    - 唱片
+    - 专辑
+    semantic_type: tab
+  - text: Album artist
+    center:
+    - 0.8361
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Album Artist
+    - 专辑艺人
+    semantic_type: label
+  - text: Keyboard
+    center:
+    - 0.7671
+    - 0.8381
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Input Method
+    - IME
+    - 键盘
+    semantic_type: other
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Recommendations
+    - Discover
+    - 为你推荐
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Lists
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  description: Main library screen displaying categorized music collections including
+    Songs, Artists, Albums, and Playlists with search functionality.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.5093
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.1088
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Tracks
+    - Music
+    - 歌曲
+    - 音乐
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.3264
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Singers
+    - Performers
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5565
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Records
+    - LPs
+    - 专辑
+    - 唱片
+    semantic_type: tab
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Recommended
+    - Suggestions
+    - 为你推荐
+    - 推荐
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Lists
+    - Collections
+    - 播放列表
+    - 歌单
+    semantic_type: tab
+  description: Main library screen with a search bar and category tabs for Songs,
+    Artists, Albums, For you, and Playlists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Sort order
+    center:
+    - 0.7491
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - sorting
+    - order by
+    - 排序方式
+    semantic_type: setting
+  - text: Ascending
+    center:
+    - 0.6907
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - A-Z
+    - ascending order
+    - 升序
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.6907
+    - 0.204
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Z-A
+    - descending order
+    - 降序
+    semantic_type: menu_item
+  - text: Song count
+    center:
+    - 0.6907
+    - 0.2565
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - number of songs
+    - track count
+    - 歌曲数量
+    semantic_type: label
+  - text: Song count desc
+    center:
+    - 0.6907
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - song count descending
+    - most songs
+    - 歌曲数降序
+    semantic_type: menu_item
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - back
+    - up
+    - 返回
+    semantic_type: button
+  - text: Playlists
+    center:
+    - 0.5005
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - playlist
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - recommendations
+    - 为你推荐
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - tracks
+    - 音乐
+    - 歌曲
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - album
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - artist
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  description: Library browsing screen with tabs for Playlists, Songs, Albums, and
+    Artists, featuring sort options and a navigation header.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Import playlist
+    center:
+    - 0.3282
+    - 0.4402
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - import playlists
+    - add playlist
+    - 导入歌单
+    semantic_type: button
+  - text: Import
+    center:
+    - 0.7759
+    - 0.5825
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - import data
+    - load
+    - 导入
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - back
+    - up
+    - 返回
+    - go back
+    semantic_type: button
+  - text: Playlists
+    center:
+    - 0.5005
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - playlist
+    - my playlists
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - menu
+    - overflow
+    - more
+    - 更多选项
+    - three dots
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - recommendations
+    - discover
+    - 为你推荐
+    - discovery
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - tracks
+    - music
+    - 歌曲
+    - 音乐
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_21
+    aliases:
+    - album
+    - 唱片
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_22
+    aliases:
+    - artist
+    - musicians
+    - 歌手
+    - 艺术家
+    semantic_type: tab
+  description: Import playlist screen allowing users to select and import playlists,
+    with navigation options to other sections like Songs, Albums, and Artists.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: Grid size
+    center:
+    - 0.7134
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - grid layout
+    - display grid
+    - 网格大小
+    semantic_type: setting
+  - text: Sort order
+    center:
+    - 0.7134
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - sorting
+    - order by
+    - 排序方式
+    semantic_type: setting
+  - text: New playlist
+    center:
+    - 0.7523
+    - 0.204
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - create playlist
+    - add playlist
+    - 新建播放列表
+    semantic_type: button
+  - text: Import playlist
+    center:
+    - 0.7523
+    - 0.2565
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - import list
+    - load playlist
+    - 导入播放列表
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7523
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - preferences
+    - options
+    - 设置
+    semantic_type: link
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - back
+    - up
+    - 返回
+    semantic_type: button
+  - text: Playlists
+    center:
+    - 0.5005
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - my playlists
+    - lists
+    - 播放列表
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - recommendations
+    - discover
+    - 为你推荐
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - tracks
+    - music
+    - 歌曲
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - performers
+    - 歌手
+    semantic_type: tab
+  description: Main library screen displaying navigation tabs for music categories
+    and options to manage playlists and settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Grid size
+    center:
+    - 0.7134
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: Grid style
+    center:
+    - 0.7134
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Sort order
+    center:
+    - 0.7134
+    - 0.204
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Settings
+    center:
+    - 0.7523
+    - 0.2565
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_7
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_8
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_9
+  description: Main library screen displaying music categories such as Songs, Albums,
+    Artists, and Playlists with options to adjust grid settings and sort order.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Look and feel
+    center:
+    - 0.306
+    - 0.0183
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Appearance
+    - UI Style
+    - 界面外观
+    semantic_type: setting
+  - text: THEME
+    center:
+    - 0.5
+    - 0.0696
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Theme
+    - 主题
+    semantic_type: label
+  - text: App theme
+    center:
+    - 0.5681
+    - 0.1152
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Application Theme
+    - 应用主题
+    semantic_type: setting
+  - text: Follow system
+    center:
+    - 0.5681
+    - 0.14
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System Default
+    - Use System Theme
+    - 跟随系统
+    semantic_type: toggle
+  - text: Just Black
+    center:
+    - 0.5046
+    - 0.2035
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pure Black
+    - AMOLED Black
+    - 纯黑
+    semantic_type: menu_item
+  - text: Material You
+    center:
+    - 0.5046
+    - 0.2735
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dynamic Color
+    - Monet
+    - 动态颜色
+    semantic_type: menu_item
+  - text: Use Manrope font
+    center:
+    - 0.5046
+    - 0.3435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Manrope Typeface
+    - 使用 Manrope 字体
+    semantic_type: toggle
+  - text: COLORS
+    center:
+    - 0.5
+    - 0.3946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Color
+    - 色彩
+    semantic_type: label
+  - text: Accent color
+    center:
+    - 0.5292
+    - 0.4402
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Primary Color
+    - Highlight Color
+    - 强调色
+    semantic_type: setting
+  - text: Desaturated color
+    center:
+    - 0.5046
+    - 0.5227
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Muted Color
+    - 低饱和度颜色
+    semantic_type: menu_item
+  - text: Adaptive color
+    center:
+    - 0.5046
+    - 0.6273
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dynamic Accent
+    - 自适应颜色
+    semantic_type: menu_item
+  description: Appearance settings screen allowing users to customize app theme, font,
+    and accent colors.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Lyrics type
+    center:
+    - 0.2801
+    - 0.4577
+    fixed: false
+    found_at_scroll: 0
+  - text: Replace Cover
+    center:
+    - 0.5
+    - 0.5192
+    fixed: false
+    found_at_scroll: 0
+  - text: Over Cover
+    center:
+    - 0.5
+    - 0.5717
+    fixed: false
+    found_at_scroll: 0
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+  - text: Now playing theme
+    center:
+    - 0.5681
+    - 0.1527
+    fixed: false
+    found_at_scroll: 1
+  - text: Normal
+    center:
+    - 0.5681
+    - 0.1775
+    fixed: false
+    found_at_scroll: 1
+  - text: Song info
+    center:
+    - 0.5046
+    - 0.2352
+    fixed: false
+    found_at_scroll: 1
+  - text: Snow fall effect
+    center:
+    - 0.5046
+    - 0.3456
+    fixed: false
+    found_at_scroll: 1
+  - text: Keep screen on when showing lyrics
+    center:
+    - 0.5046
+    - 0.5025
+    fixed: false
+    found_at_scroll: 1
+  - text: Circular play button
+    center:
+    - 0.5046
+    - 0.6231
+    fixed: false
+    found_at_scroll: 1
+  - text: Swipe anywhere to change song
+    center:
+    - 0.5046
+    - 0.6873
+    fixed: false
+    found_at_scroll: 1
+  - text: ALBUM STYLE
+    center:
+    - 0.5
+    - 0.7788
+    fixed: false
+    found_at_scroll: 1
+  - text: Album cover theme
+    center:
+    - 0.5681
+    - 0.8244
+    fixed: false
+    found_at_scroll: 1
+  - text: Album cover skip
+    center:
+    - 0.5681
+    - 0.9069
+    fixed: false
+    found_at_scroll: 1
+  - text: Carousel effect
+    center:
+    - 0.5046
+    - 0.9888
+    fixed: false
+    found_at_scroll: 1
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3758
+    fixed: false
+    found_at_scroll: 2
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.4215
+    fixed: false
+    found_at_scroll: 2
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.509
+    fixed: false
+    found_at_scroll: 2
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.5965
+    fixed: false
+    found_at_scroll: 2
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.7269
+    fixed: false
+    found_at_scroll: 2
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.8573
+    fixed: false
+    found_at_scroll: 2
+  description: Settings screen for customizing the appearance and behavior of the
+    Now Playing interface, including themes, lyrics display, and control options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Normal
+    center:
+    - 0.5
+    - 0.2194
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Standard
+    - Default
+    - 常规
+    - 普通
+    semantic_type: label
+  - text: Set
+    center:
+    - 0.7796
+    - 0.8446
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Apply
+    - Confirm
+    - Save
+    - 设置
+    - 设定
+    semantic_type: button
+  description: A minimal screen displaying the text options 'Normal' and 'Set', likely
+    for selecting a playback mode or configuration setting.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+  - text: Normal
+    center:
+    - 0.5681
+    - 0.0967
+    fixed: false
+    found_at_scroll: 0
+  - text: Carousel effect
+    center:
+    - 0.5046
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3542
+    fixed: false
+    found_at_scroll: 0
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.3998
+    fixed: false
+    found_at_scroll: 0
+  - text: Swipe down to dismiss mini player
+    center:
+    - 0.5046
+    - 0.4246
+    fixed: false
+    found_at_scroll: 0
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.4873
+    fixed: false
+    found_at_scroll: 0
+  - text: Add extra controls for mini player
+    center:
+    - 0.5046
+    - 0.5121
+    fixed: false
+    found_at_scroll: 0
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.5748
+    fixed: false
+    found_at_scroll: 0
+  - text: If enough space is available, show volume controls in the now playing screen
+    center:
+    - 0.5046
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.7052
+    fixed: false
+    found_at_scroll: 0
+  - text: Clicking on the notification will show now playing screen instead of the
+      home screen
+    center:
+    - 0.5046
+    - 0.754
+    fixed: false
+    found_at_scroll: 0
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.8356
+    fixed: false
+    found_at_scroll: 0
+  - text: Amount of blur applied for blur themes, lower is faster
+    center:
+    - 0.5681
+    - 0.8715
+    fixed: false
+    found_at_scroll: 0
+  description: Settings page for customizing the now playing screen appearance, behavior,
+    and controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Currently Playing
+    - Playing
+    - 播放中
+    - 当前播放
+    semantic_type: label
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Playback Controls
+    - Control Panel
+    - Controls
+    - 控制
+    - 播放控制
+    semantic_type: label
+  description: Now playing screen displaying current track information and playback
+    controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+  - text: ALBUM STYLE
+    center:
+    - 0.5
+    - 0.0596
+    fixed: false
+    found_at_scroll: 0
+  - text: Album cover theme
+    center:
+    - 0.5681
+    - 0.0952
+    fixed: false
+    found_at_scroll: 0
+  - text: Album cover skip
+    center:
+    - 0.5681
+    - 0.1777
+    fixed: false
+    found_at_scroll: 0
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3775
+    fixed: false
+    found_at_scroll: 0
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.4231
+    fixed: false
+    found_at_scroll: 0
+  - text: Swipe down to dismiss mini player
+    center:
+    - 0.5046
+    - 0.4479
+    fixed: false
+    found_at_scroll: 0
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.5106
+    fixed: false
+    found_at_scroll: 0
+  - text: Add extra controls for mini player
+    center:
+    - 0.5046
+    - 0.5354
+    fixed: false
+    found_at_scroll: 0
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.5981
+    fixed: false
+    found_at_scroll: 0
+  - text: If enough space is available, show volume controls in the now playing screen
+    center:
+    - 0.5046
+    - 0.6469
+    fixed: false
+    found_at_scroll: 0
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+  - text: Clicking on the notification will show now playing screen instead of the
+      home screen
+    center:
+    - 0.5046
+    - 0.7773
+    fixed: false
+    found_at_scroll: 0
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.859
+    fixed: false
+    found_at_scroll: 0
+  - text: Amount of blur applied for blur themes, lower is faster
+    center:
+    - 0.5681
+    - 0.8948
+    fixed: false
+    found_at_scroll: 0
+  description: Settings page for customizing the 'Now Playing' screen appearance and
+    behavior, including album style, swipe gestures, controls, and blur effects.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Currently Playing
+    - Playing Now
+    - 正在播放
+    semantic_type: label
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3758
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Playback Controls
+    - Media Controls
+    - 控制
+    semantic_type: label
+  description: Now playing screen displaying current track information and playback
+    controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: Clear History
+    center:
+    - 0.7523
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+  - text: History
+    center:
+    - 0.2273
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+  description: History screen displaying playback history with options to clear it
+    or navigate back.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Grid size
+    center:
+    - 0.7616
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid layout
+    - display grid
+    - 网格大小
+    semantic_type: setting
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - back
+    - up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - tracks
+    - music
+    - 歌曲
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - three dots
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - random play
+    - shuffle mode
+    - 随机播放
+    semantic_type: toggle
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - recommendations
+    - discover
+    - 为你推荐
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - musicians
+    - singers
+    - 艺术家
+    - 歌手
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - lists
+    - collections
+    - 播放列表
+    semantic_type: tab
+  description: Main library screen displaying music categories such as Songs, Albums,
+    Artists, and Playlists with shuffle and grid size options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Grid style
+    center:
+    - 0.7616
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid layout
+    - display style
+    - 视图样式
+    semantic_type: setting
+  - text: Normal
+    center:
+    - 0.7032
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - default
+    - standard
+    - 普通
+    semantic_type: menu_item
+  - text: Card
+    center:
+    - 0.7032
+    - 0.204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - card view
+    - 卡片
+    semantic_type: menu_item
+  - text: Colored Card
+    center:
+    - 0.7032
+    - 0.2565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - colorful card
+    - 彩色卡片
+    semantic_type: menu_item
+  - text: Circular
+    center:
+    - 0.7032
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - circle
+    - round
+    - 圆形
+    semantic_type: menu_item
+  - text: Image
+    center:
+    - 0.7032
+    - 0.3615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - picture
+    - photo
+    - 图片
+    semantic_type: menu_item
+  - text: Gradient image
+    center:
+    - 0.7032
+    - 0.414
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - gradient cover
+    - 渐变封面
+    semantic_type: menu_item
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - back
+    - up
+    - 返回
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - tracks
+    - music
+    - 歌曲
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - random play
+    - shuffle play
+    - 随机播放
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - recommendations
+    - 为你推荐
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - performers
+    - singers
+    - 艺术家
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - lists
+    - 歌单
+    semantic_type: tab
+  description: Main library screen displaying categorized music collections such as
+    Songs, Albums, Artists, and Playlists with navigation and playback controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Sort order
+    center:
+    - 0.7616
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序方式
+    - sort by
+    - order
+    semantic_type: setting
+  - text: Ascending
+    center:
+    - 0.7032
+    - 0.204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升序
+    - A-Z
+    - ascending order
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.7032
+    - 0.2565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 降序
+    - Z-A
+    - descending order
+    semantic_type: menu_item
+  - text: Artist
+    center:
+    - 0.7032
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - performer
+    semantic_type: menu_item
+  - text: Album
+    center:
+    - 0.7032
+    - 0.3615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - 唱片
+    - record
+    semantic_type: menu_item
+  - text: Year
+    center:
+    - 0.7032
+    - 0.414
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 年份
+    - year released
+    - release year
+    semantic_type: menu_item
+  - text: Date added
+    center:
+    - 0.7032
+    - 0.4665
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加日期
+    - date created
+    - added on
+    semantic_type: menu_item
+  - text: Date modified
+    center:
+    - 0.7032
+    - 0.519
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 修改日期
+    - last modified
+    - updated on
+    semantic_type: menu_item
+  - text: Composer
+    center:
+    - 0.7032
+    - 0.5715
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 作曲家
+    - author
+    - writer
+    semantic_type: menu_item
+  - text: Album artist
+    center:
+    - 0.7032
+    - 0.624
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑艺术家
+    - album performer
+    - band
+    semantic_type: menu_item
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 向上导航
+    - back
+    - go back
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 歌曲
+    - tracks
+    - music
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 随机播放
+    - shuffle play
+    - random
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 为你推荐
+    - recommendations
+    - suggested
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 专辑
+    - records
+    - LPs
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 艺术家
+    - singers
+    - performers
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 播放列表
+    - lists
+    - collections
+    semantic_type: tab
+  description: Sort options menu for organizing songs by criteria such as artist,
+    album, or year.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 280
+    y: 574
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 800
+    y: 574
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 280
+    y: 750
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 972
+    y: 2232
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 118
+    y: 372
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 366
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 280
+    y: 574
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 366
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  - action: tap
+    x: 354
+    y: 1056
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 611
+    y: 564
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 280
+    y: 574
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 770
+    y: 238
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 770
+    y: 364
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: code.name.monkey.retromusic
+    wait: 0.5
+  - action: launch
+    package: code.name.monkey.retromusic
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 770
+    y: 490
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Browse music library by Songs, Albums, Artists, or Playlists
+- Search for specific tracks or artists
+- Play, pause, and skip tracks on the Now Playing screen
+- Customize app appearance including themes and accent colors
+- Configure Now Playing screen layout and controls
+- View and manage listening history
+- Import playlists from other sources
+- Sort music collections by criteria like artist, album, or year
+- Adjust audio settings and backup preferences
+known_limitations:
+- Navigation relies heavily on multiple similar library screens with varying tab orders
+- Settings for appearance and Now Playing behavior are split across several sub-menus
+- Some configuration options like playback modes may require navigating through minimal
+  text-only screens

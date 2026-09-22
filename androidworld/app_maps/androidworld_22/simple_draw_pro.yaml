@@ -1,0 +1,1395 @@
+app: Simple Draw Pro
+package: com.simplemobiletools.draw.pro
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main drawing canvas screen with a toolbar providing tools like bucket
+    fill, eraser, eyedropper, and actions such as save, clear, share, and undo.
+  elements:
+  - text: Save
+    center:
+    - 0.6088
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 保存
+    - save file
+    - export
+    semantic_type: button
+  - text: Clear
+    center:
+    - 0.7264
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 清空
+    - clear canvas
+    - reset
+    semantic_type: button
+  - text: Share
+    center:
+    - 0.844
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 分享
+    - send
+    - share image
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - ⋮
+    semantic_type: button
+  - text: Bucket fill
+    center:
+    - 0.5917
+    - 0.1496
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 填充
+    - paint bucket
+    - fill color
+    semantic_type: button
+  - text: Eraser
+    center:
+    - 0.7083
+    - 0.1496
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 橡皮擦
+    - erase
+    - rubber
+    semantic_type: button
+  - text: Eyedropper
+    center:
+    - 0.825
+    - 0.1496
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 取色器
+    - color picker
+    - pipette
+    semantic_type: button
+  - text: Change color
+    center:
+    - 0.9417
+    - 0.1496
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 更改颜色
+    - select color
+    - palette
+    semantic_type: button
+  - text: Undo
+    center:
+    - 0.9417
+    - 0.2021
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 撤销
+    - back
+    - revert
+    semantic_type: button
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Save as
+    center:
+    - 0.2435
+    - 0.1915
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Export
+    - Save file
+    - 另存为
+    semantic_type: label
+  - text: .png
+    center:
+    - 0.5
+    - 0.3267
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - PNG
+    - Portable Network Graphics
+    - png format
+    semantic_type: menu_item
+  - text: .svg
+    center:
+    - 0.5
+    - 0.375
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - SVG
+    - Scalable Vector Graphics
+    - svg format
+    semantic_type: menu_item
+  - text: .jpg
+    center:
+    - 0.5
+    - 0.4233
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - JPG
+    - JPEG
+    - jpg format
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.4892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.4892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    semantic_type: button
+  description: A dialog for saving the drawing with options to choose file format
+    (.png, .svg, .jpg) and confirm or cancel the action.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Nearby
+    center:
+    - 0.3838
+    - 0.6417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Nearby Share
+    - 附近分享
+    semantic_type: menu_item
+  - text: Edit
+    center:
+    - 0.6171
+    - 0.6417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 修改
+    - 编辑
+    - Modify
+    semantic_type: button
+  - text: SMS Messenger
+    center:
+    - 0.125
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 短信
+    - Messaging
+    - Text Messages
+    semantic_type: menu_item
+  - text: Google
+    center:
+    - 0.3745
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 谷歌
+    - Search with Google
+    semantic_type: menu_item
+  - text: Search image
+    center:
+    - 0.3745
+    - 0.9515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 图片搜索
+    - Image Search
+    - Visual Search
+    semantic_type: button
+  - text: Draw
+    center:
+    - 0.6245
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 绘画
+    - Sketch
+    - 涂鸦
+    semantic_type: button
+  - text: Joplin
+    center:
+    - 0.875
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 笔记
+    - Note-taking app
+    semantic_type: menu_item
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9835
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 应用列表
+    - All Apps
+    - App Drawer
+    semantic_type: label
+  - text: Bluetooth
+    center:
+    - 0.1245
+    - 0.501
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 蓝牙
+    - BT
+    - Bluetooth settings
+    semantic_type: setting
+  - text: Drive
+    center:
+    - 0.6245
+    - 0.501
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Google Drive
+    - 云端硬盘
+    - 云盘
+    semantic_type: menu_item
+  - text: Gmail
+    center:
+    - 0.8745
+    - 0.501
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 邮件
+    - Email
+    - Google Mail
+    semantic_type: menu_item
+  - text: Maps
+    center:
+    - 0.625
+    - 0.6452
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 地图
+    - Google Maps
+    - Navigation
+    semantic_type: menu_item
+  - text: Add to Maps
+    center:
+    - 0.6245
+    - 0.6631
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 添加到地图
+    - Save location
+    semantic_type: button
+  - text: Messages
+    center:
+    - 0.875
+    - 0.6452
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 信息
+    - Chat
+    - SMS
+    semantic_type: menu_item
+  - text: Photos
+    center:
+    - 0.1245
+    - 0.7894
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 相册
+    - Google Photos
+    - 图库
+    semantic_type: menu_item
+  - text: Upload to Photos
+    center:
+    - 0.125
+    - 0.8073
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 上传到相册
+    - Backup to Photos
+    - Save to Gallery
+    semantic_type: button
+  - text: Print
+    center:
+    - 0.3745
+    - 0.7894
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 打印
+    - Printer
+    - Print document
+    semantic_type: button
+  - text: Tasks
+    center:
+    - 0.8745
+    - 0.7894
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 任务
+    - Google Tasks
+    - To-do
+    semantic_type: menu_item
+  - text: Create new task
+    center:
+    - 0.875
+    - 0.8073
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 新建任务
+    - Add task
+    - New To-do
+    semantic_type: button
+  - text: VLC
+    center:
+    - 0.1245
+    - 0.9335
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - VLC播放器
+    - Media Player
+    semantic_type: menu_item
+  - text: Play with VLC
+    center:
+    - 0.1245
+    - 0.9515
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 用VLC播放
+    - Open in VLC
+    - Play video
+    semantic_type: button
+  description: App sharing or action selection screen displaying a list of installed
+    applications and actions like SMS, Gmail, and Maps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: SMS Messenger
+    center:
+    - 0.125
+    - 0.3373
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Messages
+    - Texting
+    - 短信
+    semantic_type: app
+  - text: Google
+    center:
+    - 0.3745
+    - 0.3373
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Search
+    - 谷歌
+    - google search
+    semantic_type: app
+  - text: Search image
+    center:
+    - 0.3745
+    - 0.3552
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Image Search
+    - Visual Search
+    - 搜图
+    semantic_type: button
+  - text: Draw
+    center:
+    - 0.6245
+    - 0.3373
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Sketch
+    - Paint
+    - 绘图
+    - 画画
+    semantic_type: button
+  - text: Joplin
+    center:
+    - 0.875
+    - 0.3373
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Notes
+    - 笔记
+    semantic_type: app
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.3873
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - App Drawer
+    - All Apps
+    - 应用列表
+    semantic_type: menu_item
+  - text: Bluetooth
+    center:
+    - 0.1245
+    - 0.501
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - BT
+    - 蓝牙
+    - bluetooth settings
+    semantic_type: setting
+  - text: Drive
+    center:
+    - 0.6245
+    - 0.501
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Google Drive
+    - 云端硬盘
+    - 云盘
+    semantic_type: app
+  - text: Gmail
+    center:
+    - 0.8745
+    - 0.501
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Mail
+    - Email
+    - 邮箱
+    semantic_type: app
+  - text: Maps
+    center:
+    - 0.625
+    - 0.6452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Google Maps
+    - 地图
+    - navigation
+    semantic_type: app
+  - text: Add to Maps
+    center:
+    - 0.6245
+    - 0.6631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Save Location
+    - 添加到地图
+    semantic_type: button
+  - text: Messages
+    center:
+    - 0.875
+    - 0.6452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - SMS
+    - Chat
+    - 信息
+    - 短信
+    semantic_type: app
+  - text: Photos
+    center:
+    - 0.1245
+    - 0.7894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Gallery
+    - Google Photos
+    - 相册
+    - 图片
+    semantic_type: app
+  - text: Upload to Photos
+    center:
+    - 0.125
+    - 0.8073
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Backup
+    - Save to Gallery
+    - 上传到相册
+    semantic_type: button
+  - text: Print
+    center:
+    - 0.3745
+    - 0.7894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Printer
+    - 打印
+    semantic_type: button
+  - text: Tasks
+    center:
+    - 0.8745
+    - 0.7894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Google Tasks
+    - 任务
+    - 待办
+    semantic_type: app
+  - text: Create new task
+    center:
+    - 0.875
+    - 0.8073
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - New Task
+    - Add Task
+    - 新建任务
+    semantic_type: button
+  - text: VLC
+    center:
+    - 0.1245
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - VLC Media Player
+    - 播放器
+    semantic_type: app
+  - text: Play with VLC
+    center:
+    - 0.1245
+    - 0.9515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Open in VLC
+    - 用VLC播放
+    semantic_type: button
+  description: App sharing or action selection screen displaying a list of installed
+    applications and actions to handle content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Save as
+    center:
+    - 0.2435
+    - 0.1915
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Export as
+    - Save format
+    - 另存为
+    semantic_type: label
+  - text: .png
+    center:
+    - 0.5
+    - 0.3267
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - PNG
+    - Portable Network Graphics
+    semantic_type: menu_item
+  - text: .svg
+    center:
+    - 0.5
+    - 0.375
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - SVG
+    - Scalable Vector Graphics
+    semantic_type: menu_item
+  - text: .jpg
+    center:
+    - 0.5
+    - 0.4233
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - JPEG
+    - JPG
+    - Joint Photographic Experts Group
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.4892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.4892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    semantic_type: button
+  description: A dialog for saving the drawing with options to select file format
+    (.png, .svg, .jpg) and confirm or cancel the action.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Save as
+    center:
+    - 0.2435
+    - 0.1915
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Export as
+    - Save format
+    - 另存为
+    semantic_type: label
+  - text: .png
+    center:
+    - 0.5
+    - 0.3267
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - PNG
+    - Portable Network Graphics
+    semantic_type: menu_item
+  - text: .svg
+    center:
+    - 0.5
+    - 0.375
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - SVG
+    - Scalable Vector Graphics
+    semantic_type: menu_item
+  - text: .jpg
+    center:
+    - 0.5
+    - 0.4233
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - JPEG
+    - JPG
+    - Joint Photographic Experts Group
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.4892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.4892
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    semantic_type: button
+  description: A dialog for saving the drawing with options to choose file format
+    (.png, .svg, .jpg) and confirm or cancel the action.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Downloaded files
+    - 下载
+    - downloads folder
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Thumbnail view
+    - 网格视图
+    - grid layout
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Display root directories
+    - 显示根目录
+    - show storage roots
+    semantic_type: toggle
+  - text: New folder
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Create folder
+    - 新建文件夹
+    - add directory
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Menu
+    - 更多选项
+    - overflow menu
+    - three dots
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8588
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Save file
+    - 保存
+    - store
+    semantic_type: button
+  description: File selection screen for saving drawings, featuring folder navigation,
+    view options, and a save button.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid mode
+    - thumbnail view
+    - 网格视图
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - display root directories
+    - show root folders
+    - 显示根目录
+    semantic_type: toggle
+  - text: New folder
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - create folder
+    - new directory
+    - 新建文件夹
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8588
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save file
+    - 保存
+    - store
+    semantic_type: button
+  - text: Save to
+    center:
+    - 0.1356
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - destination
+    - save location
+    - 保存到
+    semantic_type: label
+  description: File selection screen for saving a drawing, featuring a grid view of
+    folders, options to create new folders or show roots, and a save action.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: New folder
+    center:
+    - 0.4995
+    - 0.4385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create folder
+    - 新建文件夹
+    - Add directory
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6278
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    - Dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8185
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - 确定
+    - Accept
+    - Done
+    semantic_type: button
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Downloaded files
+    - 下载文件
+    - Downloads list
+    semantic_type: label
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Thumbnail view
+    - 网格视图
+    - Grid mode
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Display root directories
+    - 显示根目录
+    - Show storage roots
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.2972
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Download folder
+    - 下载
+    - Download directory
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - 更多选项
+    - Overflow menu
+    - Three dots
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8588
+    - 0.9475
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Save
+    - 保存
+    - Store
+    semantic_type: button
+  description: File save dialog allowing the user to create a new folder and select
+    a location in Downloads to save the drawing.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort
+    - Order by
+    - Arrange
+    semantic_type: menu_item
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display hidden files
+    - Hidden files toggle
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Grid mode
+    - Thumbnail view
+    - 网格视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Display root directories
+    - Root folders
+    - 显示根目录
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.2972
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Download folder
+    - 下载
+    - 下载文件夹
+    semantic_type: link
+  - text: New folder
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Create folder
+    - 新建文件夹
+    - Add directory
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8588
+    - 0.9475
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Save file
+    - 保存
+    - Confirm
+    semantic_type: button
+  description: File save dialog screen allowing users to select a location, create
+    folders, and toggle view options before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  description: File browser screen displaying a grid of items with options to show
+    roots, search, and access more actions.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 211
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 900
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1016
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 842
+    y: 1174
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 842
+    y: 1174
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 842
+    y: 1174
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 842
+    y: 1174
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.simplemobiletools.draw.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.draw.pro
+    wait: 3.0
+  - action: tap
+    x: 658
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 842
+    y: 1174
+    wait: 1.5
+  - action: tap
+    x: 928
+    y: 2274
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Draw on the canvas using various tools
+- Fill areas with color using the bucket tool
+- Erase parts of the drawing
+- Pick colors from the canvas using the eyedropper
+- Undo previous actions
+- Clear the entire canvas
+- Save the drawing in PNG, SVG, or JPG format
+- Share the drawing via other installed apps
+known_limitations:
+- Saving a file requires navigating through multiple dialog screens for format selection
+  and file location
+- File browser interface may require scrolling to locate specific folders or roots

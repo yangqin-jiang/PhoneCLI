@@ -1,0 +1,5059 @@
+app: Tasks
+package: org.tasks
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main task management screen displaying a list of tasks with search,
+    voice input, sorting, and creation options.
+  elements:
+  - text: My Tasks
+    center:
+    - 0.1454
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 我的任务
+    - tasks list
+    - task manager
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 语音输入
+    - voice search
+    - speech to text
+    - mic
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 排序
+    - order by
+    - arrange
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - ellipsis
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.9127
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 新建任务
+    - add task
+    - new item
+    - +
+    semantic_type: button
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Hide
+    - Minimize
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.6012
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Speech to text
+    - Dictate
+    - 语音输入
+    - 麦克风
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.6012
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Order by
+    - Arrange
+    - 排序
+    - 筛选
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.6012
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Menu
+    - Overflow
+    - 更多
+    - 更多选项
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.571
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Add task
+    - New task
+    - 新建任务
+    - 添加
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Clear search
+    - Reset
+    - 清除
+    - 清空搜索
+    semantic_type: button
+  description: Task management screen with voice input, sorting, and options to create
+    new tasks or clear queries.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Google icon
+    - G logo
+    semantic_type: label
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - EN-US
+    - English
+    - 美国英语
+    semantic_type: label
+  - text: My Tasks
+    center:
+    - 0.1454
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Tasks
+    - 我的任务
+    - task list
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Find
+    - 搜索
+    - lookup
+    semantic_type: button
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - Speech to text
+    - 语音输入
+    - dictate
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Order by
+    - 排序
+    - arrange
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - 更多选项
+    - overflow menu
+    - three dots
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.9127
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - Add task
+    - 新建任务
+    - plus button
+    - new item
+    semantic_type: button
+  description: Main task list screen with search, sorting, and options to create new
+    tasks.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - done
+    - finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Clear Completed
+    center:
+    - 0.7458
+    - 0.6194
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Remove finished
+    - Delete done tasks
+    - 清除已完成
+    semantic_type: button
+  - text: Collapse subtasks
+    center:
+    - 0.7458
+    - 0.6719
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Hide subtasks
+    - Fold subtasks
+    - 收起子任务
+    semantic_type: button
+  - text: Expand subtasks
+    center:
+    - 0.7458
+    - 0.7244
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Show subtasks
+    - Unfold subtasks
+    - 展开子任务
+    semantic_type: button
+  - text: Show completed
+    center:
+    - 0.6875
+    - 0.7769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Display finished
+    - View done tasks
+    - 显示已完成
+    semantic_type: toggle
+  - text: Show unstarted
+    center:
+    - 0.6875
+    - 0.8294
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Display pending
+    - View not started
+    - 显示未开始
+    semantic_type: toggle
+  - text: Share
+    center:
+    - 0.7458
+    - 0.8819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Send
+    - Export
+    - 分享
+    semantic_type: button
+  - text: My Tasks
+    center:
+    - 0.1454
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Tasks
+    - Task List
+    - 我的任务
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - Speech to text
+    - Dictate
+    - 语音输入
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Order by
+    - Arrange
+    - 排序
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9514
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.9127
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - Add task
+    - New task
+    - 新建任务
+    semantic_type: button
+  description: Main task list screen displaying 'My Tasks' with options to filter,
+    sort, search, and create new tasks.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 保存
+    - store
+    - commit
+    semantic_type: button
+  - text: Too much information?
+    center:
+    - 0.2528
+    - 0.2156
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 信息过多？
+    - too many fields
+    - overwhelmed
+    semantic_type: label
+  - text: You can customize this screen by rearranging or removing fields
+    center:
+    - 0.5
+    - 0.2512
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - 自定义屏幕
+    - customize layout
+    - reorder fields
+    - remove fields
+    semantic_type: label
+  - text: Dismiss
+    center:
+    - 0.6639
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - 关闭
+    - cancel
+    - hide
+    - ignore
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.8676
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 设置
+    - preferences
+    - config
+    - options
+    semantic_type: setting
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.5919
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 优先级
+    - importance
+    - level
+    - urgency
+    semantic_type: label
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.6635
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - geotag
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.8081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task customization settings screen allowing users to rearrange or remove
+    fields such as Priority, Location, and Default list.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Google logo
+    center:
+    - 0.5005
+    - 0.3742
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Google icon
+    - Google brand
+    semantic_type: label
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6594
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - EN-US
+    - American English
+    - 英语(美国)
+    semantic_type: label
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Minimize
+    - Hide
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Speech to text
+    - Dictation
+    - 语音输入
+    - Microphone
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Order by
+    - Arrange
+    - 排序
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - Three dots
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.571
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - Add task
+    - New item
+    - 新建任务
+    - Plus button
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_1
+    aliases:
+    - Clear search
+    - Delete text
+    - 清除查询
+    - X button
+    semantic_type: button
+  description: Task search or input screen with voice input, sorting options, and
+    controls to create a new task or clear the query.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Clear Completed
+    center:
+    - 0.7458
+    - 0.2777
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - Remove finished
+    - Delete done tasks
+    - 清除已完成
+    semantic_type: button
+  - text: Collapse subtasks
+    center:
+    - 0.7458
+    - 0.3302
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Hide subtasks
+    - Fold children
+    - 收起子任务
+    semantic_type: button
+  - text: Expand subtasks
+    center:
+    - 0.7458
+    - 0.3827
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Show subtasks
+    - Unfold children
+    - 展开子任务
+    semantic_type: button
+  - text: Show completed
+    center:
+    - 0.6875
+    - 0.4352
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Display finished
+    - View done
+    - 显示已完成
+    semantic_type: toggle
+  - text: Show unstarted
+    center:
+    - 0.6875
+    - 0.4877
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Display pending
+    - View not started
+    - 显示未开始
+    semantic_type: toggle
+  - text: Share
+    center:
+    - 0.7458
+    - 0.5402
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Send
+    - Export
+    - 分享
+    semantic_type: button
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Minimize
+    - Fold
+    - 收起
+    semantic_type: button
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Speech to text
+    - Dictate
+    - 语音输入
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Order by
+    - Arrange
+    - 排序
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.571
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - Add task
+    - New item
+    - 新建任务
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_1
+    aliases:
+    - Reset search
+    - Clear filter
+    - 清除搜索
+    semantic_type: button
+  description: Task management screen displaying a list of tasks with options to filter,
+    sort, share, and create new tasks.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 保存
+    - store
+    - commit
+    semantic_type: button
+  - text: Too much information?
+    center:
+    - 0.2528
+    - 0.2156
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 信息过多？
+    - too many fields
+    - overwhelmed
+    semantic_type: label
+  - text: You can customize this screen by rearranging or removing fields
+    center:
+    - 0.5
+    - 0.2512
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 自定义屏幕
+    - customize layout
+    - reorder fields
+    semantic_type: label
+  - text: Dismiss
+    center:
+    - 0.6639
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 关闭
+    - cancel
+    - hide
+    - ignore
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.8676
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 设置
+    - preferences
+    - config
+    - options
+    semantic_type: setting
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.5919
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 优先级
+    - importance
+    - level
+    - urgency
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.6635
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理定位
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.8081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task customization settings screen allowing users to rearrange or remove
+    fields such as Priority, Location, and Default list.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 保存
+    - store
+    - commit
+    semantic_type: button
+  - text: Too much information?
+    center:
+    - 0.2528
+    - 0.2156
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 信息过多？
+    - too many fields
+    - overwhelmed
+    semantic_type: label
+  - text: You can customize this screen by rearranging or removing fields
+    center:
+    - 0.5
+    - 0.2512
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 自定义屏幕
+    - customize layout
+    - reorder fields
+    semantic_type: label
+  - text: Dismiss
+    center:
+    - 0.6639
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 关闭
+    - cancel
+    - hide
+    - dismiss notification
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.8676
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 设置
+    - preferences
+    - config
+    - options
+    semantic_type: setting
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.5919
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 优先级
+    - importance
+    - level
+    - urgency
+    semantic_type: label
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.6635
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - geotag
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.8081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Settings screen for customizing task input fields and default list
+    preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: None
+    center:
+    - 0.0981
+    - 0.6677
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - No sorting
+    - Default
+    - 无排序
+    semantic_type: menu_item
+  - text: By due date
+    center:
+    - 0.169
+    - 0.7148
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Sort by due date
+    - Due date
+    - 按截止日期
+    semantic_type: menu_item
+  - text: By start date
+    center:
+    - 0.1796
+    - 0.7619
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - Sort by start date
+    - Start date
+    - 按开始日期
+    semantic_type: menu_item
+  - text: By priority
+    center:
+    - 0.1514
+    - 0.809
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - Sort by priority
+    - Priority
+    - 按优先级
+    semantic_type: menu_item
+  - text: By last modified
+    center:
+    - 0.2167
+    - 0.856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - Sort by last modified
+    - Last modified
+    - 按最后修改时间
+    semantic_type: menu_item
+  - text: By creation time
+    center:
+    - 0.2185
+    - 0.9031
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Sort by creation time
+    - Created date
+    - 按创建时间
+    semantic_type: menu_item
+  - text: By list
+    center:
+    - 0.1069
+    - 0.9502
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - Sort by list
+    - List
+    - 按列表
+    semantic_type: menu_item
+  description: Sort options menu for organizing tasks by criteria such as due date,
+    priority, or list.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: By due date
+    center:
+    - 0.169
+    - 0.6002
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+  - text: By start date
+    center:
+    - 0.1796
+    - 0.6473
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+  - text: By priority
+    center:
+    - 0.1514
+    - 0.6944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+  - text: By title
+    center:
+    - 0.1157
+    - 0.7415
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+  - text: By last modified
+    center:
+    - 0.2167
+    - 0.7885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+  - text: Smart sort
+    center:
+    - 0.1569
+    - 0.8356
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+  - text: By creation time
+    center:
+    - 0.2185
+    - 0.8827
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+  - text: My order
+    center:
+    - 0.137
+    - 0.9298
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: Not available for tags, filters, or places
+    center:
+    - 0.3264
+    - 0.9548
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  description: Sort options menu allowing users to organize tasks by criteria such
+    as due date, priority, or title.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: My order
+    center:
+    - 0.137
+    - 0.6206
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Custom Order
+    - Manual Sort
+    - 自定义排序
+    semantic_type: menu_item
+  - text: By due date
+    center:
+    - 0.169
+    - 0.6677
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Due Date
+    - Sort by Due Date
+    - 按截止日期
+    semantic_type: menu_item
+  - text: By start date
+    center:
+    - 0.1796
+    - 0.7148
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Start Date
+    - Sort by Start Date
+    - 按开始日期
+    semantic_type: menu_item
+  - text: By priority
+    center:
+    - 0.1514
+    - 0.7619
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Priority
+    - Sort by Priority
+    - 按优先级
+    semantic_type: menu_item
+  - text: By title
+    center:
+    - 0.1157
+    - 0.809
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - Title
+    - Alphabetical
+    - A-Z
+    - 按标题
+    semantic_type: menu_item
+  - text: By last modified
+    center:
+    - 0.2167
+    - 0.856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - Last Modified
+    - Modified Date
+    - 按修改时间
+    semantic_type: menu_item
+  - text: Smart sort
+    center:
+    - 0.1569
+    - 0.9031
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - Intelligent Sort
+    - Auto Sort
+    - 智能排序
+    semantic_type: toggle
+  - text: By creation time
+    center:
+    - 0.2185
+    - 0.9502
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Created Date
+    - Date Created
+    - 按创建时间
+    semantic_type: menu_item
+  description: Sort options menu for organizing tasks by criteria such as due date,
+    priority, or title.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_13
+  elements:
+  - text: By completion time
+    center:
+    - 0.2523
+    - 0.6677
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by completed
+    - Completion order
+    - 按完成时间
+    semantic_type: menu_item
+  - text: By due date
+    center:
+    - 0.169
+    - 0.7148
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by deadline
+    - Due date order
+    - 按截止日期
+    semantic_type: menu_item
+  - text: By start date
+    center:
+    - 0.1796
+    - 0.7619
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by start
+    - Start date order
+    - 按开始日期
+    semantic_type: menu_item
+  - text: By priority
+    center:
+    - 0.1514
+    - 0.809
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by importance
+    - Priority order
+    - 按优先级
+    semantic_type: menu_item
+  - text: By title
+    center:
+    - 0.1157
+    - 0.856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by name
+    - Alphabetical
+    - 按标题
+    semantic_type: menu_item
+  - text: By last modified
+    center:
+    - 0.2167
+    - 0.9031
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by updated
+    - Last edited
+    - 按最后修改
+    semantic_type: menu_item
+  - text: By creation time
+    center:
+    - 0.2185
+    - 0.9502
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by created
+    - Date added
+    - 按创建时间
+    semantic_type: menu_item
+  description: Sort options menu for organizing tasks by various criteria such as
+    completion time, due date, priority, and title.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: CANCEL
+    center:
+    - 0.637
+    - 0.5379
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - Dismiss
+    - Close
+    - 放弃
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8083
+    - 0.5379
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - Apply
+    - 确定
+    - 好的
+    semantic_type: button
+  - text: My Tasks
+    center:
+    - 0.1454
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Tasks
+    - Task List
+    - 我的任务
+    - 待办事项
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dictate
+    - Speech to Text
+    - 语音输入
+    - 听写
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Order By
+    - Arrange
+    - 排序
+    - 整理
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.9429
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 设置
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.9127
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add Task
+    - New Task
+    - 新建任务
+    - 添加
+    semantic_type: button
+  description: Main tasks screen displaying a list of tasks with options to search,
+    sort, create new tasks, and confirm or cancel actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Copy
+    center:
+    - 0.3829
+    - 0.6417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Duplicate
+    - Clone
+    - 复制
+    semantic_type: button
+  - text: Nearby
+    center:
+    - 0.6162
+    - 0.6417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Nearby Share
+    - 附近
+    - Close by
+    semantic_type: tab
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App drawer
+    - All apps
+    - 应用列表
+    semantic_type: menu_item
+  - text: Create new task
+    center:
+    - 0.625
+    - 0.9219
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add task
+    - New task
+    - 新建任务
+    - 添加任务
+    semantic_type: button
+  description: Screen for creating a new task with options to select from nearby locations
+    or apps.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - commit
+    semantic_type: button
+  - text: Dismiss
+    center:
+    - 0.6639
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - Close
+    - 取消
+    - 关闭
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.8676
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - config
+    semantic_type: setting
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.5919
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: label
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.6635
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - choose place
+    - add address
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.8081
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task editing or creation screen allowing users to set priority, location,
+    default list, and save or dismiss changes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - commit
+    semantic_type: button
+  - text: Too much information?
+    center:
+    - 0.2528
+    - 0.2156
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 信息过多？
+    - too many fields
+    - overwhelmed
+    semantic_type: label
+  - text: You can customize this screen by rearranging or removing fields
+    center:
+    - 0.5
+    - 0.2512
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 自定义屏幕
+    - customize layout
+    - reorder fields
+    - remove fields
+    semantic_type: label
+  - text: Dismiss
+    center:
+    - 0.6639
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - cancel
+    - hide
+    - ignore
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.8676
+    - 0.3056
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - config
+    - options
+    semantic_type: setting
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.5919
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - level
+    - urgency
+    semantic_type: label
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.6635
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理定位
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.8081
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Settings screen for customizing task input fields such as priority,
+    location, and default list.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - confirm
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理标记
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - add label
+    - tagging
+    - 分类标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, and default list before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Today
+    center:
+    - 0.2009
+    - 0.2975
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - today
+    - 今日
+    - current day
+    semantic_type: button
+  - text: Tomorrow
+    center:
+    - 0.2009
+    - 0.35
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tomorrow
+    - 明日
+    - next day
+    semantic_type: button
+  - text: Next Mon
+    center:
+    - 0.2009
+    - 0.4025
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Next Monday
+    - 下周一
+    - coming Monday
+    semantic_type: button
+  - text: No date
+    center:
+    - 0.2009
+    - 0.455
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - no date
+    - 无日期
+    - unset date
+    - clear date
+    semantic_type: button
+  - text: 09:00
+    center:
+    - 0.8074
+    - 0.2975
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 9 AM
+    - 上午9点
+    - morning
+    semantic_type: button
+  - text: '13:00'
+    center:
+    - 0.8074
+    - 0.35
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1 PM
+    - 下午1点
+    - afternoon
+    semantic_type: button
+  - text: '17:00'
+    center:
+    - 0.8074
+    - 0.4025
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 5 PM
+    - 下午5点
+    - evening
+    semantic_type: button
+  - text: '20:00'
+    center:
+    - 0.8074
+    - 0.455
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 8 PM
+    - 晚上8点
+    - night
+    semantic_type: button
+  - text: Pick time
+    center:
+    - 0.8074
+    - 0.5075
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - select time
+    - choose time
+    - 自定义时间
+    - custom time
+    semantic_type: button
+  - text: No time
+    center:
+    - 0.8074
+    - 0.56
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - no time
+    - 无时间
+    - clear time
+    - unset time
+    semantic_type: button
+  - text: Previous month
+    center:
+    - 0.113
+    - 0.6233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - prev month
+    - last month
+    - 上个月
+    - <
+    semantic_type: button
+  - text: Next month
+    center:
+    - 0.887
+    - 0.6233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - next month
+    - 下个月
+    - '>'
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6731
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - 取消
+    - dismiss
+    - close
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8931
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - ok
+    - confirm
+    - 确定
+    - done
+    - apply
+    semantic_type: button
+  description: Date and time picker dialog allowing users to select a specific date
+    and time for a task.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Enter tag name
+    center:
+    - 0.5875
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Tag name
+    - Input tag
+    - New tag
+    - 标签名称
+    semantic_type: input
+  description: Input field for entering a new tag name in the Tasks app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - confirm
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理定位
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - add label
+    - tagging
+    - 分类标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - 预设清单
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, and default list before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: D
+    center:
+    - 0.5
+    - 0.1192
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Remove
+    - Trash
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 保存
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Importance
+    - Urgency
+    - 优先级
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Set location
+    - Add place
+    - 添加位置
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add labels
+    - Tagging
+    - 添加标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Primary list
+    - Main list
+    - 默认列表
+    semantic_type: setting
+  description: Task creation or editing screen allowing users to set priority, location,
+    tags, and list assignment before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - confirm
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理标记
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - add label
+    - tagging
+    - 分类标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, and default list before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: CANCEL
+    center:
+    - 0.637
+    - 0.5379
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8083
+    - 0.5379
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - Accept
+    - 确定
+    semantic_type: button
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Minimize
+    - Hide
+    - Fold
+    - 收起
+    semantic_type: button
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Speech to text
+    - Dictation
+    - Microphone
+    - 语音输入
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Order by
+    - Arrange
+    - Filter order
+    - 排序
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.6012
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - Three dots
+    - 更多选项
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.571
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Add task
+    - New item
+    - Plus button
+    - 新建任务
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0831
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - Clear search
+    - Reset
+    - Delete text
+    - 清除搜索
+    semantic_type: button
+  description: Task creation or editing dialog with voice input, sorting, and action
+    buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - confirm
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理标记
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - add label
+    - tagging
+    - 分类标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, and default list before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hide
+    - Minimize
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Voice input
+    center:
+    - 0.7264
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Speech to text
+    - Dictate
+    - 语音输入
+    - 麦克风
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.844
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Order by
+    - Arrange
+    - 排序
+    - 筛选
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多
+    - 更多选项
+    semantic_type: button
+  - text: Create new task
+    center:
+    - 0.5005
+    - 0.9127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add task
+    - New task
+    - 新建任务
+    - 添加
+    semantic_type: button
+  description: Task creation screen with voice input, sorting, and additional options
+    for creating a new task.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Due date
+    center:
+    - 0.2602
+    - 0.2975
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - deadline
+    - end date
+    - 截止日期
+    semantic_type: label
+  - text: Due time
+    center:
+    - 0.2602
+    - 0.35
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - deadline time
+    - end time
+    - 截止时间
+    semantic_type: label
+  - text: Day before due
+    center:
+    - 0.2602
+    - 0.4025
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1 day before
+    - 前一天提醒
+    - day prior
+    semantic_type: toggle
+  - text: Week before due
+    center:
+    - 0.2602
+    - 0.455
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1 week before
+    - 前一周提醒
+    - week prior
+    semantic_type: toggle
+  - text: No date
+    center:
+    - 0.2602
+    - 0.5075
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - remove date
+    - clear date
+    - 无日期
+    semantic_type: button
+  - text: Pick time
+    center:
+    - 0.8074
+    - 0.5075
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - select time
+    - choose time
+    - 选择时间
+    semantic_type: button
+  - text: No time
+    center:
+    - 0.8074
+    - 0.56
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - remove time
+    - clear time
+    - 无时间
+    semantic_type: button
+  - text: Previous month
+    center:
+    - 0.113
+    - 0.6233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - last month
+    - prev month
+    - 上个月
+    semantic_type: button
+  - text: Next month
+    center:
+    - 0.887
+    - 0.6233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - following month
+    - 下个月
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6731
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - dismiss
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8931
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - confirm
+    - done
+    - 确定
+    semantic_type: button
+  description: Date and time picker dialog for setting task due dates with options
+    for reminders and navigation between months.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_28
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - confirm
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理定位
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - add label
+    - tagging
+    - 分类标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - 预设清单
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, and default list before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: D
+    center:
+    - 0.5
+    - 0.1192
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Remove
+    - Trash
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 保存
+    semantic_type: button
+  - text: Does not repeat
+    center:
+    - 0.3218
+    - 0.3635
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - No repeat
+    - Once
+    - 不重复
+    - Single occurrence
+    semantic_type: label
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Importance
+    - Level
+    - 优先级
+    - Urgency
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Set location
+    - Add place
+    - 添加位置
+    - Geotag
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add labels
+    - Tagging
+    - 添加标签
+    - Keywords
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Primary list
+    - Main list
+    - 默认列表
+    - Home list
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, list assignment, and recurrence options before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - store
+    - confirm
+    semantic_type: button
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 优先级
+    - importance
+    - urgency
+    - level
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加位置
+    - set location
+    - add place
+    - 地理定位
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - add label
+    - tagging
+    - 分类
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 默认列表
+    - default task list
+    - primary list
+    semantic_type: setting
+  description: Task creation or editing screen allowing users to set priority, location,
+    tags, and default list before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: D
+    center:
+    - 0.5
+    - 0.1192
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Delete
+    - Remove
+    - Trash
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - Store
+    - 保存
+    semantic_type: button
+  - text: Does not repeat
+    center:
+    - 0.3218
+    - 0.3635
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - No repeat
+    - Once
+    - Non-recurring
+    - 不重复
+    semantic_type: label
+  - text: Priority
+    center:
+    - 0.2421
+    - 0.4352
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Importance
+    - Urgency
+    - Level
+    - 优先级
+    semantic_type: setting
+  - text: Add location
+    center:
+    - 0.2917
+    - 0.5069
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Set location
+    - Add place
+    - Geotag
+    - 添加位置
+    semantic_type: button
+  - text: Add tags
+    center:
+    - 0.2583
+    - 0.5785
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add labels
+    - Tagging
+    - Categorize
+    - 添加标签
+    semantic_type: button
+  - text: Default list
+    center:
+    - 0.3236
+    - 0.6515
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Primary list
+    - Main list
+    - 默认列表
+    semantic_type: setting
+  description: Task configuration screen allowing users to set priority, location,
+    tags, list assignment, and recurrence options before saving.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Group by
+    - Categorize
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - 排序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Checklist
+    - Steps
+    - 子任务
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Done
+    - Finished
+    - 已完成
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Group by
+    - Categorize
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - 排序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Checklist
+    - Steps
+    - 子任务
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Done
+    - Finished
+    - 已完成
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_34
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Group by
+    - Categorize
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - 排序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Checklist
+    - Steps
+    - 子任务
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Done
+    - Finished
+    - 已完成
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Group by
+    - Categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - 排序
+    - 顺序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Checklist
+    - Steps
+    - 子任务
+    - 清单
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Done
+    - Finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management view displaying options for grouping, sorting, subtasks,
+    and completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_37
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group
+    - categorize
+    - 分组
+    semantic_type: setting
+  - text: By list
+    center:
+    - 0.1838
+    - 0.6535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list grouping
+    - 按列表分组
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - asc
+    - A-Z
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort
+    - order
+    - 排序
+    semantic_type: setting
+  - text: Smart sort
+    center:
+    - 0.2194
+    - 0.7327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - intelligent sort
+    - auto sort
+    - 智能排序
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.869
+    - 0.721
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - desc
+    - Z-A
+    - 降序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: setting
+  - text: My order
+    center:
+    - 0.2042
+    - 0.8119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - custom order
+    - manual sort
+    - 我的顺序
+    semantic_type: menu_item
+  - text: Move completed tasks to bottom
+    center:
+    - 0.4361
+    - 0.8673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - push done to bottom
+    - completed tasks last
+    - 已完成任务置底
+    semantic_type: toggle
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: label
+  - text: By completion time
+    center:
+    - 0.2861
+    - 0.946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - completion date
+    - finished time
+    - 按完成时间
+    semantic_type: menu_item
+  description: Task sorting and grouping settings page allowing users to customize
+    list organization by criteria such as completion status, order, and subtasks.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分组
+    semantic_type: setting
+  - text: By list
+    center:
+    - 0.1838
+    - 0.6535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list grouping
+    - by project
+    - 按列表
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - A-Z
+    - ascending order
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    semantic_type: setting
+  - text: By start date
+    center:
+    - 0.2352
+    - 0.7327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - start date
+    - by due date
+    - 按开始日期
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: setting
+  - text: My order
+    center:
+    - 0.2042
+    - 0.8119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - custom order
+    - manual sort
+    - 我的顺序
+    semantic_type: menu_item
+  - text: Move completed tasks to bottom
+    center:
+    - 0.4361
+    - 0.8673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - push completed down
+    - hide completed
+    - 将已完成任务移至底部
+    semantic_type: toggle
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: label
+  - text: By completion time
+    center:
+    - 0.2861
+    - 0.946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - completion date
+    - finished time
+    - 按完成时间
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.869
+    - 0.9344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Z-A
+    - descending order
+    - 降序
+    semantic_type: menu_item
+  description: Task sorting and grouping settings page allowing users to configure
+    order by list, start date, completion time, and subtask visibility.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_40
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - order by
+    - sort order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    - 细分任务
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_41
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    semantic_type: setting
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - A-Z
+    - ascending order
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    semantic_type: setting
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: label
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: tab
+  - text: Descending
+    center:
+    - 0.869
+    - 0.9344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Z-A
+    - descending order
+    - 降序
+    semantic_type: menu_item
+  description: Task sorting and filtering menu with options for grouping, ordering,
+    subtasks, and completion status.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分组
+    semantic_type: setting
+  - text: By list
+    center:
+    - 0.1838
+    - 0.6535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list grouping
+    - by task list
+    - 按列表
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - A-Z
+    - ascending order
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    semantic_type: setting
+  - text: By last modified
+    center:
+    - 0.2606
+    - 0.7327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - last modified date
+    - modified time
+    - 按修改时间
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.869
+    - 0.721
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Z-A
+    - descending order
+    - 降序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: setting
+  - text: Move completed tasks to bottom
+    center:
+    - 0.4361
+    - 0.8673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - push done to bottom
+    - sort completed last
+    - 已完成移至底部
+    semantic_type: toggle
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: label
+  - text: By completion time
+    center:
+    - 0.2861
+    - 0.946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - completion date
+    - finished time
+    - 按完成时间
+    semantic_type: menu_item
+  description: Task sorting and grouping settings page allowing users to configure
+    list organization by criteria such as modification time, completion status, and
+    subtask visibility.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    semantic_type: setting
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - A-Z
+    - ascending order
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    semantic_type: setting
+  - text: Descending
+    center:
+    - 0.869
+    - 0.721
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Z-A
+    - descending order
+    - 降序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: toggle
+  description: Task list view with sorting and grouping options including ascending,
+    descending, subtasks, and completed filters.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_44
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: menu_item
+  description: Task organization screen providing options for grouping, sorting, and
+    managing subtasks.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_45
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: menu_item
+  description: Task organization screen providing options for grouping, sorting, and
+    managing subtasks.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分组
+    semantic_type: setting
+  - text: By list
+    center:
+    - 0.1838
+    - 0.6535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list grouping
+    - by project
+    - 按列表
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - asc
+    - A-Z
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    semantic_type: setting
+  - text: By creation time
+    center:
+    - 0.262
+    - 0.7327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - date created
+    - created date
+    - 按创建时间
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.869
+    - 0.721
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - desc
+    - Z-A
+    - 降序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: setting
+  - text: By priority
+    center:
+    - 0.2144
+    - 0.8119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - priority level
+    - importance
+    - 按优先级
+    semantic_type: menu_item
+  - text: Move completed tasks to bottom
+    center:
+    - 0.4361
+    - 0.8673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - push done to bottom
+    - sort completed last
+    - 已完成移至底部
+    semantic_type: toggle
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: label
+  - text: By completion time
+    center:
+    - 0.2861
+    - 0.946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - date completed
+    - finished date
+    - 按完成时间
+    semantic_type: menu_item
+  description: Task sorting and grouping settings page with options for list organization,
+    subtasks, and completion handling.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    semantic_type: setting
+  - text: By list
+    center:
+    - 0.1838
+    - 0.6535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list grouping
+    - by project
+    - 按列表
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.8787
+    - 0.6419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - A-Z
+    - ascending order
+    - 升序
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    semantic_type: setting
+  - text: By creation time
+    center:
+    - 0.262
+    - 0.7327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - date created
+    - creation date
+    - 按创建时间
+    semantic_type: menu_item
+  - text: Descending
+    center:
+    - 0.869
+    - 0.721
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Z-A
+    - descending order
+    - 降序
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist items
+    - 子任务
+    semantic_type: setting
+  - text: By title
+    center:
+    - 0.1898
+    - 0.8119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - alphabetical
+    - name
+    - 按标题
+    semantic_type: menu_item
+  - text: Move completed tasks to bottom
+    center:
+    - 0.4361
+    - 0.8673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - push done to bottom
+    - sort completed last
+    - 已完成移至底部
+    semantic_type: toggle
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    semantic_type: label
+  - text: By completion time
+    center:
+    - 0.2861
+    - 0.946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - date completed
+    - finish time
+    - 按完成时间
+    semantic_type: menu_item
+  description: Task sorting and grouping settings page with options for list organization,
+    subtasks, and completed task handling.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: Grouping
+    center:
+    - 0.2208
+    - 0.6315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - group by
+    - categorize
+    - 分类
+    - 分组
+    semantic_type: menu_item
+  - text: Sorting
+    center:
+    - 0.2037
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - 排序
+    - 排列
+    semantic_type: menu_item
+  - text: Subtasks
+    center:
+    - 0.2222
+    - 0.7898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sub-tasks
+    - checklist
+    - 子任务
+    - 清单
+    semantic_type: setting
+  - text: Completed
+    center:
+    - 0.2366
+    - 0.924
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - done
+    - finished
+    - 已完成
+    - 完成的任务
+    semantic_type: tab
+  description: Task management screen offering options for grouping, sorting, viewing
+    subtasks, and filtering completed items.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 2263
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 2263
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 784
+    y: 1443
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 1443
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 2263
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 256
+    y: 2218
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 806
+    y: 1486
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 806
+    y: 2116
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 2263
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 603
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 717
+    y: 734
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 937
+    y: 734
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 262
+    y: 1420
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 315
+    y: 1592
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 350
+    y: 1940
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 784
+    y: 1443
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 1443
+    wait: 1.5
+  - action: tap
+    x: 806
+    y: 666
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 1443
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  - action: tap
+    x: 273
+    y: 518
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  - action: tap
+    x: 315
+    y: 1592
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 201
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1370
+    wait: 1.5
+  - action: tap
+    x: 350
+    y: 1940
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 2263
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 315
+    y: 1592
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 784
+    y: 2263
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2190
+    wait: 1.5
+  - action: tap
+    x: 350
+    y: 1940
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  - action: tap
+    x: 182
+    y: 1716
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1828
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  - action: tap
+    x: 164
+    y: 1942
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  - action: tap
+    x: 234
+    y: 2054
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  - action: tap
+    x: 236
+    y: 2168
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 238
+    y: 1516
+    wait: 1.5
+  - action: tap
+    x: 116
+    y: 2280
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  - action: tap
+    x: 182
+    y: 1440
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1554
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  - action: tap
+    x: 164
+    y: 1666
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  - action: tap
+    x: 125
+    y: 1780
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  - action: tap
+    x: 234
+    y: 1892
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 220
+    y: 1705
+    wait: 1.5
+  - action: tap
+    x: 236
+    y: 2118
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  - action: tap
+    x: 182
+    y: 1602
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  - action: tap
+    x: 194
+    y: 1716
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  - action: tap
+    x: 164
+    y: 1828
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  - action: tap
+    x: 125
+    y: 1942
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  - action: tap
+    x: 234
+    y: 2054
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: org.tasks
+    wait: 0.5
+  - action: launch
+    package: org.tasks
+    wait: 3.0
+  - action: tap
+    x: 912
+    y: 2263
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 1896
+    wait: 1.5
+  - action: tap
+    x: 170
+    y: 2168
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Create a new task with title and details
+- Set due date and time for a task
+- Assign priority level to a task
+- Add tags or categories to organize tasks
+- Search for existing tasks using text or voice input
+- Sort tasks by criteria such as due date, priority, or title
+- Filter tasks to show only completed or specific lists
+- Customize visible input fields in task settings
+- Set location-based reminders for tasks
+- Share task details with other applications
+known_limitations:
+- Sort options are distributed across multiple similar menus (screens 10-13), potentially
+  causing confusion
+- Task customization settings appear on multiple redundant screens (5, 8, 9, 17)
+- Voice input is available in some creation flows but may not be consistent across
+  all editing screens
+- Date and time picking requires navigating through separate dialog overlays (screens
+  19, 27)

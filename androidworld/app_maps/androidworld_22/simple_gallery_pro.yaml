@@ -1,0 +1,3055 @@
+app: Simple Gallery Pro
+package: com.simplemobiletools.gallery.pro
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main gallery screen displaying folders with options to search, open
+    camera, add folders, and view all content.
+  elements:
+  - text: Search
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 搜索
+    - 查找
+    - search bar
+    semantic_type: input
+  - text: Open camera
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 启动相机
+    - 拍照
+    - launch camera
+    semantic_type: button
+  - text: Show all folders content
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 显示所有文件夹内容
+    - 查看全部
+    - show all
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 更多选项
+    - 菜单
+    - more
+    - ⋮
+    semantic_type: button
+  - text: Add folder
+    center:
+    - 0.5
+    - 0.2144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 添加文件夹
+    - 新增目录
+    - include folder
+    semantic_type: button
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search folders
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 搜索文件夹
+    - folder search
+    - find folders
+    semantic_type: input
+  - text: Open camera
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 打开相机
+    - launch camera
+    - take photo
+    semantic_type: button
+  - text: Show all folders content
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 显示所有文件夹内容
+    - show all media
+    - display all albums
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 更多选项
+    - menu
+    - overflow menu
+    - three dots
+    semantic_type: button
+  - text: Switch to file search across all visible folders
+    center:
+    - 0.5
+    - 0.1515
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 切换到全局文件搜索
+    - search all files
+    - global search
+    semantic_type: button
+  description: Folder browsing screen with search, camera access, and view options
+    for managing gallery content.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Options
+    center:
+    - 0.9116
+    - 0.8025
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  description: Options menu screen displaying a list of configurable settings and
+    actions for the gallery app.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Search
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Toggle filename visibility
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Show filenames
+    - Hide filenames
+    - 显示文件名
+    - 隐藏文件名
+    semantic_type: toggle
+  - text: Switch to folder view
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Folder view
+    - Folders
+    - 文件夹视图
+    - 目录模式
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Change filters
+    center:
+    - 0.4995
+    - 0.2144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Filters
+    - Filter settings
+    - 筛选器
+    - 过滤设置
+    semantic_type: button
+  description: Toolbar screen providing search, view toggles, and filter options for
+    managing gallery content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Sort by
+    center:
+    - 0.6574
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 排序方式
+    - sort order
+    - arrange by
+    semantic_type: menu_item
+  - text: Filter media
+    center:
+    - 0.6574
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 过滤媒体
+    - filter files
+    - media filter
+    semantic_type: button
+  - text: Change view type
+    center:
+    - 0.6574
+    - 0.2456
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 切换视图
+    - view mode
+    - layout
+    semantic_type: button
+  - text: Temporarily show hidden
+    center:
+    - 0.6574
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 显示隐藏文件
+    - show hidden items
+    - reveal hidden
+    semantic_type: toggle
+  - text: Open the Recycle Bin
+    center:
+    - 0.6574
+    - 0.3506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 打开回收站
+    - trash
+    - deleted items
+    semantic_type: button
+  - text: Open camera
+    center:
+    - 0.6574
+    - 0.4031
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 打开相机
+    - launch camera
+    - take photo
+    semantic_type: button
+  - text: Group by
+    center:
+    - 0.6574
+    - 0.4556
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 分组方式
+    - grouping
+    - organize by
+    semantic_type: menu_item
+  - text: Set as default folder
+    center:
+    - 0.6574
+    - 0.5081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Column count
+    center:
+    - 0.6574
+    - 0.5606
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 列数
+    - grid columns
+    - number of columns
+    semantic_type: setting
+  - text: Slideshow
+    center:
+    - 0.6574
+    - 0.6131
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 幻灯片
+    - auto play
+    - photo slideshow
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.6574
+    - 0.6656
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: link
+  - text: About
+    center:
+    - 0.6574
+    - 0.7181
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 关于
+    - app info
+    - version
+    semantic_type: link
+  description: A menu screen providing various gallery management options such as
+    sorting, filtering, view settings, and access to tools like the Recycle Bin and
+    Settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Filter media
+    center:
+    - 0.2949
+    - 0.304
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Media filter
+    - Filter types
+    - 筛选媒体
+    semantic_type: label
+  - text: Images
+    center:
+    - 0.5
+    - 0.3673
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 照片
+    semantic_type: toggle
+  - text: Videos
+    center:
+    - 0.5
+    - 0.4235
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Clips
+    - Movies
+    - 视频
+    - 影片
+    semantic_type: toggle
+  - text: GIFs
+    center:
+    - 0.5
+    - 0.4798
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Animated GIFs
+    - 动图
+    - GIF动画
+    semantic_type: toggle
+  - text: RAW images
+    center:
+    - 0.5
+    - 0.536
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - RAW files
+    - Raw photos
+    - 原始图像
+    - RAW格式
+    semantic_type: toggle
+  - text: SVGs
+    center:
+    - 0.5
+    - 0.5923
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Vector images
+    - Scalable Vector Graphics
+    - 矢量图
+    - SVG文件
+    semantic_type: toggle
+  - text: Portraits
+    center:
+    - 0.5
+    - 0.6485
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Portrait mode
+    - 人像
+    - 肖像
+    semantic_type: toggle
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.7183
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    - 关闭
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.7183
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Confirm
+    - Apply
+    - 确定
+    - 确认
+    semantic_type: button
+  description: A filter selection dialog allowing users to choose specific media types
+    such as Images, Videos, GIFs, RAW images, SVGs, and Portraits.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Search
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Toggle filename visibility
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Show filenames
+    - Hide filenames
+    - 显示文件名
+    - 隐藏文件名
+    semantic_type: toggle
+  - text: Switch to folder view
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Folder view
+    - Directory mode
+    - 文件夹视图
+    - 目录模式
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Change filters
+    center:
+    - 0.4995
+    - 0.194
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Filter settings
+    - Adjust filters
+    - 更改过滤器
+    - 筛选设置
+    semantic_type: button
+  description: Toolbar screen providing search, view toggles, and filter options for
+    managing gallery content.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search files
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 搜索文件
+    - search
+    - find files
+    semantic_type: input
+  - text: Toggle filename visibility
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 显示/隐藏文件名
+    - show filenames
+    - hide filenames
+    - toggle names
+    semantic_type: toggle
+  - text: Switch to folder view
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 切换到文件夹视图
+    - folder view
+    - directory view
+    - folders
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Change filters
+    center:
+    - 0.4995
+    - 0.2144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 更改过滤器
+    - filter
+    - filters
+    - modify filters
+    semantic_type: button
+  description: Gallery toolbar with search, view toggles, and filter options for managing
+    media display.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Sort by
+    center:
+    - 0.637
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 排序方式
+    - order by
+    - arrange by
+    semantic_type: menu_item
+  - text: Filter media
+    center:
+    - 0.637
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 筛选媒体
+    - filter files
+    - media filter
+    semantic_type: button
+  - text: Change view type
+    center:
+    - 0.637
+    - 0.2456
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 切换视图
+    - view mode
+    - layout type
+    semantic_type: button
+  - text: Temporarily show hidden
+    center:
+    - 0.637
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 临时显示隐藏文件
+    - show hidden items
+    - reveal hidden
+    semantic_type: toggle
+  - text: Temporarily show excluded
+    center:
+    - 0.637
+    - 0.3506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 临时显示排除项
+    - show excluded items
+    - reveal excluded
+    semantic_type: toggle
+  - text: Create new folder
+    center:
+    - 0.637
+    - 0.4031
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 新建文件夹
+    - new directory
+    - add folder
+    semantic_type: button
+  - text: Column count
+    center:
+    - 0.637
+    - 0.4556
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 列数
+    - grid columns
+    - number of columns
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.637
+    - 0.5081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: link
+  - text: About
+    center:
+    - 0.637
+    - 0.5606
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 关于
+    - app info
+    - version info
+    semantic_type: link
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search folders
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - 搜索文件夹
+    - find folders
+    - folder search
+    semantic_type: input
+  - text: Open camera
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 打开相机
+    - launch camera
+    - take photo
+    semantic_type: button
+  - text: Show all folders content
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 显示所有文件夹内容
+    - show all media
+    - display all
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: button
+  - text: Switch to file search across all visible folders
+    center:
+    - 0.5
+    - 0.1515
+    fixed: true
+    found_at_scroll: 2
+    leads_to: screen_21
+    aliases:
+    - 全局文件搜索
+    - search all files
+    - global search
+    semantic_type: button
+  description: Folder management and settings menu with options for sorting, filtering,
+    viewing hidden items, creating folders, and adjusting display preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search files
+    center:
+    - 0.4653
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 搜索文件
+    - search
+    - find files
+    semantic_type: input
+  - text: Toggle filename visibility
+    center:
+    - 0.8921
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 显示文件名
+    - hide filenames
+    - show file names
+    - 文件名可见性
+    semantic_type: toggle
+  description: Search interface for finding files with options to toggle filename
+    visibility and navigate back.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Switch to Camera Mode
+    center:
+    - 0.1903
+    - 0.5085
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Camera
+    - Photo Mode
+    - 拍照模式
+    - 相机
+    semantic_type: button
+  - text: Switch to Video Camera
+    center:
+    - 0.1903
+    - 0.5765
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Video
+    - Camcorder
+    - 录像模式
+    - 摄像机
+    semantic_type: button
+  - text: Options
+    center:
+    - 0.9116
+    - 0.8025
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Menu
+    - More
+    - Settings
+    - 选项
+    - 更多
+    semantic_type: button
+  - text: Shutter
+    center:
+    - 0.5
+    - 0.9081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Capture
+    - Take Photo
+    - Snap
+    - 快门
+    - 拍摄
+    semantic_type: button
+  description: Camera interface with options to switch between photo and video modes,
+    access settings, and capture media.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: Select a folder
+    center:
+    - 0.3282
+    - 0.1781
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Choose directory
+    - Pick folder
+    - 选择文件夹
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.8446
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.8446
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Confirm
+    - Accept
+    - 确定
+    semantic_type: button
+  description: Folder selection dialog allowing the user to choose a directory with
+    Cancel and OK actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Sort by
+    center:
+    - 0.2343
+    - 0.2419
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 排序方式
+    - 排序依据
+    - order by
+    semantic_type: label
+  - text: Ascending
+    center:
+    - 0.5
+    - 0.6579
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 升序
+    - ascending order
+    - A-Z
+    semantic_type: button
+  - text: Descending
+    center:
+    - 0.5
+    - 0.7063
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 降序
+    - descending order
+    - Z-A
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.7808
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 取消
+    - dismiss
+    - abort
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.7808
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 确定
+    - confirm
+    - apply
+    semantic_type: button
+  description: A sorting options dialog allowing the user to select ascending or descending
+    order and confirm with OK.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_13
+  elements:
+  - text: Grid
+    center:
+    - 0.5
+    - 0.4233
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - grid view
+    - thumbnails
+    - 网格视图
+    semantic_type: button
+  - text: List
+    center:
+    - 0.5
+    - 0.4717
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - list view
+    - 列表视图
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.6033
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - dismiss
+    - close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.6033
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - confirm
+    - accept
+    - 确定
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_18
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: Open camera
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - launch camera
+    - take photo
+    - 打开相机
+    semantic_type: button
+  - text: Show all folders content
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - display all media
+    - show everything
+    - 显示所有文件夹内容
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: Add folder
+    center:
+    - 0.5
+    - 0.2144
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - include directory
+    - select folder
+    - 添加文件夹
+    semantic_type: button
+  description: Folder selection dialog with search, camera access, and folder management
+    options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: 1 column
+    center:
+    - 0.5
+    - 0.1783
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - single column
+    - one column
+    - 1列
+    semantic_type: menu_item
+  - text: 2 columns
+    center:
+    - 0.5
+    - 0.2267
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - two columns
+    - double column
+    - 2列
+    semantic_type: menu_item
+  - text: 3 columns
+    center:
+    - 0.5
+    - 0.275
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - three columns
+    - triple column
+    - 3列
+    semantic_type: menu_item
+  - text: 4 columns
+    center:
+    - 0.5
+    - 0.3233
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - four columns
+    - quad column
+    - 4列
+    semantic_type: menu_item
+  - text: 5 columns
+    center:
+    - 0.5
+    - 0.3717
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - five columns
+    - 5列
+    semantic_type: menu_item
+  - text: 6 columns
+    center:
+    - 0.5
+    - 0.42
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - six columns
+    - 6列
+    semantic_type: menu_item
+  - text: 7 columns
+    center:
+    - 0.5
+    - 0.4683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - seven columns
+    - 7列
+    semantic_type: menu_item
+  - text: 8 columns
+    center:
+    - 0.5
+    - 0.5167
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - eight columns
+    - 8列
+    semantic_type: menu_item
+  - text: 9 columns
+    center:
+    - 0.5
+    - 0.565
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - nine columns
+    - 9列
+    semantic_type: menu_item
+  - text: 10 columns
+    center:
+    - 0.5
+    - 0.6133
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - ten columns
+    - 10列
+    semantic_type: menu_item
+  - text: 11 columns
+    center:
+    - 0.5
+    - 0.6617
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - eleven columns
+    - 11列
+    semantic_type: menu_item
+  - text: 12 columns
+    center:
+    - 0.5
+    - 0.71
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - twelve columns
+    - 12列
+    semantic_type: menu_item
+  - text: 13 columns
+    center:
+    - 0.5
+    - 0.7583
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - thirteen columns
+    - 13列
+    semantic_type: menu_item
+  - text: 14 columns
+    center:
+    - 0.5
+    - 0.8067
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - fourteen columns
+    - 14列
+    semantic_type: menu_item
+  - text: 15 columns
+    center:
+    - 0.5
+    - 0.855
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - fifteen columns
+    - 15列
+    semantic_type: menu_item
+  - text: 16 columns
+    center:
+    - 0.5
+    - 0.8827
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - sixteen columns
+    - 16列
+    semantic_type: menu_item
+  - text: 17 columns
+    center:
+    - 0.5
+    - 0.7037
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - seventeen columns
+    - 17列
+    semantic_type: menu_item
+  - text: 18 columns
+    center:
+    - 0.5
+    - 0.7521
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - eighteen columns
+    - 18列
+    semantic_type: menu_item
+  - text: 19 columns
+    center:
+    - 0.5
+    - 0.8004
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - nineteen columns
+    - 19列
+    semantic_type: menu_item
+  - text: 20 columns
+    center:
+    - 0.5
+    - 0.8488
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - twenty columns
+    - 20列
+    semantic_type: menu_item
+  description: Settings screen for selecting the number of columns in the gallery
+    grid view, offering options from 1 to 20 columns.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: COLOR CUSTOMIZATION
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Customize colors
+    center:
+    - 0.1861
+    - 0.2123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: GENERAL
+    center:
+    - 0.5269
+    - 0.274
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Language
+    center:
+    - 0.1287
+    - 0.3302
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Change date and time format
+    center:
+    - 0.2755
+    - 0.4123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: File loading priority
+    center:
+    - 0.1986
+    - 0.4731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Speed
+    center:
+    - 0.5
+    - 0.4944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Manage included folders
+    center:
+    - 0.2417
+    - 0.5552
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Manage excluded folders
+    center:
+    - 0.2458
+    - 0.6206
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Show hidden items
+    center:
+    - 0.5
+    - 0.6883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Search all files instead of folders on the main screen
+    center:
+    - 0.5
+    - 0.7583
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: VIDEOS
+    center:
+    - 0.5269
+    - 0.8223
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Play videos automatically
+    center:
+    - 0.5
+    - 0.8854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Remember last video playback position
+    center:
+    - 0.5
+    - 0.9554
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Loop videos
+    center:
+    - 0.5
+    - 0.9996
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Always open videos on a separate screen with new horizontal gestures
+    center:
+    - 0.5
+    - 0.3379
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Allow controlling video volume and brightness with vertical gestures
+    center:
+    - 0.5
+    - 0.4079
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: THUMBNAILS
+    center:
+    - 0.5269
+    - 0.4719
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Crop thumbnails into squares
+    center:
+    - 0.5
+    - 0.535
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Animate GIFs at thumbnails
+    center:
+    - 0.5
+    - 0.605
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: File thumbnail style
+    center:
+    - 0.2005
+    - 0.6727
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Folder thumbnail style
+    center:
+    - 0.2218
+    - 0.7335
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: SCROLLING
+    center:
+    - 0.5269
+    - 0.8119
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Scroll thumbnails horizontally
+    center:
+    - 0.5
+    - 0.875
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Enable pull-to-refresh from the top
+    center:
+    - 0.5
+    - 0.945
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: FULLSCREEN MEDIA
+    center:
+    - 0.5269
+    - 0.9904
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Max brightness when viewing fullscreen media
+    center:
+    - 0.5
+    - 0.3379
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Black background at fullscreen media
+    center:
+    - 0.5
+    - 0.4079
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Automatically hide system UI at fullscreen media
+    center:
+    - 0.5
+    - 0.4779
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Allow instantly changing media by clicking on screen sides
+    center:
+    - 0.5
+    - 0.5479
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Allow controlling photo brightness with vertical gestures
+    center:
+    - 0.5
+    - 0.6179
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Allow closing the fullscreen view with a down gesture
+    center:
+    - 0.5
+    - 0.6879
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Show a notch if available
+    center:
+    - 0.5
+    - 0.7579
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Rotate fullscreen media by
+    center:
+    - 0.2565
+    - 0.821
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: DEEP ZOOMABLE IMAGES
+    center:
+    - 0.5269
+    - 0.8994
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Allow deep zooming images
+    center:
+    - 0.5
+    - 0.9625
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_3
+  - text: Allow rotating images with gestures
+    center:
+    - 0.5
+    - 0.3058
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Show images in the highest possible quality
+    center:
+    - 0.5
+    - 0.3758
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Allow 1:1 zooming in with two double taps
+    center:
+    - 0.5
+    - 0.4458
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: EXTENDED DETAILS
+    center:
+    - 0.5269
+    - 0.5098
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Show extended details over fullscreen media
+    center:
+    - 0.5
+    - 0.5729
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: SECURITY
+    center:
+    - 0.5269
+    - 0.6369
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Password protect the whole application
+    center:
+    - 0.5
+    - 0.7
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Password protect hidden item visibility
+    center:
+    - 0.5
+    - 0.77
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Password protect file deletion and moving
+    center:
+    - 0.5
+    - 0.84
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: FILE OPERATIONS
+    center:
+    - 0.5269
+    - 0.904
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  - text: Delete empty folders after deleting their content
+    center:
+    - 0.5
+    - 0.9671
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_3
+  description: Settings screen for Simple Gallery Pro with categorized options for
+    color customization, general preferences, video playback, thumbnails, scrolling,
+    and fullscreen media.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: SUPPORT
+    center:
+    - 0.2681
+    - 0.1606
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Frequently asked questions
+    center:
+    - 0.5681
+    - 0.2156
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: hello@simplemobiletools.com
+    center:
+    - 0.5681
+    - 0.2856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: HELP US
+    center:
+    - 0.2606
+    - 0.359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Contributors
+    center:
+    - 0.5681
+    - 0.414
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Donate
+    center:
+    - 0.5681
+    - 0.484
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: SOCIAL
+    center:
+    - 0.2519
+    - 0.5573
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Facebook
+    center:
+    - 0.5681
+    - 0.6123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: GitHub
+    center:
+    - 0.5681
+    - 0.6823
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Reddit
+    center:
+    - 0.5681
+    - 0.7523
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Telegram
+    center:
+    - 0.5681
+    - 0.8223
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: OTHER
+    center:
+    - 0.2481
+    - 0.8956
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Privacy policy
+    center:
+    - 0.5681
+    - 0.9506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: About
+    center:
+    - 0.5588
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Third party licences
+    center:
+    - 0.5681
+    - 0.7977
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  - text: Made with ❤️ in Slovakia
+    center:
+    - 0.5681
+    - 0.939
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+  description: About and support screen displaying contact information, social links,
+    donation options, and legal details.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Select a folder
+    center:
+    - 0.3282
+    - 0.1781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Choose directory
+    - Pick folder
+    - 选择文件夹
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.8446
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.8446
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Confirm
+    - Accept
+    - 确定
+    semantic_type: button
+  description: Folder selection dialog with Cancel and OK buttons for choosing a directory.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search folders
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索文件夹
+    - folder search
+    - find folders
+    semantic_type: input
+  - text: Open camera
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 打开相机
+    - launch camera
+    - take photo
+    semantic_type: button
+  - text: Show all folders content
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 显示所有文件夹内容
+    - view all folders
+    - show everything
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Add folder
+    center:
+    - 0.5
+    - 0.2144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加文件夹
+    - include directory
+    - select folder
+    semantic_type: button
+  - text: Switch to file search across all visible folders
+    center:
+    - 0.5
+    - 0.1515
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 切换到全局文件搜索
+    - search all files
+    - global search
+    semantic_type: button
+  description: Folder management screen allowing users to search, add folders, open
+    the camera, and toggle visibility of folder contents.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Grid
+    center:
+    - 0.5
+    - 0.4233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid view
+    - thumbnail view
+    - 网格视图
+    semantic_type: button
+  - text: List
+    center:
+    - 0.5
+    - 0.4717
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list view
+    - 列表视图
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.6033
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - dismiss
+    - abort
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.6033
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - confirm
+    - accept
+    - 确定
+    - done
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - return
+    - previous
+    - 返回
+    semantic_type: button
+  - text: Search folders
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - find folders
+    - folder search
+    - 搜索文件夹
+    semantic_type: input
+  - text: Open camera
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - launch camera
+    - take photo
+    - 打开相机
+    semantic_type: button
+  - text: Show all folders content
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - display all folders
+    - show everything
+    - 显示所有文件夹内容
+    semantic_type: toggle
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - three dots
+    semantic_type: button
+  - text: Switch to file search across all visible folders
+    center:
+    - 0.5
+    - 0.1515
+    fixed: true
+    found_at_scroll: 2
+    aliases:
+    - global file search
+    - search all files
+    - 全局文件搜索
+    semantic_type: button
+  description: Folder selection dialog with a grid or list view, search functionality,
+    and confirmation buttons.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Sort by
+    center:
+    - 0.6574
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序方式
+    - sort order
+    - arrange by
+    semantic_type: menu_item
+  - text: Filter media
+    center:
+    - 0.6574
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 媒体过滤
+    - filter files
+    - media filter
+    semantic_type: button
+  - text: Change view type
+    center:
+    - 0.6574
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 切换视图
+    - view mode
+    - layout type
+    semantic_type: button
+  - text: Temporarily show hidden
+    center:
+    - 0.6574
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示隐藏文件
+    - show hidden items
+    - reveal hidden
+    semantic_type: toggle
+  - text: Open the Recycle Bin
+    center:
+    - 0.6574
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开回收站
+    - trash bin
+    - deleted items
+    semantic_type: button
+  - text: Open camera
+    center:
+    - 0.6574
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开相机
+    - launch camera
+    - take photo
+    semantic_type: button
+  - text: Group by
+    center:
+    - 0.6574
+    - 0.3944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分组方式
+    - grouping
+    - organize by
+    semantic_type: menu_item
+  - text: Set as default folder
+    center:
+    - 0.6574
+    - 0.4469
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设为默认文件夹
+    - default directory
+    - set home folder
+    semantic_type: button
+  - text: Column count
+    center:
+    - 0.6574
+    - 0.4994
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 列数
+    - grid columns
+    - number of columns
+    semantic_type: setting
+  - text: Slideshow
+    center:
+    - 0.6574
+    - 0.5519
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 幻灯片
+    - auto play
+    - photo slideshow
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.6574
+    - 0.6044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - 配置
+    semantic_type: link
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search files
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 搜索文件
+    - find files
+    - search
+    semantic_type: input
+  - text: Toggle filename visibility
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 显示文件名
+    - show/hide names
+    - filename display
+    semantic_type: toggle
+  - text: Switch to folder view
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 切换到文件夹视图
+    - folder mode
+    - directory view
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - additional actions
+    semantic_type: button
+  - text: Change filters
+    center:
+    - 0.4995
+    - 0.2144
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更改过滤器
+    - modify filters
+    - adjust filtering
+    semantic_type: button
+  description: A menu screen providing various gallery management options such as
+    sorting, filtering, view settings, and navigation to other features like the Recycle
+    Bin or Settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Toggle filename visibility
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 显示文件名
+    - hide filenames
+    - show names
+    semantic_type: toggle
+  - text: Switch to folder view
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 文件夹视图
+    - folder mode
+    - directory view
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - ⋮
+    semantic_type: button
+  - text: Change filters
+    center:
+    - 0.4995
+    - 0.194
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 修改过滤器
+    - filter settings
+    - adjust filters
+    semantic_type: button
+  description: Toolbar screen providing view customization options such as toggling
+    filename visibility, switching to folder view, and changing filters.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Sort by
+    center:
+    - 0.6574
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序方式
+    - sort order
+    - arrange by
+    semantic_type: menu_item
+  - text: Filter media
+    center:
+    - 0.6574
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 媒体过滤
+    - filter files
+    - media filter
+    semantic_type: button
+  - text: Change view type
+    center:
+    - 0.6574
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 切换视图
+    - view mode
+    - layout type
+    semantic_type: button
+  - text: Temporarily show hidden
+    center:
+    - 0.6574
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示隐藏文件
+    - show hidden items
+    - reveal hidden
+    semantic_type: toggle
+  - text: Open the Recycle Bin
+    center:
+    - 0.6574
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开回收站
+    - trash bin
+    - deleted items
+    semantic_type: button
+  - text: Open camera
+    center:
+    - 0.6574
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开相机
+    - launch camera
+    - take photo
+    semantic_type: button
+  - text: Group by
+    center:
+    - 0.6574
+    - 0.3944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分组方式
+    - grouping
+    - organize by
+    semantic_type: menu_item
+  - text: Set as default folder
+    center:
+    - 0.6574
+    - 0.4469
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设为默认文件夹
+    - default directory
+    - set home folder
+    semantic_type: button
+  - text: Column count
+    center:
+    - 0.6574
+    - 0.4994
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 列数
+    - grid columns
+    - number of columns
+    semantic_type: setting
+  - text: Slideshow
+    center:
+    - 0.6574
+    - 0.5519
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 幻灯片
+    - auto play
+    - photo slideshow
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.6574
+    - 0.6044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: link
+  - text: Back
+    center:
+    - 0.0875
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Toggle filename visibility
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 显示文件名
+    - show/hide names
+    - filename display
+    semantic_type: toggle
+  - text: Switch to folder view
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 切换到文件夹视图
+    - folder mode
+    - directory view
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: button
+  - text: Change filters
+    center:
+    - 0.4995
+    - 0.194
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 更改过滤器
+    - modify filters
+    - edit filtering
+    semantic_type: button
+  description: A menu screen providing various gallery management options such as
+    sorting, filtering, view settings, and navigation to other features like the Recycle
+    Bin or Settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Group by
+    center:
+    - 0.2588
+    - 0.1781
+    fixed: true
+    found_at_scroll: 0
+  - text: Do not group files
+    center:
+    - 0.5
+    - 0.2375
+    fixed: false
+    found_at_scroll: 0
+  - text: Last modified (daily)
+    center:
+    - 0.5
+    - 0.2858
+    fixed: false
+    found_at_scroll: 0
+  - text: Last modified (monthly)
+    center:
+    - 0.5
+    - 0.3342
+    fixed: false
+    found_at_scroll: 0
+  - text: Date taken (daily)
+    center:
+    - 0.5
+    - 0.3825
+    fixed: false
+    found_at_scroll: 0
+  - text: Date taken (monthly)
+    center:
+    - 0.5
+    - 0.4308
+    fixed: false
+    found_at_scroll: 0
+  - text: File type
+    center:
+    - 0.5
+    - 0.4792
+    fixed: false
+    found_at_scroll: 0
+  - text: Extension
+    center:
+    - 0.5
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+  - text: Folder
+    center:
+    - 0.5
+    - 0.5758
+    fixed: false
+    found_at_scroll: 0
+  - text: Ascending
+    center:
+    - 0.5
+    - 0.6425
+    fixed: false
+    found_at_scroll: 0
+  - text: Descending
+    center:
+    - 0.5
+    - 0.6908
+    fixed: false
+    found_at_scroll: 0
+  - text: Show file count at section headers
+    center:
+    - 0.5
+    - 0.7488
+    fixed: false
+    found_at_scroll: 0
+  - text: Use for this folder only
+    center:
+    - 0.5
+    - 0.7879
+    fixed: false
+    found_at_scroll: 0
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.8446
+    fixed: true
+    found_at_scroll: 0
+  - text: OK
+    center:
+    - 0.7796
+    - 0.8446
+    fixed: true
+    found_at_scroll: 0
+  - text: Please note that grouping and sorting are 2 independent fields
+    center:
+    - 0.5
+    - 0.786
+    fixed: false
+    found_at_scroll: 1
+  description: Configuration dialog for setting file grouping and sorting options
+    in the gallery.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 514
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 364
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 514
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 710
+    y: 338
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 710
+    y: 590
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 710
+    y: 1094
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 710
+    y: 1220
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 710
+    y: 1346
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 514
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 882
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 688
+    y: 590
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 364
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 94
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 364
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 212
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.simplemobiletools.gallery.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.gallery.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 710
+    y: 1094
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 428
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Browse photo and video folders
+- Search for specific media files
+- Capture photos or videos using the built-in camera
+- Filter media by type (Images, Videos, GIFs, RAW, SVGs)
+- Sort gallery content by name, date, or size
+- Customize grid view column count
+- Manage hidden folders and files
+- Access the Recycle Bin to restore deleted items
+- Adjust app theme and color customization settings
+known_limitations:
+- Settings and management options are distributed across multiple menu screens and
+  dialogs
+- Folder selection requires navigating through separate dialog interfaces with confirmation
+  steps
+- Advanced sorting and grouping configurations are located in nested dialogs rather
+  than the main toolbar

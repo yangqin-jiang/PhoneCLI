@@ -1,0 +1,4896 @@
+app: Broccoli
+package: com.flauschcode.broccoli
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main recipes screen featuring a navigation drawer, search bar, and
+    options to view all recipes, browse categories, or create a new recipe.
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Categories
+    center:
+    - 0.4606
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: All recipes
+    center:
+    - 0.4023
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 分类
+    - tags
+    - groups
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 支持应用
+    - donate
+    - contribute
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    semantic_type: setting
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 关于应用
+    - app info
+    - version info
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - open menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: All recipes
+    center:
+    - 0.4023
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 全部食谱
+    - all dishes
+    - recipe list
+    semantic_type: link
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.5387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 新建食谱
+    - add recipe
+    - new dish
+    semantic_type: button
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.5854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 从网站导入食谱
+    - import URL
+    - web import
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 新食谱
+    - add new
+    - create dish
+    semantic_type: button
+  description: Main navigation drawer for the Broccoli app featuring menu options
+    like Recipes, Categories, and Settings, along with quick actions to create or
+    import recipes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: All recipes
+    center:
+    - 0.4023
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 全部食谱
+    - 所有菜谱
+    - all dishes
+    semantic_type: tab
+  - text: Seasonal recipes
+    center:
+    - 0.4023
+    - 0.1975
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 时令食谱
+    - 季节菜谱
+    - seasonal dishes
+    semantic_type: tab
+  - text: Recipes without category
+    center:
+    - 0.4023
+    - 0.25
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 无分类食谱
+    - 未分类菜谱
+    - uncategorized recipes
+    semantic_type: tab
+  - text: Favorites
+    center:
+    - 0.4023
+    - 0.3025
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 收藏
+    - 喜爱
+    - favorites list
+    - saved recipes
+    semantic_type: tab
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - 打开导航菜单
+    - menu button
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.4606
+    - 0.145
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 分类
+    - 类别
+    - tags
+    - groups
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 搜索
+    - 查找
+    - search bar
+    - find
+    semantic_type: input
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.5387
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - 新建食谱
+    - 添加菜谱
+    - add recipe
+    - new dish
+    semantic_type: button
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.5854
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - 从网站导入食谱
+    - 导入网址
+    - import URL
+    - web import
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 新食谱
+    - 新建菜谱
+    - add new
+    - create dish
+    semantic_type: button
+  description: Recipe management screen displaying categorized recipe lists and options
+    to create or import new recipes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 食谱
+    - 菜谱
+    - cookbook
+    semantic_type: tab
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - close
+    - hide
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Search in ALL RECIPES
+    center:
+    - 0.5681
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - search recipes
+    - find recipe
+    - 搜索食谱
+    - 全局搜索
+    semantic_type: input
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.3679
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - add recipe
+    - new recipe
+    - 新建食谱
+    - 添加菜谱
+    semantic_type: button
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.4146
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - import URL
+    - web import
+    - 导入网址
+    - 从网页导入
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - create recipe
+    - add new
+    - 新建
+    - 新增食谱
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.145
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - clear search
+    - reset
+    - 清除
+    - 清空搜索
+    semantic_type: button
+  description: Recipe management screen featuring a search bar, options to create
+    or import recipes, and a list of recipes accessible via a navigation drawer.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8829
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Save
+    - 保存
+    - Confirm
+    semantic_type: button
+  - text: Change photo
+    center:
+    - 0.9079
+    - 0.3052
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Edit photo
+    - Update avatar
+    - 更换照片
+    - 修改头像
+    semantic_type: button
+  description: Profile editing screen allowing the user to change their photo and
+    save updates.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Categories
+    center:
+    - 0.2977
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 分类
+    - groups
+    - tags
+    semantic_type: label
+  - text: Add category
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - 新建分类
+    - create category
+    - new group
+    semantic_type: button
+  description: Categories management screen allowing users to view existing categories
+    and add new ones via a navigation drawer.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - menu
+    - hamburger menu
+    - side menu
+    - navigation menu
+    semantic_type: button
+  - text: CONFIGURE
+    center:
+    - 0.5
+    - 0.601
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - settings
+    - setup
+    - configuration
+    - preferences
+    semantic_type: button
+  description: A configuration screen accessible via the navigation drawer, likely
+    containing settings or setup options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Support the app
+    center:
+    - 0.3556
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - app support
+    - help app
+    - support
+    semantic_type: link
+  - text: Donate
+    center:
+    - 0.5
+    - 0.1673
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - donation
+    - give money
+    - contribute
+    semantic_type: button
+  - text: Tell your friends
+    center:
+    - 0.4995
+    - 0.3769
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - invite friends
+    - refer
+    - share with friends
+    semantic_type: link
+  - text: SHARE THE APP
+    center:
+    - 0.5
+    - 0.479
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - share
+    - send to friends
+    - invite
+    semantic_type: button
+  description: Navigation drawer menu with options to support, donate, and share the
+    app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Backup and restore
+    center:
+    - 0.3935
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - data management
+    - backup & restore
+    - 备份与恢复
+    semantic_type: setting
+  - text: Backup
+    center:
+    - 0.5
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - create backup
+    - save data
+    - 备份
+    semantic_type: button
+  - text: Backup recipes
+    center:
+    - 0.3069
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - export recipes
+    - save recipes
+    - 备份食谱
+    semantic_type: menu_item
+  - text: Last backup
+    center:
+    - 0.281
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - previous backup
+    - latest backup time
+    - 上次备份
+    semantic_type: label
+  - text: Restore
+    center:
+    - 0.5
+    - 0.3856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - recover
+    - import data
+    - 恢复
+    semantic_type: button
+  - text: Restore recipes
+    center:
+    - 0.3088
+    - 0.4344
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - import recipes
+    - load recipes
+    - 恢复食谱
+    semantic_type: menu_item
+  description: Backup and restore settings page allowing users to backup or restore
+    recipes with last backup status displayed.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Settings
+    center:
+    - 0.269
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: General settings
+    center:
+    - 0.5
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Preferred category
+    center:
+    - 0.3356
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: Theme
+    center:
+    - 0.2347
+    - 0.2802
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+  - text: Seasonal calendar
+    center:
+    - 0.5
+    - 0.3677
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Region
+    center:
+    - 0.2347
+    - 0.4165
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Languages of recipes
+    center:
+    - 0.3611
+    - 0.4965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: In which languages do you create your recipes? Choose at least one language.
+    center:
+    - 0.5681
+    - 0.5279
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: Send feedback
+    center:
+    - 0.3032
+    - 0.5944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+  - text: Do you miss your region, language or favorite ingredient?
+    center:
+    - 0.5681
+    - 0.6258
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+  description: Settings screen allowing users to configure general preferences such
+    as theme, region, and recipe languages, and to send feedback.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - menu
+    - hamburger menu
+    - navigation menu
+    semantic_type: button
+  - text: About the app
+    center:
+    - 0.3329
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - About
+    - App info
+    - 关于应用
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.5
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Support
+    - FAQ
+    - 帮助
+    semantic_type: menu_item
+  - text: Send feedback
+    center:
+    - 0.3032
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Feedback
+    - Report issue
+    - 提交反馈
+    semantic_type: button
+  - text: Version
+    center:
+    - 0.2407
+    - 0.3781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - App version
+    - 版本号
+    - version number
+    semantic_type: label
+  - text: Legal
+    center:
+    - 0.5
+    - 0.4656
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Legal information
+    - 法律信息
+    - Terms
+    semantic_type: setting
+  - text: Open source licenses
+    center:
+    - 0.3593
+    - 0.5144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - OSS licenses
+    - 开源许可
+    - licenses
+    semantic_type: link
+  - text: License details for open source software
+    center:
+    - 0.4847
+    - 0.5369
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - OSS details
+    - 开源软件许可详情
+    - license info
+    semantic_type: link
+  - text: Privacy policy
+    center:
+    - 0.2935
+    - 0.5944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - Privacy
+    - 隐私政策
+    - data policy
+    semantic_type: link
+  description: App information and support menu containing links to About, Help, Feedback,
+    Legal, Privacy Policy, and Open Source Licenses.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: Categories
+    center:
+    - 0.4606
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.5387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.5854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  description: Main recipes screen with navigation drawer, search, categories, and
+    options to create or import a new recipe.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - recipe list
+    - my recipes
+    - 食谱
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.4606
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - tags
+    - groups
+    - 分类
+    semantic_type: tab
+  - text: Recipes without category
+    center:
+    - 0.4023
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - uncategorized
+    - no category
+    - 未分类
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.5387
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - add recipe
+    - new entry
+    - 新建食谱
+    semantic_type: button
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.5854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - import URL
+    - web import
+    - 导入网址
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - add new
+    - create
+    - 新增
+    semantic_type: button
+  description: Recipe management screen displaying categories and recipes with options
+    to search, create a new recipe, or import one from a website.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.4606
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 分类
+    - types
+    - groups
+    semantic_type: tab
+  - text: Favorites
+    center:
+    - 0.4023
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 收藏
+    - liked
+    - bookmarks
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 添加食谱
+    - create recipe
+    - add dish
+    semantic_type: button
+  description: Main navigation screen of the Broccoli app providing access to Recipes,
+    Categories, Favorites, Search, and New Recipe creation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 食谱
+    - dishes
+    - meals
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 分类
+    - tags
+    - groups
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 季节日历
+    - seasonality
+    - calendar
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 支持应用
+    - donate
+    - contribute
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    semantic_type: menu_item
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 关于应用
+    - app info
+    - version
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - open menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - close
+    - hide
+    - minimize
+    semantic_type: button
+  - text: Search in ALL RECIPES
+    center:
+    - 0.5681
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 搜索所有食谱
+    - search recipes
+    - find dish
+    semantic_type: input
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.3679
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - add recipe
+    - new dish
+    - 新建食谱
+    semantic_type: button
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.4146
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - import URL
+    - web import
+    - 导入网址
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 新建食谱
+    - add new
+    - create dish
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.145
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_41
+    aliases:
+    - clear search
+    - delete text
+    - 清空
+    semantic_type: button
+  description: Navigation drawer menu providing access to recipes, categories, settings,
+    and recipe creation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Change photo
+    center:
+    - 0.5
+    - 0.4619
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Edit photo
+    - Update avatar
+    - 更换头像
+    semantic_type: button
+  - text: Pick photo
+    center:
+    - 0.5
+    - 0.5117
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Choose photo
+    - Select image
+    - Gallery
+    - 从相册选择
+    semantic_type: button
+  - text: Take photo
+    center:
+    - 0.5
+    - 0.5642
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Camera
+    - Snap
+    - Capture
+    - 拍照
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_44
+    aliases:
+    - Back
+    - Up
+    - Return
+    - 返回
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.3074
+    - 0.084
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_43
+    aliases:
+    - Add recipe
+    - Create recipe
+    - 新建食谱
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8829
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_45
+    aliases:
+    - Save
+    - Confirm
+    - Done
+    - 保存
+    semantic_type: button
+  description: Screen for creating a new recipe with options to change, pick, or take
+    a photo, and a save button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - groups
+    - tags
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 赞助应用
+    - donate
+    - support development
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    semantic_type: setting
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于应用
+    - app info
+    - version info
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu button
+    - hamburger icon
+    - 侧边栏
+    semantic_type: button
+  - text: Add category
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新建分类
+    - create category
+    - new group
+    semantic_type: button
+  description: Main navigation menu displaying app sections such as Recipes, Categories,
+    and Settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Add category
+    center:
+    - 0.5
+    - 0.4419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New category
+    - Create category
+    - 添加分类
+    semantic_type: button
+  - text: Name
+    center:
+    - 0.5
+    - 0.5106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Category name
+    - Title
+    - 名称
+    semantic_type: input
+  - text: CANCEL
+    center:
+    - 0.6185
+    - 0.5802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - Dismiss
+    - 取消
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.8185
+    - 0.5802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save
+    - Confirm
+    - 保存
+    semantic_type: button
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: Categories
+    center:
+    - 0.2977
+    - 0.084
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Category list
+    - 分类
+    semantic_type: label
+  description: Dialog for adding a new category with a name input field and save/cancel
+    actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app name
+    - title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - types
+    - groups
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支持应用
+    - donate
+    - 赞助
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: setting
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于应用
+    - app info
+    - version info
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: CONFIGURE
+    center:
+    - 0.5
+    - 0.601
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置
+    - setup
+    - customize
+    semantic_type: button
+  description: Navigation drawer menu providing access to Recipes, Categories, Settings,
+    and other app features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app name
+    - title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - types
+    - groups
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支持应用
+    - 赞助
+    - contribute
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份与恢复
+    - 数据备份
+    - backup
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - 配置
+    semantic_type: menu_item
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于
+    - about
+    - info
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: Donate
+    center:
+    - 0.5
+    - 0.1673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 捐赠
+    - 捐款
+    - give
+    semantic_type: button
+  - text: SUPPORT ME ON KO-FI
+    center:
+    - 0.5
+    - 0.2873
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Ko-fi
+    - 赞助我
+    - donate via Ko-fi
+    semantic_type: link
+  - text: Tell your friends
+    center:
+    - 0.4995
+    - 0.3769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 推荐给朋友
+    - invite
+    - refer
+    semantic_type: menu_item
+  - text: SHARE THE APP
+    center:
+    - 0.5
+    - 0.479
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享应用
+    - share
+    - send to friends
+    semantic_type: button
+  description: Navigation drawer menu providing access to recipes, categories, settings,
+    and support options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Copy
+    center:
+    - 0.3829
+    - 0.6417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Duplicate
+    - Clone
+    - 复制
+    semantic_type: button
+  - text: Nearby
+    center:
+    - 0.6162
+    - 0.6417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close by
+    - Local
+    - 附近
+    semantic_type: tab
+  - text: Broccoli
+    center:
+    - 0.1245
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App Name
+    - 品牌名
+    semantic_type: label
+  - text: New Recipe
+    center:
+    - 0.1245
+    - 0.9515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add Recipe
+    - Create Recipe
+    - 新建食谱
+    semantic_type: button
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Application List
+    - App Directory
+    - 应用列表
+    semantic_type: label
+  - text: Create new task
+    center:
+    - 0.625
+    - 0.9219
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add Task
+    - New Task
+    - 新建任务
+    semantic_type: button
+  description: A screen in the Broccoli app displaying a list of apps with options
+    to create a new recipe or task.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Sidebar
+    center:
+    - 0.6708
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.6801
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+  - text: All notes
+    center:
+    - 0.8792
+    - 0.0817
+    fixed: false
+    found_at_scroll: 0
+  - text: CREATE A NOTEBOOK
+    center:
+    - 0.8134
+    - 0.186
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.0892
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.1625
+    fixed: false
+    found_at_scroll: 0
+  - text: Notebooks
+    center:
+    - 0.3343
+    - 0.1627
+    fixed: false
+    found_at_scroll: 0
+  - text: '&#128465;️'
+    center:
+    - 0.069
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+  - text: Trash
+    center:
+    - 0.3477
+    - 0.2023
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.7854
+    fixed: false
+    found_at_scroll: 0
+  - text: New Notebook
+    center:
+    - 0.3343
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.825
+    fixed: false
+    found_at_scroll: 0
+  - text: Tags
+    center:
+    - 0.3343
+    - 0.8252
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.8642
+    fixed: false
+    found_at_scroll: 0
+  - text: Configuration
+    center:
+    - 0.3343
+    - 0.8644
+    fixed: false
+    found_at_scroll: 0
+  - text: 
+    center:
+    - 0.0681
+    - 0.9375
+    fixed: false
+    found_at_scroll: 0
+  - text: Synchronise
+    center:
+    - 0.3343
+    - 0.9377
+    fixed: false
+    found_at_scroll: 0
+  description: Sidebar navigation menu providing access to notes, notebooks, tags,
+    trash, and app configuration options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Nearby
+    center:
+    - 0.4995
+    - 0.6221
+    fixed: false
+    found_at_scroll: 0
+  - text: Create new task
+    center:
+    - 0.625
+    - 0.9515
+    fixed: false
+    found_at_scroll: 0
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9835
+    fixed: false
+    found_at_scroll: 0
+  description: Screen for creating a new task with options to select from nearby items
+    or an apps list.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Backup and restore
+    center:
+    - 0.3935
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - data management
+    - backup & restore
+    - 备份与恢复
+    semantic_type: setting
+  - text: Backup
+    center:
+    - 0.5
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - save data
+    - create backup
+    - 备份
+    semantic_type: button
+  - text: Backup recipes
+    center:
+    - 0.3069
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - export recipes
+    - save recipes
+    - 备份食谱
+    semantic_type: menu_item
+  - text: Last backup
+    center:
+    - 0.281
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - previous backup
+    - last saved
+    - 上次备份时间
+    semantic_type: label
+  - text: Restore
+    center:
+    - 0.5
+    - 0.3856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recover
+    - load backup
+    - 恢复
+    semantic_type: button
+  - text: Restore recipes
+    center:
+    - 0.3088
+    - 0.4344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - import recipes
+    - load recipes
+    - 恢复食谱
+    semantic_type: menu_item
+  description: Backup and restore settings page allowing users to back up or restore
+    recipes.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: Audio
+    center:
+    - 0.1657
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+  - text: Documents
+    center:
+    - 0.4412
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+  - text: Large files
+    center:
+    - 0.7509
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+  - text: BROWSE FILES IN OTHER APPS
+    center:
+    - 0.2255
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+  - text: Drive
+    center:
+    - 0.4995
+    - 0.2735
+    fixed: false
+    found_at_scroll: 0
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.3221
+    fixed: false
+    found_at_scroll: 0
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.3221
+    fixed: false
+    found_at_scroll: 0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: File browsing screen displaying categories like Audio, Documents, and
+    Large files with options to view recent files or browse other apps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recent documents
+    - latest files
+    - 最近文件
+    semantic_type: link
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid layout
+    - thumbnail view
+    - 网格视图
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - display roots
+    - show storage roots
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recents
+    - history
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: Open from
+    center:
+    - 0.1769
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - browse
+    - select source
+    - 打开自
+    semantic_type: menu_item
+  description: File browser screen displaying recent files in a grid view with options
+    to search, change view, or open from different sources.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recent documents
+    - latest files
+    - 最近文件
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid layout
+    - thumbnail view
+    - 网格视图
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - display roots
+    - show storage roots
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recents
+    - history
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  description: File management screen displaying recent files in a grid view with
+    search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Documents
+    center:
+    - 0.1361
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Files
+    - Docs
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Big files
+    - Huge files
+    - 大文件
+    semantic_type: menu_item
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List mode
+    - 列表视图
+    - 列表模式
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Display roots
+    - 显示根目录
+    - 显示根路径
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  description: File management screen displaying documents and large files in a list
+    view with search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio
+    center:
+    - 0.1657
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+  - text: Documents
+    center:
+    - 0.4412
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+  - text: Large files
+    center:
+    - 0.7509
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+  - text: Files in Downloads
+    center:
+    - 0.4412
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: Downloads management screen displaying categorized file types and a
+    list of downloaded files with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Audio
+    center:
+    - 0.1657
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sound
+    - 音频
+    semantic_type: menu_item
+  - text: Documents
+    center:
+    - 0.4412
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    semantic_type: menu_item
+  - text: Large files
+    center:
+    - 0.7509
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Big files
+    - 大文件
+    semantic_type: menu_item
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 列表视图
+    - list mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 显示根目录
+    - show root directories
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: button
+  - text: Alarms
+    center:
+    - 0.2282
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 闹钟
+    - alarm clock
+    semantic_type: menu_item
+  - text: Android
+    center:
+    - 0.6847
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安卓
+    - system
+    semantic_type: label
+  - text: Audiobooks
+    center:
+    - 0.2648
+    - 0.371
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书
+    - audio books
+    semantic_type: menu_item
+  - text: DCIM
+    center:
+    - 0.6667
+    - 0.371
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Camera
+    - 相机
+    - digital camera images
+    semantic_type: menu_item
+  - text: Download
+    center:
+    - 0.7009
+    - 0.4331
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Downloads
+    - 下载
+    - downloaded files
+    semantic_type: menu_item
+  - text: Movies
+    center:
+    - 0.2292
+    - 0.4952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Videos
+    - 电影
+    - video files
+    semantic_type: menu_item
+  - text: Music
+    center:
+    - 0.6708
+    - 0.4952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 音乐
+    - songs
+    - audio tracks
+    semantic_type: menu_item
+  - text: Notifications
+    center:
+    - 0.2708
+    - 0.5573
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通知
+    - alerts
+    semantic_type: menu_item
+  - text: Pictures
+    center:
+    - 0.6875
+    - 0.5573
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Images
+    - Photos
+    - 图片
+    - 照片
+    semantic_type: menu_item
+  - text: Podcasts
+    center:
+    - 0.2454
+    - 0.6194
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播客
+    - podcast episodes
+    semantic_type: menu_item
+  - text: Recordings
+    center:
+    - 0.7111
+    - 0.6194
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 录音
+    - voice memos
+    semantic_type: menu_item
+  - text: Ringtones
+    center:
+    - 0.2505
+    - 0.6815
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声
+    - ring tones
+    semantic_type: menu_item
+  - text: VLCVideos
+    center:
+    - 0.7088
+    - 0.6815
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - VLC Videos
+    - VLC视频
+    semantic_type: menu_item
+  description: File browser screen displaying a list of directories and file categories
+    with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Languages of recipes
+    center:
+    - 0.5
+    - 0.296
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recipe Language
+    - Language
+    - 语言
+    semantic_type: label
+  - text: CANCEL
+    center:
+    - 0.637
+    - 0.726
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    - Dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8278
+    - 0.726
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - 确定
+    - Done
+    - Apply
+    semantic_type: button
+  description: A dialog for selecting the languages of recipes with Cancel and OK
+    action buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: SKIP
+    center:
+    - 0.119
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 跳过
+    - skip this step
+    semantic_type: button
+  - text: Next
+    center:
+    - 0.8931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 下一步
+    - 继续
+    - next step
+    semantic_type: button
+  description: Onboarding or tutorial screen with navigation controls to skip or proceed
+    to the next step.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_32
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - types
+    - groups
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支持应用
+    - donate
+    - contribute
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    semantic_type: setting
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于应用
+    - app info
+    - about
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - open menu
+    - hamburger menu
+    - side menu
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.5
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - support
+    - FAQ
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.3032
+    - 0.2002
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - contact us
+    - report issue
+    semantic_type: button
+  - text: Version
+    center:
+    - 0.2407
+    - 0.3781
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 版本
+    - app version
+    - version number
+    semantic_type: label
+  - text: Legal
+    center:
+    - 0.5
+    - 0.4656
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 法律信息
+    - legal notices
+    - terms
+    semantic_type: menu_item
+  - text: Open source licenses
+    center:
+    - 0.3593
+    - 0.5144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开源许可证
+    - OSS licenses
+    - third-party licenses
+    semantic_type: link
+  - text: License details for open source software
+    center:
+    - 0.4847
+    - 0.5369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开源软件许可详情
+    - license text
+    - OSS details
+    semantic_type: link
+  - text: Privacy policy
+    center:
+    - 0.2935
+    - 0.5944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - privacy statement
+    - data policy
+    semantic_type: link
+  description: Settings and information menu displaying options for recipes, categories,
+    app support, backup, legal details, and general settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    - Go back
+    semantic_type: button
+  description: A minimal screen featuring only a 'Navigate up' button, likely serving
+    as an empty state or loading placeholder.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_34
+  elements:
+  - text: Web View
+    center:
+    - 0.5
+    - 0.5135
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - WebView
+    - browser view
+    - 网页视图
+    semantic_type: other
+  - text: Home
+    center:
+    - 0.0583
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - 首页
+    - home page
+    semantic_type: tab
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tab switcher
+    - close tab
+    - 切换标签页
+    - 关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  description: Web browser home screen with a web view, tab management controls, and
+    additional options menu.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+  - text: create a new recipe
+    center:
+    - 0.3926
+    - 0.5387
+    fixed: false
+    found_at_scroll: 0
+  - text: import a recipe from a website
+    center:
+    - 0.5
+    - 0.5854
+    fixed: false
+    found_at_scroll: 0
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+  description: Main navigation screen of the Broccoli app featuring menu options for
+    recipes, categories, settings, and actions to create or import recipes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - close
+    - hide
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Search in SEASONAL RECIPES
+    center:
+    - 0.5681
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search
+    - find recipes
+    - 搜索时令食谱
+    - query
+    semantic_type: input
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - add recipe
+    - create recipe
+    - 新建食谱
+    - + recipe
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.145
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - clear search
+    - delete text
+    - 清除
+    - reset
+    semantic_type: button
+  description: Search interface for seasonal recipes featuring a query input field,
+    clear button, and new recipe option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_37
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    - meals
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - types
+    - groups
+    - tags
+    semantic_type: tab
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支持应用
+    - donate
+    - contribute
+    - 赞助
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    - 备份还原
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - 配置
+    semantic_type: setting
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于应用
+    - app info
+    - version
+    - 关于
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开导航栏
+    - menu button
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    - 查询
+    semantic_type: input
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新建食谱
+    - add recipe
+    - create dish
+    - 新增菜谱
+    semantic_type: button
+  description: Main navigation menu of the Broccoli app featuring options for recipes,
+    categories, settings, and support.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - open sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - close
+    - hide
+    - minimize
+    - 收起
+    semantic_type: button
+  - text: Search in RECIPES WITHOUT CATEGORY
+    center:
+    - 0.5681
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search recipes
+    - find dish
+    - 搜索食谱
+    semantic_type: input
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - add recipe
+    - create recipe
+    - 新建食谱
+    - + recipe
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.145
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - clear search
+    - delete text
+    - reset
+    - 清除
+    semantic_type: button
+  description: Recipe search results screen displaying a list of recipes with options
+    to create a new recipe or clear the search query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Broccoli
+    center:
+    - 0.3403
+    - 0.1388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  - text: Recipes
+    center:
+    - 0.3403
+    - 0.2275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.3403
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - types
+    - groups
+    semantic_type: menu_item
+  - text: Seasonal calendar
+    center:
+    - 0.3403
+    - 0.3325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 季节日历
+    - 时令表
+    - seasonal guide
+    semantic_type: menu_item
+  - text: Support the app
+    center:
+    - 0.3403
+    - 0.4037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支持应用
+    - donate
+    - 赞助
+    semantic_type: menu_item
+  - text: Backup and restore
+    center:
+    - 0.3403
+    - 0.475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份与恢复
+    - data backup
+    - restore data
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.3403
+    - 0.5275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - 配置
+    semantic_type: menu_item
+  - text: About the app
+    center:
+    - 0.3403
+    - 0.58
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于应用
+    - app info
+    - version info
+    semantic_type: menu_item
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - open menu
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: Favorites
+    center:
+    - 0.4023
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - liked recipes
+    - bookmarks
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.9412
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新建食谱
+    - add recipe
+    - create dish
+    semantic_type: button
+  description: Main navigation drawer for the Broccoli app, providing access to recipes,
+    categories, settings, and other app features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - close
+    - minimize
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Search in FAVORITES
+    center:
+    - 0.5681
+    - 0.1448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - search favorites
+    - find in favorites
+    - 收藏搜索
+    semantic_type: input
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - add recipe
+    - create recipe
+    - 新建食谱
+    - 新增菜谱
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.145
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - clear search
+    - delete text
+    - 清除
+    - 清空
+    semantic_type: button
+  description: Favorites search screen displaying a query input field, clear button,
+    and an option to add new recipes.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_41
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger menu
+    - sidebar
+    semantic_type: button
+  - text: Recipes
+    center:
+    - 0.2644
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 食谱
+    - 菜谱
+    - dishes
+    semantic_type: tab
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - close
+    - minimize
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.145
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - clear search
+    - delete text
+    - 清除搜索
+    - 清空
+    semantic_type: button
+  - text: New Recipe
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - add recipe
+    - create recipe
+    - 新建食谱
+    - 新增菜谱
+    semantic_type: button
+  description: Recipe search results screen displaying a list of recipes with options
+    to clear the query or create a new recipe.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_42
+  elements:
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - big files
+    - large documents
+    - 大文件
+    semantic_type: menu_item
+  - text: BROWSE FILES IN OTHER APPS
+    center:
+    - 0.2255
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - browse other apps
+    - file browser
+    - 浏览其他应用中的文件
+    semantic_type: button
+  - text: Drive
+    center:
+    - 0.1662
+    - 0.2735
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Drive
+    - 云端硬盘
+    - 云盘
+    semantic_type: menu_item
+  - text: Gallery
+    center:
+    - 0.4995
+    - 0.2735
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 相册
+    - 图片库
+    - image gallery
+    semantic_type: menu_item
+  - text: Photos
+    center:
+    - 0.8329
+    - 0.2735
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - images
+    - pictures
+    - 照片
+    semantic_type: menu_item
+  - text: Recent images
+    center:
+    - 0.4412
+    - 0.3221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - latest photos
+    - recent pictures
+    - 最近图片
+    semantic_type: menu_item
+  - text: List view
+    center:
+    - 0.8829
+    - 0.3221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list mode
+    - 列表视图
+    - detailed view
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - display roots
+    - show directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - history
+    - latest
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - three dots
+    semantic_type: button
+  description: File browsing interface for selecting large files from sources like
+    Drive, Gallery, and Photos with list view and search options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: Recent images
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  description: File picker screen displaying recent images in a list view with search
+    and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_44
+  elements:
+  - text: Recent images
+    center:
+    - 0.4412
+    - 0.0802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - latest photos
+    - recent pictures
+    - 最近图片
+    semantic_type: label
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list mode
+    - detailed view
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - show storage
+    - display drives
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - latest
+    - recents
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: Open from
+    center:
+    - 0.1769
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - browse
+    - select source
+    - 打开位置
+    semantic_type: label
+  - text: Downloads
+    center:
+    - 0.4083
+    - 0.2065
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - downloaded files
+    - 下载
+    semantic_type: menu_item
+  - text: Drive
+    center:
+    - 0.35
+    - 0.389
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Drive
+    - 云端硬盘
+    semantic_type: menu_item
+  - text: Gallery
+    center:
+    - 0.35
+    - 0.459
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - album
+    - 图库
+    semantic_type: menu_item
+  - text: Photos
+    center:
+    - 0.35
+    - 0.529
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - pictures
+    - images
+    - 照片
+    semantic_type: menu_item
+  description: File picker screen allowing users to select recent images or browse
+    files from Downloads, Drive, Gallery, and Photos.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8829
+    - 0.0769
+    fixed: false
+    found_at_scroll: 1
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  description: File management view options menu allowing users to customize sorting,
+    visibility, and display layout.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 348
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 672
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 798
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 969
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1140
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1392
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 474
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 600
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 726
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  - action: tap
+    x: 980
+    y: 733
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 672
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 672
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 798
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 969
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 969
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1150
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1140
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1140
+    wait: 1.5
+  - action: tap
+    x: 332
+    y: 480
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1140
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 926
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1140
+    wait: 1.5
+  - action: tap
+    x: 334
+    y: 1042
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 364
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 362
+    y: 480
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 254
+    y: 672
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 883
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 390
+    y: 1192
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1266
+    wait: 1.5
+  - action: tap
+    x: 328
+    y: 1426
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1392
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1392
+    wait: 1.5
+  - action: tap
+    x: 388
+    y: 1234
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 368
+    y: 1392
+    wait: 1.5
+  - action: tap
+    x: 317
+    y: 1426
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 474
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 474
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 348
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 600
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 600
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 348
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 726
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 498
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 434
+    y: 726
+    wait: 1.5
+  - action: tap
+    x: 1016
+    y: 348
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 1016
+    y: 348
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1006
+    y: 348
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  - action: tap
+    x: 980
+    y: 733
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1228
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  - action: tap
+    x: 980
+    y: 733
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1354
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  - action: tap
+    x: 980
+    y: 733
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.flauschcode.broccoli
+    wait: 0.5
+  - action: launch
+    package: com.flauschcode.broccoli
+    wait: 3.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  - action: tap
+    x: 980
+    y: 733
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 954
+    y: 201
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Browse and view recipes
+- Search for specific recipes
+- Create a new recipe with photos
+- Import recipes from websites
+- Manage recipe categories
+- Backup and restore recipe data
+- Configure app theme and language preferences
+- Edit user profile information
+known_limitations:
+- Navigation relies heavily on the drawer menu which may require multiple taps to
+  access deep settings
+- File browsing for imports involves navigating through multiple system file manager
+  screens
+- Some configuration options like backup status are nested within specific settings
+  sub-menus

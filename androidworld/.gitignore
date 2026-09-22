@@ -1,0 +1,22 @@
+android_world/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Credentials stay local.  config.yaml is the committed, secret-free template.
+.env
+config.local.yaml
+
+# Raw benchmark outputs are large and machine-specific.  Commit summaries in
+# results/ instead.
+aw_checkpoints*/
+artifacts/checkpoints/
+artifacts/map_logs/
+artifacts/maps/
+artifacts/config/
+
+# Transient map-builder files and logs.
+app_maps/**/.build_tmp/
+app_maps/**/logs/
+logs/

@@ -1,0 +1,10571 @@
+app: OsmAnd
+package: net.osmand
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main map view with navigation controls, search, and configuration options.
+  elements:
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Map configuration
+    - Map settings
+    - 地图配置
+    semantic_type: menu_item
+  - text: North is up
+    center:
+    - 0.0685
+    - 0.1379
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - North up
+    - Map orientation north
+    - 朝北
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Return
+    - Go back
+    - 返回菜单
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Navigation
+    - Directions
+    - 路线
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - +
+    - 放大
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - '-'
+    - 缩小
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Maps
+    - 地图
+    semantic_type: tab
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 地图
+    - map view
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 返回地图
+    - return to map
+    semantic_type: button
+  - text: Browse map checked
+    center:
+    - 0.0579
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 浏览地图
+    - browse mode
+    semantic_type: toggle
+  - text: Driving unchecked
+    center:
+    - 0.1745
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 驾车
+    - driving mode
+    - car navigation
+    semantic_type: toggle
+  - text: Cycling unchecked
+    center:
+    - 0.2912
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 骑行
+    - cycling mode
+    - bike navigation
+    semantic_type: toggle
+  - text: Walking unchecked
+    center:
+    - 0.4079
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 步行
+    - walking mode
+    - pedestrian
+    semantic_type: toggle
+  - text: Public transport unchecked
+    center:
+    - 0.5245
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 公共交通
+    - public transit
+    - bus metro
+    semantic_type: toggle
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 显示
+    - display
+    - visible
+    semantic_type: label
+  - text: Favorites
+    center:
+    - 0.4903
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 收藏
+    - favorites list
+    - bookmarks
+    semantic_type: menu_item
+  - text: POI overlay…
+    center:
+    - 0.4222
+    - 0.539
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 兴趣点覆盖
+    - points of interest
+    - POI layer
+    semantic_type: link
+  - text: None
+    center:
+    - 0.4222
+    - 0.5615
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 无
+    - empty
+    - disable
+    semantic_type: label
+  - text: Point Labels (POI, Favorites)
+    center:
+    - 0.4903
+    - 0.6206
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 点标签
+    - point names
+    - labels
+    semantic_type: setting
+  - text: Transport
+    center:
+    - 0.4222
+    - 0.6919
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 交通
+    - transportation
+    - transit
+    semantic_type: menu_item
+  - text: Tracks
+    center:
+    - 0.4222
+    - 0.7631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 轨迹
+    - GPX tracks
+    - routes
+    semantic_type: menu_item
+  - text: Map markers
+    center:
+    - 0.4903
+    - 0.8344
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 地图标记
+    - pins
+    - markers
+    semantic_type: menu_item
+  - text: Map source…
+    center:
+    - 0.5681
+    - 0.8952
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 地图源
+    - map provider
+    - tile source
+    semantic_type: link
+  - text: Offline vector maps
+    center:
+    - 0.5681
+    - 0.9177
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 离线矢量地图
+    - vector maps
+    - offline maps
+    semantic_type: setting
+  - text: Wikipedia
+    center:
+    - 0.5681
+    - 0.9646
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 维基百科
+    - wiki
+    - articles
+    semantic_type: menu_item
+  - text: Configure map
+    center:
+    - 0.3134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 配置地图
+    - map settings
+    - customize map
+    semantic_type: link
+  - text: North is up
+    center:
+    - 0.9194
+    - 0.27
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 北方朝上
+    - north up
+    - orientation
+    semantic_type: toggle
+  - text: Explore Wikipedia offline.
+    center:
+    - 0.5681
+    - 0.2648
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 离线浏览维基百科
+    - offline wiki
+    semantic_type: label
+  - text: Get
+    center:
+    - 0.1625
+    - 0.2994
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 获取
+    - download
+    - install
+    semantic_type: button
+  - text: Weather
+    center:
+    - 0.5681
+    - 0.3431
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - 天气
+    - forecast
+    - climate
+    semantic_type: menu_item
+  - text: Explore Weather forecast.
+    center:
+    - 0.5681
+    - 0.3656
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 查看天气预报
+    - weather info
+    semantic_type: label
+  - text: Show borders of downloaded maps
+    center:
+    - 0.4903
+    - 0.4535
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 显示下载地图边界
+    - map borders
+    - boundaries
+    semantic_type: toggle
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.5294
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - 地形
+    - topo
+    - elevation
+    semantic_type: menu_item
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.7348
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 路线
+    - paths
+    - trails
+    semantic_type: menu_item
+  - text: Cycle routes
+    center:
+    - 0.4222
+    - 0.7856
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 骑行路线
+    - bike paths
+    - cycling trails
+    semantic_type: setting
+  - text: Disabled
+    center:
+    - 0.4222
+    - 0.8081
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 禁用
+    - 'off'
+    - inactive
+    semantic_type: label
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.8569
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - 山地车路线
+    - MTB trails
+    - mountain biking
+    semantic_type: setting
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.9281
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_16
+    aliases:
+    - 徒步路线
+    - hiking trails
+    - trekking
+    semantic_type: setting
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.2477
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_2
+    aliases:
+    - 难度分级
+    - difficulty level
+    - grade
+    semantic_type: setting
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.319
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_17
+    aliases:
+    - 滑雪道
+    - ski runs
+    - pistes
+    semantic_type: setting
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.3902
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_18
+    aliases:
+    - 骑马路线
+    - equestrian trails
+    - horse riding
+    semantic_type: setting
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.4615
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_19
+    aliases:
+    - 激流运动
+    - rafting
+    - kayaking
+    semantic_type: setting
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.5327
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_16
+    aliases:
+    - 健身步道
+    - exercise trails
+    - fitness path
+    semantic_type: setting
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.604
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_19
+    aliases:
+    - 跑步路线
+    - running trails
+    - jogging paths
+    semantic_type: setting
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.6902
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_20
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: menu_item
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.7473
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_4
+    aliases:
+    - 地图样式
+    - theme
+    - skin
+    semantic_type: setting
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.7473
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_4
+    aliases:
+    - 默认样式
+    - default style
+    - standard
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.8023
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_4
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: setting
+  - text: Day
+    center:
+    - 0.5681
+    - 0.8248
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_4
+    aliases:
+    - 白天
+    - day mode
+    - light theme
+    semantic_type: label
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.8798
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_4
+    aliases:
+    - 地图放大镜
+    - zoom lens
+    - magnify
+    semantic_type: setting
+  - text: 100 %
+    center:
+    - 0.9153
+    - 0.8798
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_21
+    aliases:
+    - 百分之百
+    - full size
+    - normal zoom
+    semantic_type: label
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_10
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: setting
+  - text: Default
+    center:
+    - 0.9065
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_20
+    aliases:
+    - 默认
+    - standard
+    - original
+    semantic_type: label
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_10
+    aliases:
+    - 文字大小
+    - font size
+    - label size
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_22
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    semantic_type: setting
+  - text: Local names
+    center:
+    - 0.8644
+    - 0.8206
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_22
+    aliases:
+    - 本地名称
+    - local labels
+    - native names
+    semantic_type: toggle
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_23
+    aliases:
+    - 详情
+    - more info
+    - advanced
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_24
+    aliases:
+    - 隐藏
+    - collapse
+    - close
+    semantic_type: button
+  description: Map configuration menu allowing users to toggle map layers, overlays,
+    and display settings such as POIs, transport, and routes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 配置地图
+    - map settings
+    - map configuration
+    - customize map
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    - search bar
+    semantic_type: input
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 返回菜单
+    - back
+    - return
+    - go back
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 路线
+    - navigation
+    - directions
+    - path
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 放大
+    - zoom+
+    - enlarge
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 缩小
+    - zoom-
+    - reduce
+    semantic_type: button
+  description: Main map view with navigation controls, search, and route options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - Map settings
+    - Map configuration
+    - 地图配置
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - Find
+    - Search bar
+    - 搜索
+    semantic_type: input
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - Return
+    - Go back
+    - 返回菜单
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - Path
+    - Track
+    - 路线
+    semantic_type: label
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - +
+    - 放大
+    - zoom plus
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - '-'
+    - 缩小
+    - zoom minus
+    semantic_type: button
+  - text: Browse map
+    center:
+    - 0.2843
+    - 0.0777
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - View map
+    - Explore map
+    - 浏览地图
+    semantic_type: button
+  - text: OsmAnd profile
+    center:
+    - 0.2926
+    - 0.1002
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - Profile
+    - User profile
+    - 用户资料
+    semantic_type: menu_item
+  - text: Configure profile
+    center:
+    - 0.3199
+    - 0.1506
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Profile settings
+    - Edit profile
+    - 配置个人资料
+    semantic_type: menu_item
+  - text: Map markers
+    center:
+    - 0.2116
+    - 0.2065
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Markers
+    - Pins
+    - 地图标记
+    semantic_type: menu_item
+  - text: My Places
+    center:
+    - 0.1866
+    - 0.261
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Favorites
+    - Saved locations
+    - 我的收藏
+    semantic_type: menu_item
+  - text: Navigation
+    center:
+    - 0.1903
+    - 0.3702
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Navigate
+    - Directions
+    - 导航
+    semantic_type: menu_item
+  - text: Download maps
+    center:
+    - 0.238
+    - 0.4794
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Offline maps
+    - Get maps
+    - 下载地图
+    semantic_type: menu_item
+  - text: Travel guides (Beta)
+    center:
+    - 0.269
+    - 0.534
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - Guides
+    - Wiki travel
+    - 旅行指南
+    semantic_type: menu_item
+  - text: Plan a route
+    center:
+    - 0.2005
+    - 0.5885
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Create route
+    - Route planning
+    - 规划路线
+    semantic_type: menu_item
+  - text: Configure screen
+    center:
+    - 0.2431
+    - 0.6444
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Screen settings
+    - Display options
+    - 屏幕配置
+    semantic_type: menu_item
+  - text: Plugins
+    center:
+    - 0.1616
+    - 0.699
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - Add-ons
+    - Extensions
+    - 插件
+    semantic_type: menu_item
+  - text: Settings
+    center:
+    - 0.1685
+    - 0.7535
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.137
+    - 0.8081
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Support
+    - FAQ
+    - 帮助
+    semantic_type: menu_item
+  description: Main menu screen providing access to navigation, map configuration,
+    settings, and various OsmAnd features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 配置地图
+    - map settings
+    - map configuration
+    - customize map
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    - search bar
+    semantic_type: input
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 返回菜单
+    - back
+    - return to menu
+    - go back
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 路线
+    - navigation
+    - directions
+    - plan route
+    semantic_type: button
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 放大
+    - zoom+
+    - enlarge map
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 缩小
+    - zoom-
+    - reduce map
+    semantic_type: button
+  description: Main map view with navigation controls, search, and route configuration
+    options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: 'What''s here:'
+    center:
+    - 0.5
+    - 0.7219
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - Location info
+    - Current location
+    - 此处信息
+    semantic_type: label
+  - text: CLOSE
+    center:
+    - 0.4995
+    - 0.9473
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Close
+    - Dismiss
+    - Cancel
+    - 关闭
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 地图
+    - Map view
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Map settings
+    - Map configuration
+    - 配置地图
+    - Map options
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - Search places
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Return to menu
+    - Menu
+    - 返回菜单
+    - Go back
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Navigation
+    - Directions
+    - 路线
+    - Navigate
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - +
+    - 放大
+    - Increase zoom
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - '-'
+    - 缩小
+    - Decrease zoom
+    semantic_type: button
+  description: Main map interface with controls for navigation, search, map configuration,
+    and zooming.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Favorites
+    center:
+    - 0.4903
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: POI overlay…
+    center:
+    - 0.4222
+    - 0.539
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Point Labels (POI, Favorites)
+    center:
+    - 0.4903
+    - 0.6206
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+  - text: Transport
+    center:
+    - 0.4222
+    - 0.6919
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+  - text: Tracks
+    center:
+    - 0.4222
+    - 0.7631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+  - text: Map markers
+    center:
+    - 0.4903
+    - 0.8344
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+  - text: Map source…
+    center:
+    - 0.5681
+    - 0.8952
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+  - text: Offline vector maps
+    center:
+    - 0.5681
+    - 0.9177
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+  - text: Wikipedia
+    center:
+    - 0.5681
+    - 0.9646
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+  - text: Configure map
+    center:
+    - 0.3134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+  - text: Explore Wikipedia offline.
+    center:
+    - 0.5681
+    - 0.2665
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+  - text: Get
+    center:
+    - 0.1625
+    - 0.301
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+  - text: Weather
+    center:
+    - 0.5681
+    - 0.3448
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_44
+  - text: Explore Weather forecast.
+    center:
+    - 0.5681
+    - 0.3673
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Show borders of downloaded maps
+    center:
+    - 0.4903
+    - 0.4552
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.531
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_45
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.7365
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_46
+  - text: Cycle routes
+    center:
+    - 0.4222
+    - 0.7873
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_47
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.8585
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_43
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.9298
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_48
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.2715
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_49
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.3427
+    fixed: false
+    found_at_scroll: 2
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.414
+    fixed: false
+    found_at_scroll: 2
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.4852
+    fixed: false
+    found_at_scroll: 2
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.5565
+    fixed: false
+    found_at_scroll: 2
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.6277
+    fixed: false
+    found_at_scroll: 2
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.714
+    fixed: false
+    found_at_scroll: 2
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.771
+    fixed: false
+    found_at_scroll: 2
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.771
+    fixed: false
+    found_at_scroll: 2
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.826
+    fixed: false
+    found_at_scroll: 2
+  - text: Sunrise/sunset
+    center:
+    - 0.5681
+    - 0.8485
+    fixed: false
+    found_at_scroll: 2
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.9035
+    fixed: false
+    found_at_scroll: 2
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.9633
+    fixed: false
+    found_at_scroll: 2
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 3
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 3
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 3
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 3
+  description: Map configuration menu allowing users to toggle various overlays, routes,
+    and map sources.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    semantic_type: button
+  - text: Browse map unchecked
+    center:
+    - 0.0579
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 浏览地图
+    - browse map
+    semantic_type: toggle
+  - text: Driving unchecked
+    center:
+    - 0.1745
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 驾车
+    - driving mode
+    - car navigation
+    semantic_type: toggle
+  - text: Cycling unchecked
+    center:
+    - 0.2912
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 骑行
+    - cycling mode
+    - bike navigation
+    semantic_type: toggle
+  - text: Walking checked
+    center:
+    - 0.4079
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 步行
+    - walking mode
+    - pedestrian
+    semantic_type: toggle
+  - text: Public transport unchecked
+    center:
+    - 0.5245
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 公共交通
+    - public transit
+    - bus metro
+    semantic_type: toggle
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示
+    - display
+    - visible
+    semantic_type: label
+  - text: Favorites
+    center:
+    - 0.4903
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - favorites list
+    - bookmarks
+    semantic_type: menu_item
+  - text: POI overlay…
+    center:
+    - 0.4222
+    - 0.539
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 兴趣点覆盖
+    - points of interest
+    - POI layer
+    semantic_type: link
+  - text: None
+    center:
+    - 0.4222
+    - 0.5615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 无
+    - empty
+    - disable
+    semantic_type: setting
+  - text: Point Labels (POI, Favorites)
+    center:
+    - 0.4903
+    - 0.6206
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 点标签
+    - point names
+    - label display
+    semantic_type: setting
+  - text: Transport
+    center:
+    - 0.4222
+    - 0.6919
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交通
+    - transportation
+    - transit
+    semantic_type: menu_item
+  - text: Tracks
+    center:
+    - 0.4222
+    - 0.7631
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 轨迹
+    - GPX tracks
+    - recorded paths
+    semantic_type: menu_item
+  - text: Map markers
+    center:
+    - 0.4903
+    - 0.8344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图标记
+    - pins
+    - markers
+    semantic_type: menu_item
+  - text: Map source…
+    center:
+    - 0.5681
+    - 0.8952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图源
+    - map provider
+    - tile source
+    semantic_type: link
+  - text: Offline vector maps
+    center:
+    - 0.5681
+    - 0.9177
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 离线矢量地图
+    - offline maps
+    - vector tiles
+    semantic_type: setting
+  - text: Wikipedia
+    center:
+    - 0.5681
+    - 0.9646
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 维基百科
+    - wiki articles
+    - wikipedia layer
+    semantic_type: menu_item
+  - text: Configure map
+    center:
+    - 0.3134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置地图
+    - map settings
+    - customize map
+    semantic_type: link
+  - text: Explore Wikipedia offline.
+    center:
+    - 0.5681
+    - 0.251
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 离线浏览维基百科
+    - download wiki
+    - offline wikipedia
+    semantic_type: label
+  - text: Get
+    center:
+    - 0.1625
+    - 0.2856
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 获取
+    - download
+    - install
+    semantic_type: button
+  - text: Weather
+    center:
+    - 0.5681
+    - 0.3294
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 天气
+    - weather forecast
+    - meteorology
+    semantic_type: menu_item
+  - text: Explore Weather forecast.
+    center:
+    - 0.5681
+    - 0.3519
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 查看天气预报
+    - weather info
+    - forecast details
+    semantic_type: label
+  - text: Show borders of downloaded maps
+    center:
+    - 0.4903
+    - 0.4398
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 显示下载地图边界
+    - map boundaries
+    - show edges
+    semantic_type: toggle
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.5156
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地形
+    - topo map
+    - elevation
+    semantic_type: menu_item
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.721
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 路线
+    - paths
+    - trails
+    semantic_type: label
+  - text: Cycle routes
+    center:
+    - 0.4222
+    - 0.7719
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 自行车路线
+    - cycling paths
+    - bike trails
+    semantic_type: toggle
+  - text: Disabled
+    center:
+    - 0.4222
+    - 0.7944
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 禁用
+    - 'off'
+    - inactive
+    semantic_type: label
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.8431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 山地车路线
+    - MTB trails
+    - mountain biking
+    semantic_type: toggle
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.9144
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 徒步路线
+    - hiking trails
+    - walking paths
+    semantic_type: toggle
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.2665
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 难度分级
+    - difficulty level
+    - grade
+    semantic_type: toggle
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.3377
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 滑雪道
+    - ski runs
+    - pistes
+    semantic_type: toggle
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.409
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 骑马路线
+    - equestrian trails
+    - horse riding
+    semantic_type: toggle
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.4802
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 激流运动
+    - rafting
+    - kayaking
+    semantic_type: toggle
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.5515
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 健身步道
+    - exercise trails
+    - fitness path
+    semantic_type: toggle
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.6227
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 跑步路线
+    - running trails
+    - jogging paths
+    semantic_type: toggle
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.709
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: label
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.766
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图样式
+    - theme
+    - visual style
+    semantic_type: link
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.766
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 默认样式
+    - default theme
+    - standard
+    semantic_type: setting
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.821
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图模式
+    - view mode
+    - day/night
+    semantic_type: label
+  - text: Day
+    center:
+    - 0.5681
+    - 0.8435
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 白天
+    - day mode
+    - light theme
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.8985
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图放大镜
+    - zoom lens
+    - magnify
+    semantic_type: toggle
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.9598
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: link
+  - text: Default
+    center:
+    - 0.9065
+    - 0.9598
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 默认
+    - standard
+    - original
+    semantic_type: setting
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 字体大小
+    - text scale
+    - font size
+    semantic_type: link
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    semantic_type: link
+  - text: Local names
+    center:
+    - 0.8644
+    - 0.8206
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 本地名称
+    - local labels
+    - native names
+    semantic_type: setting
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 详情
+    - more info
+    - details
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 隐藏
+    - collapse
+    - close
+    semantic_type: button
+  description: Map configuration screen allowing users to customize map layers, overlays,
+    and display settings such as walking mode, POI labels, and route visibility.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Show POI overlay
+    center:
+    - 0.5
+    - 0.1052
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Display POIs
+    - POI layer
+    - Points of Interest
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.2708
+    - 0.154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: button
+  - text: Accommodation
+    center:
+    - 0.3551
+    - 0.2044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lodging
+    - Hotels
+    - 住宿
+    semantic_type: menu_item
+  - text: Cafe and restaurant
+    center:
+    - 0.3815
+    - 0.2548
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dining
+    - Food & Drink
+    - 餐饮
+    - Restaurants
+    semantic_type: menu_item
+  - text: Charging station
+    center:
+    - 0.3537
+    - 0.3052
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - EV charger
+    - Electric vehicle charging
+    - 充电桩
+    semantic_type: menu_item
+  - text: Convenience store and supermarket
+    center:
+    - 0.5097
+    - 0.3658
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Grocery
+    - Shop
+    - 超市
+    - 便利店
+    semantic_type: menu_item
+  - text: Emergency
+    center:
+    - 0.3074
+    - 0.4265
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - SOS
+    - Emergency services
+    - 紧急求助
+    semantic_type: menu_item
+  - text: Filling station
+    center:
+    - 0.3269
+    - 0.4769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Gas station
+    - Petrol station
+    - 加油站
+    semantic_type: menu_item
+  - text: Finance
+    center:
+    - 0.2787
+    - 0.5273
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bank
+    - ATM
+    - 金融
+    semantic_type: menu_item
+  - text: Food
+    center:
+    - 0.2551
+    - 0.5777
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Groceries
+    - Edibles
+    - 食品
+    semantic_type: menu_item
+  - text: Healthcare
+    center:
+    - 0.3051
+    - 0.6281
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Medical
+    - Hospital
+    - 医疗
+    - Health
+    semantic_type: menu_item
+  - text: Leisure
+    center:
+    - 0.2741
+    - 0.6785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Entertainment
+    - Recreation
+    - 休闲
+    semantic_type: menu_item
+  - text: Nautical
+    center:
+    - 0.2829
+    - 0.729
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Marine
+    - Boating
+    - 航海
+    semantic_type: menu_item
+  - text: Nearest POIs
+    center:
+    - 0.325
+    - 0.7794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Closest points
+    - Nearby places
+    - 附近兴趣点
+    semantic_type: menu_item
+  - text: Parking
+    center:
+    - 0.2769
+    - 0.8298
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Car park
+    - P lot
+    - 停车
+    semantic_type: menu_item
+  - text: Personal transport
+    center:
+    - 0.3718
+    - 0.8802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Vehicle services
+    - Auto
+    - 个人交通
+    semantic_type: menu_item
+  - text: Apply filters
+    center:
+    - 0.1917
+    - 0.9254
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Filter
+    - Set filters
+    - 应用筛选
+    semantic_type: button
+  - text: DISMISS
+    center:
+    - 0.8093
+    - 0.9254
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - Cancel
+    - 关闭
+    semantic_type: button
+  - text: Public transport
+    center:
+    - 0.3495
+    - 0.6173
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Transit
+    - Bus & Train
+    - 公共交通
+    semantic_type: menu_item
+  - text: Sightseeing
+    center:
+    - 0.3125
+    - 0.6677
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Attractions
+    - Tourist spots
+    - 观光
+    semantic_type: menu_item
+  - text: Sport
+    center:
+    - 0.2588
+    - 0.7181
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Sports
+    - Athletics
+    - 运动
+    semantic_type: menu_item
+  - text: Store
+    center:
+    - 0.2569
+    - 0.7685
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Shop
+    - Retail
+    - 商店
+    semantic_type: menu_item
+  - text: Tourism
+    center:
+    - 0.2819
+    - 0.819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Travel
+    - Tourist info
+    - 旅游
+    semantic_type: menu_item
+  - text: Water
+    center:
+    - 0.262
+    - 0.8694
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Hydration
+    - Drinking water
+    - 水源
+    semantic_type: menu_item
+  description: A scrollable list of Point of Interest (POI) categories allowing users
+    to filter map overlays by type such as accommodation, food, and transport.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.5798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - +
+    - 放大
+    - zoom plus
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.649
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - '-'
+    - 缩小
+    - zoom minus
+    semantic_type: button
+  - text: Country
+    center:
+    - 0.0986
+    - 0.7473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 国家
+    - region
+    - nation
+    semantic_type: label
+  - text: Add
+    center:
+    - 0.1287
+    - 0.9027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加
+    - plus
+    - create
+    semantic_type: button
+  - text: Marker
+    center:
+    - 0.3764
+    - 0.9027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 标记
+    - pin
+    - waypoint
+    semantic_type: menu_item
+  - text: Share
+    center:
+    - 0.6245
+    - 0.9027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - send
+    - export
+    semantic_type: button
+  - text: Actions
+    center:
+    - 0.8713
+    - 0.9027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 操作
+    - more actions
+    - options
+    semantic_type: menu_item
+  - text: DETAILS
+    center:
+    - 0.3222
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 详情
+    - information
+    - info
+    semantic_type: tab
+  - text: NAVIGATION
+    center:
+    - 0.8222
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 导航
+    - directions
+    - route
+    semantic_type: tab
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    semantic_type: label
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置地图
+    - map settings
+    - map configuration
+    semantic_type: link
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: COLLAPSE
+    center:
+    - 0.3222
+    - 0.2067
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 收起
+    - hide
+    - minimize
+    semantic_type: button
+  - text: Population
+    center:
+    - 0.5657
+    - 0.2515
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 人口
+    - demographics
+    - residents
+    semantic_type: label
+  - text: Nearby Wikipedia articles
+    center:
+    - 0.5171
+    - 0.321
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 附近维基百科文章
+    - wiki nearby
+    - wikipedia points
+    semantic_type: link
+  - text: Get
+    center:
+    - 0.2597
+    - 0.549
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 获取
+    - download
+    - install
+    semantic_type: button
+  - text: 'Name: English'
+    center:
+    - 0.5171
+    - 0.6577
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 名称：英语
+    - English name
+    - name en
+    semantic_type: label
+  - text: Online photos
+    center:
+    - 0.5171
+    - 0.7815
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 在线照片
+    - web images
+    - photos online
+    semantic_type: link
+  - text: Collapse
+    center:
+    - 0.0699
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 收起
+    - fold
+    - hide panel
+    semantic_type: button
+  description: Map details screen displaying location information such as population
+    and nearby articles, with options for navigation, map configuration, and sharing.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - navigation map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    - exit screen
+    semantic_type: button
+  - text: Transport
+    center:
+    - 0.4806
+    - 0.3544
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交通
+    - public transport
+    - transit
+    - 公共交通
+    semantic_type: tab
+  description: Transport mode screen displaying a map view with an option to return
+    to the main map interface.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Tracks
+    center:
+    - 0.3639
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 轨迹
+    - routes
+    - paths
+    - track list
+    semantic_type: label
+  - text: Search
+    center:
+    - 0.6597
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    - query
+    semantic_type: input
+  - text: Switch folder
+    center:
+    - 0.7958
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 切换文件夹
+    - change directory
+    - navigate folder
+    semantic_type: button
+  - text: More actions
+    center:
+    - 0.9319
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多操作
+    - options
+    - menu
+    - actions
+    semantic_type: button
+  - text: On map
+    center:
+    - 0.0898
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 在地图上
+    - show on map
+    - display on map
+    semantic_type: button
+  - text: All
+    center:
+    - 0.2292
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 全部
+    - select all
+    - everything
+    semantic_type: button
+  - text: Sort by
+    center:
+    - 0.1833
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序方式
+    - order by
+    - arrange
+    semantic_type: button
+  - text: Last modified
+    center:
+    - 0.2204
+    - 0.2127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最后修改
+    - recently updated
+    - date modified
+    semantic_type: menu_item
+  - text: Import
+    center:
+    - 0.5
+    - 0.4785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 导入
+    - load
+    - bring in
+    semantic_type: button
+  - text: DESELECT ALL
+    center:
+    - 0.1644
+    - 0.9448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消全选
+    - unselect all
+    - clear selection
+    semantic_type: button
+  - text: APPLY
+    center:
+    - 0.8995
+    - 0.9448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 应用
+    - confirm
+    - save
+    - done
+    semantic_type: button
+  description: Track management screen allowing users to search, sort, import, and
+    select tracks for display on the map.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+  - text: Plugins
+    center:
+    - 0.2588
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+  - text: Wikipedia
+    center:
+    - 0.5171
+    - 0.1373
+    fixed: false
+    found_at_scroll: 0
+  - text: More…
+    center:
+    - 0.9394
+    - 0.159
+    fixed: false
+    found_at_scroll: 0
+  - text: Online maps
+    center:
+    - 0.5171
+    - 0.2277
+    fixed: false
+    found_at_scroll: 0
+  - text: Trip recording
+    center:
+    - 0.5171
+    - 0.3181
+    fixed: false
+    found_at_scroll: 0
+  - text: Topography
+    center:
+    - 0.5171
+    - 0.4085
+    fixed: false
+    found_at_scroll: 0
+  - text: Weather
+    center:
+    - 0.5171
+    - 0.499
+    fixed: false
+    found_at_scroll: 0
+  - text: Nautical map view
+    center:
+    - 0.5171
+    - 0.5894
+    fixed: false
+    found_at_scroll: 0
+  - text: Ski map view
+    center:
+    - 0.5171
+    - 0.6798
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio/video notes
+    center:
+    - 0.5171
+    - 0.7702
+    fixed: false
+    found_at_scroll: 0
+  - text: Parking position
+    center:
+    - 0.5171
+    - 0.8606
+    fixed: false
+    found_at_scroll: 0
+  - text: OpenStreetMap editing
+    center:
+    - 0.5171
+    - 0.951
+    fixed: false
+    found_at_scroll: 0
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: true
+    found_at_scroll: 0
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: true
+    found_at_scroll: 0
+  - text: Favorites
+    center:
+    - 0.4903
+    - 0.4781
+    fixed: true
+    found_at_scroll: 0
+  - text: POI overlay…
+    center:
+    - 0.4222
+    - 0.539
+    fixed: true
+    found_at_scroll: 0
+  - text: Point Labels (POI, Favorites)
+    center:
+    - 0.4903
+    - 0.6206
+    fixed: true
+    found_at_scroll: 0
+  - text: Transport
+    center:
+    - 0.4222
+    - 0.6919
+    fixed: true
+    found_at_scroll: 0
+  - text: Tracks
+    center:
+    - 0.4222
+    - 0.7631
+    fixed: true
+    found_at_scroll: 0
+  - text: Map markers
+    center:
+    - 0.4903
+    - 0.8344
+    fixed: true
+    found_at_scroll: 0
+  - text: Map source…
+    center:
+    - 0.5681
+    - 0.8952
+    fixed: true
+    found_at_scroll: 0
+  - text: Offline vector maps
+    center:
+    - 0.5681
+    - 0.9177
+    fixed: true
+    found_at_scroll: 0
+  - text: Configure map
+    center:
+    - 0.3134
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+  - text: Movement direction
+    center:
+    - 0.9194
+    - 0.27
+    fixed: true
+    found_at_scroll: 0
+  - text: Mapillary
+    center:
+    - 0.5171
+    - 0.636
+    fixed: false
+    found_at_scroll: 1
+  - text: External Sensors
+    center:
+    - 0.5171
+    - 0.7265
+    fixed: false
+    found_at_scroll: 1
+  - text: Accessibility
+    center:
+    - 0.5171
+    - 0.8169
+    fixed: false
+    found_at_scroll: 1
+  - text: OsmAnd development
+    center:
+    - 0.5171
+    - 0.9073
+    fixed: false
+    found_at_scroll: 1
+  description: A scrollable menu listing various map configuration options, plugins,
+    and overlay settings in the OsmAnd app.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 配置地图
+    - map settings
+    - map configuration
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回菜单
+    - back
+    - menu
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - navigation
+    - directions
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 放大
+    - zoom+
+    - enlarge
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 缩小
+    - zoom-
+    - reduce
+    semantic_type: button
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - close
+    - exit
+    semantic_type: button
+  - text: Browse map checked
+    center:
+    - 0.0579
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 浏览地图
+    - browse mode
+    - explore map
+    semantic_type: toggle
+  - text: Driving unchecked
+    center:
+    - 0.1745
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 驾车
+    - car navigation
+    - driving mode
+    semantic_type: toggle
+  - text: Cycling unchecked
+    center:
+    - 0.2912
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 骑行
+    - bicycle
+    - bike navigation
+    semantic_type: toggle
+  - text: Walking unchecked
+    center:
+    - 0.4079
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 步行
+    - pedestrian
+    - hiking
+    semantic_type: toggle
+  - text: Public transport unchecked
+    center:
+    - 0.5245
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 公共交通
+    - transit
+    - bus/train
+    semantic_type: toggle
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示
+    - display
+    - visible
+    semantic_type: label
+  - text: Favorites
+    center:
+    - 0.4903
+    - 0.4781
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - bookmarks
+    - saved places
+    semantic_type: menu_item
+  - text: POI overlay…
+    center:
+    - 0.4222
+    - 0.539
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 兴趣点覆盖
+    - points of interest
+    - POI layer
+    semantic_type: menu_item
+  - text: Point Labels (POI, Favorites)
+    center:
+    - 0.4903
+    - 0.6206
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 点标签
+    - labels
+    - names
+    semantic_type: setting
+  - text: Transport
+    center:
+    - 0.4222
+    - 0.6919
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交通
+    - transit lines
+    - public transport
+    semantic_type: menu_item
+  - text: Tracks
+    center:
+    - 0.4222
+    - 0.7631
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 轨迹
+    - GPX tracks
+    - recorded paths
+    semantic_type: menu_item
+  - text: Map markers
+    center:
+    - 0.4903
+    - 0.8344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图标记
+    - pins
+    - markers
+    semantic_type: menu_item
+  - text: Map source…
+    center:
+    - 0.5681
+    - 0.8952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图源
+    - tile source
+    - map provider
+    semantic_type: menu_item
+  - text: Offline vector maps
+    center:
+    - 0.5681
+    - 0.9177
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 离线矢量地图
+    - vector tiles
+    - offline maps
+    semantic_type: menu_item
+  - text: Wikipedia
+    center:
+    - 0.5681
+    - 0.9646
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 维基百科
+    - wiki
+    - articles
+    semantic_type: menu_item
+  - text: Movement direction
+    center:
+    - 0.9194
+    - 0.27
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 移动方向
+    - heading
+    - orientation
+    semantic_type: setting
+  - text: Explore Wikipedia offline.
+    center:
+    - 0.5681
+    - 0.2565
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 离线浏览维基百科
+    - download wiki
+    - offline articles
+    semantic_type: link
+  - text: Get
+    center:
+    - 0.1625
+    - 0.291
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 获取
+    - download
+    - install
+    semantic_type: button
+  - text: Weather
+    center:
+    - 0.5681
+    - 0.3348
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 天气
+    - forecast
+    - climate
+    semantic_type: menu_item
+  - text: Explore Weather forecast.
+    center:
+    - 0.5681
+    - 0.3573
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 查看天气预报
+    - weather details
+    - forecast info
+    semantic_type: link
+  - text: Show borders of downloaded maps
+    center:
+    - 0.4903
+    - 0.4452
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 显示下载地图边界
+    - map boundaries
+    - coverage area
+    semantic_type: toggle
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.521
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地形
+    - contours
+    - elevation
+    semantic_type: menu_item
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.7265
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 路线
+    - paths
+    - trails
+    semantic_type: label
+  - text: Cycle routes
+    center:
+    - 0.4222
+    - 0.7773
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 自行车路线
+    - cycling paths
+    - bike trails
+    semantic_type: toggle
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.8485
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 山地车路线
+    - MTB trails
+    - off-road cycling
+    semantic_type: toggle
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.9198
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 徒步路线
+    - hiking trails
+    - walking paths
+    semantic_type: toggle
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.2635
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 难度分级
+    - trail difficulty
+    - grade
+    semantic_type: setting
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.3348
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 滑雪道
+    - ski runs
+    - pistes
+    semantic_type: toggle
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.406
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 骑马路线
+    - equestrian trails
+    - horse riding
+    semantic_type: toggle
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.4773
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 激流运动
+    - rafting
+    - kayaking
+    semantic_type: toggle
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.5485
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 健身步道
+    - exercise paths
+    - workout trails
+    semantic_type: toggle
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.6198
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 跑步路线
+    - jogging paths
+    - run trails
+    semantic_type: toggle
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.706
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.7631
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图样式
+    - theme
+    - skin
+    semantic_type: menu_item
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.7631
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 默认
+    - default style
+    - standard
+    semantic_type: menu_item
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.8181
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.8956
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 地图放大镜
+    - magnify
+    - zoom lens
+    semantic_type: setting
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.9569
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: setting
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 字体大小
+    - text scale
+    - font size
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 地图语言
+    - localization
+    - language
+    semantic_type: setting
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 详情
+    - more info
+    - details
+    semantic_type: button
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 隐藏
+    - collapse
+    - minimize
+    semantic_type: button
+  description: Map configuration menu allowing users to customize map layers, overlays,
+    and display settings such as POIs, tracks, and weather.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Offline Wikipedia
+    center:
+    - 0.6069
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+  - text: Restore purchases
+    center:
+    - 0.9319
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+  - text: OsmAnd Cloud
+    center:
+    - 0.4514
+    - 0.4577
+    fixed: false
+    found_at_scroll: 0
+  - text: Pro features
+    center:
+    - 0.4514
+    - 0.5115
+    fixed: false
+    found_at_scroll: 0
+  - text: Hourly map updates
+    center:
+    - 0.4514
+    - 0.5652
+    fixed: false
+    found_at_scroll: 0
+  - text: Cross-buy
+    center:
+    - 0.4514
+    - 0.619
+    fixed: false
+    found_at_scroll: 0
+  - text: Weather
+    center:
+    - 0.4514
+    - 0.6727
+    fixed: false
+    found_at_scroll: 0
+  - text: 3D Relief
+    center:
+    - 0.4514
+    - 0.7265
+    fixed: false
+    found_at_scroll: 0
+  - text: Monthly map updates
+    center:
+    - 0.4514
+    - 0.7802
+    fixed: false
+    found_at_scroll: 0
+  - text: Unlimited map downloads
+    center:
+    - 0.4514
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+  - text: Android Auto
+    center:
+    - 0.4514
+    - 0.8877
+    fixed: false
+    found_at_scroll: 0
+  - text: Offline Wikivoyage
+    center:
+    - 0.4514
+    - 0.9719
+    fixed: false
+    found_at_scroll: 0
+  - text: External sensors support
+    center:
+    - 0.4514
+    - 0.3198
+    fixed: false
+    found_at_scroll: 1
+  - text: Contour lines, hillshade, slope
+    center:
+    - 0.4514
+    - 0.3735
+    fixed: false
+    found_at_scroll: 1
+  - text: Nautical depth
+    center:
+    - 0.4514
+    - 0.4273
+    fixed: false
+    found_at_scroll: 1
+  - text: Continue with OsmAnd Pro
+    center:
+    - 0.5588
+    - 0.4877
+    fixed: false
+    found_at_scroll: 1
+  - text: Continue with Maps+
+    center:
+    - 0.5588
+    - 0.5635
+    fixed: false
+    found_at_scroll: 1
+  - text: Later
+    center:
+    - 0.5
+    - 0.6515
+    fixed: false
+    found_at_scroll: 1
+  - text: Troubleshooting
+    center:
+    - 0.1847
+    - 0.771
+    fixed: false
+    found_at_scroll: 1
+  - text: New device / new account
+    center:
+    - 0.5681
+    - 0.8727
+    fixed: false
+    found_at_scroll: 1
+  - text: Contact support
+    center:
+    - 0.3116
+    - 0.8698
+    fixed: false
+    found_at_scroll: 2
+  description: Subscription and feature comparison screen listing Pro benefits with
+    options to purchase, restore, or defer.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: 'What''s here:'
+    center:
+    - 0.5
+    - 0.7215
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Location info
+    - Current location
+    - Place details
+    - 此处信息
+    semantic_type: label
+  - text: CLOSE
+    center:
+    - 0.4995
+    - 0.9473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - Dismiss
+    - Cancel
+    - 关闭
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Map view
+    - 地图
+    - Navigation map
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Map settings
+    - Map configuration
+    - 配置地图
+    - Map options
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Look up
+    - 搜索
+    - Search places
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Return to menu
+    - Menu
+    - 返回菜单
+    - Go back
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Navigation
+    - Directions
+    - 路线
+    - Plan route
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - +
+    - Enlarge
+    - 放大
+    - Zoom plus
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - '-'
+    - Shrink
+    - 缩小
+    - Zoom minus
+    semantic_type: button
+  description: Main map interface with navigation controls, search, and configuration
+    options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+  - text: Show
+    center:
+    - 0.0875
+    - 0.0944
+    fixed: false
+    found_at_scroll: 0
+  - text: Favorites
+    center:
+    - 0.4903
+    - 0.1556
+    fixed: false
+    found_at_scroll: 0
+  - text: POI overlay…
+    center:
+    - 0.4222
+    - 0.2165
+    fixed: false
+    found_at_scroll: 0
+  - text: Point Labels (POI, Favorites)
+    center:
+    - 0.4903
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+  - text: Transport
+    center:
+    - 0.4222
+    - 0.3694
+    fixed: false
+    found_at_scroll: 0
+  - text: Tracks
+    center:
+    - 0.4222
+    - 0.4406
+    fixed: false
+    found_at_scroll: 0
+  - text: Map markers
+    center:
+    - 0.4903
+    - 0.5119
+    fixed: false
+    found_at_scroll: 0
+  - text: Map source…
+    center:
+    - 0.5681
+    - 0.5727
+    fixed: false
+    found_at_scroll: 0
+  - text: Offline vector maps
+    center:
+    - 0.5681
+    - 0.5952
+    fixed: false
+    found_at_scroll: 0
+  - text: Wikipedia
+    center:
+    - 0.5681
+    - 0.6448
+    fixed: false
+    found_at_scroll: 0
+  - text: Explore Wikipedia offline.
+    center:
+    - 0.5681
+    - 0.6673
+    fixed: false
+    found_at_scroll: 0
+  - text: Get
+    center:
+    - 0.1625
+    - 0.7019
+    fixed: false
+    found_at_scroll: 0
+  - text: Weather
+    center:
+    - 0.5681
+    - 0.7456
+    fixed: false
+    found_at_scroll: 0
+  - text: Explore Weather forecast.
+    center:
+    - 0.5681
+    - 0.7681
+    fixed: false
+    found_at_scroll: 0
+  - text: Show borders of downloaded maps
+    center:
+    - 0.4903
+    - 0.856
+    fixed: false
+    found_at_scroll: 0
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.9319
+    fixed: false
+    found_at_scroll: 0
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.4123
+    fixed: false
+    found_at_scroll: 1
+  - text: Cycle routes
+    center:
+    - 0.4222
+    - 0.4631
+    fixed: false
+    found_at_scroll: 1
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.5344
+    fixed: false
+    found_at_scroll: 1
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.6056
+    fixed: false
+    found_at_scroll: 1
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.6769
+    fixed: false
+    found_at_scroll: 1
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.7481
+    fixed: false
+    found_at_scroll: 1
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.8194
+    fixed: false
+    found_at_scroll: 1
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.8906
+    fixed: false
+    found_at_scroll: 1
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.9619
+    fixed: false
+    found_at_scroll: 1
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.361
+    fixed: false
+    found_at_scroll: 2
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.4473
+    fixed: false
+    found_at_scroll: 2
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.5044
+    fixed: false
+    found_at_scroll: 2
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.5044
+    fixed: false
+    found_at_scroll: 2
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.5594
+    fixed: false
+    found_at_scroll: 2
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 2
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 2
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 2
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 2
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 2
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 2
+  description: Map configuration menu allowing users to toggle various overlays, routes,
+    and rendering settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    - go back to map
+    semantic_type: button
+  description: Map view screen with an option to return to the main map interface
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    - go back
+    semantic_type: button
+  description: Full-screen map view with a 'Back to map' button to return to the main
+    navigation interface.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    - go back to map
+    semantic_type: button
+  description: Full-screen map view with a 'Back to map' button for navigation context.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.0831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地形
+    - terrain
+    - elevation
+    - topo
+    semantic_type: setting
+  - text: Get
+    center:
+    - 0.0949
+    - 0.2085
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 获取
+    - download
+    - install
+    - add
+    semantic_type: button
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.2885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - navigation
+    - paths
+    - 轨迹
+    semantic_type: menu_item
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.4473
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.5044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图样式
+    - theme
+    - visual style
+    - 外观
+    semantic_type: setting
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.5044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.5594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图放大镜
+    - zoom
+    - magnify
+    - scale
+    semantic_type: setting
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: setting
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 字体大小
+    - font size
+    - text scale
+    - 字号
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    - 显示语言
+    semantic_type: setting
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 详情
+    - more info
+    - details view
+    - 详细信息
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 隐藏
+    - collapse
+    - minimize
+    - dismiss
+    semantic_type: button
+  description: Map configuration screen allowing users to customize map rendering,
+    styles, text size, language, and display details.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Day/night mode
+    center:
+    - 0.5
+    - 0.3831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - theme
+    - appearance
+    - dark mode
+    - light mode
+    semantic_type: setting
+  - text: Sunrise/sunset
+    center:
+    - 0.5685
+    - 0.4327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sun position
+    - daylight times
+    - dawn/dusk
+    semantic_type: toggle
+  - text: Light sensor
+    center:
+    - 0.5685
+    - 0.5902
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ambient light
+    - auto brightness
+    - automatic theme
+    semantic_type: toggle
+  - text: DISMISS
+    center:
+    - 0.8093
+    - 0.6475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close
+    - cancel
+    - ignore
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - map view
+    - cartography
+    - 地图
+    semantic_type: tab
+  - text: Cycle routes
+    center:
+    - 0.4222
+    - 0.0669
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - biking paths
+    - cycling tracks
+    - bike lanes
+    semantic_type: toggle
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.1381
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - MTB trails
+    - off-road cycling
+    - mountain biking
+    semantic_type: toggle
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.2094
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - trekking paths
+    - walking trails
+    - hiking trails
+    semantic_type: toggle
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.2806
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - trail difficulty
+    - grade
+    - rating
+    semantic_type: toggle
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.3519
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - ski runs
+    - pistes
+    - winter sports
+    semantic_type: toggle
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.4231
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - equestrian trails
+    - horse riding paths
+    - bridleways
+    semantic_type: toggle
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.4944
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - rafting
+    - kayaking
+    - water sports
+    semantic_type: toggle
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.5656
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - exercise paths
+    - workout routes
+    - fitness tracks
+    semantic_type: toggle
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.6369
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - jogging paths
+    - run trails
+    - running tracks
+    semantic_type: toggle
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.7231
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - rendering engine
+    - map display
+    - visualization
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.7802
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - theme
+    - skin
+    - visual style
+    - map theme
+    semantic_type: menu_item
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.7802
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.8352
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - view mode
+    - display mode
+    - map type
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.9127
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - zoom lens
+    - magnifying glass
+    - loupe
+    semantic_type: toggle
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.9679
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - road appearance
+    - street rendering
+    - highway style
+    semantic_type: menu_item
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - font size
+    - label size
+    - text scale
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - language
+    - locale
+    - display language
+    semantic_type: menu_item
+  - text: Local names
+    center:
+    - 0.8644
+    - 0.8206
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - native names
+    - local labels
+    - original names
+    semantic_type: toggle
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - more info
+    - additional settings
+    - advanced
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - collapse
+    - minimize
+    - conceal
+    semantic_type: button
+  description: Map configuration screen allowing users to customize visual settings,
+    route overlays, and display preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Map language
+    center:
+    - 0.5
+    - 0.1052
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Language
+    - Display language
+    - 地图语言
+    semantic_type: label
+  - text: Local names
+    center:
+    - 0.5
+    - 0.155
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Native names
+    - Original names
+    - 本地名称
+    semantic_type: toggle
+  - text: English
+    center:
+    - 0.5
+    - 0.2075
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - EN
+    - 英语
+    semantic_type: menu_item
+  - text: Afrikaans
+    center:
+    - 0.5
+    - 0.26
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - AF
+    - 南非荷兰语
+    semantic_type: menu_item
+  - text: Albanian
+    center:
+    - 0.5
+    - 0.3125
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - SQ
+    - 阿尔巴尼亚语
+    semantic_type: menu_item
+  - text: Albanian (Tosk)
+    center:
+    - 0.5
+    - 0.365
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 阿尔巴尼亚语 (托斯克)
+    semantic_type: menu_item
+  - text: Arabic
+    center:
+    - 0.5
+    - 0.4175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - AR
+    - 阿拉伯语
+    semantic_type: menu_item
+  - text: Armenian
+    center:
+    - 0.5
+    - 0.47
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - HY
+    - 亚美尼亚语
+    semantic_type: menu_item
+  - text: Azerbaijani
+    center:
+    - 0.5
+    - 0.5225
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - AZ
+    - 阿塞拜疆语
+    semantic_type: menu_item
+  - text: Basque
+    center:
+    - 0.5
+    - 0.575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - EU
+    - 巴斯克语
+    semantic_type: menu_item
+  - text: Belarusian
+    center:
+    - 0.5
+    - 0.6275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BE
+    - 白俄罗斯语
+    semantic_type: menu_item
+  - text: Bengali
+    center:
+    - 0.5
+    - 0.68
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BN
+    - 孟加拉语
+    semantic_type: menu_item
+  - text: Berber
+    center:
+    - 0.5
+    - 0.7325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 柏柏尔语
+    semantic_type: menu_item
+  - text: Bishnupriya
+    center:
+    - 0.5
+    - 0.785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 比什努普里亚语
+    semantic_type: menu_item
+  - text: Bosnian
+    center:
+    - 0.5
+    - 0.8375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BS
+    - 波斯尼亚语
+    semantic_type: menu_item
+  - text: Breton
+    center:
+    - 0.5
+    - 0.8792
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BR
+    - 布列塔尼语
+    semantic_type: menu_item
+  - text: CANCEL
+    center:
+    - 0.6352
+    - 0.9254
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    semantic_type: button
+  - text: APPLY
+    center:
+    - 0.8269
+    - 0.9254
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Apply
+    - 应用
+    - 确认
+    semantic_type: button
+  - text: Bulgarian
+    center:
+    - 0.5
+    - 0.1888
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - BG
+    - 保加利亚语
+    semantic_type: menu_item
+  - text: Catalan
+    center:
+    - 0.5
+    - 0.2412
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - CA
+    - 加泰罗尼亚语
+    semantic_type: menu_item
+  - text: Cebuano
+    center:
+    - 0.5
+    - 0.2938
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 宿务语
+    semantic_type: menu_item
+  - text: Central Kurdish
+    center:
+    - 0.5
+    - 0.3463
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 库尔德语 (中部)
+    semantic_type: menu_item
+  - text: Chinese
+    center:
+    - 0.5
+    - 0.3987
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - ZH
+    - 中文
+    - 汉语
+    semantic_type: menu_item
+  - text: Croatian
+    center:
+    - 0.5
+    - 0.4512
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - HR
+    - 克罗地亚语
+    semantic_type: menu_item
+  - text: Czech
+    center:
+    - 0.5
+    - 0.5038
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - CS
+    - 捷克语
+    semantic_type: menu_item
+  - text: Danish
+    center:
+    - 0.5
+    - 0.5563
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - DA
+    - 丹麦语
+    semantic_type: menu_item
+  - text: Dutch
+    center:
+    - 0.5
+    - 0.6088
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - NL
+    - 荷兰语
+    semantic_type: menu_item
+  - text: Esperanto
+    center:
+    - 0.5
+    - 0.6613
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - EO
+    - 世界语
+    semantic_type: menu_item
+  - text: Estonian
+    center:
+    - 0.5
+    - 0.7137
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - ET
+    - 爱沙尼亚语
+    semantic_type: menu_item
+  - text: Finnish
+    center:
+    - 0.5
+    - 0.7662
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - FI
+    - 芬兰语
+    semantic_type: menu_item
+  - text: French
+    center:
+    - 0.5
+    - 0.8187
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - FR
+    - 法语
+    semantic_type: menu_item
+  - text: Frysk
+    center:
+    - 0.5
+    - 0.8698
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Frisian
+    - 弗里西语
+    semantic_type: menu_item
+  - text: Galician
+    center:
+    - 0.5
+    - 0.1775
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - GL
+    - 加利西亚语
+    semantic_type: menu_item
+  - text: Georgian
+    center:
+    - 0.5
+    - 0.23
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - KA
+    - 格鲁吉亚语
+    semantic_type: menu_item
+  - text: German
+    center:
+    - 0.5
+    - 0.2825
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - DE
+    - 德语
+    semantic_type: menu_item
+  - text: Greek
+    center:
+    - 0.5
+    - 0.335
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - EL
+    - 希腊语
+    semantic_type: menu_item
+  - text: Haitian
+    center:
+    - 0.5
+    - 0.3875
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - HT
+    - 海地克里奥尔语
+    semantic_type: menu_item
+  - text: Hebrew
+    center:
+    - 0.5
+    - 0.44
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - HE
+    - 希伯来语
+    semantic_type: menu_item
+  - text: Hindi
+    center:
+    - 0.5
+    - 0.4925
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - HI
+    - 印地语
+    semantic_type: menu_item
+  - text: Hungarian
+    center:
+    - 0.5
+    - 0.545
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - HU
+    - 匈牙利语
+    semantic_type: menu_item
+  - text: Icelandic
+    center:
+    - 0.5
+    - 0.5975
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - IS
+    - 冰岛语
+    semantic_type: menu_item
+  - text: Indonesian
+    center:
+    - 0.5
+    - 0.65
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - ID
+    - 印尼语
+    semantic_type: menu_item
+  - text: Irish
+    center:
+    - 0.5
+    - 0.7025
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - GA
+    - 爱尔兰语
+    semantic_type: menu_item
+  - text: Italian
+    center:
+    - 0.5
+    - 0.755
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - IT
+    - 意大利语
+    semantic_type: menu_item
+  - text: Japanese
+    center:
+    - 0.5
+    - 0.8075
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - JA
+    - 日语
+    semantic_type: menu_item
+  - text: Kabyle
+    center:
+    - 0.5
+    - 0.86
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 卡拜尔语
+    semantic_type: menu_item
+  - text: Kannada
+    center:
+    - 0.5
+    - 0.8904
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - KN
+    - 卡纳达语
+    semantic_type: menu_item
+  - text: Kazakh
+    center:
+    - 0.5
+    - 0.2167
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - KK
+    - 哈萨克语
+    semantic_type: menu_item
+  - text: Korean
+    center:
+    - 0.5
+    - 0.2692
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - KO
+    - 韩语
+    semantic_type: menu_item
+  - text: Kurdish
+    center:
+    - 0.5
+    - 0.3217
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - KU
+    - 库尔德语
+    semantic_type: menu_item
+  - text: Lao
+    center:
+    - 0.5
+    - 0.3742
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - LO
+    - 老挝语
+    semantic_type: menu_item
+  - text: Latin
+    center:
+    - 0.5
+    - 0.4267
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - LA
+    - 拉丁语
+    semantic_type: menu_item
+  - text: Latvian
+    center:
+    - 0.5
+    - 0.4792
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - LV
+    - 拉脱维亚语
+    semantic_type: menu_item
+  - text: Lithuanian
+    center:
+    - 0.5
+    - 0.5317
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - LT
+    - 立陶宛语
+    semantic_type: menu_item
+  - text: Low German
+    center:
+    - 0.5
+    - 0.5842
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 低地德语
+    semantic_type: menu_item
+  - text: Luxembourgish
+    center:
+    - 0.5
+    - 0.6367
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - LB
+    - 卢森堡语
+    semantic_type: menu_item
+  - text: Macedonian
+    center:
+    - 0.5
+    - 0.6892
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - MK
+    - 马其顿语
+    semantic_type: menu_item
+  - text: Malayalam
+    center:
+    - 0.5
+    - 0.7417
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - ML
+    - 马拉雅拉姆语
+    semantic_type: menu_item
+  - text: Malaysian
+    center:
+    - 0.5
+    - 0.7942
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - MS
+    - 马来语
+    semantic_type: menu_item
+  - text: Marathi
+    center:
+    - 0.5
+    - 0.8467
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - MR
+    - 马拉地语
+    semantic_type: menu_item
+  - text: Navajo
+    center:
+    - 0.5
+    - 0.8838
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 纳瓦霍语
+    semantic_type: menu_item
+  description: Language selection screen for map labels with a scrollable list of
+    languages and Apply/Cancel actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Close the dialog
+    center:
+    - 0.5
+    - 0.096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  - text: Details
+    center:
+    - 0.5
+    - 0.1717
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Detail
+    - Info
+    - 详细信息
+    - 详情
+    semantic_type: label
+  - text: Show or hide additional map details
+    center:
+    - 0.5
+    - 0.205
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Toggle map details
+    - Map overlays
+    - 显示或隐藏地图细节
+    semantic_type: setting
+  - text: More details
+    center:
+    - 0.4222
+    - 0.2481
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional info
+    - Expand
+    - 更多详情
+    semantic_type: button
+  - text: Show toll restrictions
+    center:
+    - 0.4222
+    - 0.3015
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Toll roads
+    - Toll gates
+    - 收费路段
+    semantic_type: toggle
+  - text: Show road surface
+    center:
+    - 0.4222
+    - 0.354
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Surface type
+    - Pavement
+    - 路面类型
+    semantic_type: toggle
+  - text: Show road quality
+    center:
+    - 0.4222
+    - 0.4065
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Road condition
+    - Smoothness
+    - 道路质量
+    semantic_type: toggle
+  - text: Show access restrictions
+    center:
+    - 0.4222
+    - 0.4598
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Access limits
+    - Private roads
+    - 通行限制
+    semantic_type: toggle
+  - text: Show Low Emission Zones
+    center:
+    - 0.4222
+    - 0.5123
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - LEZ
+    - Clean air zones
+    - 低排放区
+    semantic_type: toggle
+  - text: Color-code buildings by type
+    center:
+    - 0.4222
+    - 0.5648
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Building types
+    - Building colors
+    - 建筑类型着色
+    semantic_type: toggle
+  - text: Street lighting
+    center:
+    - 0.4222
+    - 0.6181
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lights
+    - Lamps
+    - 路灯
+    semantic_type: toggle
+  - text: Waterway tunnels
+    center:
+    - 0.4222
+    - 0.6715
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Underwater tunnels
+    - Canal tunnels
+    - 水道隧道
+    semantic_type: toggle
+  - text: Nature reserve
+    center:
+    - 0.4222
+    - 0.724
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Protected areas
+    - Conservation
+    - 自然保护区
+    semantic_type: toggle
+  - text: Difficulty of horse trails
+    center:
+    - 0.4222
+    - 0.7765
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Equestrian difficulty
+    - Horse riding level
+    - 马道难度
+    semantic_type: toggle
+  - text: Proposed objects
+    center:
+    - 0.4222
+    - 0.829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Planned features
+    - Future maps
+    - 规划中对象
+    semantic_type: toggle
+  - text: Nautical depth contours
+    center:
+    - 0.4222
+    - 0.8815
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Depth lines
+    - Bathymetry
+    - 航海等深线
+    semantic_type: toggle
+  - text: Close
+    center:
+    - 0.4995
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Exit
+    - 关闭
+    semantic_type: button
+  description: A dialog listing various map detail options that users can toggle to
+    customize the visual information displayed on the map.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.6944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 放大
+    - zoom+
+    - increase zoom
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.7635
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 缩小
+    - zoom-
+    - decrease zoom
+    semantic_type: button
+  - text: DETAILS
+    center:
+    - 0.5
+    - 0.9475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 详情
+    - 详细信息
+    - details view
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置地图
+    - map settings
+    - map configuration
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: button
+  description: Main map interface with zoom controls and options to view details,
+    configure the map, or search.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Return
+    - Up arrow
+    semantic_type: button
+  - text: Type to search all
+    center:
+    - 0.5875
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Search bar
+    - Query input
+    semantic_type: input
+  - text: History
+    center:
+    - 0.1667
+    - 0.1421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recent searches
+    - Search history
+    - 历史记录
+    semantic_type: tab
+  - text: HISTORY
+    center:
+    - 0.1667
+    - 0.1419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recent searches
+    - Search history
+    - 历史记录
+    semantic_type: label
+  - text: Categories
+    center:
+    - 0.5
+    - 0.1421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - POI categories
+    - Types
+    - 分类
+    semantic_type: tab
+  - text: CATEGORIES
+    center:
+    - 0.5
+    - 0.1419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - POI categories
+    - Types
+    - 分类
+    semantic_type: label
+  - text: Address
+    center:
+    - 0.8333
+    - 0.1421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Location
+    - Place
+    - 地址
+    semantic_type: tab
+  - text: ADDRESS
+    center:
+    - 0.8329
+    - 0.1419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Location
+    - Place
+    - 地址
+    semantic_type: label
+  - text: Clear
+    center:
+    - 0.9417
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Delete
+    - Remove text
+    - X button
+    semantic_type: button
+  - text: SHOW ON MAP
+    center:
+    - 0.5657
+    - 0.1421
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Display on map
+    - View on map
+    - 在地图上显示
+    semantic_type: button
+  - text: INCREASE SEARCH RADIUS
+    center:
+    - 0.5
+    - 0.335
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Expand search area
+    - Widen search
+    - 增加搜索半径
+    semantic_type: button
+  - text: No search results?&#10;Provide feedback
+    center:
+    - 0.4213
+    - 0.5994
+    fixed: true
+    found_at_scroll: 1
+  - text: Send
+    center:
+    - 0.9213
+    - 0.5994
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Submit
+    - Send feedback
+    - 发送
+    semantic_type: button
+  description: Search interface with input field, history and category filters, and
+    options to show results on map or adjust search radius.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置地图
+    - map settings
+    - map configuration
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search bar
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回菜单
+    - back
+    - return
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - path
+    - navigation route
+    semantic_type: label
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 放大
+    - zoom+
+    - enlarge
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 缩小
+    - zoom-
+    - reduce
+    semantic_type: button
+  - text: Browse map
+    center:
+    - 0.2843
+    - 0.0777
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 浏览地图
+    - explore map
+    - pan map
+    semantic_type: button
+  - text: OsmAnd profile
+    center:
+    - 0.2926
+    - 0.1002
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OsmAnd 配置文件
+    - user profile
+    - app profile
+    semantic_type: label
+  - text: Configure profile
+    center:
+    - 0.3199
+    - 0.1506
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置配置文件
+    - profile settings
+    - edit profile
+    semantic_type: menu_item
+  - text: Map markers
+    center:
+    - 0.2116
+    - 0.2065
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图标记
+    - pins
+    - waypoints
+    semantic_type: menu_item
+  - text: My Places
+    center:
+    - 0.1866
+    - 0.261
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的地点
+    - favorites
+    - saved places
+    semantic_type: menu_item
+  - text: Navigation
+    center:
+    - 0.1903
+    - 0.3702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 导航
+    - navigate
+    - directions
+    semantic_type: menu_item
+  - text: Download maps
+    center:
+    - 0.238
+    - 0.4794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 下载地图
+    - offline maps
+    - get maps
+    semantic_type: menu_item
+  - text: Travel guides (Beta)
+    center:
+    - 0.269
+    - 0.534
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 旅行指南 (测试版)
+    - wikivoyage
+    - travel info
+    semantic_type: menu_item
+  - text: Plan a route
+    center:
+    - 0.2005
+    - 0.5885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 规划路线
+    - create route
+    - route planning
+    semantic_type: menu_item
+  - text: Configure screen
+    center:
+    - 0.2431
+    - 0.6444
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置屏幕
+    - screen settings
+    - display options
+    semantic_type: menu_item
+  - text: Plugins
+    center:
+    - 0.1616
+    - 0.699
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 插件
+    - add-ons
+    - extensions
+    semantic_type: menu_item
+  - text: Settings
+    center:
+    - 0.1685
+    - 0.7535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.137
+    - 0.8081
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - support
+    - FAQ
+    semantic_type: menu_item
+  description: Main menu screen providing access to navigation, map configuration,
+    settings, and various app features.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Close the dialog
+    center:
+    - 0.5
+    - 0.2479
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  - text: Uninstall
+    center:
+    - 0.2593
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Remove
+    - Delete app
+    - 卸载
+    semantic_type: button
+  - text: Keep active
+    center:
+    - 0.7403
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Stay active
+    - Remain active
+    - 保持活跃
+    semantic_type: button
+  description: Confirmation dialog asking the user to choose between uninstalling
+    or keeping a plugin active.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_28
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图配置
+    - map settings
+    - customize map
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search bar
+    semantic_type: input
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回菜单
+    - back
+    - return
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - navigation
+    - directions
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 放大
+    - zoom+
+    - enlarge
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 缩小
+    - zoom-
+    - reduce
+    semantic_type: button
+  - text: Browse map
+    center:
+    - 0.2843
+    - 0.0777
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 浏览地图
+    - explore map
+    - pan map
+    semantic_type: button
+  - text: OsmAnd profile
+    center:
+    - 0.2926
+    - 0.1002
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置文件
+    - user profile
+    - app profile
+    semantic_type: label
+  - text: Configure profile
+    center:
+    - 0.3199
+    - 0.1506
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置简介
+    - profile settings
+    - edit profile
+    semantic_type: button
+  - text: Driving
+    center:
+    - 0.4181
+    - 0.2773
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 驾车
+    - car mode
+    - drive
+    semantic_type: menu_item
+  - text: 'Type: Car'
+    center:
+    - 0.4181
+    - 0.2998
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 类型：汽车
+    - 'vehicle type: car'
+    - car
+    semantic_type: label
+  - text: Cycling
+    center:
+    - 0.4181
+    - 0.3498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 骑行
+    - bike mode
+    - bicycle
+    semantic_type: menu_item
+  - text: 'Type: Bicycle'
+    center:
+    - 0.4181
+    - 0.3723
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 类型：自行车
+    - 'vehicle type: bike'
+    - bike
+    semantic_type: label
+  - text: Walking
+    center:
+    - 0.4181
+    - 0.4223
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 步行
+    - pedestrian
+    - on foot
+    semantic_type: menu_item
+  - text: 'Type: On foot'
+    center:
+    - 0.4181
+    - 0.4448
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 类型：步行
+    - 'mode: walking'
+    - pedestrian
+    semantic_type: label
+  - text: Public transport
+    center:
+    - 0.4181
+    - 0.4948
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 公共交通
+    - transit
+    - bus/train
+    semantic_type: menu_item
+  - text: 'Type: Public transport'
+    center:
+    - 0.4181
+    - 0.5173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 类型：公共交通
+    - 'mode: transit'
+    - public transit
+    semantic_type: label
+  - text: Manage
+    center:
+    - 0.4181
+    - 0.5777
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 管理
+    - manage profiles
+    - settings
+    semantic_type: button
+  description: Map interface with navigation controls, search functionality, and travel
+    mode selection options including driving, cycling, walking, and public transport.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_29
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Browse map
+    center:
+    - 0.3181
+    - 0.0731
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - View Map
+    - Map View
+    - Explore Map
+    semantic_type: button
+  - text: Configure profile
+    center:
+    - 0.3019
+    - 0.0985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Profile Settings
+    - Edit Profile
+    - Setup Profile
+    semantic_type: menu_item
+  - text: Free Settings Backup
+    center:
+    - 0.3574
+    - 0.2185
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Backup
+    - Save Settings
+    - Cloud Backup
+    semantic_type: link
+  - text: Close
+    center:
+    - 0.912
+    - 0.2196
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    semantic_type: button
+  - text: Get OsmAnd Cloud
+    center:
+    - 0.5681
+    - 0.3094
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OsmAnd Cloud
+    - Subscribe
+    - Premium
+    semantic_type: link
+  - text: General settings
+    center:
+    - 0.5681
+    - 0.3865
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - General
+    - Common Settings
+    - Basic Settings
+    semantic_type: setting
+  - text: Configure map
+    center:
+    - 0.5681
+    - 0.4652
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Map Settings
+    - Map Configuration
+    - Map Options
+    semantic_type: menu_item
+  - text: Configure screen
+    center:
+    - 0.5681
+    - 0.544
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screen Settings
+    - Display Configuration
+    - Screen Options
+    semantic_type: menu_item
+  - text: Profile appearance
+    center:
+    - 0.5681
+    - 0.6227
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Look and Feel
+    - Visual Style
+    - Theme
+    semantic_type: menu_item
+  - text: UI Customization
+    center:
+    - 0.5681
+    - 0.7015
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Interface Settings
+    - UI Settings
+    - Customize UI
+    semantic_type: menu_item
+  - text: Plugin settings
+    center:
+    - 0.5875
+    - 0.7727
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Plugins
+    - Add-ons
+    - Extensions
+    semantic_type: setting
+  - text: Weather
+    center:
+    - 0.5681
+    - 0.821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Weather Plugin
+    - Forecast
+    - Meteorology
+    semantic_type: menu_item
+  - text: Actions
+    center:
+    - 0.5
+    - 0.9056
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Operations
+    - Tasks
+    - Quick Actions
+    semantic_type: menu_item
+  - text: Export profile
+    center:
+    - 0.5875
+    - 0.9515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Share Profile
+    - Save Profile
+    - Export Settings
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Map View
+    - Navigation Map
+    - Carte
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Locate
+    - Query
+    semantic_type: tab
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Go Back
+    - Menu
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Navigation
+    - Directions
+    - Path
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - +
+    - Magnify
+    - Enlarge
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '-'
+    - Reduce
+    - Shrink
+    semantic_type: button
+  - text: Copy from another profile
+    center:
+    - 0.5875
+    - 0.7512
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Import Settings
+    - Clone Profile
+    - Duplicate
+    semantic_type: button
+  - text: Reset to default
+    center:
+    - 0.5875
+    - 0.805
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Restore Defaults
+    - Factory Reset
+    - Clear Changes
+    semantic_type: button
+  - text: Delete profile
+    center:
+    - 0.5875
+    - 0.8575
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Remove Profile
+    - Trash
+    - Discard
+    semantic_type: button
+  description: Profile configuration menu offering options to customize map, screen,
+    appearance, plugins, and manage profile settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Map markers
+    center:
+    - 0.5875
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Markers
+    - Pins
+    - 地图标记
+    - 标注点
+    semantic_type: menu_item
+  - text: List
+    center:
+    - 0.125
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 列表
+    - 清单
+    - view list
+    semantic_type: tab
+  - text: Groups
+    center:
+    - 0.375
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Categories
+    - 分组
+    - 类别
+    - folders
+    semantic_type: tab
+  - text: History
+    center:
+    - 0.625
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recent
+    - 历史记录
+    - 最近访问
+    semantic_type: tab
+  - text: More
+    center:
+    - 0.875
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional options
+    - 更多
+    - 其他
+    - extra
+    semantic_type: button
+  description: Map markers management screen with tabs for List, Groups, History,
+    and More to organize and view saved locations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: My Places
+    center:
+    - 0.2884
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Places
+    - Saved Locations
+    - 我的地点
+    semantic_type: tab
+  - text: Filter
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Sort
+    - 筛选
+    semantic_type: button
+  - text: FAVORITES
+    center:
+    - 0.1134
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Favorites
+    - Bookmarks
+    - 收藏
+    semantic_type: label
+  - text: TRACKS
+    center:
+    - 0.319
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Routes
+    - GPX Tracks
+    - 轨迹
+    semantic_type: label
+  - text: Add Favorites
+    center:
+    - 0.4995
+    - 0.4494
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New Favorite
+    - Create Bookmark
+    - 添加收藏
+    semantic_type: button
+  - text: IMPORT
+    center:
+    - 0.5
+    - 0.5631
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Import Data
+    - Load File
+    - 导入
+    semantic_type: button
+  - text: Add to 'Favorites'
+    center:
+    - 0.0713
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save as Favorite
+    - Bookmark this
+    - 加入收藏
+    semantic_type: menu_item
+  - text: Share
+    center:
+    - 0.3565
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Send
+    - Export
+    - 分享
+    semantic_type: button
+  - text: Select map markers
+    center:
+    - 0.6417
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Choose Markers
+    - Pick Points
+    - 选择标记
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.9269
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Remove
+    - Trash
+    - 删除
+    semantic_type: button
+  description: My Places management screen allowing users to view, add, import, share,
+    or delete favorites and tracks.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Maps &amp; Resources
+    center:
+    - 0.3792
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Maps and Resources
+    - 地图与资源
+    - Map resources
+    semantic_type: label
+  - text: Refresh
+    center:
+    - 0.8236
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reload
+    - Update list
+    - 刷新
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: DOWNLOADS
+    center:
+    - 0.1306
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Downloaded maps
+    - 下载
+    - Downloads tab
+    semantic_type: tab
+  - text: LOCAL
+    center:
+    - 0.3407
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Local files
+    - 本地
+    - On device
+    semantic_type: tab
+  - text: UPDATES
+    center:
+    - 0.5213
+    - 0.1408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Available updates
+    - 更新
+    - Updates tab
+    semantic_type: tab
+  - text: Free version
+    center:
+    - 0.3736
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Free tier
+    - 免费版
+    - Basic version
+    semantic_type: label
+  - text: Device memory
+    center:
+    - 0.4019
+    - 0.261
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Internal storage
+    - 手机存储
+    - Local storage
+    semantic_type: setting
+  - text: Other
+    center:
+    - 0.5
+    - 0.341
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Miscellaneous
+    - 其他
+    - More
+    semantic_type: menu_item
+  - text: Voice prompts (TTS, preferred)
+    center:
+    - 0.3634
+    - 0.3906
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Text-to-Speech
+    - 语音导航
+    - TTS
+    - Voice guidance
+    semantic_type: setting
+  description: Maps & Resources management screen allowing users to search, download,
+    update, or manage local map files and voice prompts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Return
+    - Up arrow
+    semantic_type: button
+  - text: Travel guides
+    center:
+    - 0.4843
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Guides
+    - Tourism info
+    - 旅行指南
+    semantic_type: menu_item
+  - text: Options
+    center:
+    - 0.8968
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Settings
+    - Preferences
+    - 配置
+    - 选项
+    semantic_type: button
+  - text: Search for country, city, or province
+    center:
+    - 0.4606
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Search location
+    - Find place
+    - 搜索地点
+    semantic_type: input
+  - text: Search
+    center:
+    - 0.9208
+    - 0.1452
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.5
+    - 0.5123
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - 关闭
+    - X
+    semantic_type: button
+  - text: Start editing
+    center:
+    - 0.5
+    - 0.829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Edit
+    - Begin edit
+    - 开始编辑
+    semantic_type: button
+  - text: Explore
+    center:
+    - 0.2954
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Discover
+    - Browse
+    - 探索
+    semantic_type: tab
+  - text: Bookmarked articles
+    center:
+    - 0.7046
+    - 0.9431
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Saved articles
+    - Favorites
+    - 收藏文章
+    semantic_type: menu_item
+  description: Travel guides screen allowing users to search for locations, explore
+    content, and manage bookmarked articles.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Plugins
+    center:
+    - 0.2588
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add-ons
+    - Extensions
+    - 插件
+    - 附加组件
+    semantic_type: menu_item
+  - text: Disable
+    center:
+    - 0.0778
+    - 0.1592
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Turn off
+    - Deactivate
+    - 禁用
+    - 关闭
+    semantic_type: button
+  - text: Wikipedia
+    center:
+    - 0.5171
+    - 0.1373
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Wiki
+    - 维基百科
+    - Wikipedia plugin
+    semantic_type: menu_item
+  - text: More…
+    center:
+    - 0.9394
+    - 0.159
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - More options
+    - Additional
+    - 更多
+    - 查看更多
+    semantic_type: button
+  - text: Enable
+    center:
+    - 0.0778
+    - 0.2496
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Turn on
+    - Activate
+    - 启用
+    - 开启
+    semantic_type: button
+  - text: Online maps
+    center:
+    - 0.5171
+    - 0.2277
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Internet maps
+    - Web maps
+    - 在线地图
+    - 网络地图
+    semantic_type: setting
+  - text: Trip recording
+    center:
+    - 0.5171
+    - 0.3181
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Track recording
+    - GPS logging
+    - 行程记录
+    - 轨迹录制
+    semantic_type: menu_item
+  - text: Topography
+    center:
+    - 0.5171
+    - 0.4085
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terrain
+    - Contour lines
+    - 地形
+    - 等高线
+    semantic_type: menu_item
+  - text: Weather
+    center:
+    - 0.5171
+    - 0.499
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Forecast
+    - 气象
+    - 天气
+    - 气候
+    semantic_type: menu_item
+  - text: Nautical map view
+    center:
+    - 0.5171
+    - 0.5894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Marine charts
+    - Sea maps
+    - 航海图
+    - 海图视图
+    semantic_type: menu_item
+  - text: Ski map view
+    center:
+    - 0.5171
+    - 0.6798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Slope maps
+    - Winter sports
+    - 滑雪地图
+    - 雪道视图
+    semantic_type: menu_item
+  - text: Audio/video notes
+    center:
+    - 0.5171
+    - 0.7702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Media notes
+    - AV notes
+    - 音视频笔记
+    - 多媒体备注
+    semantic_type: menu_item
+  - text: Parking position
+    center:
+    - 0.5171
+    - 0.8606
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Park car
+    - Save parking
+    - 停车位置
+    - 泊车记录
+    semantic_type: menu_item
+  - text: OpenStreetMap editing
+    center:
+    - 0.5171
+    - 0.951
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OSM edit
+    - Edit OSM
+    - 编辑开放街图
+    - OSM修改
+    semantic_type: menu_item
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Map view
+    - 地图
+    - 主地图
+    semantic_type: tab
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Map settings
+    - Map configuration
+    - 配置地图
+    - 地图设置
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return to menu
+    - Menu
+    - 返回菜单
+    - 回到主菜单
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Navigation
+    - Directions
+    - 路线
+    - 导航
+    semantic_type: tab
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Magnify
+    - +
+    - 放大
+    - 拉近
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Shrink
+    - '-'
+    - 缩小
+    - 拉远
+    semantic_type: button
+  - text: Mapillary
+    center:
+    - 0.5171
+    - 0.636
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Street level imagery
+    - Mapillary plugin
+    - 街景影像
+    semantic_type: menu_item
+  - text: External Sensors
+    center:
+    - 0.5171
+    - 0.7265
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Sensors
+    - Bluetooth sensors
+    - 外部传感器
+    - 外接传感器
+    semantic_type: menu_item
+  - text: Accessibility
+    center:
+    - 0.5171
+    - 0.8169
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Access features
+    - 无障碍
+    - 辅助功能
+    - 易用性
+    semantic_type: setting
+  - text: OsmAnd development
+    center:
+    - 0.5171
+    - 0.9073
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dev mode
+    - Developer options
+    - 开发模式
+    - 开发者选项
+    semantic_type: setting
+  description: A scrollable list of available plugins and features in OsmAnd that
+    users can enable or disable to customize app functionality.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: menu_item
+  - text: OsmAnd settings
+    center:
+    - 0.5681
+    - 0.1431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App Settings
+    - General Settings
+    - OsmAnd配置
+    semantic_type: setting
+  - text: OsmAnd Cloud
+    center:
+    - 0.5681
+    - 0.234
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cloud Sync
+    - Backup
+    - 云同步
+    semantic_type: menu_item
+  - text: Purchases
+    center:
+    - 0.5681
+    - 0.314
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Buy
+    - Subscription
+    - Store
+    - 购买
+    semantic_type: menu_item
+  - text: Browse map
+    center:
+    - 0.5681
+    - 0.4369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - View Map
+    - Map View
+    - 浏览地图
+    semantic_type: button
+  - text: App profiles
+    center:
+    - 0.5
+    - 0.5031
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Profiles
+    - User Profiles
+    - 应用配置
+    semantic_type: menu_item
+  - text: Driving
+    center:
+    - 0.4713
+    - 0.634
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Car
+    - Automobile
+    - 驾车
+    semantic_type: tab
+  - text: Cycling
+    center:
+    - 0.4713
+    - 0.7127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bike
+    - Bicycle
+    - 骑行
+    semantic_type: tab
+  - text: Walking
+    center:
+    - 0.4713
+    - 0.7915
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pedestrian
+    - Hiking
+    - 步行
+    semantic_type: tab
+  - text: Truck
+    center:
+    - 0.4713
+    - 0.8702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lorry
+    - Heavy Vehicle
+    - 卡车
+    semantic_type: tab
+  - text: Motorcycle
+    center:
+    - 0.4713
+    - 0.949
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Motorbike
+    - Bike
+    - 摩托车
+    semantic_type: tab
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Map View
+    - 地图
+    semantic_type: label
+  - text: Configure map
+    center:
+    - 0.0685
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Map Settings
+    - Map Configuration
+    - 地图配置
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.188
+    - 0.0842
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Exit
+    - 返回菜单
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Navigation
+    - Directions
+    - 路线
+    semantic_type: menu_item
+  - text: Zoom in
+    center:
+    - 0.9218
+    - 0.8694
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - +
+    - Magnify
+    - 放大
+    semantic_type: button
+  - text: Zoom out
+    center:
+    - 0.9218
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - '-'
+    - Reduce
+    - 缩小
+    semantic_type: button
+  - text: Moped
+    center:
+    - 0.4713
+    - 0.2969
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Scooter
+    - 轻便摩托车
+    semantic_type: tab
+  - text: Public transport
+    center:
+    - 0.4713
+    - 0.3756
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Transit
+    - Bus
+    - 公共交通
+    semantic_type: tab
+  - text: Train
+    center:
+    - 0.4713
+    - 0.4544
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Rail
+    - Subway
+    - 火车
+    semantic_type: tab
+  - text: Boat
+    center:
+    - 0.4713
+    - 0.5331
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Marine
+    - Ship
+    - 船
+    semantic_type: tab
+  - text: Aircraft
+    center:
+    - 0.4713
+    - 0.6119
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Plane
+    - Aviation
+    - 飞机
+    semantic_type: tab
+  - text: Skiing
+    center:
+    - 0.4713
+    - 0.6906
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Snow
+    - Winter Sports
+    - 滑雪
+    semantic_type: tab
+  - text: Horseback riding
+    center:
+    - 0.4713
+    - 0.7694
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Equestrian
+    - Horse
+    - 骑马
+    semantic_type: tab
+  - text: New profile
+    center:
+    - 0.5875
+    - 0.8471
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Create Profile
+    - Add Profile
+    - 新建配置
+    semantic_type: button
+  - text: Edit profile list
+    center:
+    - 0.5875
+    - 0.8996
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Manage Profiles
+    - Edit Profiles
+    - 编辑配置列表
+    semantic_type: button
+  - text: Import/export
+    center:
+    - 0.5194
+    - 0.9575
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Data Transfer
+    - Backup/Restore
+    - 导入/导出
+    semantic_type: menu_item
+  - text: Export to file
+    center:
+    - 0.5875
+    - 0.8037
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Save to File
+    - Backup
+    - 导出到文件
+    semantic_type: button
+  - text: Import from file
+    center:
+    - 0.5875
+    - 0.8575
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Load from File
+    - Restore
+    - 从文件导入
+    semantic_type: button
+  description: Settings screen displaying a list of app profiles and configuration
+    options for different transportation modes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.2259
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - Assistance
+    - 帮助
+    semantic_type: menu_item
+  - text: More actions
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Options
+    - Menu
+    - 更多操作
+    semantic_type: button
+  - text: Contact us
+    center:
+    - 0.5
+    - 0.1552
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Get in touch
+    - 联系我们
+    semantic_type: link
+  - text: Contact support
+    center:
+    - 0.5681
+    - 0.2056
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Customer service
+    - 联系支持
+    semantic_type: link
+  - text: GitHub Discussion
+    center:
+    - 0.5681
+    - 0.2785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Github forums
+    - GitHub 讨论
+    semantic_type: link
+  - text: Ask question, propose features
+    center:
+    - 0.5681
+    - 0.301
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Feature request
+    - 提问与建议
+    semantic_type: link
+  - text: Telegram chats
+    center:
+    - 0.5681
+    - 0.3569
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - TG group
+    - Telegram 聊天
+    semantic_type: link
+  - text: Twitter
+    center:
+    - 0.5681
+    - 0.414
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - X
+    - 推特
+    semantic_type: link
+  - text: Reddit
+    center:
+    - 0.5681
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reddit forum
+    - 红迪
+    semantic_type: link
+  - text: Facebook
+    center:
+    - 0.5681
+    - 0.5598
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - FB
+    - 脸书
+    semantic_type: link
+  - text: Report an issue
+    center:
+    - 0.5
+    - 0.6469
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bug report
+    - 报告问题
+    semantic_type: link
+  - text: Open issue on GitHub
+    center:
+    - 0.5681
+    - 0.6973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create GitHub issue
+    - 在 GitHub 上提交问题
+    semantic_type: link
+  - text: Send logcat log
+    center:
+    - 0.5681
+    - 0.7702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Submit logs
+    - 发送日志
+    semantic_type: button
+  - text: Detailed log file
+    center:
+    - 0.5681
+    - 0.7927
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Full log
+    - 详细日志文件
+    semantic_type: link
+  - text: About OsmAnd
+    center:
+    - 0.5
+    - 0.8573
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App info
+    - 关于 OsmAnd
+    semantic_type: menu_item
+  - text: What's new
+    center:
+    - 0.5681
+    - 0.966
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Changelog
+    - Release notes
+    - 新功能
+    semantic_type: link
+  - text: Free versions
+    center:
+    - 0.5681
+    - 0.8723
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Free editions
+    - 免费版本
+    semantic_type: link
+  - text: Download and install free OsmAnd version
+    center:
+    - 0.5681
+    - 0.8948
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Install free app
+    - 下载免费版
+    semantic_type: link
+  description: Help and support screen providing access to contact options, community
+    links, issue reporting, and app information.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    semantic_type: tab
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回菜单
+    - back
+    - menu
+    semantic_type: button
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - navigation
+    - path
+    semantic_type: tab
+  - text: fold/unfold
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 展开/折叠
+    - expand/collapse
+    - toggle panel
+    semantic_type: button
+  - text: Driving
+    center:
+    - 0.1852
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 驾车
+    - car
+    - drive
+    semantic_type: menu_item
+  - text: Driving checked
+    center:
+    - 0.1847
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 驾车已选
+    - car selected
+    semantic_type: menu_item
+  - text: Cycling
+    center:
+    - 0.3019
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 骑行
+    - bike
+    - bicycle
+    semantic_type: menu_item
+  - text: Cycling unchecked
+    center:
+    - 0.3014
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 骑行未选
+    - bike unselected
+    semantic_type: menu_item
+  - text: Walking
+    center:
+    - 0.4185
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 步行
+    - walk
+    - pedestrian
+    semantic_type: menu_item
+  - text: Walking unchecked
+    center:
+    - 0.4181
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 步行未选
+    - walk unselected
+    semantic_type: menu_item
+  - text: Public transport
+    center:
+    - 0.5352
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 公共交通
+    - transit
+    - bus
+    - train
+    semantic_type: menu_item
+  - text: Public transport unchecked
+    center:
+    - 0.5347
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 公共交通未选
+    - transit unselected
+    semantic_type: menu_item
+  - text: Choose app modes
+    center:
+    - 0.9319
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 选择应用模式
+    - select profile
+    - mode selection
+    semantic_type: link
+  - text: 'From:'
+    center:
+    - 0.194
+    - 0.1202
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 起点
+    - departure
+    - start point
+    semantic_type: label
+  - text: Select point of departure
+    center:
+    - 0.4903
+    - 0.1444
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 选择出发点
+    - pick start
+    - set origin
+    semantic_type: input
+  - text: Swap
+    center:
+    - 0.9319
+    - 0.1323
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 交换
+    - reverse
+    - switch direction
+    semantic_type: button
+  - text: 'To:'
+    center:
+    - 0.1759
+    - 0.1744
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 终点
+    - destination
+    - arrival
+    semantic_type: label
+  - text: Set destination
+    center:
+    - 0.4903
+    - 0.1985
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置目的地
+    - pick end
+    - choose destination
+    semantic_type: input
+  - text: Add
+    center:
+    - 0.8838
+    - 0.1865
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加
+    - add waypoint
+    - plus
+    semantic_type: button
+  - text: 'On'
+    center:
+    - 0.1208
+    - 0.2415
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 开启
+    - enabled
+    - active
+    semantic_type: toggle
+  - text: Settings
+    center:
+    - 0.8042
+    - 0.2415
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - config
+    - preferences
+    semantic_type: setting
+  - text: Home
+    center:
+    - 0.3074
+    - 0.3081
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 家
+    - home address
+    - residence
+    semantic_type: menu_item
+  - text: Work
+    center:
+    - 0.8088
+    - 0.3081
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 公司
+    - work address
+    - office
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.2491
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - abort
+    - close
+    semantic_type: button
+  - text: Start
+    center:
+    - 0.7505
+    - 0.9475
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 开始
+    - begin navigation
+    - go
+    semantic_type: button
+  description: Route planning screen allowing users to select travel mode, set departure
+    and destination points, and start navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Close the dialog
+    center:
+    - 0.5
+    - 0.4196
+    fixed: false
+    found_at_scroll: 0
+  - text: Uninstall speed cameras
+    center:
+    - 0.5
+    - 0.831
+    fixed: false
+    found_at_scroll: 0
+  - text: Cancel
+    center:
+    - 0.2597
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+  - text: Uninstall and Restart
+    center:
+    - 0.7398
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 1
+  - text: Back to menu
+    center:
+    - 0.0782
+    - 0.9385
+    fixed: false
+    found_at_scroll: 1
+  - text: Route
+    center:
+    - 0.2319
+    - 0.9385
+    fixed: false
+    found_at_scroll: 1
+  - text: fold/unfold
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: Driving
+    center:
+    - 0.1852
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: Driving checked
+    center:
+    - 0.1847
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+  - text: Cycling
+    center:
+    - 0.3019
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: Cycling unchecked
+    center:
+    - 0.3014
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+  - text: Walking
+    center:
+    - 0.4185
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: Walking unchecked
+    center:
+    - 0.4181
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+  - text: Public transport
+    center:
+    - 0.5352
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: Public transport unchecked
+    center:
+    - 0.5347
+    - 0.0794
+    fixed: false
+    found_at_scroll: 1
+  - text: Choose app modes
+    center:
+    - 0.9319
+    - 0.0796
+    fixed: false
+    found_at_scroll: 1
+  - text: 'From:'
+    center:
+    - 0.194
+    - 0.1202
+    fixed: false
+    found_at_scroll: 1
+  - text: Select point of departure
+    center:
+    - 0.4903
+    - 0.1444
+    fixed: false
+    found_at_scroll: 1
+  - text: Swap
+    center:
+    - 0.9319
+    - 0.1323
+    fixed: false
+    found_at_scroll: 1
+  - text: 'To:'
+    center:
+    - 0.1759
+    - 0.1744
+    fixed: false
+    found_at_scroll: 1
+  - text: Set destination
+    center:
+    - 0.4903
+    - 0.1985
+    fixed: false
+    found_at_scroll: 1
+  - text: Add
+    center:
+    - 0.9319
+    - 0.1865
+    fixed: false
+    found_at_scroll: 1
+  - text: 'On'
+    center:
+    - 0.1208
+    - 0.2415
+    fixed: false
+    found_at_scroll: 1
+  - text: Settings
+    center:
+    - 0.8042
+    - 0.2415
+    fixed: false
+    found_at_scroll: 1
+  - text: Home
+    center:
+    - 0.3074
+    - 0.3081
+    fixed: false
+    found_at_scroll: 1
+  - text: Work
+    center:
+    - 0.8088
+    - 0.3081
+    fixed: false
+    found_at_scroll: 1
+  - text: Start
+    center:
+    - 0.7505
+    - 0.9475
+    fixed: false
+    found_at_scroll: 1
+  description: Route planning screen allowing users to set departure and destination
+    points, select travel modes, and access navigation settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    - exit
+    semantic_type: button
+  - text: Transport
+    center:
+    - 0.4806
+    - 0.3544
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交通
+    - public transport
+    - transit
+    semantic_type: menu_item
+  - text: North is up
+    center:
+    - 0.9194
+    - 0.27
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 北方朝上
+    - north up
+    - map orientation north
+    semantic_type: toggle
+  description: Transport mode map view with navigation controls and orientation settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_40
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回地图
+    - return to map
+    - exit settings
+    semantic_type: button
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示
+    - display
+    - visible
+    semantic_type: toggle
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.504
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地形
+    - terrain
+    - contours
+    - elevation
+    semantic_type: menu_item
+  - text: Get
+    center:
+    - 0.0949
+    - 0.6294
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 获取
+    - download
+    - install
+    semantic_type: button
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.7094
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - paths
+    - navigation routes
+    semantic_type: menu_item
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.7969
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.854
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图样式
+    - theme
+    - visual style
+    - 皮肤
+    semantic_type: menu_item
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.854
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.909
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: menu_item
+  - text: Configure map
+    center:
+    - 0.3134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 配置地图
+    - map settings
+    - customize map
+    semantic_type: link
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图放大镜
+    - zoom lens
+    - magnifying glass
+    semantic_type: setting
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: menu_item
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 字体大小
+    - font size
+    - label size
+    - 文字大小
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    - 地名语言
+    semantic_type: menu_item
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 详情
+    - more info
+    - detailed view
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 隐藏
+    - conceal
+    - invisible
+    semantic_type: toggle
+  description: Map configuration menu offering options to adjust topography, routes,
+    map style, rendering details, and text settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Close the dialog
+    center:
+    - 0.5
+    - 0.0998
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - dismiss
+    - exit
+    - close
+    semantic_type: button
+  - text: Map style
+    center:
+    - 0.5
+    - 0.1915
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - map theme
+    - rendering style
+    - 地图样式
+    semantic_type: setting
+  - text: Show full description
+    center:
+    - 0.2139
+    - 0.2898
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - expand description
+    - view details
+    - 显示完整描述
+    semantic_type: button
+  - text: OsmAnd
+    center:
+    - 0.2514
+    - 0.3565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.2597
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - abort
+    - discard
+    - 取消
+    semantic_type: button
+  - text: Apply
+    center:
+    - 0.7398
+    - 0.9406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - confirm
+    - save changes
+    - 应用
+    semantic_type: button
+  description: A dialog for selecting and applying a map style in OsmAnd, with options
+    to view details, cancel, or confirm changes.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Day/night mode
+    center:
+    - 0.5
+    - 0.3831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - theme
+    - appearance
+    - dark mode
+    - light mode
+    semantic_type: setting
+  - text: Sunrise/sunset
+    center:
+    - 0.5685
+    - 0.4327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - dawn/dusk
+    - sun times
+    - daylight
+    semantic_type: label
+  - text: Day
+    center:
+    - 0.5685
+    - 0.4852
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - light mode
+    - daytime
+    semantic_type: toggle
+  - text: Night
+    center:
+    - 0.5685
+    - 0.5377
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - dark mode
+    - nighttime
+    semantic_type: toggle
+  - text: Light sensor
+    center:
+    - 0.5685
+    - 0.5902
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - auto brightness
+    - ambient light
+    - automatic
+    semantic_type: toggle
+  - text: DISMISS
+    center:
+    - 0.8093
+    - 0.6475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close
+    - cancel
+    - hide
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - map view
+    - main map
+    semantic_type: tab
+  - text: Back to map
+    center:
+    - 0.5
+    - 0.1846
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - return to map
+    - exit
+    semantic_type: button
+  - text: Browse map unchecked
+    center:
+    - 0.0579
+    - 0.3498
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - browse map
+    - explore map
+    semantic_type: toggle
+  - text: Driving checked
+    center:
+    - 0.1745
+    - 0.3498
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - car mode
+    - driving navigation
+    - automobile
+    semantic_type: toggle
+  - text: Cycling unchecked
+    center:
+    - 0.2912
+    - 0.3498
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - bike mode
+    - bicycle navigation
+    semantic_type: toggle
+  - text: Walking unchecked
+    center:
+    - 0.4079
+    - 0.3498
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - pedestrian mode
+    - hiking
+    - on foot
+    semantic_type: toggle
+  - text: Public transport unchecked
+    center:
+    - 0.5245
+    - 0.3498
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - transit
+    - bus/train
+    - public transit
+    semantic_type: toggle
+  - text: Show
+    center:
+    - 0.0875
+    - 0.4169
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - display
+    - visible
+    - enable
+    semantic_type: button
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.504
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - terrain
+    - contours
+    - elevation
+    semantic_type: menu_item
+  - text: Get
+    center:
+    - 0.0949
+    - 0.6294
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - download
+    - install
+    - acquire
+    semantic_type: button
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.7094
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - navigation
+    - paths
+    - tracks
+    semantic_type: menu_item
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.7965
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - rendering settings
+    - display options
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.8535
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - theme
+    - visual style
+    - skin
+    semantic_type: menu_item
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.8535
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - app name
+    - home
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.9085
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - view mode
+    - orientation
+    semantic_type: setting
+  - text: Configure map
+    center:
+    - 0.3134
+    - 0.0838
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - map settings
+    - customize map
+    semantic_type: menu_item
+  - text: Movement direction
+    center:
+    - 0.9194
+    - 0.27
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - heading
+    - orientation
+    - direction of travel
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - zoom
+    - magnify
+    - scale
+    semantic_type: setting
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - road appearance
+    - street style
+    semantic_type: setting
+  - text: Default
+    center:
+    - 0.9065
+    - 0.6981
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - standard
+    - reset
+    - original
+    semantic_type: button
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - font size
+    - label size
+    - text scale
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - language
+    - locale
+    - translation
+    semantic_type: setting
+  - text: Local names
+    center:
+    - 0.8644
+    - 0.8206
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - native names
+    - local labels
+    semantic_type: toggle
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - more info
+    - advanced
+    - specifics
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - conceal
+    - invisible
+    - disable
+    semantic_type: button
+  description: Map configuration screen allowing users to adjust display settings
+    such as day/night mode, map style, text size, and language.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: Map magnifier
+    center:
+    - 0.5
+    - 0.2256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - zoom control
+    - map zoom
+    - magnify map
+    semantic_type: button
+  - text: DISMISS
+    center:
+    - 0.8093
+    - 0.805
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close
+    - cancel
+    - hide
+    - dismiss notification
+    semantic_type: button
+  description: A map magnifier overlay that allows users to zoom in on a specific
+    area of the map, with an option to dismiss the view.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - cartography
+    semantic_type: tab
+  - text: Show
+    center:
+    - 0.0875
+    - 0.0677
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示
+    - display
+    - visibility
+    semantic_type: menu_item
+  - text: Topography
+    center:
+    - 0.1435
+    - 0.1548
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地形
+    - terrain
+    - elevation
+    - contours
+    semantic_type: setting
+  - text: Get
+    center:
+    - 0.0949
+    - 0.2802
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 获取
+    - download
+    - install
+    semantic_type: button
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.36
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - navigation
+    - paths
+    - tracks
+    semantic_type: menu_item
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.4473
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.5044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图样式
+    - theme
+    - skin
+    - visual style
+    semantic_type: setting
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.5044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.5594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: setting
+  - text: Sunrise/sunset
+    center:
+    - 0.5681
+    - 0.5819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 日出/日落
+    - sun times
+    - daylight
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图放大镜
+    - zoom lens
+    - magnifying glass
+    semantic_type: button
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 道路样式
+    - road appearance
+    - street rendering
+    semantic_type: setting
+  - text: Default
+    center:
+    - 0.9065
+    - 0.6981
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 默认
+    - standard
+    - original
+    - reset
+    semantic_type: button
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 字体大小
+    - font size
+    - text scale
+    - label size
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    - translation
+    semantic_type: setting
+  - text: Local names
+    center:
+    - 0.8644
+    - 0.8206
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 本地名称
+    - native names
+    - local labels
+    semantic_type: toggle
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 详情
+    - more info
+    - specifics
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 隐藏
+    - conceal
+    - dismiss
+    semantic_type: button
+  description: Map configuration screen allowing users to customize map rendering,
+    style, text size, language, and visibility of topographic and route details.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - map display
+    semantic_type: label
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.6677
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 渲染
+    - rendering settings
+    - map render
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.7248
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - theme
+    - map theme
+    - 样式
+    semantic_type: setting
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.7248
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.7798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 模式
+    - view mode
+    - display mode
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.8573
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 放大镜
+    - magnifier
+    - zoom lens
+    semantic_type: setting
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.9185
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: setting
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.9708
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字体大小
+    - font size
+    - text scale
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    semantic_type: setting
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 详情
+    - more info
+    - details view
+    semantic_type: button
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 隐藏
+    - collapse
+    - dismiss
+    semantic_type: button
+  description: Map appearance configuration screen allowing users to customize map
+    style, road style, text size, and language settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_46
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - map screen
+    semantic_type: tab
+  - text: Get
+    center:
+    - 0.0949
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 下载
+    - download
+    - get maps
+    semantic_type: tab
+  - text: Routes
+    center:
+    - 0.1014
+    - 0.2265
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 路线
+    - navigation
+    - 导航
+    semantic_type: tab
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.9335
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - display options
+    semantic_type: setting
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.5044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图样式
+    - theme
+    - 外观
+    semantic_type: menu_item
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.5044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - app name
+    - application
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.5594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: menu_item
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图放大镜
+    - magnifier
+    - zoom helper
+    semantic_type: toggle
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: menu_item
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 字体大小
+    - text scale
+    - font size
+    semantic_type: menu_item
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 地图语言
+    - language
+    - localization
+    semantic_type: menu_item
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 详情
+    - more info
+    - details view
+    semantic_type: button
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 隐藏
+    - collapse
+    - dismiss
+    semantic_type: button
+  description: Map configuration screen allowing users to customize map rendering,
+    style, road appearance, text size, and language settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Day/night mode
+    center:
+    - 0.5
+    - 0.3831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - theme
+    - dark mode
+    - light mode
+    - 昼夜模式
+    semantic_type: setting
+  - text: Sunrise/sunset
+    center:
+    - 0.5685
+    - 0.4327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sun times
+    - dawn/dusk
+    - 日出日落
+    semantic_type: toggle
+  - text: Light sensor
+    center:
+    - 0.5685
+    - 0.5902
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ambient light
+    - auto brightness
+    - 光线传感器
+    semantic_type: toggle
+  - text: DISMISS
+    center:
+    - 0.8093
+    - 0.6475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close
+    - cancel
+    - ignore
+    - 关闭
+    semantic_type: button
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - map view
+    - 地图
+    semantic_type: tab
+  - text: Mountain bike routes
+    center:
+    - 0.4903
+    - 0.0906
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - MTB trails
+    - mountain biking
+    - 山地自行车路线
+    semantic_type: toggle
+  - text: Hiking routes
+    center:
+    - 0.4222
+    - 0.1619
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - trekking paths
+    - walking trails
+    - 徒步路线
+    semantic_type: toggle
+  - text: Difficulty classification
+    center:
+    - 0.4222
+    - 0.2331
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - trail difficulty
+    - grade
+    - 难度分类
+    semantic_type: toggle
+  - text: Ski slopes
+    center:
+    - 0.4903
+    - 0.3044
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - ski runs
+    - pistes
+    - 滑雪道
+    semantic_type: toggle
+  - text: Horse routes
+    center:
+    - 0.4903
+    - 0.3756
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - equestrian trails
+    - riding paths
+    - 骑马路线
+    semantic_type: toggle
+  - text: Whitewater sports
+    center:
+    - 0.4903
+    - 0.4469
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - kayaking
+    - rafting
+    - 激流运动
+    semantic_type: toggle
+  - text: Fitness trails
+    center:
+    - 0.4903
+    - 0.5181
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - exercise paths
+    - workout trails
+    - 健身步道
+    semantic_type: toggle
+  - text: Running routes
+    center:
+    - 0.4903
+    - 0.5894
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - jogging paths
+    - running trails
+    - 跑步路线
+    semantic_type: toggle
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.6756
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - rendering engine
+    - map display
+    - 地图渲染
+    semantic_type: menu_item
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.7327
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - theme
+    - visual style
+    - 地图样式
+    semantic_type: setting
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.7327
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - app name
+    - OsmAnd Maps
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.7877
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - view mode
+    - map type
+    - 地图模式
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.8652
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - zoom lens
+    - magnifying glass
+    - 地图放大镜
+    semantic_type: toggle
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.9265
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - road appearance
+    - street style
+    - 道路样式
+    semantic_type: setting
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - font size
+    - label size
+    - 字体大小
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - localization
+    - language settings
+    - 地图语言
+    semantic_type: setting
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - more info
+    - advanced
+    - 详情
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - collapse
+    - minimize
+    - 隐藏
+    semantic_type: button
+  description: A configuration menu for map appearance and activity-specific overlays,
+    allowing users to customize rendering styles, text size, and visible route types.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Road style
+    center:
+    - 0.5
+    - 0.3569
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - road type
+    - street style
+    - 道路样式
+    - 道路类型
+    semantic_type: setting
+  - text: DISMISS
+    center:
+    - 0.8093
+    - 0.6737
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close
+    - cancel
+    - dismiss dialog
+    - 关闭
+    - 取消
+    semantic_type: button
+  description: A modal dialog for selecting a road style with a dismiss option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: Map
+    center:
+    - 0.5
+    - 0.4869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图
+    - map view
+    - map display
+    semantic_type: setting
+  - text: Map rendering
+    center:
+    - 0.169
+    - 0.4473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图渲染
+    - rendering settings
+    - map drawing
+    semantic_type: menu_item
+  - text: Map style
+    center:
+    - 0.4639
+    - 0.5044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图样式
+    - theme
+    - map theme
+    - 外观
+    semantic_type: setting
+  - text: OsmAnd
+    center:
+    - 0.8958
+    - 0.5044
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - OpenStreetMap Automated Navigation Directions
+    - app name
+    semantic_type: label
+  - text: Map mode
+    center:
+    - 0.5681
+    - 0.5594
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图模式
+    - view mode
+    - display mode
+    semantic_type: setting
+  - text: Map magnifier
+    center:
+    - 0.4833
+    - 0.6369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图放大镜
+    - zoom control
+    - magnify map
+    semantic_type: setting
+  - text: Road style
+    center:
+    - 0.4745
+    - 0.6981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 道路样式
+    - road appearance
+    - street style
+    semantic_type: setting
+  - text: Text size
+    center:
+    - 0.4833
+    - 0.7594
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字体大小
+    - text scale
+    - font size
+    - 字号
+    semantic_type: setting
+  - text: Map language
+    center:
+    - 0.4324
+    - 0.8206
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 地图语言
+    - language
+    - locale
+    - 显示语言
+    semantic_type: setting
+  - text: Details
+    center:
+    - 0.4931
+    - 0.8819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 详情
+    - more details
+    - detailed info
+    semantic_type: link
+  - text: Hide
+    center:
+    - 0.4931
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐藏
+    - collapse
+    - minimize
+    semantic_type: button
+  description: Map appearance customization screen allowing users to adjust map style,
+    road style, text size, and language settings.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 331
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 250
+    y: 2252
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1168
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 440
+    y: 840
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 566
+    y: 840
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 1294
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 1660
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 1832
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 2148
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 2202
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 2315
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 993
+    y: 648
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 155
+    y: 1270
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 530
+    y: 766
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 530
+    y: 936
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 530
+    y: 1108
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 182
+    y: 1656
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 988
+    y: 2112
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 467
+    y: 1970
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 532
+    y: 2116
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 532
+    y: 2264
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 331
+    wait: 1.5
+  - action: tap
+    x: 203
+    y: 202
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 331
+    wait: 1.5
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 331
+    wait: 1.5
+  - action: tap
+    x: 250
+    y: 2252
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 346
+    y: 362
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 228
+    y: 496
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 202
+    y: 626
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 257
+    y: 1150
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 290
+    y: 1282
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 174
+    y: 1678
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 182
+    y: 1808
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 148
+    y: 1940
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 250
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 250
+    y: 2252
+    wait: 1.5
+  - action: tap
+    x: 84
+    y: 2252
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1168
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1732
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 1660
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: tap
+    x: 530
+    y: 2002
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 2148
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: tap
+    x: 614
+    y: 2315
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 614
+    y: 828
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 614
+    y: 882
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 110
+    y: 1768
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 456
+    y: 1889
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 456
+    y: 2232
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: net.osmand
+    wait: 0.5
+  - action: launch
+    package: net.osmand
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 202
+    wait: 1.5
+  - action: tap
+    x: 188
+    y: 840
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 456
+    y: 652
+    wait: 1.5
+launch_behavior: resume_last
+common_tasks:
+- Search for a location or Point of Interest
+- Plan and start navigation for driving, cycling, or walking
+- Toggle map layers and overlays (e.g., POIs, transport, weather)
+- Import and display GPS tracks
+- Customize map rendering styles and text size
+- Configure travel profiles and plugins
+- View detailed information about a specific location
+known_limitations:
+- Map configuration menus often require scrolling through long lists to find specific
+  settings
+- Language selection requires navigating a separate scrollable list with manual apply
+  action
+- Some advanced features and plugins are locked behind a Pro subscription
+- Returning from full-screen map views or specific modes requires explicit 'Back to
+  map' actions

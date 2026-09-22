@@ -1,0 +1,7148 @@
+app: Clock
+package: com.google.android.deskclock
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main home screen of the Clock app providing navigation to Alarm, Timer,
+    Stopwatch, and Bedtime features, along with an option to add cities.
+  elements:
+  - text: Clock
+    center:
+    - 0.1282
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 时钟
+    - time
+    - world clock
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.137
+    - 0.3725
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 主页
+    - home screen
+    - main
+    semantic_type: tab
+  - text: Add city
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 添加城市
+    - new city
+    - add location
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 闹钟
+    - alarms
+    - wake up
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 计时器
+    - countdown
+    - timer
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 秒表
+    - stop watch
+    - chronometer
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 就寝
+    - sleep
+    - wind down
+    - sleep schedule
+    semantic_type: tab
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Screensaver
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 设置
+    - 配置
+    - Preferences
+    semantic_type: setting
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 隐私政策
+    - Privacy
+    - 数据隐私
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 反馈
+    - Report issue
+    - 提交意见
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 帮助
+    - Support
+    - FAQ
+    semantic_type: link
+  - text: Clock
+    center:
+    - 0.1282
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 时钟
+    - World Clock
+    - 世界时钟
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - 更多选项
+    - Menu
+    - Overflow menu
+    - ⋮
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.137
+    - 0.3725
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 主页
+    - 首页
+    - Main
+    semantic_type: tab
+  - text: Add city
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - 添加城市
+    - New city
+    - + City
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 闹钟
+    - Alarms
+    - 提醒
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 计时器
+    - 倒计时
+    - Countdown
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - 秒表
+    - 码表
+    - Chronometer
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 就寝
+    - 睡眠
+    - Sleep schedule
+    semantic_type: tab
+  description: Main Clock app screen displaying time and navigation tabs for Alarm,
+    Timer, Stopwatch, and Bedtime, with a menu overlay showing settings and help options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search for a city
+    center:
+    - 0.5681
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 搜索城市
+    - find city
+    - city search
+    semantic_type: input
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - 清除文本
+    - clear
+    - delete text
+    - 清空
+    semantic_type: button
+  description: City search interface allowing users to find and add locations by typing
+    into the search bar.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Alarm
+    center:
+    - 0.1301
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 闹钟
+    - alarms
+    - wake up
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Expand alarm
+    center:
+    - 0.8736
+    - 0.1583
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 展开闹钟
+    - expand
+    - show details
+    semantic_type: button
+  - text: Add alarm
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 添加闹钟
+    - new alarm
+    - create alarm
+    - +
+    semantic_type: button
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 时钟
+    - world clock
+    - time
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 计时器
+    - countdown
+    - timer
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 秒表
+    - stop watch
+    - chronometer
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 就寝时间
+    - sleep
+    - wind down
+    semantic_type: tab
+  description: Main Clock app screen displaying navigation tabs for Alarm, Clock,
+    Timer, Stopwatch, and Bedtime, with options to add or manage alarms.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Timer
+    center:
+    - 0.1273
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Countdown
+    - 计时器
+    - 定时器
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 设置
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.2454
+    - 0.3404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - One
+    - 一
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.5005
+    - 0.3406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Two
+    - 二
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.7556
+    - 0.3404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Three
+    - 三
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.2454
+    - 0.4554
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Four
+    - 四
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.5005
+    - 0.4556
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Five
+    - 五
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.7556
+    - 0.4554
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Six
+    - 六
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.2458
+    - 0.5702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Seven
+    - 七
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.5005
+    - 0.5702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Eight
+    - 八
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.756
+    - 0.5702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Nine
+    - 九
+    semantic_type: button
+  - text: '00'
+    center:
+    - 0.2454
+    - 0.685
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Double Zero
+    - 零零
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.5005
+    - 0.6852
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zero
+    - 零
+    semantic_type: button
+  - text: ⌫
+    center:
+    - 0.7556
+    - 0.685
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Backspace
+    - Delete
+    - 删除
+    - 退格
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 闹钟
+    - Alerts
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - World Clock
+    - 时钟
+    - 世界时钟
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 秒表
+    - Chronometer
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Sleep
+    - 睡眠
+    - 就寝时间
+    semantic_type: tab
+  description: Timer setup screen with a numeric keypad for inputting duration and
+    bottom navigation tabs.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Stopwatch
+    center:
+    - 0.188
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 秒表
+    - 计时器
+    - chronometer
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - 更多选项
+    - 菜单
+    - more
+    - overflow menu
+    semantic_type: button
+  - text: Start
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 开始
+    - 启动
+    - begin
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 闹钟
+    - 警报
+    - alarms
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 时钟
+    - 世界时钟
+    - world clock
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 定时器
+    - 倒计时
+    - countdown
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - 就寝
+    - 睡眠
+    - sleep
+    - wind down
+    semantic_type: tab
+  description: Main navigation screen of the Clock app featuring tabs for Alarm, Clock,
+    Timer, Stopwatch, and Bedtime.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Bedtime
+    center:
+    - 0.1611
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Sleep
+    - Sleep Schedule
+    - 就寝时间
+    - 睡眠
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Get started
+    center:
+    - 0.5
+    - 0.7894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Start
+    - Begin
+    - 开始
+    - 入门
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Alarms
+    - 闹钟
+    - 提醒
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - World Clock
+    - 时钟
+    - 世界时钟
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Countdown
+    - 计时器
+    - 倒计时
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 秒表
+    - 计时
+    semantic_type: tab
+  description: Main navigation screen of the Clock app featuring tabs for Alarm, Clock,
+    Timer, and Stopwatch, along with a Bedtime section and a Get started prompt.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Got it
+    center:
+    - 0.7958
+    - 0.2729
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - OK
+    - Understood
+    - Confirm
+    - 知道了
+    semantic_type: button
+  - text: Bedtime
+    center:
+    - 0.1611
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - Sleep
+    - Sleep Schedule
+    - 就寝
+    - 睡眠
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_26
+    aliases:
+    - Menu
+    - Overflow
+    - More
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Get started
+    center:
+    - 0.5
+    - 0.7894
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_27
+    aliases:
+    - Start
+    - Begin
+    - Setup
+    - 开始
+    - 入门
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Alarms
+    - 闹钟
+    - 提醒
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - World Clock
+    - 时钟
+    - 世界时钟
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Countdown
+    - 计时器
+    - 倒计时
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Stop Watch
+    - 秒表
+    - 码表
+    semantic_type: tab
+  description: Main navigation screen of the Clock app featuring tabs for Alarm, Clock,
+    Timer, and Stopwatch, along with Bedtime setup options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Clock
+    center:
+    - 0.5
+    - 0.2744
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Style
+    center:
+    - 0.1014
+    - 0.3217
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+  - text: Digital
+    center:
+    - 0.1074
+    - 0.3427
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+  - text: Display time with seconds
+    center:
+    - 0.2866
+    - 0.3987
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Automatic home clock
+    center:
+    - 0.2556
+    - 0.4562
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: While traveling in an area where the time is different, add a clock for
+      home
+    center:
+    - 0.413
+    - 0.4871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Home time zone
+    center:
+    - 0.2028
+    - 0.5529
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Change date &amp; time
+    center:
+    - 0.2319
+    - 0.63
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: Alarms
+    center:
+    - 0.5
+    - 0.6948
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: Silence after
+    center:
+    - 0.1681
+    - 0.7421
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+  - text: Snooze length
+    center:
+    - 0.1843
+    - 0.8192
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+  - text: Gradually increase volume
+    center:
+    - 0.2907
+    - 0.9931
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+  - text: Volume buttons
+    center:
+    - 0.1968
+    - 0.3733
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_34
+  - text: Control volume
+    center:
+    - 0.1769
+    - 0.3944
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_34
+  - text: Start week on
+    center:
+    - 0.1792
+    - 0.4504
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_35
+  - text: Timers
+    center:
+    - 0.5
+    - 0.5348
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+  - text: Timer sound
+    center:
+    - 0.1681
+    - 0.5821
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_37
+  - text: Timer Expired
+    center:
+    - 0.1634
+    - 0.6031
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_37
+  - text: Timer vibrate
+    center:
+    - 0.1736
+    - 0.7362
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+  - text: Screen saver
+    center:
+    - 0.5
+    - 0.801
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+  - text: Night mode
+    center:
+    - 0.1616
+    - 0.9254
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+  - text: Very dim display (for dark rooms)
+    center:
+    - 0.3139
+    - 0.9465
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_36
+  description: Settings page for the Clock app allowing customization of clock style,
+    alarms, timers, and display preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Home
+    center:
+    - 0.0583
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 主页
+    - 首页
+    - main screen
+    semantic_type: tab
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - tab overview
+    - recent tabs
+    - 切换标签页
+    - 关闭标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  description: Home screen of the Clock app featuring tab management controls and
+    a more options menu.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Allow one-time access
+    center:
+    - 0.5
+    - 0.6913
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - Allow once
+    - Grant temporary permission
+    - 单次允许
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.7512
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Deny
+    - Reject
+    - Block
+    - 不允许
+    - 拒绝
+    semantic_type: button
+  description: Permission dialog prompting the user to allow or deny one-time access.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Support
+    - 帮助
+    - 帮助中心
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Search help
+    center:
+    - 0.5
+    - 0.1596
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Search
+    - Find help
+    - 搜索帮助
+    - 查询
+    semantic_type: input
+  - text: Popular help resources
+    center:
+    - 0.2185
+    - 0.2221
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Common topics
+    - FAQ
+    - 热门帮助资源
+    - 常见问题
+    semantic_type: label
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - View all
+    - All articles
+    - 浏览所有文章
+    - 查看全部
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.5634
+    - 0.3719
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Feedback
+    - Report issue
+    - 发送反馈
+    - 意见反馈
+    semantic_type: button
+  description: Help screen providing search functionality, popular resources, and
+    article browsing options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - Screensaver
+    - Daydream
+    - 屏保
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 设置
+    - Preferences
+    - Config
+    semantic_type: button
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - 隐私政策
+    - Privacy
+    - Data policy
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Feedback
+    - 报告问题
+    - Submit feedback
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 帮助
+    - Support
+    - FAQ
+    semantic_type: link
+  - text: Bedtime
+    center:
+    - 0.1611
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_11
+    aliases:
+    - Sleep
+    - 睡眠
+    - Wind down
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_49
+    aliases:
+    - Menu
+    - 更多
+    - Overflow
+    - Three dots
+    semantic_type: button
+  - text: Get started
+    center:
+    - 0.5
+    - 0.7894
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 开始
+    - Start
+    - Begin
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 闹钟
+    - Alarms
+    - Clock alarm
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 时钟
+    - World Clock
+    - Time
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 计时器
+    - Countdown
+    - 倒计时
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 秒表
+    - Chronometer
+    - Stop watch
+    semantic_type: tab
+  description: Main menu or settings overview screen of the Clock app listing features
+    like Alarm, Bedtime, and Timer along with support options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Set a regular wake-up alarm
+    center:
+    - 0.5
+    - 0.1771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create alarm
+    - Add alarm
+    - New alarm
+    semantic_type: button
+  - text: Fifteen minutes earlier
+    center:
+    - 0.1787
+    - 0.2708
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - -15 min
+    - 15 mins sooner
+    - 提前15分钟
+    semantic_type: button
+  - text: Fifteen minutes later
+    center:
+    - 0.8213
+    - 0.2708
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - +15 min
+    - 15 mins later
+    - 推迟15分钟
+    semantic_type: button
+  - text: S
+    center:
+    - 0.1222
+    - 0.3475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sunday
+    - Sun
+    - 周日
+    semantic_type: toggle
+  - text: M
+    center:
+    - 0.2481
+    - 0.3475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Monday
+    - Mon
+    - 周一
+    semantic_type: toggle
+  - text: T
+    center:
+    - 0.3741
+    - 0.3475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Tuesday
+    - Tue
+    - 周二
+    semantic_type: toggle
+  - text: W
+    center:
+    - 0.5
+    - 0.3475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Wednesday
+    - Wed
+    - 周三
+    semantic_type: toggle
+  - text: F
+    center:
+    - 0.7519
+    - 0.3475
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Friday
+    - Fri
+    - 周五
+    semantic_type: toggle
+  - text: Sunrise Alarm
+    center:
+    - 0.5102
+    - 0.43
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Wake up light
+    - Gradual wake
+    - 日出闹钟
+    semantic_type: setting
+  - text: Slowly brighten screen before alarm
+    center:
+    - 0.4856
+    - 0.451
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screen fade-in
+    - Light simulation
+    - 屏幕渐亮
+    semantic_type: label
+  - text: Sound
+    center:
+    - 0.5782
+    - 0.5033
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Ringtone
+    - Alarm sound
+    - 铃声
+    semantic_type: link
+  - text: Vibrate
+    center:
+    - 0.5102
+    - 0.5867
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Vibration
+    - Haptic feedback
+    - 振动
+    semantic_type: toggle
+  - text: Skip
+    center:
+    - 0.1949
+    - 0.9125
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Ignore
+    - 跳过
+    semantic_type: button
+  - text: Next
+    center:
+    - 0.8051
+    - 0.9125
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Continue
+    - Proceed
+    - 下一步
+    semantic_type: button
+  description: Alarm configuration screen allowing users to set wake-up time, repeat
+    days, and preferences like Sunrise Alarm, sound, and vibration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screensaver
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - 配置
+    - preferences
+    semantic_type: button
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - 隐私条款
+    - privacy statement
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 反馈
+    - 提交意见
+    - report issue
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - 支持
+    - FAQ
+    semantic_type: link
+  - text: Alarm
+    center:
+    - 0.1301
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 闹钟
+    - 闹铃
+    - alarms
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - 菜单
+    - more
+    - overflow menu
+    semantic_type: button
+  - text: Expand alarm
+    center:
+    - 0.8736
+    - 0.1583
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 展开闹钟
+    - 显示详情
+    - expand
+    semantic_type: button
+  - text: Add alarm
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 添加闹钟
+    - 新建闹钟
+    - create alarm
+    - +
+    semantic_type: button
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 时钟
+    - 世界时钟
+    - world clock
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 计时器
+    - 倒计时
+    - countdown
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 秒表
+    - 码表
+    - stop watch
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 睡眠
+    - 就寝时间
+    - sleep
+    - wind down
+    semantic_type: tab
+  description: Main navigation screen of the Clock app featuring tabs for Alarm, Clock,
+    Timer, Stopwatch, and Bedtime, along with access to settings and help options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: Alarm
+    center:
+    - 0.1301
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 闹钟
+    - alarms
+    - wake up
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Add label
+    center:
+    - 0.4514
+    - 0.1583
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加标签
+    - label
+    - name alarm
+    semantic_type: button
+  - text: Collapse alarm
+    center:
+    - 0.8736
+    - 0.1583
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收起闹钟
+    - minimize
+    - hide details
+    semantic_type: button
+  - text: Pause alarm
+    center:
+    - 0.5
+    - 0.3821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 暂停闹钟
+    - snooze
+    - dismiss
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.2014
+    - 0.5396
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 删除
+    - remove
+    - trash
+    semantic_type: button
+  - text: Expand alarm
+    center:
+    - 0.8736
+    - 0.6096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 展开闹钟
+    - show details
+    - expand
+    semantic_type: button
+  - text: Add alarm
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加闹钟
+    - new alarm
+    - create alarm
+    - +
+    semantic_type: button
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 时钟
+    - world clock
+    - time
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 计时器
+    - countdown
+    - timer
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 秒表
+    - stop watch
+    - chronometer
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 就寝
+    - sleep
+    - wind down
+    - sleep schedule
+    semantic_type: tab
+  description: Alarm management screen displaying active alarms with options to add,
+    edit, pause, or delete them, alongside navigation tabs for Clock, Timer, Stopwatch,
+    and Bedtime.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Select time
+    center:
+    - 0.2681
+    - 0.2671
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Choose time
+    - Pick time
+    - 选择时间
+    semantic_type: label
+  - text: ':'
+    center:
+    - 0.5005
+    - 0.3408
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - colon
+    - time separator
+    semantic_type: label
+  - text: Switch to text input mode for the time input.
+    center:
+    - 0.219
+    - 0.7567
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Keyboard input
+    - Type time
+    - 手动输入
+    - 文本输入
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.5875
+    - 0.7588
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7722
+    - 0.7588
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    - Save
+    semantic_type: button
+  description: Time picker dialog allowing users to select a time with options to
+    switch input mode, cancel, or confirm.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_17
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screensaver
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - 配置
+    - Preferences
+    semantic_type: button
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - Privacy
+    - 数据隐私
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 反馈
+    - Report issue
+    - 提交反馈
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - Support
+    - FAQ
+    semantic_type: link
+  - text: Timer
+    center:
+    - 0.1273
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 计时器
+    - 倒计时
+    - Countdown
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.2454
+    - 0.3404
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 一
+    - One
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.5005
+    - 0.3406
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 二
+    - Two
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.7556
+    - 0.3404
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 三
+    - Three
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.2454
+    - 0.4554
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 四
+    - Four
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.5005
+    - 0.4556
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 五
+    - Five
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.7556
+    - 0.4554
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 六
+    - Six
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.2458
+    - 0.5702
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 七
+    - Seven
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.5005
+    - 0.5702
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 八
+    - Eight
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.756
+    - 0.5702
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 九
+    - Nine
+    semantic_type: button
+  - text: '00'
+    center:
+    - 0.2454
+    - 0.685
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Double Zero
+    - 零零
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.5005
+    - 0.6852
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 零
+    - Zero
+    semantic_type: button
+  - text: ⌫
+    center:
+    - 0.7556
+    - 0.685
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Backspace
+    - Delete
+    - 删除
+    - 退格
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 闹钟
+    - Alerts
+    - 闹铃
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 时钟
+    - World Clock
+    - 世界时钟
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 秒表
+    - 计时
+    - Chronometer
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 睡眠
+    - Sleep
+    - 就寝时间
+    semantic_type: tab
+  description: A menu overlay displaying app settings and help options above a numeric
+    keypad interface.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screensaver
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - 配置
+    - Preferences
+    semantic_type: button
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - Privacy Statement
+    - 数据隐私
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 反馈
+    - Submit feedback
+    - 报告问题
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - Support
+    - FAQ
+    semantic_type: link
+  - text: Stopwatch
+    center:
+    - 0.188
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 秒表
+    - 计时器
+    - Chronometer
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - Menu
+    - Overflow menu
+    - 三点菜单
+    semantic_type: button
+  - text: Start
+    center:
+    - 0.5
+    - 0.8163
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 开始
+    - Go
+    - Run
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 闹钟
+    - Alert
+    - Wake up
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 时钟
+    - World Clock
+    - 时间
+    semantic_type: tab
+  - text: Timer
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 定时器
+    - 倒计时
+    - Countdown
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 就寝
+    - 睡眠
+    - Sleep mode
+    - Wind down
+    semantic_type: tab
+  description: Settings and help menu for the Clock app, featuring options like Screen
+    saver, Privacy policy, and navigation to main features such as Alarm, Clock, Timer,
+    and Stopwatch.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+  - text: Album cover theme
+    center:
+    - 0.5681
+    - 0.0719
+    fixed: false
+    found_at_scroll: 0
+  - text: Normal
+    center:
+    - 0.5681
+    - 0.0967
+    fixed: false
+    found_at_scroll: 0
+  - text: Album cover skip
+    center:
+    - 0.5681
+    - 0.1544
+    fixed: false
+    found_at_scroll: 0
+  - text: Carousel effect
+    center:
+    - 0.5046
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3542
+    fixed: false
+    found_at_scroll: 0
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.3998
+    fixed: false
+    found_at_scroll: 0
+  - text: Swipe down to dismiss mini player
+    center:
+    - 0.5046
+    - 0.4246
+    fixed: false
+    found_at_scroll: 0
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.4873
+    fixed: false
+    found_at_scroll: 0
+  - text: Add extra controls for mini player
+    center:
+    - 0.5046
+    - 0.5121
+    fixed: false
+    found_at_scroll: 0
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.5748
+    fixed: false
+    found_at_scroll: 0
+  - text: If enough space is available, show volume controls in the now playing screen
+    center:
+    - 0.5046
+    - 0.6235
+    fixed: false
+    found_at_scroll: 0
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.7052
+    fixed: false
+    found_at_scroll: 0
+  - text: Clicking on the notification will show now playing screen instead of the
+      home screen
+    center:
+    - 0.5046
+    - 0.754
+    fixed: false
+    found_at_scroll: 0
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.8356
+    fixed: false
+    found_at_scroll: 0
+  - text: Amount of blur applied for blur themes, lower is faster
+    center:
+    - 0.5681
+    - 0.8715
+    fixed: false
+    found_at_scroll: 0
+  description: Settings page for customizing the 'Now playing' screen appearance and
+    behavior, including theme, controls, and blur effects.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Currently Playing
+    - Playing
+    - 播放中
+    semantic_type: label
+  - text: ALBUM STYLE
+    center:
+    - 0.5
+    - 0.0633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Album Art Style
+    - Cover Style
+    - 专辑样式
+    semantic_type: setting
+  - text: Album cover theme
+    center:
+    - 0.5681
+    - 0.1027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cover Theme
+    - Artwork Theme
+    - 专辑封面主题
+    semantic_type: menu_item
+  - text: Album cover skip
+    center:
+    - 0.5681
+    - 0.1852
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Skip Cover
+    - Cover Transition
+    - 专辑封面切换
+    semantic_type: menu_item
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Control Settings
+    - Playback Controls
+    - 控制
+    semantic_type: setting
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.4306
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Swipe Down to Dismiss
+    - Swipe to Close
+    - 下滑关闭
+    semantic_type: toggle
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.5181
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional Controls
+    - More Controls
+    - 额外控制
+    semantic_type: toggle
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.6056
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Volume Buttons
+    - Hardware Volume
+    - 音量控制
+    semantic_type: toggle
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.736
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display Now Playing
+    - Show Player Screen
+    - 显示播放界面
+    semantic_type: toggle
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.8665
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Blur Intensity
+    - Background Blur
+    - 模糊程度
+    semantic_type: setting
+  description: Settings page for customizing the 'Now playing' media notification
+    appearance and behavior, including album art styles and control options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Currently Playing
+    - Playing
+    - 播放中
+    semantic_type: label
+  - text: ALBUM STYLE
+    center:
+    - 0.5
+    - 0.0596
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Album Art Style
+    - Cover Style
+    - 专辑样式
+    semantic_type: setting
+  - text: Album cover theme
+    center:
+    - 0.5681
+    - 0.0952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cover Theme
+    - Artwork Theme
+    - 专辑封面主题
+    semantic_type: menu_item
+  - text: Album cover skip
+    center:
+    - 0.5681
+    - 0.1777
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Skip Cover
+    - Change Cover
+    - 切换专辑封面
+    semantic_type: button
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3775
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Control Settings
+    - Playback Controls
+    - 控制
+    semantic_type: setting
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.4231
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Swipe Down to Dismiss
+    - Close by Swiping
+    - 下滑关闭
+    semantic_type: toggle
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.5106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional Controls
+    - More Controls
+    - 额外控制
+    semantic_type: toggle
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.5981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Volume Buttons
+    - Sound Control
+    - 音量控制
+    semantic_type: toggle
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display Player
+    - Show Player Screen
+    - 显示播放界面
+    semantic_type: toggle
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.859
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Blur Intensity
+    - Background Blur
+    - 模糊程度
+    semantic_type: setting
+  description: Settings page for customizing the 'Now playing' screen appearance and
+    behavior, including album style, controls, and blur effects.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Now playing
+    center:
+    - 0.2921
+    - 0.0183
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Currently Playing
+    - Playing
+    - 播放中
+    semantic_type: label
+  - text: ALBUM STYLE
+    center:
+    - 0.5
+    - 0.0587
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Album Art Style
+    - Cover Style
+    - 专辑样式
+    semantic_type: setting
+  - text: Album cover theme
+    center:
+    - 0.5681
+    - 0.0935
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cover Theme
+    - Artwork Theme
+    - 专辑封面主题
+    semantic_type: menu_item
+  - text: Album cover skip
+    center:
+    - 0.5681
+    - 0.176
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Skip Cover
+    - Cover Transition
+    - 专辑封面切换
+    semantic_type: menu_item
+  - text: CONTROLS
+    center:
+    - 0.5
+    - 0.3758
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Control Settings
+    - Playback Controls
+    - 控制
+    semantic_type: setting
+  - text: Dismiss with swipe down
+    center:
+    - 0.5046
+    - 0.4215
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Swipe Down to Dismiss
+    - Swipe to Close
+    - 下滑关闭
+    semantic_type: toggle
+  - text: Extra controls
+    center:
+    - 0.5046
+    - 0.509
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Additional Controls
+    - More Controls
+    - 额外控制
+    semantic_type: toggle
+  - text: Volume controls
+    center:
+    - 0.5046
+    - 0.5965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Volume Buttons
+    - Hardware Volume
+    - 音量控制
+    semantic_type: toggle
+  - text: Show now playing screen
+    center:
+    - 0.5046
+    - 0.7269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display Now Playing
+    - Show Player Screen
+    - 显示播放界面
+    semantic_type: toggle
+  - text: Blur amount
+    center:
+    - 0.5681
+    - 0.8573
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Blur Intensity
+    - Background Blur
+    - 模糊程度
+    semantic_type: setting
+  description: Settings page for customizing the 'Now playing' screen appearance and
+    behavior, including album style, controls, and blur amount.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Clear History
+    center:
+    - 0.7523
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Delete History
+    - Remove History
+    - 清除历史记录
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: History
+    center:
+    - 0.2273
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Record
+    - Log
+    - 历史记录
+    semantic_type: label
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  description: History screen displaying past clock activities with options to clear
+    history or access more settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Timer
+    center:
+    - 0.1273
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Countdown
+    - 计时器
+    - 定时器
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.2454
+    - 0.3404
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - One
+    - 一
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.5005
+    - 0.3406
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Two
+    - 二
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.7556
+    - 0.3404
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Three
+    - 三
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.2454
+    - 0.4554
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Four
+    - 四
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.5005
+    - 0.4556
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Five
+    - 五
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.7556
+    - 0.4554
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Six
+    - 六
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.2458
+    - 0.5702
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Seven
+    - 七
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.5005
+    - 0.5702
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Eight
+    - 八
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.756
+    - 0.5702
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Nine
+    - 九
+    semantic_type: button
+  - text: '00'
+    center:
+    - 0.2454
+    - 0.685
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Double Zero
+    - 零零
+    semantic_type: button
+  - text: '0'
+    center:
+    - 0.5005
+    - 0.6852
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Zero
+    - 零
+    semantic_type: button
+  - text: ⌫
+    center:
+    - 0.7556
+    - 0.685
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Backspace
+    - Delete
+    - 清除
+    - 删除
+    semantic_type: button
+  - text: Alarm
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 闹钟
+    - Alerts
+    semantic_type: tab
+  - text: Clock
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - World Clock
+    - 时钟
+    - 世界时钟
+    semantic_type: tab
+  - text: Stopwatch
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 秒表
+    - 计时
+    semantic_type: tab
+  - text: Bedtime
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Sleep
+    - 睡眠
+    - 就寝时间
+    semantic_type: tab
+  - text: Set a consistent bedtime for better sleep
+    center:
+    - 0.5
+    - 0.2217
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Sleep schedule description
+    - 改善睡眠
+    semantic_type: label
+  - text: Choose a regular bedtime, disconnect from your device, and listen to soothing
+      sounds
+    center:
+    - 0.5
+    - 0.3423
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Bedtime instructions
+    - 睡眠说明
+    semantic_type: label
+  - text: Get started
+    center:
+    - 0.5
+    - 0.7894
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Start
+    - 开始
+    - 立即开始
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0244
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0183
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - Tracks
+    - 歌曲
+    - 音乐
+    semantic_type: menu_item
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - Random play
+    - 随机播放
+    - 混洗
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - Recommended
+    - 为你推荐
+    - 个性化推荐
+    semantic_type: menu_item
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 唱片
+    - 专辑
+    semantic_type: menu_item
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - Singers
+    - 歌手
+    - 艺术家
+    semantic_type: menu_item
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - 歌单
+    - 播放列表
+    semantic_type: menu_item
+  description: Bedtime setup screen offering guidance to establish a consistent sleep
+    schedule with a 'Get started' call to action.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Grid style
+    center:
+    - 0.7616
+    - 0.099
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - grid layout
+    - grid view
+    - 网格样式
+    semantic_type: setting
+  - text: Normal
+    center:
+    - 0.7032
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - standard
+    - default
+    - 普通
+    - 常规
+    semantic_type: menu_item
+  - text: Card
+    center:
+    - 0.7032
+    - 0.204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - card view
+    - 卡片
+    semantic_type: menu_item
+  - text: Colored Card
+    center:
+    - 0.7032
+    - 0.2565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - colorful card
+    - 彩色卡片
+    semantic_type: menu_item
+  - text: Circular
+    center:
+    - 0.7032
+    - 0.309
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - circle
+    - round
+    - 圆形
+    semantic_type: menu_item
+  - text: Image
+    center:
+    - 0.7032
+    - 0.3615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - picture
+    - photo
+    - 图片
+    semantic_type: menu_item
+  - text: Gradient image
+    center:
+    - 0.7032
+    - 0.414
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - gradient
+    - 渐变图片
+    semantic_type: menu_item
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - back
+    - up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - tracks
+    - music
+    - 歌曲
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - 更多
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - random play
+    - 随机播放
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - recommended
+    - 为你推荐
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - singers
+    - performers
+    - 艺术家
+    - 歌手
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - lists
+    - 歌单
+    - 播放列表
+    semantic_type: tab
+  description: Music library screen displaying categories such as Songs, Albums, Artists,
+    and Playlists with navigation and playback options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screensaver
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - 配置
+    - preferences
+    semantic_type: setting
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - privacy statement
+    - data policy
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 反馈
+    - 提交反馈
+    - report issue
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - support
+    - FAQ
+    semantic_type: link
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 返回
+    - back
+    - up arrow
+    semantic_type: button
+  - text: Songs
+    center:
+    - 0.5
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 歌曲
+    - tracks
+    - music
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Shuffle
+    center:
+    - 0.8931
+    - 0.8381
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 随机播放
+    - shuffle mode
+    - random play
+    semantic_type: toggle
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 为你推荐
+    - personalized
+    - discover
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 专辑
+    - records
+    - LPs
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 艺术家
+    - 歌手
+    - performers
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.9
+    - 0.93
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 播放列表
+    - 歌单
+    - collections
+    semantic_type: tab
+  description: A screen displaying a mix of app settings options and music library
+    categories such as Songs, Albums, and Playlists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Playlists
+    center:
+    - 0.5005
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Playlist
+    - My Playlists
+    - 播放列表
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - More
+    - ⋮
+    semantic_type: button
+  - text: For you
+    center:
+    - 0.1
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Recommended
+    - Discover
+    - 为你推荐
+    semantic_type: tab
+  - text: Songs
+    center:
+    - 0.3
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Tracks
+    - Music
+    - 歌曲
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.5
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Records
+    - 专辑
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.7
+    - 0.93
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Singers
+    - Performers
+    - 艺人
+    semantic_type: tab
+  description: Music library screen displaying categorized tabs for Playlists, Songs,
+    Albums, and Artists with navigation and options controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Digital
+    center:
+    - 0.3306
+    - 0.3192
+    fixed: false
+    found_at_scroll: 0
+  - text: Analog
+    center:
+    - 0.3306
+    - 0.3717
+    fixed: false
+    found_at_scroll: 0
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 1
+  - text: Clock
+    center:
+    - 0.5
+    - 0.2744
+    fixed: false
+    found_at_scroll: 1
+  - text: Style
+    center:
+    - 0.1014
+    - 0.3217
+    fixed: false
+    found_at_scroll: 1
+  - text: Display time with seconds
+    center:
+    - 0.2866
+    - 0.3987
+    fixed: false
+    found_at_scroll: 1
+  - text: Automatic home clock
+    center:
+    - 0.2556
+    - 0.4562
+    fixed: false
+    found_at_scroll: 1
+  - text: While traveling in an area where the time is different, add a clock for
+      home
+    center:
+    - 0.413
+    - 0.4871
+    fixed: false
+    found_at_scroll: 1
+  - text: Home time zone
+    center:
+    - 0.2028
+    - 0.5529
+    fixed: false
+    found_at_scroll: 1
+  - text: Change date &amp; time
+    center:
+    - 0.2319
+    - 0.63
+    fixed: false
+    found_at_scroll: 1
+  - text: Alarms
+    center:
+    - 0.5
+    - 0.6948
+    fixed: false
+    found_at_scroll: 1
+  - text: Silence after
+    center:
+    - 0.1681
+    - 0.7421
+    fixed: false
+    found_at_scroll: 1
+  - text: Snooze length
+    center:
+    - 0.1843
+    - 0.8192
+    fixed: false
+    found_at_scroll: 1
+  - text: Alarm volume
+    center:
+    - 0.3019
+    - 0.9004
+    fixed: false
+    found_at_scroll: 1
+  - text: Gradually increase volume
+    center:
+    - 0.2907
+    - 0.9931
+    fixed: false
+    found_at_scroll: 1
+  - text: Volume buttons
+    center:
+    - 0.1968
+    - 0.3733
+    fixed: false
+    found_at_scroll: 2
+  - text: Control volume
+    center:
+    - 0.1769
+    - 0.3944
+    fixed: false
+    found_at_scroll: 2
+  - text: Start week on
+    center:
+    - 0.1792
+    - 0.4504
+    fixed: false
+    found_at_scroll: 2
+  - text: Timers
+    center:
+    - 0.5
+    - 0.5348
+    fixed: false
+    found_at_scroll: 2
+  - text: Timer sound
+    center:
+    - 0.1681
+    - 0.5821
+    fixed: false
+    found_at_scroll: 2
+  - text: Timer Expired
+    center:
+    - 0.1634
+    - 0.6031
+    fixed: false
+    found_at_scroll: 2
+  - text: Timer vibrate
+    center:
+    - 0.1736
+    - 0.7362
+    fixed: false
+    found_at_scroll: 2
+  - text: Screen saver
+    center:
+    - 0.5
+    - 0.801
+    fixed: false
+    found_at_scroll: 2
+  - text: Night mode
+    center:
+    - 0.1616
+    - 0.9254
+    fixed: false
+    found_at_scroll: 2
+  - text: Very dim display (for dark rooms)
+    center:
+    - 0.3139
+    - 0.9465
+    fixed: false
+    found_at_scroll: 2
+  description: Clock app settings page allowing users to configure display styles,
+    alarm behaviors, timer sounds, and night mode preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Home time zone
+    center:
+    - 0.5
+    - 0.1046
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - home timezone
+    - local time zone
+    - primary time zone
+    semantic_type: setting
+  - text: Cancel
+    center:
+    - 0.8218
+    - 0.9254
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - dismiss
+    - abort
+    - close
+    - back
+    semantic_type: button
+  description: A dialog or selection screen for choosing a home time zone with a cancel
+    option.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Set time automatically
+    center:
+    - 0.3009
+    - 0.2815
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto set time
+    - Automatic time
+    - 自动设置时间
+    semantic_type: toggle
+  - text: Date
+    center:
+    - 0.1088
+    - 0.346
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期
+    - Calendar date
+    semantic_type: label
+  - text: Time
+    center:
+    - 0.1134
+    - 0.4319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 时钟
+    - Current time
+    semantic_type: label
+  - text: Time zone
+    center:
+    - 0.5097
+    - 0.5223
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 时区
+    - Zone
+    semantic_type: setting
+  - text: Set time zone automatically
+    center:
+    - 0.3593
+    - 0.574
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto time zone
+    - Automatic time zone
+    - 自动设置时区
+    semantic_type: toggle
+  - text: Use location to set time zone
+    center:
+    - 0.3727
+    - 0.6385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Location-based time zone
+    - GPS time zone
+    - 使用位置设定时区
+    semantic_type: label
+  - text: Time format
+    center:
+    - 0.5097
+    - 0.8148
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Format
+    - 时间格式
+    semantic_type: setting
+  - text: Use locale default
+    center:
+    - 0.2528
+    - 0.8665
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default locale
+    - System default
+    - 使用区域默认值
+    semantic_type: toggle
+  - text: Use 24-hour format
+    center:
+    - 0.2685
+    - 0.931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 24-hour time
+    - Military time
+    - 使用24小时制
+    semantic_type: toggle
+  description: Date and time settings screen allowing users to configure automatic
+    time updates, time zones, and time formats.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: Silence after
+    center:
+    - 0.5
+    - 0.3042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto silence
+    - Stop ringing after
+    - 自动静音
+    semantic_type: setting
+  - text: Cancel
+    center:
+    - 0.8218
+    - 0.7254
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    - Abort
+    semantic_type: button
+  description: A dialog or setting screen allowing the user to configure the 'Silence
+    after' duration with options to confirm or cancel.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_32
+  elements:
+  - text: Snooze length
+    center:
+    - 0.5
+    - 0.1046
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - snooze duration
+    - 贪睡时长
+    - 小睡时间
+    semantic_type: setting
+  - text: Cancel
+    center:
+    - 0.8218
+    - 0.9254
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - dismiss
+    - close
+    semantic_type: button
+  description: Dialog for setting the snooze duration with a cancel option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_33
+  elements:
+  - text: Gradually increase volume
+    center:
+    - 0.5
+    - 0.1467
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Fade in
+    - Ramp up volume
+    - 渐强音量
+    semantic_type: toggle
+  - text: Never
+    center:
+    - 0.5
+    - 0.1958
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 'Off'
+    - Disabled
+    - 从不
+    semantic_type: menu_item
+  - text: 5 seconds
+    center:
+    - 0.5
+    - 0.2483
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 5s
+    - 5 sec
+    - 5秒
+    semantic_type: menu_item
+  - text: 10 seconds
+    center:
+    - 0.5
+    - 0.3008
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 10s
+    - 10 sec
+    - 10秒
+    semantic_type: menu_item
+  - text: 15 seconds
+    center:
+    - 0.5
+    - 0.3533
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 15s
+    - 15 sec
+    - 15秒
+    semantic_type: menu_item
+  - text: 20 seconds
+    center:
+    - 0.5
+    - 0.4058
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 20s
+    - 20 sec
+    - 20秒
+    semantic_type: menu_item
+  - text: 25 seconds
+    center:
+    - 0.5
+    - 0.4583
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 25s
+    - 25 sec
+    - 25秒
+    semantic_type: menu_item
+  - text: 30 seconds
+    center:
+    - 0.5
+    - 0.5108
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 30s
+    - 30 sec
+    - 30秒
+    semantic_type: menu_item
+  - text: 35 seconds
+    center:
+    - 0.5
+    - 0.5633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 35s
+    - 35 sec
+    - 35秒
+    semantic_type: menu_item
+  - text: 40 seconds
+    center:
+    - 0.5
+    - 0.6158
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 40s
+    - 40 sec
+    - 40秒
+    semantic_type: menu_item
+  - text: 45 seconds
+    center:
+    - 0.5
+    - 0.6683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 45s
+    - 45 sec
+    - 45秒
+    semantic_type: menu_item
+  - text: 50 seconds
+    center:
+    - 0.5
+    - 0.7208
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 50s
+    - 50 sec
+    - 50秒
+    semantic_type: menu_item
+  - text: 55 seconds
+    center:
+    - 0.5
+    - 0.7733
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 55s
+    - 55 sec
+    - 55秒
+    semantic_type: menu_item
+  - text: 60 seconds
+    center:
+    - 0.5
+    - 0.8258
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 60s
+    - 1 minute
+    - 1 min
+    - 60秒
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.8218
+    - 0.8829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  description: A dialog for selecting the gradual volume increase duration with time
+    interval options and a cancel button.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Control volume
+    center:
+    - 0.388
+    - 0.3708
+    fixed: false
+    found_at_scroll: 0
+  - text: Snooze
+    center:
+    - 0.388
+    - 0.4233
+    fixed: false
+    found_at_scroll: 0
+  - text: Stop
+    center:
+    - 0.388
+    - 0.4758
+    fixed: false
+    found_at_scroll: 0
+  - text: Do nothing
+    center:
+    - 0.388
+    - 0.5283
+    fixed: false
+    found_at_scroll: 0
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+  - text: Snooze length
+    center:
+    - 0.1843
+    - 0.1263
+    fixed: false
+    found_at_scroll: 1
+  - text: Alarm volume
+    center:
+    - 0.3019
+    - 0.1992
+    fixed: false
+    found_at_scroll: 1
+  - text: Gradually increase volume
+    center:
+    - 0.2907
+    - 0.2963
+    fixed: false
+    found_at_scroll: 1
+  - text: Volume buttons
+    center:
+    - 0.1968
+    - 0.3733
+    fixed: false
+    found_at_scroll: 1
+  - text: Start week on
+    center:
+    - 0.1792
+    - 0.4504
+    fixed: false
+    found_at_scroll: 1
+  - text: Timers
+    center:
+    - 0.5
+    - 0.5348
+    fixed: false
+    found_at_scroll: 1
+  - text: Timer sound
+    center:
+    - 0.1681
+    - 0.5821
+    fixed: false
+    found_at_scroll: 1
+  - text: Timer Expired
+    center:
+    - 0.1634
+    - 0.6031
+    fixed: false
+    found_at_scroll: 1
+  - text: Timer vibrate
+    center:
+    - 0.1736
+    - 0.7362
+    fixed: false
+    found_at_scroll: 1
+  - text: Screen saver
+    center:
+    - 0.5
+    - 0.801
+    fixed: false
+    found_at_scroll: 1
+  - text: Style
+    center:
+    - 0.1014
+    - 0.8483
+    fixed: false
+    found_at_scroll: 1
+  - text: Night mode
+    center:
+    - 0.1616
+    - 0.9254
+    fixed: false
+    found_at_scroll: 1
+  - text: Very dim display (for dark rooms)
+    center:
+    - 0.3139
+    - 0.9465
+    fixed: false
+    found_at_scroll: 1
+  description: Settings screen for configuring alarm, timer, and display preferences
+    such as volume, snooze length, and night mode.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - Three dots
+    - ⋮
+    semantic_type: button
+  - text: Snooze length
+    center:
+    - 0.1843
+    - 0.1263
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Snooze duration
+    - Snooze time
+    - 贪睡时长
+    semantic_type: setting
+  - text: Alarm volume
+    center:
+    - 0.3019
+    - 0.1992
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Alarm sound level
+    - 闹钟音量
+    semantic_type: setting
+  - text: Gradually increase volume
+    center:
+    - 0.2907
+    - 0.2963
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Fade in
+    - Ramp up volume
+    - 渐强
+    semantic_type: toggle
+  - text: Control volume
+    center:
+    - 0.1769
+    - 0.3944
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Volume buttons control alarm
+    - Use volume keys for alarm
+    - 音量键控制
+    semantic_type: toggle
+  - text: Start week on
+    center:
+    - 0.1792
+    - 0.4504
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - First day of week
+    - Week start
+    - 每周起始日
+    semantic_type: setting
+  - text: Timers
+    center:
+    - 0.5
+    - 0.5348
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Timer settings
+    - 计时器设置
+    semantic_type: menu_item
+  - text: Timer sound
+    center:
+    - 0.1681
+    - 0.5821
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Timer ringtone
+    - Timer tone
+    - 计时器铃声
+    semantic_type: setting
+  - text: Timer Expired
+    center:
+    - 0.1634
+    - 0.6031
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Timer done sound
+    - 计时结束音
+    semantic_type: label
+  - text: Timer vibrate
+    center:
+    - 0.1736
+    - 0.7362
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Vibrate on timer end
+    - 计时器振动
+    semantic_type: toggle
+  - text: Screen saver
+    center:
+    - 0.5
+    - 0.801
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Daydream
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: link
+  - text: Style
+    center:
+    - 0.1014
+    - 0.8483
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Clock style
+    - Appearance
+    - 样式
+    semantic_type: setting
+  - text: Night mode
+    center:
+    - 0.1616
+    - 0.9254
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Dark theme
+    - 夜间模式
+    semantic_type: toggle
+  - text: Very dim display (for dark rooms)
+    center:
+    - 0.3139
+    - 0.9465
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Extra dim
+    - Low brightness night mode
+    - 超暗显示
+    semantic_type: toggle
+  description: Settings page for the Clock app allowing users to configure alarm,
+    timer, and display preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: Snooze length
+    center:
+    - 0.1843
+    - 0.1263
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Snooze duration
+    - 贪睡时长
+    - 小睡时间
+    semantic_type: setting
+  - text: Alarm volume
+    center:
+    - 0.3019
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Alarm sound level
+    - 闹钟音量
+    semantic_type: setting
+  - text: Gradually increase volume
+    center:
+    - 0.2907
+    - 0.2963
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Fade in
+    - 渐强
+    - 音量渐增
+    semantic_type: toggle
+  - text: Volume buttons
+    center:
+    - 0.1968
+    - 0.3733
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hardware keys
+    - 物理按键
+    - 音量键
+    semantic_type: setting
+  - text: Control volume
+    center:
+    - 0.1769
+    - 0.3944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Adjust volume
+    - 调节音量
+    semantic_type: label
+  - text: Start week on
+    center:
+    - 0.1792
+    - 0.4504
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - First day of week
+    - 周起始日
+    - 每周开始于
+    semantic_type: setting
+  - text: Timers
+    center:
+    - 0.5
+    - 0.5348
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Timer settings
+    - 计时器设置
+    semantic_type: setting
+  - text: Timer sound
+    center:
+    - 0.1681
+    - 0.5821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Timer ringtone
+    - 计时器铃声
+    semantic_type: setting
+  - text: Timer Expired
+    center:
+    - 0.1634
+    - 0.6031
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Timer done
+    - 计时结束
+    semantic_type: label
+  - text: Timer vibrate
+    center:
+    - 0.1736
+    - 0.7362
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Vibration
+    - 振动
+    - 计时器振动
+    semantic_type: toggle
+  - text: Screen saver
+    center:
+    - 0.5
+    - 0.801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Daydream
+    - 屏保
+    - 屏幕保护程序
+    semantic_type: link
+  - text: Style
+    center:
+    - 0.1014
+    - 0.8483
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Theme
+    - 样式
+    - 主题
+    semantic_type: setting
+  - text: Night mode
+    center:
+    - 0.1616
+    - 0.9254
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dark theme
+    - 夜间模式
+    - 深色模式
+    semantic_type: toggle
+  - text: Very dim display (for dark rooms)
+    center:
+    - 0.3139
+    - 0.9465
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Extra dim
+    - 极暗显示
+    - 暗光模式
+    semantic_type: label
+  description: Settings page for the Clock app allowing users to configure alarm,
+    timer, and display preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - ⋮
+    - More
+    semantic_type: button
+  - text: Add new
+    center:
+    - 0.5583
+    - 0.3279
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add
+    - Create
+    - New
+    - +
+    semantic_type: button
+  description: A screen for managing items with options to navigate up, access more
+    settings, and add new entries.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.3801
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - URL bar
+    - address bar
+    - search box
+    - omnibox
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7759
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - voice input
+    - speak to search
+    - microphone search
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8926
+    - 0.3267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Lens
+    - visual search
+    - camera search
+    - image search
+    semantic_type: button
+  - text: Discover
+    center:
+    - 0.1093
+    - 0.6081
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Feed
+    - News feed
+    - Explore
+    semantic_type: tab
+  - text: Options for Discover
+    center:
+    - 0.9366
+    - 0.6083
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Discover settings
+    - feed preferences
+    - customize discover
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.8926
+    - 0.6654
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Exit
+    - Cancel
+    semantic_type: button
+  - text: Turn on sync
+    center:
+    - 0.5
+    - 0.7812
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Enable sync
+    - Activate synchronization
+    - Sync data
+    semantic_type: toggle
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Homepage
+    - Main page
+    - Start page
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Tab overview
+    - Recent tabs
+    - Task switcher
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow menu
+    - Three dots
+    - Settings
+    semantic_type: button
+  description: Browser new tab page with search bar, Google Lens, and Discover feed.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Close flauschcode.com tab
+    center:
+    - 0.4315
+    - 0.1683
+    fixed: false
+    found_at_scroll: 0
+  - text: Close policies.google.com tab
+    center:
+    - 0.912
+    - 0.1683
+    fixed: false
+    found_at_scroll: 0
+  - text: New tab
+    center:
+    - 0.2537
+    - 0.4565
+    fixed: false
+    found_at_scroll: 0
+  - text: Close New tab tab
+    center:
+    - 0.4315
+    - 0.4567
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  description: Browser tab management screen displaying open tabs with options to
+    close them or create a new tab.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Forward
+    center:
+    - 0.4218
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Go forward
+    - Next page
+    - 前进
+    semantic_type: button
+  - text: Bookmark
+    center:
+    - 0.5468
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add bookmark
+    - Save page
+    - 收藏
+    - 加入书签
+    semantic_type: button
+  - text: Download
+    center:
+    - 0.6718
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save file
+    - 下载
+    semantic_type: button
+  - text: Page info
+    center:
+    - 0.7972
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Page details
+    - Site information
+    - 页面信息
+    semantic_type: menu_item
+  - text: Refresh
+    center:
+    - 0.9231
+    - 0.1087
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reload
+    - Reload page
+    - 刷新
+    semantic_type: button
+  - text: New tab
+    center:
+    - 0.5431
+    - 0.1613
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open new tab
+    - 新建标签页
+    semantic_type: button
+  - text: New Incognito tab
+    center:
+    - 0.6727
+    - 0.2137
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Incognito
+    - Private tab
+    - 无痕模式
+    - 隐私标签页
+    semantic_type: button
+  - text: History
+    center:
+    - 0.5333
+    - 0.2783
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Browsing history
+    - 历史记录
+    semantic_type: menu_item
+  - text: Downloads
+    center:
+    - 0.5685
+    - 0.3308
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Download manager
+    - 下载内容
+    semantic_type: menu_item
+  - text: Bookmarks
+    center:
+    - 0.5694
+    - 0.3833
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Saved pages
+    - 收藏夹
+    semantic_type: menu_item
+  - text: Recent tabs
+    center:
+    - 0.5741
+    - 0.4358
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recently closed
+    - 最近关闭的标签页
+    semantic_type: menu_item
+  - text: Share…
+    center:
+    - 0.6727
+    - 0.5004
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Share page
+    - 分享
+    semantic_type: button
+  - text: Find in page
+    center:
+    - 0.5759
+    - 0.5529
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search on page
+    - 页面内查找
+    semantic_type: button
+  - text: Add to Home screen
+    center:
+    - 0.6477
+    - 0.6054
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Install app
+    - 添加到主屏幕
+    semantic_type: button
+  - text: Desktop site
+    center:
+    - 0.6046
+    - 0.6579
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Desktop mode
+    - PC view
+    - 桌面版网站
+    semantic_type: toggle
+  - text: Settings
+    center:
+    - 0.5426
+    - 0.7225
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    semantic_type: menu_item
+  - text: Help &amp; feedback
+    center:
+    - 0.6125
+    - 0.775
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help
+    - Support
+    - 帮助与反馈
+    semantic_type: menu_item
+  description: Browser menu overlay displaying navigation, tab management, and settings
+    options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Close
+    center:
+    - 0.0583
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - Exit
+    - 关闭
+    semantic_type: button
+  - text: Hide sensitive info
+    center:
+    - 0.5
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Mask content
+    - Privacy mode
+    - 隐藏敏感信息
+    semantic_type: toggle
+  - text: Undo
+    center:
+    - 0.6167
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Revert
+    - Reverse
+    - 撤销
+    semantic_type: button
+  - text: Done
+    center:
+    - 0.9417
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Finish
+    - Complete
+    - OK
+    - 完成
+    semantic_type: button
+  - text: GOT IT
+    center:
+    - 0.9037
+    - 0.1831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Understood
+    - OK
+    - Acknowledge
+    - 知道了
+    semantic_type: button
+  description: A confirmation or informational overlay in the Clock app with options
+    to hide sensitive info, undo actions, and dismiss the dialog.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: System information
+    center:
+    - 0.425
+    - 0.1056
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 系统信息
+    - device info
+    - system details
+    semantic_type: label
+  - text: Report type
+    center:
+    - 0.5
+    - 0.1692
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 报告类型
+    - report category
+    - type of report
+    semantic_type: label
+  - text: Package name
+    center:
+    - 0.5
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 包名
+    - app ID
+    - bundle ID
+    semantic_type: label
+  - text: Package version
+    center:
+    - 0.5
+    - 0.3208
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 版本号
+    - version code
+    - build number
+    semantic_type: label
+  - text: Package version name
+    center:
+    - 0.5
+    - 0.3967
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 版本名称
+    - version string
+    - display version
+    semantic_type: label
+  - text: INSTALLED BY
+    center:
+    - 0.5
+    - 0.4742
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安装来源
+    - installer
+    - installed from
+    semantic_type: label
+  - text: Process name
+    center:
+    - 0.5
+    - 0.5325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 进程名
+    - process ID
+    - running process
+    semantic_type: label
+  - text: Time
+    center:
+    - 0.5
+    - 0.6083
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 时间
+    - timestamp
+    - date time
+    semantic_type: label
+  - text: System app
+    center:
+    - 0.5
+    - 0.6842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 系统应用
+    - system application
+    - pre-installed app
+    semantic_type: label
+  - text: Locale
+    center:
+    - 0.5
+    - 0.76
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 语言区域
+    - language region
+    - locale settings
+    semantic_type: label
+  - text: SYSTEM
+    center:
+    - 0.5
+    - 0.8375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 系统
+    - OS
+    - operating system
+    semantic_type: setting
+  - text: Device
+    center:
+    - 0.5
+    - 0.8958
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设备
+    - hardware
+    - terminal
+    semantic_type: setting
+  - text: Build ID
+    center:
+    - 0.5
+    - 0.2442
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 构建ID
+    - build identifier
+    - firmware ID
+    semantic_type: label
+  - text: Build type
+    center:
+    - 0.5
+    - 0.3371
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 构建类型
+    - build variant
+    - release type
+    semantic_type: label
+  - text: Build fingerprint
+    center:
+    - 0.5
+    - 0.4129
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 构建指纹
+    - device fingerprint
+    - unique build ID
+    semantic_type: label
+  - text: Model
+    center:
+    - 0.5
+    - 0.5233
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 型号
+    - device model
+    - product model
+    semantic_type: label
+  - text: Product
+    center:
+    - 0.5
+    - 0.5992
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 产品
+    - product name
+    - device product
+    semantic_type: label
+  - text: SDK version
+    center:
+    - 0.5
+    - 0.675
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - SDK版本
+    - API level
+    - software development kit
+    semantic_type: label
+  - text: Release
+    center:
+    - 0.5
+    - 0.7508
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 发布版本
+    - Android version
+    - OS release
+    semantic_type: label
+  - text: Incremental version
+    center:
+    - 0.5
+    - 0.8267
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 增量版本
+    - incremental build
+    - patch version
+    semantic_type: label
+  - text: Codename
+    center:
+    - 0.5
+    - 0.9025
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 代号
+    - version codename
+    - Android codename
+    semantic_type: label
+  - text: Board
+    center:
+    - 0.5
+    - 0.4696
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 主板
+    - hardware board
+    - chipset board
+    semantic_type: label
+  - text: Brand
+    center:
+    - 0.5
+    - 0.5454
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 品牌
+    - manufacturer
+    - OEM
+    semantic_type: label
+  - text: NETWORK
+    center:
+    - 0.5
+    - 0.6229
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 网络
+    - connectivity
+    - network settings
+    semantic_type: setting
+  - text: Phone type
+    center:
+    - 0.5
+    - 0.6813
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 电话类型
+    - phone mode
+    - telephony type
+    semantic_type: label
+  - text: Network type
+    center:
+    - 0.5
+    - 0.7571
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 网络类型
+    - connection type
+    - data network
+    semantic_type: label
+  - text: Network MCC code
+    center:
+    - 0.5
+    - 0.8329
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 移动国家代码
+    - MCC
+    - mobile country code
+    semantic_type: label
+  - text: Network MNC code
+    center:
+    - 0.5
+    - 0.9087
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 移动网络代码
+    - MNC
+    - mobile network code
+    semantic_type: label
+  description: A detailed system information screen displaying device specifications,
+    build details, and network configuration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: Select time
+    center:
+    - 0.2407
+    - 0.2665
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Choose time
+    - Set time
+    - 选择时间
+    semantic_type: label
+  - text: ':'
+    center:
+    - 0.4218
+    - 0.3408
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - colon
+    - time separator
+    semantic_type: label
+  - text: AM
+    center:
+    - 0.7773
+    - 0.3146
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - ante meridiem
+    - 上午
+    - morning
+    semantic_type: button
+  - text: PM
+    center:
+    - 0.7773
+    - 0.3658
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - post meridiem
+    - 下午
+    - afternoon
+    semantic_type: button
+  - text: '11'
+    center:
+    - 0.3792
+    - 0.47
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - eleven
+    - 十一
+    semantic_type: button
+  - text: '12'
+    center:
+    - 0.5009
+    - 0.4554
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - twelve
+    - 十二
+    semantic_type: button
+  - text: '10'
+    center:
+    - 0.2907
+    - 0.5098
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ten
+    - 十
+    semantic_type: button
+  - text: '1'
+    center:
+    - 0.6222
+    - 0.47
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 一
+    semantic_type: button
+  - text: '2'
+    center:
+    - 0.7102
+    - 0.5098
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - two
+    - 二
+    semantic_type: button
+  - text: '9'
+    center:
+    - 0.2583
+    - 0.5642
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - nine
+    - 九
+    semantic_type: button
+  - text: '3'
+    center:
+    - 0.7435
+    - 0.5646
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - three
+    - 三
+    semantic_type: button
+  - text: '8'
+    center:
+    - 0.2907
+    - 0.6192
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - eight
+    - 八
+    semantic_type: button
+  - text: '7'
+    center:
+    - 0.3796
+    - 0.6587
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - seven
+    - 七
+    semantic_type: button
+  - text: '6'
+    center:
+    - 0.5009
+    - 0.6737
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - six
+    - 六
+    semantic_type: button
+  - text: '5'
+    center:
+    - 0.6218
+    - 0.6587
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - five
+    - 五
+    semantic_type: button
+  - text: '4'
+    center:
+    - 0.7102
+    - 0.6192
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - four
+    - 四
+    semantic_type: button
+  - text: Switch to text input mode for the time input.
+    center:
+    - 0.1894
+    - 0.7567
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Keyboard input
+    - Type time
+    - 手动输入
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.6171
+    - 0.7588
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8019
+    - 0.7588
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    semantic_type: button
+  - text: '55'
+    center:
+    - 0.3792
+    - 0.47
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - fifty-five
+    - 五十五分
+    semantic_type: button
+  - text: '50'
+    center:
+    - 0.2907
+    - 0.5098
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - fifty
+    - 五十分
+    semantic_type: button
+  - text: '05'
+    center:
+    - 0.6222
+    - 0.47
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - five
+    - 五分
+    semantic_type: button
+  - text: '45'
+    center:
+    - 0.2583
+    - 0.5642
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - forty-five
+    - 四十五分
+    semantic_type: button
+  - text: '15'
+    center:
+    - 0.7435
+    - 0.5646
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - fifteen
+    - 十五分
+    semantic_type: button
+  - text: '40'
+    center:
+    - 0.2907
+    - 0.6192
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - forty
+    - 四十分
+    semantic_type: button
+  - text: '35'
+    center:
+    - 0.3796
+    - 0.6587
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - thirty-five
+    - 三十五分
+    semantic_type: button
+  - text: '30'
+    center:
+    - 0.5009
+    - 0.6737
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - thirty
+    - 三十分
+    semantic_type: button
+  - text: '25'
+    center:
+    - 0.6218
+    - 0.6587
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - twenty-five
+    - 二十五分
+    semantic_type: button
+  - text: '20'
+    center:
+    - 0.7102
+    - 0.6192
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - twenty
+    - 二十分
+    semantic_type: button
+  description: Time picker dialog allowing users to select hour and minute with AM/PM
+    options and confirm or cancel the selection.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Clear help history
+    center:
+    - 0.725
+    - 0.1496
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - delete history
+    - clear search history
+    - 清除帮助历史
+    semantic_type: button
+  - text: Open source licenses
+    center:
+    - 0.725
+    - 0.2546
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - licenses
+    - 开源许可证
+    - legal info
+    semantic_type: link
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - back
+    - up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.5005
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - support
+    - assistance
+    - 帮助
+    - help center
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    - three dots
+    semantic_type: button
+  - text: Search help
+    center:
+    - 0.5
+    - 0.1596
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - search
+    - find help
+    - 搜索帮助
+    - query
+    semantic_type: input
+  - text: Popular help resources
+    center:
+    - 0.2185
+    - 0.2221
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - trending topics
+    - common issues
+    - 热门帮助资源
+    - FAQs
+    semantic_type: label
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - view all
+    - all help articles
+    - 浏览所有文章
+    - full list
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.5634
+    - 0.3719
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - report issue
+    - contact support
+    - 发送反馈
+    - give feedback
+    semantic_type: button
+  description: Help center screen providing search functionality, popular resources,
+    article browsing, and options to clear history or send feedback.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search help
+    center:
+    - 0.5583
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索帮助
+    - search
+    - find help
+    semantic_type: input
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 向上导航
+    - up
+    - back
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.5005
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - support
+    - assistance
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - more
+    semantic_type: button
+  - text: Popular help resources
+    center:
+    - 0.2185
+    - 0.2221
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 热门帮助资源
+    - top help
+    - common issues
+    semantic_type: label
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 浏览所有文章
+    - view all
+    - all topics
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.5634
+    - 0.3719
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - report issue
+    semantic_type: button
+  - text: Clear text
+    center:
+    - 0.9319
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 清除文本
+    - clear
+    - delete input
+    semantic_type: button
+  description: Help screen displaying popular resources, article browsing options,
+    and feedback submission for the Clock app.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_46
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Send Feedback
+    center:
+    - 0.2944
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Feedback
+    - Report Issue
+    - Submit Feedback
+    semantic_type: button
+  - text: Send
+    center:
+    - 0.9412
+    - 0.0838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Submit
+    - Post
+    - Dispatch
+    semantic_type: button
+  - text: Highlight or hide info
+    center:
+    - 0.4903
+    - 0.7077
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Toggle Info
+    - Show/Hide Details
+    - Info Visibility
+    semantic_type: toggle
+  - text: View
+    center:
+    - 0.4903
+    - 0.7944
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - See
+    - Display
+    - Preview
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.0583
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Dismiss
+    - Exit
+    - Cancel
+    semantic_type: button
+  - text: Highlight your issue
+    center:
+    - 0.3833
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Mark Issue
+    - Flag Problem
+    - Select Issue
+    semantic_type: button
+  - text: Hide sensitive info
+    center:
+    - 0.5
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Mask Data
+    - Conceal Info
+    - Privacy Mode
+    semantic_type: toggle
+  - text: Undo
+    center:
+    - 0.6167
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Revert
+    - Reverse
+    - Go Back
+    semantic_type: button
+  - text: Done
+    center:
+    - 0.9417
+    - 0.0838
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Finish
+    - Complete
+    - OK
+    semantic_type: button
+  - text: GOT IT
+    center:
+    - 0.9037
+    - 0.1831
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Understood
+    - OK
+    - Acknowledge
+    semantic_type: button
+  description: Feedback submission screen allowing users to highlight issues, hide
+    sensitive info, and send feedback.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_47
+  elements:
+  - text: gt
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - go to
+    - navigate
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - switch view
+    - view mode
+    - layout
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - preferences
+    - config
+    - setup
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - more
+    - ⋮
+    semantic_type: menu_item
+  - text: 08:00 AM
+    center:
+    - 0.088
+    - 0.2073
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 8 AM
+    - eight o'clock
+    semantic_type: label
+  - text: 09:00 AM
+    center:
+    - 0.088
+    - 0.2727
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 9 AM
+    - nine o'clock
+    semantic_type: label
+  - text: 10:00 AM
+    center:
+    - 0.088
+    - 0.3381
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 10 AM
+    - ten o'clock
+    semantic_type: label
+  - text: 11:00 AM
+    center:
+    - 0.088
+    - 0.4035
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 11 AM
+    - eleven o'clock
+    semantic_type: label
+  - text: 12:00 PM
+    center:
+    - 0.088
+    - 0.469
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 12 PM
+    - noon
+    - midday
+    semantic_type: label
+  - text: 01:00 PM
+    center:
+    - 0.088
+    - 0.5344
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 1 PM
+    - one o'clock
+    semantic_type: label
+  - text: 02:00 PM
+    center:
+    - 0.088
+    - 0.5996
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 2 PM
+    - two o'clock
+    semantic_type: label
+  description: Clock app schedule view displaying hourly time slots from 08:00 AM
+    to 02:00 PM with options to change view, access settings, and more.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Home
+    center:
+    - 0.0583
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.1069
+    fixed: false
+    found_at_scroll: 0
+  description: Home screen of the Clock app with options to switch or close tabs and
+    access more options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: Screen saver
+    center:
+    - 0.7329
+    - 0.1517
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screensaver
+    - Daydream
+    - 屏保
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.7329
+    - 0.2042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - Config
+    semantic_type: button
+  - text: Privacy policy
+    center:
+    - 0.7329
+    - 0.2567
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - Privacy Statement
+    - Data Policy
+    semantic_type: link
+  - text: Send feedback
+    center:
+    - 0.7329
+    - 0.3092
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Feedback
+    - Report issue
+    - 提交反馈
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.7329
+    - 0.3617
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Support
+    - 帮助
+    - FAQ
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9366
+    - 0.0879
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: Search help
+    center:
+    - 0.5
+    - 0.1596
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Search
+    - Find help
+    - 搜索帮助
+    semantic_type: input
+  - text: Browse all articles
+    center:
+    - 0.5
+    - 0.3148
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - All articles
+    - View all
+    - 浏览所有文章
+    semantic_type: link
+  - text: Close
+    center:
+    - 0.0583
+    - 0.0838
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Dismiss
+    - Cancel
+    - 关闭
+    - X
+    semantic_type: button
+  - text: Hide sensitive info
+    center:
+    - 0.5
+    - 0.0838
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Mask info
+    - 隐藏敏感信息
+    - Privacy mode
+    semantic_type: toggle
+  - text: Undo
+    center:
+    - 0.6167
+    - 0.0838
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Revert
+    - 撤销
+    - Reverse
+    semantic_type: button
+  - text: Done
+    center:
+    - 0.9417
+    - 0.0838
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Finish
+    - Complete
+    - 完成
+    - OK
+    semantic_type: button
+  description: Help and settings screen providing access to screen saver configuration,
+    privacy policy, feedback, and searchable help articles.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 1959
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 972
+    y: 2232
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 364
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 616
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 742
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 868
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1959
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 944
+    y: 380
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1959
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1959
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 108
+    y: 2232
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 324
+    y: 2232
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2232
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 756
+    y: 2232
+    wait: 1.5
+  - action: tap
+    x: 972
+    y: 2232
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 364
+    wait: 1.5
+  - action: tap
+    x: 860
+    y: 655
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 364
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 174
+    y: 212
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 364
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 364
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1895
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: tap
+    x: 110
+    y: 772
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: tap
+    x: 219
+    y: 1327
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: tap
+    x: 250
+    y: 1512
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: tap
+    x: 182
+    y: 1781
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: tap
+    x: 199
+    y: 1966
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: tap
+    x: 314
+    y: 2384
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 213
+    y: 896
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 194
+    y: 1081
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 1284
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 490
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 182
+    y: 1397
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 616
+    wait: 1.5
+  - action: tap
+    x: 63
+    y: 202
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 616
+    wait: 1.5
+  - action: tap
+    x: 891
+    y: 202
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 616
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 202
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 742
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1659
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 742
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1803
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 868
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 212
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 868
+    wait: 1.5
+  - action: tap
+    x: 1012
+    y: 211
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 868
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 383
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 868
+    wait: 1.5
+  - action: tap
+    x: 608
+    y: 892
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 364
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: tap
+    x: 792
+    y: 616
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.google.android.deskclock
+    wait: 0.5
+  - action: launch
+    package: com.google.android.deskclock
+    wait: 3.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1028
+    y: 211
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Set a new alarm with specific time and repeat days
+- Start, pause, or reset a stopwatch
+- Set a countdown timer for a specific duration
+- Add a new city to the world clock
+- Configure bedtime schedule and sleep preferences
+- Customize clock display style and theme
+- Change alarm sound and vibration settings
+- View history of past timer and stopwatch activities
+- Access help resources and app settings
+known_limitations:
+- Settings and help options are hidden behind a menu overlay rather than being directly
+  accessible from the main tabs
+- Some configuration screens like 'Now playing' customization may be unrelated to
+  core clock functions and cause confusion
+- Permission dialogs for one-time access may interrupt workflow unexpectedly

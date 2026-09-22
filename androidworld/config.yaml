@@ -1,0 +1,32 @@
+# PhoneCLI on AndroidWorld — secret-free reference configuration.
+# Export OPENROUTER_API_KEY in your shell; never put a real key in this file.
+
+agent:
+  name: OpenAIAgent
+  args:
+    api_key: "${OPENROUTER_API_KEY}"
+    api_base: "https://openrouter.ai/api/v1"
+    model_name: "qwen/qwen3.7-plus"
+    max_new_tokens: 512
+
+androidworld:
+  suite_family: android_world
+  n_task_combinations: 1
+  seed: 42
+  console_port: 5554
+  grpc_port: 8554
+  emulator_setup: false
+
+macro:
+  enabled: true
+  app_maps_dir: "./app_maps/androidworld_22"
+
+llm:
+  api_key: "${OPENROUTER_API_KEY}"
+  api_base: "https://openrouter.ai/api/v1"
+  model: "qwen/qwen3.7-plus"
+  vlm_model: "qwen/qwen3.7-plus"
+
+output:
+  checkpoint_dir: "./aw_checkpoints"
+  verbose: false

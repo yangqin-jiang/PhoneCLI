@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+
+# Secrets / local configuration
+.env
+config.local.yaml
+
+# Experiment data (never versioned)
+logs/
+aw_checkpoints*/
+artifacts/
+results/
+*.kimi_judge.bak
+app_maps/**/.build_tmp/
+app_maps/**/logs/
+
+# AndroidWorld benchmark checkout (cloned by androidworld/setup.sh)
+androidworld/android_world/
+
+# macOS
+.DS_Store

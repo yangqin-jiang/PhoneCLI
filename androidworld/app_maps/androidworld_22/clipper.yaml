@@ -1,0 +1,43 @@
+app: Clipper
+package: ca.zgrs.clipper
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Splash screen displaying the Clipper app logo.
+  elements:
+  - text: Clipper
+    center:
+    - 0.5
+    - 0.0704
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - app name
+    - application title
+    semantic_type: label
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: ca.zgrs.clipper
+    wait: 0.5
+  - action: launch
+    package: ca.zgrs.clipper
+    wait: 3.0
+launch_behavior: always_home
+common_tasks:
+- Copy text to clipboard
+- Paste text from clipboard
+- View clipboard history
+- Pin frequently used clips
+- Delete individual clipboard items
+- Clear entire clipboard history
+- Search for specific copied text
+- Share clipboard content with other apps
+known_limitations:
+- Clipboard history may be cleared automatically by the OS on some devices
+- Requires accessibility permissions to function correctly in background
+- Free version may have a limit on the number of stored history items

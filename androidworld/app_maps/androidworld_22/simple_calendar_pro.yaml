@@ -1,0 +1,7293 @@
+app: Simple Calendar Pro
+package: com.simplemobiletools.calendar.pro
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main calendar screen header with search, view switching, settings,
+    and more options controls
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Preferences
+    - Configuration
+    - 设置
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Add event
+    - Create event
+    - 新建事件
+    semantic_type: button
+  description: Main calendar screen with search, view options, settings, and new event
+    creation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.3925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Day view
+    - 日视图
+    - 单日
+    semantic_type: tab
+  - text: Weekly view
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Week view
+    - 周视图
+    - 单周
+    semantic_type: tab
+  - text: Monthly view
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Month view
+    - 月视图
+    - 单月
+    semantic_type: tab
+  - text: Monthly and daily view
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Month & Day
+    - 月日视图
+    - combined view
+    semantic_type: tab
+  - text: Yearly view
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Year view
+    - 年视图
+    - 全年
+    semantic_type: tab
+  - text: Simple event list
+    center:
+    - 0.5
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Event list
+    - List view
+    - 事件列表
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - Switch view
+    - 切换视图
+    - View mode
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Preferences
+    - 设置
+    - 配置
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+    aliases:
+    - Menu
+    - 更多
+    - 三点菜单
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - Add event
+    - 新建事件
+    - Create
+    semantic_type: button
+  description: Main menu screen providing navigation to various calendar views, search,
+    settings, and event creation options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: COLOR CUSTOMIZATION
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Customize colors
+    center:
+    - 0.1861
+    - 0.2123
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+  - text: Customize widget colors
+    center:
+    - 0.2417
+    - 0.2777
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: GENERAL
+    center:
+    - 0.5269
+    - 0.3394
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Language
+    center:
+    - 0.1287
+    - 0.3956
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Manage event types
+    center:
+    - 0.2069
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+  - text: Use 24-hour time format
+    center:
+    - 0.5
+    - 0.5454
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Start week on Sunday
+    center:
+    - 0.5
+    - 0.6154
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: Highlight weekends on some views
+    center:
+    - 0.5
+    - 0.6854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: REMINDERS
+    center:
+    - 0.5269
+    - 0.7494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: Customize notifications
+    center:
+    - 0.2329
+    - 0.8102
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Audio stream used by reminders
+    center:
+    - 0.3
+    - 0.871
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Notification
+    center:
+    - 0.5
+    - 0.8923
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Vibrate on reminder notification
+    center:
+    - 0.5
+    - 0.9554
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: Loop reminders until dismissed
+    center:
+    - 0.5
+    - 0.9996
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: Always use same snooze time
+    center:
+    - 0.5
+    - 0.3704
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_20
+  - text: Snooze time
+    center:
+    - 0.1481
+    - 0.4335
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: CALDAV
+    center:
+    - 0.5269
+    - 0.5119
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: CalDAV sync
+    center:
+    - 0.5
+    - 0.575
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: NEW EVENTS
+    center:
+    - 0.5269
+    - 0.639
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: Default start time
+    center:
+    - 0.1861
+    - 0.6952
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: Default duration
+    center:
+    - 0.1755
+    - 0.7727
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_26
+  - text: Default event type
+    center:
+    - 0.1912
+    - 0.8502
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: Use the last events' reminders as the default for new events
+    center:
+    - 0.5
+    - 0.9346
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_27
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.9852
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+  - text: Start day at
+    center:
+    - 0.1412
+    - 0.3027
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_28
+  - text: Show events spanning across midnight at the top bar
+    center:
+    - 0.5
+    - 0.3871
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_29
+  - text: Allow customizing day count
+    center:
+    - 0.5
+    - 0.4571
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_29
+  - text: Start week with the current day
+    center:
+    - 0.5
+    - 0.5271
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_29
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.591
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_30
+  - text: Show week numbers
+    center:
+    - 0.5
+    - 0.6542
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_30
+  - text: Show a grid
+    center:
+    - 0.5
+    - 0.7242
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_29
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.7881
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_30
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.8444
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_31
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.9287
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_29
+  - text: Replace event description with location
+    center:
+    - 0.5
+    - 0.9862
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_29
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.3148
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_32
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.371
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_33
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.4485
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_34
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.5269
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_32
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.59
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_32
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.66
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_34
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.7277
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_33
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.7894
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_34
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.8525
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_32
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.9225
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_32
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.9792
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_35
+  description: Settings screen for Simple Calendar Pro with sections for color customization,
+    general preferences, reminders, CalDAV sync, new event defaults, and weekly view
+    options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Go to date
+    center:
+    - 0.612
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Jump to date
+    - Navigate to date
+    - Select date
+    semantic_type: button
+  - text: Print
+    center:
+    - 0.612
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Print calendar
+    - Export to PDF
+    - 打印
+    semantic_type: button
+  - text: Add holidays
+    center:
+    - 0.612
+    - 0.2456
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Import holidays
+    - Holiday calendar
+    - 添加节假日
+    semantic_type: menu_item
+  - text: Add contact birthdays
+    center:
+    - 0.612
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Contact birthdays
+    - Sync birthdays
+    - 添加联系人生日
+    semantic_type: menu_item
+  - text: Add contact anniversaries
+    center:
+    - 0.612
+    - 0.3506
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - Contact anniversaries
+    - Sync anniversaries
+    - 添加联系人纪念日
+    semantic_type: menu_item
+  - text: Import events from an .ics file
+    center:
+    - 0.612
+    - 0.4031
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - Import ICS
+    - Import calendar file
+    - 导入ICS文件
+    semantic_type: menu_item
+  - text: Export events to an .ics file
+    center:
+    - 0.612
+    - 0.4556
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - Export ICS
+    - Save as ICS
+    - 导出ICS文件
+    semantic_type: menu_item
+  - text: About
+    center:
+    - 0.612
+    - 0.5081
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - App info
+    - Version
+    - 关于
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Find event
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - View mode
+    - Switch layout
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - Preferences
+    - Configuration
+    - 设置
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_14
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_40
+    aliases:
+    - Create event
+    - Add event
+    - 新建事件
+    semantic_type: button
+  description: Main calendar screen displaying a menu of actions including event management,
+    data import/export, and navigation options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.3925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Day view
+    - 日视图
+    - 单日
+    semantic_type: tab
+  - text: Weekly view
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - Week view
+    - 周视图
+    - 单周
+    semantic_type: tab
+  - text: Monthly view
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Month view
+    - 月视图
+    - 单月
+    semantic_type: tab
+  - text: Monthly and daily view
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Agenda view
+    - 日程列表
+    - 月日混合视图
+    semantic_type: tab
+  - text: Yearly view
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Year view
+    - 年视图
+    - 全年
+    semantic_type: tab
+  - text: Simple event list
+    center:
+    - 0.5
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Event list
+    - 事件列表
+    - 清单视图
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_12
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_13
+    aliases:
+    - Switch view
+    - 切换视图
+    - 视图选择
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_25
+    aliases:
+    - Preferences
+    - 设置
+    - 配置
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_14
+    aliases:
+    - Menu
+    - 更多
+    - 三点菜单
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_40
+    aliases:
+    - Add event
+    - 新建事件
+    - 创建日程
+    semantic_type: button
+  description: Main calendar screen displaying various view options and navigation
+    controls for managing events and settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - Preferences
+    - Configuration
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: Task
+    center:
+    - 0.7593
+    - 0.514
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - To-do
+    - Todo
+    - 任务
+    semantic_type: menu_item
+  - text: Event
+    center:
+    - 0.7519
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Appointment
+    - 活动
+    semantic_type: menu_item
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Add event
+    - Create event
+    - 新建事件
+    semantic_type: button
+  description: Main calendar screen with search, view options, settings, and buttons
+    to create new tasks or events.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  description: Calendar main screen header with search, view switching, settings,
+    and more options controls
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: 7 days
+    center:
+    - 0.9111
+    - 0.9506
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Week view
+    - Weekly
+    - 七天
+    semantic_type: tab
+  description: Calendar view screen displaying a 7-day layout with options to search,
+    change view, and access settings.
+  scrollable: true
+  scroll_direction: horizontal
+- id: screen_9
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add event
+    - Create event
+    - 新建事件
+    semantic_type: button
+  description: Main calendar screen featuring a toolbar with search, view options,
+    settings, and a button to create new events.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: Calendar main screen header with search, view switching, settings,
+    and more options controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_11
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: Create a new event
+    center:
+    - 0.4995
+    - 0.194
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add event
+    - New entry
+    - 新建事件
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add Event
+    - Create Event
+    - 新建活动
+    semantic_type: button
+  description: Main calendar screen with options to search, change view, access settings,
+    and create new events.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: Create a new event
+    center:
+    - 0.4995
+    - 0.194
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add event
+    - New entry
+    - 新建事件
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add Event
+    - Create Event
+    - 新建活动
+    semantic_type: button
+  description: Main calendar screen with options to search, change view, access settings,
+    and create new events.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.3925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Day view
+    - 日视图
+    - 单日
+    semantic_type: tab
+  - text: Weekly view
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Week view
+    - 周视图
+    - 单周
+    semantic_type: tab
+  - text: Monthly view
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Month view
+    - 月视图
+    - 单月
+    semantic_type: tab
+  - text: Monthly and daily view
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Agenda view
+    - 日程列表
+    - 月日混合视图
+    semantic_type: tab
+  - text: Yearly view
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Year view
+    - 年视图
+    - 全年
+    semantic_type: tab
+  - text: Simple event list
+    center:
+    - 0.5
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Event list
+    - 事件列表
+    - 清单视图
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Switch view
+    - 切换视图
+    - 视图选择
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Preferences
+    - 设置
+    - 配置
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - 更多
+    - 选项
+    semantic_type: button
+  - text: Create a new event
+    center:
+    - 0.4995
+    - 0.194
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add event
+    - 新建事件
+    - 添加日程
+    semantic_type: button
+  description: Main calendar screen displaying various view options and navigation
+    controls for managing events and settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: Print
+    center:
+    - 0.612
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - print calendar
+    - 打印
+    semantic_type: button
+  - text: Add holidays
+    center:
+    - 0.612
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - import holidays
+    - add public holidays
+    - 添加节假日
+    semantic_type: setting
+  - text: Add contact birthdays
+    center:
+    - 0.612
+    - 0.2456
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - import birthdays
+    - sync contact birthdays
+    - 添加联系人生日
+    semantic_type: setting
+  - text: Add contact anniversaries
+    center:
+    - 0.612
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - import anniversaries
+    - sync contact anniversaries
+    - 添加联系人纪念日
+    semantic_type: setting
+  - text: Import events from an .ics file
+    center:
+    - 0.612
+    - 0.3506
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - import ics
+    - import calendar file
+    - 导入事件
+    semantic_type: button
+  - text: Export events to an .ics file
+    center:
+    - 0.612
+    - 0.4031
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - export ics
+    - backup calendar
+    - 导出事件
+    semantic_type: button
+  - text: About
+    center:
+    - 0.612
+    - 0.4556
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app info
+    - version
+    - 关于
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - find events
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - switch view
+    - view mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - preferences
+    - configuration
+    - 设置
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  - text: Create a new event
+    center:
+    - 0.4995
+    - 0.194
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - add event
+    - new entry
+    - 创建新事件
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - add event
+    - create event
+    - 新建事件
+    semantic_type: button
+  description: Main calendar screen displaying a list of actions and options for managing
+    events, settings, and data import/export.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: Create a new event
+    center:
+    - 0.4995
+    - 0.194
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add event
+    - New entry
+    - 新建事件
+    semantic_type: button
+  - text: Task
+    center:
+    - 0.7593
+    - 0.8556
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - To-do
+    - Todo
+    - 任务
+    semantic_type: tab
+  - text: Event
+    center:
+    - 0.7519
+    - 0.9256
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Calendar
+    - Appointment
+    - 事件
+    semantic_type: tab
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add Event
+    - Create Event
+    - 新建事件
+    semantic_type: button
+  description: Event creation screen allowing users to input details for a new calendar
+    event or task.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Customize colors
+    center:
+    - 0.3421
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - color customization
+    - change colors
+    - 自定义颜色
+    semantic_type: link
+  - text: Theme
+    center:
+    - 0.2644
+    - 0.1648
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - app theme
+    - appearance
+    - 主题
+    semantic_type: setting
+  - text: App icon color
+    center:
+    - 0.1676
+    - 0.2423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - icon color
+    - launcher icon tint
+    - 应用图标颜色
+    semantic_type: setting
+  description: Customization screen for adjusting theme and app icon colors.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: OK
+    center:
+    - 0.8542
+    - 0.93
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    - 确认
+    semantic_type: button
+  description: A minimal confirmation dialog or screen with a single OK button to
+    acknowledge a message or action.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9417
+    - 0.0838
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    semantic_type: button
+  - text: Calendar
+    center:
+    - 0.4995
+    - 0.3515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Schedule
+    - Agenda
+    - 日历
+    semantic_type: tab
+  - text: Suggested
+    center:
+    - 0.5
+    - 0.4315
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recommendations
+    - Suggestions
+    - 推荐
+    semantic_type: label
+  - text: System default
+    center:
+    - 0.4185
+    - 0.4906
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default
+    - System Setting
+    - 系统默认
+    semantic_type: setting
+  description: Calendar selection screen allowing users to choose between suggested
+    calendars or the system default.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Manage event types
+    center:
+    - 0.3727
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Event type management
+    - Edit event categories
+    - 管理事件类型
+    semantic_type: link
+  - text: Add a new type
+    center:
+    - 0.9412
+    - 0.0879
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create event type
+    - New category
+    - 添加新类型
+    semantic_type: button
+  description: Screen for managing event types with an option to add a new type.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: COLOR CUSTOMIZATION
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+  - text: Customize colors
+    center:
+    - 0.1861
+    - 0.2123
+    fixed: false
+    found_at_scroll: 0
+  - text: Customize widget colors
+    center:
+    - 0.2417
+    - 0.2777
+    fixed: false
+    found_at_scroll: 0
+  - text: GENERAL
+    center:
+    - 0.5269
+    - 0.3394
+    fixed: false
+    found_at_scroll: 0
+  - text: Language
+    center:
+    - 0.1287
+    - 0.3956
+    fixed: false
+    found_at_scroll: 0
+  - text: Manage event types
+    center:
+    - 0.2069
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+  - text: Use 24-hour time format
+    center:
+    - 0.5
+    - 0.5454
+    fixed: false
+    found_at_scroll: 0
+  - text: Start week on Sunday
+    center:
+    - 0.5
+    - 0.6154
+    fixed: false
+    found_at_scroll: 0
+  - text: Highlight weekends on some views
+    center:
+    - 0.5
+    - 0.6854
+    fixed: false
+    found_at_scroll: 0
+  - text: REMINDERS
+    center:
+    - 0.5269
+    - 0.7494
+    fixed: false
+    found_at_scroll: 0
+  - text: Customize notifications
+    center:
+    - 0.2329
+    - 0.8102
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio stream used by reminders
+    center:
+    - 0.3
+    - 0.871
+    fixed: false
+    found_at_scroll: 0
+  - text: Notification
+    center:
+    - 0.5
+    - 0.8923
+    fixed: false
+    found_at_scroll: 0
+  - text: Vibrate on reminder notification
+    center:
+    - 0.5
+    - 0.9554
+    fixed: false
+    found_at_scroll: 0
+  - text: Loop reminders until dismissed
+    center:
+    - 0.5
+    - 0.9996
+    fixed: false
+    found_at_scroll: 0
+  - text: Always use same snooze time
+    center:
+    - 0.5
+    - 0.3608
+    fixed: false
+    found_at_scroll: 1
+  - text: Snooze time
+    center:
+    - 0.1481
+    - 0.424
+    fixed: false
+    found_at_scroll: 1
+  - text: CALDAV
+    center:
+    - 0.5269
+    - 0.5023
+    fixed: false
+    found_at_scroll: 1
+  - text: CalDAV sync
+    center:
+    - 0.5
+    - 0.5654
+    fixed: false
+    found_at_scroll: 1
+  - text: NEW EVENTS
+    center:
+    - 0.5269
+    - 0.6294
+    fixed: false
+    found_at_scroll: 1
+  - text: Default start time
+    center:
+    - 0.1861
+    - 0.6856
+    fixed: false
+    found_at_scroll: 1
+  - text: Default duration
+    center:
+    - 0.1755
+    - 0.7631
+    fixed: false
+    found_at_scroll: 1
+  - text: Default event type
+    center:
+    - 0.1912
+    - 0.8406
+    fixed: false
+    found_at_scroll: 1
+  - text: Use the last events' reminders as the default for new events
+    center:
+    - 0.5
+    - 0.925
+    fixed: false
+    found_at_scroll: 1
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.9804
+    fixed: false
+    found_at_scroll: 1
+  - text: Start day at
+    center:
+    - 0.1412
+    - 0.296
+    fixed: false
+    found_at_scroll: 2
+  - text: Show events spanning across midnight at the top bar
+    center:
+    - 0.5
+    - 0.3804
+    fixed: false
+    found_at_scroll: 2
+  - text: Allow customizing day count
+    center:
+    - 0.5
+    - 0.4504
+    fixed: false
+    found_at_scroll: 2
+  - text: Start week with the current day
+    center:
+    - 0.5
+    - 0.5204
+    fixed: false
+    found_at_scroll: 2
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.5844
+    fixed: false
+    found_at_scroll: 2
+  - text: Show week numbers
+    center:
+    - 0.5
+    - 0.6475
+    fixed: false
+    found_at_scroll: 2
+  - text: Show a grid
+    center:
+    - 0.5
+    - 0.7175
+    fixed: false
+    found_at_scroll: 2
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.7815
+    fixed: false
+    found_at_scroll: 2
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.8377
+    fixed: false
+    found_at_scroll: 2
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.9221
+    fixed: false
+    found_at_scroll: 2
+  - text: Replace event description with location
+    center:
+    - 0.5
+    - 0.9829
+    fixed: false
+    found_at_scroll: 2
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.3306
+    fixed: false
+    found_at_scroll: 3
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.3869
+    fixed: false
+    found_at_scroll: 3
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.4644
+    fixed: false
+    found_at_scroll: 3
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.5427
+    fixed: false
+    found_at_scroll: 3
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.6058
+    fixed: false
+    found_at_scroll: 3
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.6758
+    fixed: false
+    found_at_scroll: 3
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.7435
+    fixed: false
+    found_at_scroll: 3
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.8052
+    fixed: false
+    found_at_scroll: 3
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.8683
+    fixed: false
+    found_at_scroll: 3
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.9383
+    fixed: false
+    found_at_scroll: 3
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.9871
+    fixed: false
+    found_at_scroll: 3
+  description: Settings page for Simple Calendar Pro with options for color customization,
+    general preferences, reminders, CalDAV sync, new event defaults, and weekly view
+    configurations.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: COLOR CUSTOMIZATION
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+  - text: Customize colors
+    center:
+    - 0.1861
+    - 0.2123
+    fixed: false
+    found_at_scroll: 0
+  - text: Customize widget colors
+    center:
+    - 0.2417
+    - 0.2777
+    fixed: false
+    found_at_scroll: 0
+  - text: GENERAL
+    center:
+    - 0.5269
+    - 0.3394
+    fixed: false
+    found_at_scroll: 0
+  - text: Language
+    center:
+    - 0.1287
+    - 0.3956
+    fixed: false
+    found_at_scroll: 0
+  - text: Manage event types
+    center:
+    - 0.2069
+    - 0.4777
+    fixed: false
+    found_at_scroll: 0
+  - text: Use 24-hour time format
+    center:
+    - 0.5
+    - 0.5454
+    fixed: false
+    found_at_scroll: 0
+  - text: Start week on Sunday
+    center:
+    - 0.5
+    - 0.6154
+    fixed: false
+    found_at_scroll: 0
+  - text: Highlight weekends on some views
+    center:
+    - 0.5
+    - 0.6854
+    fixed: false
+    found_at_scroll: 0
+  - text: Color of highlighted weekends
+    center:
+    - 0.4588
+    - 0.7565
+    fixed: false
+    found_at_scroll: 0
+  - text: REMINDERS
+    center:
+    - 0.5269
+    - 0.8215
+    fixed: false
+    found_at_scroll: 0
+  - text: Customize notifications
+    center:
+    - 0.2329
+    - 0.8823
+    fixed: false
+    found_at_scroll: 0
+  - text: Audio stream used by reminders
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 0
+  - text: Notification
+    center:
+    - 0.5
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+  - text: Vibrate on reminder notification
+    center:
+    - 0.5
+    - 0.2988
+    fixed: false
+    found_at_scroll: 1
+  - text: Loop reminders until dismissed
+    center:
+    - 0.5
+    - 0.3688
+    fixed: false
+    found_at_scroll: 1
+  - text: Always use same snooze time
+    center:
+    - 0.5
+    - 0.4387
+    fixed: false
+    found_at_scroll: 1
+  - text: Snooze time
+    center:
+    - 0.1481
+    - 0.5019
+    fixed: false
+    found_at_scroll: 1
+  - text: CALDAV
+    center:
+    - 0.5269
+    - 0.5802
+    fixed: false
+    found_at_scroll: 1
+  - text: CalDAV sync
+    center:
+    - 0.5
+    - 0.6433
+    fixed: false
+    found_at_scroll: 1
+  - text: NEW EVENTS
+    center:
+    - 0.5269
+    - 0.7073
+    fixed: false
+    found_at_scroll: 1
+  - text: Default start time
+    center:
+    - 0.1861
+    - 0.7635
+    fixed: false
+    found_at_scroll: 1
+  - text: Default duration
+    center:
+    - 0.1755
+    - 0.841
+    fixed: false
+    found_at_scroll: 1
+  - text: Default event type
+    center:
+    - 0.1912
+    - 0.9185
+    fixed: false
+    found_at_scroll: 1
+  - text: Use the last events' reminders as the default for new events
+    center:
+    - 0.5
+    - 0.9883
+    fixed: false
+    found_at_scroll: 1
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.3094
+    fixed: false
+    found_at_scroll: 2
+  - text: Start day at
+    center:
+    - 0.1412
+    - 0.3656
+    fixed: false
+    found_at_scroll: 2
+  - text: Show events spanning across midnight at the top bar
+    center:
+    - 0.5
+    - 0.45
+    fixed: false
+    found_at_scroll: 2
+  - text: Allow customizing day count
+    center:
+    - 0.5
+    - 0.52
+    fixed: false
+    found_at_scroll: 2
+  - text: Start week with the current day
+    center:
+    - 0.5
+    - 0.59
+    fixed: false
+    found_at_scroll: 2
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.654
+    fixed: false
+    found_at_scroll: 2
+  - text: Show week numbers
+    center:
+    - 0.5
+    - 0.7171
+    fixed: false
+    found_at_scroll: 2
+  - text: Show a grid
+    center:
+    - 0.5
+    - 0.7871
+    fixed: false
+    found_at_scroll: 2
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.851
+    fixed: false
+    found_at_scroll: 2
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.9073
+    fixed: false
+    found_at_scroll: 2
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.9827
+    fixed: false
+    found_at_scroll: 2
+  - text: Replace event description with location
+    center:
+    - 0.5
+    - 0.3137
+    fixed: false
+    found_at_scroll: 3
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.3777
+    fixed: false
+    found_at_scroll: 3
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.434
+    fixed: false
+    found_at_scroll: 3
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.5115
+    fixed: false
+    found_at_scroll: 3
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.5898
+    fixed: false
+    found_at_scroll: 3
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.6529
+    fixed: false
+    found_at_scroll: 3
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.7229
+    fixed: false
+    found_at_scroll: 3
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.7906
+    fixed: false
+    found_at_scroll: 3
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.8523
+    fixed: false
+    found_at_scroll: 3
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.9154
+    fixed: false
+    found_at_scroll: 3
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.9796
+    fixed: false
+    found_at_scroll: 3
+  description: Settings screen for Simple Calendar Pro allowing customization of colors,
+    general preferences, reminders, CalDAV sync, new event defaults, and weekly view
+    options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: '#EC2E2A'
+    center:
+    - 0.3602
+    - 0.6202
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - color code
+    - hex color
+    semantic_type: label
+  - text: '#'
+    center:
+    - 0.5644
+    - 0.6204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hash
+    - pound sign
+    semantic_type: label
+  - text: EC2E2A
+    center:
+    - 0.6745
+    - 0.6204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hex value
+    - color value
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.7346
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.7346
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Accept
+    - Done
+    - 确定
+    semantic_type: button
+  description: A confirmation dialog with Cancel and OK buttons, likely for deleting
+    or confirming an action.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.084
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Calendar
+    center:
+    - 0.4995
+    - 0.3515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日历
+    - Schedule
+    semantic_type: label
+  - text: All Calendar notifications
+    center:
+    - 0.413
+    - 0.4423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notifications
+    - 通知
+    - Alerts
+    semantic_type: setting
+  - text: Categories
+    center:
+    - 0.5097
+    - 0.5377
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分类
+    - Tags
+    - Groups
+    semantic_type: menu_item
+  description: Notification settings screen for managing all calendar notifications
+    and their categories.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Alarm
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+  - text: System
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+  - text: Notification
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+  - text: Ring
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: COLOR CUSTOMIZATION
+    center:
+    - 0.5269
+    - 0.1515
+    fixed: false
+    found_at_scroll: 1
+  - text: Customize colors
+    center:
+    - 0.1861
+    - 0.2123
+    fixed: false
+    found_at_scroll: 1
+  - text: Customize widget colors
+    center:
+    - 0.2417
+    - 0.2777
+    fixed: false
+    found_at_scroll: 1
+  - text: GENERAL
+    center:
+    - 0.5269
+    - 0.3394
+    fixed: false
+    found_at_scroll: 1
+  - text: Language
+    center:
+    - 0.1287
+    - 0.3956
+    fixed: false
+    found_at_scroll: 1
+  - text: Manage event types
+    center:
+    - 0.2069
+    - 0.4777
+    fixed: false
+    found_at_scroll: 1
+  - text: Use 24-hour time format
+    center:
+    - 0.5
+    - 0.5454
+    fixed: false
+    found_at_scroll: 1
+  - text: Start week on Sunday
+    center:
+    - 0.5
+    - 0.6154
+    fixed: false
+    found_at_scroll: 1
+  - text: Highlight weekends on some views
+    center:
+    - 0.5
+    - 0.6854
+    fixed: false
+    found_at_scroll: 1
+  - text: Color of highlighted weekends
+    center:
+    - 0.4588
+    - 0.7565
+    fixed: false
+    found_at_scroll: 1
+  - text: REMINDERS
+    center:
+    - 0.5269
+    - 0.8215
+    fixed: false
+    found_at_scroll: 1
+  - text: Customize notifications
+    center:
+    - 0.2329
+    - 0.8823
+    fixed: false
+    found_at_scroll: 1
+  - text: Audio stream used by reminders
+    center:
+    - 0.3
+    - 0.9431
+    fixed: false
+    found_at_scroll: 1
+  - text: Vibrate on reminder notification
+    center:
+    - 0.5
+    - 0.2925
+    fixed: false
+    found_at_scroll: 2
+  - text: Loop reminders until dismissed
+    center:
+    - 0.5
+    - 0.3625
+    fixed: false
+    found_at_scroll: 2
+  - text: Always use same snooze time
+    center:
+    - 0.5
+    - 0.4325
+    fixed: false
+    found_at_scroll: 2
+  - text: Snooze time
+    center:
+    - 0.1481
+    - 0.4956
+    fixed: false
+    found_at_scroll: 2
+  - text: CALDAV
+    center:
+    - 0.5269
+    - 0.574
+    fixed: false
+    found_at_scroll: 2
+  - text: CalDAV sync
+    center:
+    - 0.5
+    - 0.6371
+    fixed: false
+    found_at_scroll: 2
+  - text: NEW EVENTS
+    center:
+    - 0.5269
+    - 0.701
+    fixed: false
+    found_at_scroll: 2
+  - text: Default start time
+    center:
+    - 0.1861
+    - 0.7573
+    fixed: false
+    found_at_scroll: 2
+  - text: Default duration
+    center:
+    - 0.1755
+    - 0.8348
+    fixed: false
+    found_at_scroll: 2
+  - text: Default event type
+    center:
+    - 0.1912
+    - 0.9123
+    fixed: false
+    found_at_scroll: 2
+  - text: Use the last events' reminders as the default for new events
+    center:
+    - 0.5
+    - 0.9852
+    fixed: false
+    found_at_scroll: 2
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.309
+    fixed: false
+    found_at_scroll: 3
+  - text: Start day at
+    center:
+    - 0.1412
+    - 0.3652
+    fixed: false
+    found_at_scroll: 3
+  - text: Show events spanning across midnight at the top bar
+    center:
+    - 0.5
+    - 0.4496
+    fixed: false
+    found_at_scroll: 3
+  - text: Allow customizing day count
+    center:
+    - 0.5
+    - 0.5196
+    fixed: false
+    found_at_scroll: 3
+  - text: Start week with the current day
+    center:
+    - 0.5
+    - 0.5896
+    fixed: false
+    found_at_scroll: 3
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.6535
+    fixed: false
+    found_at_scroll: 3
+  - text: Show week numbers
+    center:
+    - 0.5
+    - 0.7167
+    fixed: false
+    found_at_scroll: 3
+  - text: Show a grid
+    center:
+    - 0.5
+    - 0.7867
+    fixed: false
+    found_at_scroll: 3
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.8506
+    fixed: false
+    found_at_scroll: 3
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.9069
+    fixed: false
+    found_at_scroll: 3
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.9825
+    fixed: false
+    found_at_scroll: 3
+  description: Settings page for Simple Calendar Pro with options for color customization,
+    general preferences, reminders, CalDAV sync, and new event defaults.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    - options
+    semantic_type: setting
+  - text: CALDAV
+    center:
+    - 0.5269
+    - 0.4835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - CalDAV
+    - calendar sync
+    - 日历同步
+    - caldav settings
+    semantic_type: menu_item
+  - text: NEW EVENTS
+    center:
+    - 0.5269
+    - 0.6106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new events
+    - 新建事件
+    - default new event
+    - 默认新事件
+    semantic_type: setting
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.9702
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - weekly view
+    - 周视图
+    - week view
+    - 7-day view
+    semantic_type: setting
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.564
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - monthly view
+    - 月视图
+    - month view
+    - 30-day view
+    semantic_type: setting
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.761
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - event lists
+    - 事件列表
+    - list view
+    - agenda view
+    semantic_type: setting
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.304
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - widgets
+    - 小部件
+    - home screen widgets
+    - 桌面组件
+    semantic_type: menu_item
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.516
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - events
+    - 事件
+    - calendar events
+    - appointments
+    semantic_type: tab
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.7785
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - tasks
+    - 任务
+    - to-dos
+    - todo list
+    semantic_type: tab
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.9738
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - backups
+    - 备份
+    - backup settings
+    - data backup
+    semantic_type: menu_item
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.8148
+    fixed: false
+    found_at_scroll: 3
+    aliases:
+    - migrating
+    - 迁移
+    - import/export
+    - data migration
+    semantic_type: menu_item
+  description: Settings menu listing configuration categories such as CalDAV, views,
+    widgets, and backups.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Value
+    center:
+    - 0.5
+    - 0.2435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - amount
+    - number
+    - quantity
+    semantic_type: label
+  - text: minutes
+    center:
+    - 0.5
+    - 0.3198
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - mins
+    - min
+    - 分钟
+    semantic_type: label
+  - text: hours
+    center:
+    - 0.5
+    - 0.376
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hrs
+    - hr
+    - 小时
+    semantic_type: label
+  - text: days
+    center:
+    - 0.5
+    - 0.4323
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - d
+    - 天
+    - 日
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.5021
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - Abort
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.5021
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - Apply
+    - 确定
+    - 好
+    semantic_type: button
+  description: Time interval selection dialog with options for minutes, hours, and
+    days, along with Cancel and OK buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: Start week on Sunday
+    center:
+    - 0.5
+    - 0.1473
+    fixed: false
+    found_at_scroll: 1
+  - text: Highlight weekends on some views
+    center:
+    - 0.5
+    - 0.215
+    fixed: false
+    found_at_scroll: 1
+  - text: Color of highlighted weekends
+    center:
+    - 0.4588
+    - 0.286
+    fixed: false
+    found_at_scroll: 1
+  - text: REMINDERS
+    center:
+    - 0.5269
+    - 0.351
+    fixed: false
+    found_at_scroll: 1
+  - text: Customize notifications
+    center:
+    - 0.2329
+    - 0.4119
+    fixed: false
+    found_at_scroll: 1
+  - text: Audio stream used by reminders
+    center:
+    - 0.3
+    - 0.4727
+    fixed: false
+    found_at_scroll: 1
+  - text: Notification
+    center:
+    - 0.5
+    - 0.494
+    fixed: false
+    found_at_scroll: 1
+  - text: Vibrate on reminder notification
+    center:
+    - 0.5
+    - 0.5571
+    fixed: false
+    found_at_scroll: 1
+  - text: Loop reminders until dismissed
+    center:
+    - 0.5
+    - 0.6271
+    fixed: false
+    found_at_scroll: 1
+  - text: Always use same snooze time
+    center:
+    - 0.5
+    - 0.6971
+    fixed: false
+    found_at_scroll: 1
+  - text: CALDAV
+    center:
+    - 0.5269
+    - 0.761
+    fixed: false
+    found_at_scroll: 1
+  - text: CalDAV sync
+    center:
+    - 0.5
+    - 0.8242
+    fixed: false
+    found_at_scroll: 1
+  - text: NEW EVENTS
+    center:
+    - 0.5269
+    - 0.8881
+    fixed: false
+    found_at_scroll: 1
+  - text: Default start time
+    center:
+    - 0.1861
+    - 0.9444
+    fixed: false
+    found_at_scroll: 1
+  - text: Default duration
+    center:
+    - 0.1755
+    - 0.2927
+    fixed: false
+    found_at_scroll: 2
+  - text: Default event type
+    center:
+    - 0.1912
+    - 0.3702
+    fixed: false
+    found_at_scroll: 2
+  - text: Use the last events' reminders as the default for new events
+    center:
+    - 0.5
+    - 0.4546
+    fixed: false
+    found_at_scroll: 2
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.5185
+    fixed: false
+    found_at_scroll: 2
+  - text: Start day at
+    center:
+    - 0.1412
+    - 0.5748
+    fixed: false
+    found_at_scroll: 2
+  - text: Show events spanning across midnight at the top bar
+    center:
+    - 0.5
+    - 0.6592
+    fixed: false
+    found_at_scroll: 2
+  - text: Allow customizing day count
+    center:
+    - 0.5
+    - 0.7292
+    fixed: false
+    found_at_scroll: 2
+  - text: Start week with the current day
+    center:
+    - 0.5
+    - 0.7992
+    fixed: false
+    found_at_scroll: 2
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.8631
+    fixed: false
+    found_at_scroll: 2
+  - text: Show week numbers
+    center:
+    - 0.5
+    - 0.9263
+    fixed: false
+    found_at_scroll: 2
+  - text: Show a grid
+    center:
+    - 0.5
+    - 0.985
+    fixed: false
+    found_at_scroll: 2
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.3102
+    fixed: false
+    found_at_scroll: 3
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.3665
+    fixed: false
+    found_at_scroll: 3
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.4508
+    fixed: false
+    found_at_scroll: 3
+  - text: Replace event description with location
+    center:
+    - 0.5
+    - 0.5208
+    fixed: false
+    found_at_scroll: 3
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.5848
+    fixed: false
+    found_at_scroll: 3
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.641
+    fixed: false
+    found_at_scroll: 3
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.7185
+    fixed: false
+    found_at_scroll: 3
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.7969
+    fixed: false
+    found_at_scroll: 3
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.86
+    fixed: false
+    found_at_scroll: 3
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.93
+    fixed: false
+    found_at_scroll: 3
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.9935
+    fixed: false
+    found_at_scroll: 3
+  description: Settings page for configuring calendar preferences, reminders, sync
+    options, and view layouts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: 12.00 AM
+    center:
+    - 0.5
+    - 0.1783
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - midnight
+    - 00:00
+    - 12am
+    semantic_type: label
+  - text: 01.00 AM
+    center:
+    - 0.5
+    - 0.2267
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1am
+    - 01:00
+    semantic_type: label
+  - text: 02.00 AM
+    center:
+    - 0.5
+    - 0.275
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 2am
+    - 02:00
+    semantic_type: label
+  - text: 03.00 AM
+    center:
+    - 0.5
+    - 0.3233
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 3am
+    - 03:00
+    semantic_type: label
+  - text: 04.00 AM
+    center:
+    - 0.5
+    - 0.3717
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 4am
+    - 04:00
+    semantic_type: label
+  - text: 05.00 AM
+    center:
+    - 0.5
+    - 0.42
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 5am
+    - 05:00
+    semantic_type: label
+  - text: 06.00 AM
+    center:
+    - 0.5
+    - 0.4683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 6am
+    - 06:00
+    semantic_type: label
+  - text: 07.00 AM
+    center:
+    - 0.5
+    - 0.5167
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 7am
+    - 07:00
+    semantic_type: label
+  - text: 08.00 AM
+    center:
+    - 0.5
+    - 0.565
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 8am
+    - 08:00
+    semantic_type: label
+  - text: 09.00 AM
+    center:
+    - 0.5
+    - 0.6133
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 9am
+    - 09:00
+    semantic_type: label
+  - text: 10.00 AM
+    center:
+    - 0.5
+    - 0.6617
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 10am
+    - '10:00'
+    semantic_type: label
+  - text: 11.00 AM
+    center:
+    - 0.5
+    - 0.71
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 11am
+    - '11:00'
+    semantic_type: label
+  - text: 12.00 PM
+    center:
+    - 0.5
+    - 0.7583
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - noon
+    - 12pm
+    - '12:00'
+    semantic_type: label
+  - text: 01.00 PM
+    center:
+    - 0.5
+    - 0.8067
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1pm
+    - '13:00'
+    semantic_type: label
+  - text: 02.00 PM
+    center:
+    - 0.5
+    - 0.855
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 2pm
+    - '14:00'
+    semantic_type: label
+  - text: 03.00 PM
+    center:
+    - 0.5
+    - 0.8827
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 3pm
+    - '15:00'
+    semantic_type: label
+  - text: 04.00 PM
+    center:
+    - 0.5
+    - 0.8488
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 4pm
+    - '16:00'
+    semantic_type: label
+  description: Hourly time slot list for scheduling events throughout the day.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - configuration
+    - options
+    semantic_type: setting
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.2477
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 周视图
+    - weekly calendar
+    - week view
+    semantic_type: tab
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.5923
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 月视图
+    - monthly calendar
+    - month view
+    semantic_type: tab
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.7894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 事件列表
+    - event list
+    - list view
+    semantic_type: tab
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.3148
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 小部件
+    - widgets settings
+    - home screen widgets
+    semantic_type: menu_item
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.5269
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 事件
+    - calendar events
+    - appointments
+    semantic_type: menu_item
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.7894
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 任务
+    - to-dos
+    - checklist
+    semantic_type: menu_item
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.9792
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 备份
+    - backup data
+    - export
+    semantic_type: menu_item
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.8148
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 迁移
+    - import data
+    - data migration
+    semantic_type: menu_item
+  description: Settings screen displaying configuration categories for views, widgets,
+    events, tasks, backups, and migration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+  - text: Use the last events' reminders as the default for new events
+    center:
+    - 0.5
+    - 0.2146
+    fixed: false
+    found_at_scroll: 0
+  - text: WEEKLY VIEW
+    center:
+    - 0.5269
+    - 0.2785
+    fixed: false
+    found_at_scroll: 0
+  - text: Show events spanning across midnight at the top bar
+    center:
+    - 0.5
+    - 0.4192
+    fixed: false
+    found_at_scroll: 0
+  - text: Allow customizing day count
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+  - text: Start week with the current day
+    center:
+    - 0.5
+    - 0.5592
+    fixed: false
+    found_at_scroll: 0
+  - text: MONTHLY VIEW
+    center:
+    - 0.5269
+    - 0.6231
+    fixed: false
+    found_at_scroll: 0
+  - text: Show week numbers
+    center:
+    - 0.5
+    - 0.6863
+    fixed: false
+    found_at_scroll: 0
+  - text: Show a grid
+    center:
+    - 0.5
+    - 0.7562
+    fixed: false
+    found_at_scroll: 0
+  - text: EVENT LISTS
+    center:
+    - 0.5269
+    - 0.8202
+    fixed: false
+    found_at_scroll: 0
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.8765
+    fixed: false
+    found_at_scroll: 0
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.9608
+    fixed: false
+    found_at_scroll: 0
+  - text: Replace event description with location
+    center:
+    - 0.5
+    - 0.3054
+    fixed: false
+    found_at_scroll: 1
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.3694
+    fixed: false
+    found_at_scroll: 1
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.4256
+    fixed: false
+    found_at_scroll: 1
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.5031
+    fixed: false
+    found_at_scroll: 1
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.5815
+    fixed: false
+    found_at_scroll: 1
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.6446
+    fixed: false
+    found_at_scroll: 1
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.7146
+    fixed: false
+    found_at_scroll: 1
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.7823
+    fixed: false
+    found_at_scroll: 1
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.844
+    fixed: false
+    found_at_scroll: 1
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.9071
+    fixed: false
+    found_at_scroll: 1
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.9754
+    fixed: false
+    found_at_scroll: 1
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.6877
+    fixed: false
+    found_at_scroll: 2
+  - text: Enable automatic backups
+    center:
+    - 0.5
+    - 0.7508
+    fixed: false
+    found_at_scroll: 2
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.8148
+    fixed: false
+    found_at_scroll: 2
+  - text: Export settings
+    center:
+    - 0.1685
+    - 0.8756
+    fixed: false
+    found_at_scroll: 2
+  - text: Import settings
+    center:
+    - 0.1699
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+  description: Settings page with various configuration options for calendar views,
+    events, tasks, widgets, backups, and migration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: '1'
+    center:
+    - 0.5
+    - 0.2435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - one
+    - 1 minute
+    - 1 hour
+    - 1 day
+    semantic_type: input
+  - text: minutes
+    center:
+    - 0.5
+    - 0.3198
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - mins
+    - min
+    - 分钟
+    semantic_type: label
+  - text: hours
+    center:
+    - 0.5
+    - 0.376
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hrs
+    - hr
+    - 小时
+    semantic_type: label
+  - text: days
+    center:
+    - 0.5
+    - 0.4323
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - d
+    - 天
+    - 日
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.5021
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - dismiss
+    - close
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.5021
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 确认
+    - 确定
+    - confirm
+    - done
+    semantic_type: button
+  description: Time interval selection dialog with options for minutes, hours, and
+    days, plus Cancel and OK buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_32
+  elements:
+  - text: Small
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - S
+    - Tiny
+    - 小
+    semantic_type: label
+  - text: Medium
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - M
+    - 中
+    - Normal
+    semantic_type: label
+  - text: Large
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - L
+    - 大
+    - Big
+    semantic_type: label
+  - text: Extra large
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - XL
+    - 特大
+    - Huge
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 设置
+    - Preferences
+    - Config
+    semantic_type: setting
+  - text: Display events from the past
+    center:
+    - 0.2699
+    - 0.1252
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Show past events
+    - 显示过去的事件
+    - Past events visibility
+    semantic_type: toggle
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.2008
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Show details
+    - 显示描述或位置
+    - Event details
+    semantic_type: toggle
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.2648
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 小组件
+    - Widgets section
+    - App widgets
+    semantic_type: setting
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.321
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Text size
+    - 字体大小
+    - Typography
+    semantic_type: setting
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.3985
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Widget click action
+    - 小部件点击视图
+    - Default widget view
+    semantic_type: setting
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.4198
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Day view
+    - 日视图
+    - 24h view
+    semantic_type: menu_item
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.4769
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 事件
+    - Calendar events
+    - Events section
+    semantic_type: setting
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.54
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Fade old events
+    - 淡化过去的事件
+    - Grey out past
+    semantic_type: toggle
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.61
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Time zone support
+    - 允许更改时区
+    - TZ settings
+    semantic_type: toggle
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.6777
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Clear data
+    - 删除所有事件和任务
+    - Reset calendar
+    semantic_type: button
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.7394
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 任务
+    - To-dos
+    - Tasks section
+    semantic_type: setting
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.8025
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Enable tasks
+    - 允许创建任务
+    - Task creation
+    semantic_type: toggle
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.8725
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Fade done tasks
+    - 淡化已完成任务
+    - Grey out completed
+    semantic_type: toggle
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.9365
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 备份
+    - Backup section
+    - Data backup
+    semantic_type: setting
+  - text: Enable automatic backups
+    center:
+    - 0.5
+    - 0.9867
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Auto backup
+    - 启用自动备份
+    - Scheduled backups
+    semantic_type: toggle
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.8148
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 迁移
+    - Migration section
+    - Data transfer
+    semantic_type: setting
+  - text: Export settings
+    center:
+    - 0.1685
+    - 0.8756
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Save config
+    - 导出设置
+    - Backup preferences
+    semantic_type: button
+  - text: Import settings
+    center:
+    - 0.1699
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - Load config
+    - 导入设置
+    - Restore preferences
+    semantic_type: button
+  description: Settings screen for configuring display preferences, widget behavior,
+    event and task management, backups, and data migration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.3683
+    fixed: false
+    found_at_scroll: 0
+  - text: Weekly view
+    center:
+    - 0.5
+    - 0.4167
+    fixed: false
+    found_at_scroll: 0
+  - text: Monthly view
+    center:
+    - 0.5
+    - 0.465
+    fixed: false
+    found_at_scroll: 0
+  - text: Monthly and daily view
+    center:
+    - 0.5
+    - 0.5133
+    fixed: false
+    found_at_scroll: 0
+  - text: Yearly view
+    center:
+    - 0.5
+    - 0.5617
+    fixed: false
+    found_at_scroll: 0
+  - text: Simple event list
+    center:
+    - 0.5
+    - 0.61
+    fixed: false
+    found_at_scroll: 0
+  - text: Last view
+    center:
+    - 0.5
+    - 0.6583
+    fixed: false
+    found_at_scroll: 0
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.1554
+    fixed: false
+    found_at_scroll: 1
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.2194
+    fixed: false
+    found_at_scroll: 1
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.2756
+    fixed: false
+    found_at_scroll: 1
+  - text: Medium
+    center:
+    - 0.5
+    - 0.2969
+    fixed: false
+    found_at_scroll: 1
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.3531
+    fixed: false
+    found_at_scroll: 1
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.4315
+    fixed: false
+    found_at_scroll: 1
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.4946
+    fixed: false
+    found_at_scroll: 1
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.5646
+    fixed: false
+    found_at_scroll: 1
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.6323
+    fixed: false
+    found_at_scroll: 1
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.694
+    fixed: false
+    found_at_scroll: 1
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.7571
+    fixed: false
+    found_at_scroll: 1
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.8271
+    fixed: false
+    found_at_scroll: 1
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.891
+    fixed: false
+    found_at_scroll: 1
+  - text: Enable automatic backups
+    center:
+    - 0.5
+    - 0.9542
+    fixed: false
+    found_at_scroll: 1
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.995
+    fixed: false
+    found_at_scroll: 1
+  - text: Export settings
+    center:
+    - 0.1685
+    - 0.8756
+    fixed: false
+    found_at_scroll: 2
+  - text: Import settings
+    center:
+    - 0.1699
+    - 0.941
+    fixed: false
+    found_at_scroll: 2
+  description: Settings page for Simple Calendar Pro with options for view preferences,
+    event and task management, backups, and migration.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Settings
+    center:
+    - 0.238
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: setting
+  - text: Display description or location
+    center:
+    - 0.5
+    - 0.1771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示描述或位置
+    - Show description
+    - Show location
+    semantic_type: toggle
+  - text: WIDGETS
+    center:
+    - 0.5269
+    - 0.241
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 小部件
+    - Widgets
+    - 桌面组件
+    semantic_type: setting
+  - text: Font size
+    center:
+    - 0.1222
+    - 0.2973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字体大小
+    - Text size
+    - 字号
+    semantic_type: setting
+  - text: View to open from the event list widget
+    center:
+    - 0.3495
+    - 0.3748
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 从事件列表小部件打开的视图
+    - Widget click action
+    - 小部件点击行为
+    semantic_type: setting
+  - text: EVENTS
+    center:
+    - 0.5269
+    - 0.4531
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 事件
+    - Events
+    - 日程
+    semantic_type: setting
+  - text: Dim past events
+    center:
+    - 0.5
+    - 0.5162
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 淡化过去的事件
+    - Grey out past events
+    - 置灰过期事件
+    semantic_type: toggle
+  - text: Allow changing event time zones
+    center:
+    - 0.5
+    - 0.5863
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 允许更改事件时区
+    - Change time zones
+    - 时区设置
+    semantic_type: toggle
+  - text: Delete all events and tasks
+    center:
+    - 0.2565
+    - 0.654
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 删除所有事件和任务
+    - Clear all data
+    - 清空数据
+    semantic_type: button
+  - text: TASKS
+    center:
+    - 0.5269
+    - 0.7156
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 任务
+    - Tasks
+    - 待办
+    semantic_type: setting
+  - text: Allow creating tasks
+    center:
+    - 0.5
+    - 0.7788
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 允许创建任务
+    - Enable tasks
+    - 启用任务
+    semantic_type: toggle
+  - text: Dim completed tasks
+    center:
+    - 0.5
+    - 0.8488
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 淡化已完成的任务
+    - Grey out done tasks
+    - 置灰完成任务
+    semantic_type: toggle
+  - text: BACKUPS
+    center:
+    - 0.5269
+    - 0.9127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 备份
+    - Backups
+    - 数据备份
+    semantic_type: setting
+  - text: Enable automatic backups
+    center:
+    - 0.5
+    - 0.9748
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 启用自动备份
+    - Auto backup
+    - 自动保存
+    semantic_type: toggle
+  - text: MIGRATING
+    center:
+    - 0.5269
+    - 0.8148
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 迁移
+    - Migration
+    - 数据迁移
+    semantic_type: setting
+  - text: Export settings
+    center:
+    - 0.1685
+    - 0.8756
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 导出设置
+    - Export config
+    - 备份配置
+    semantic_type: button
+  - text: Import settings
+    center:
+    - 0.1699
+    - 0.941
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 导入设置
+    - Import config
+    - 恢复配置
+    semantic_type: button
+  description: Settings screen for configuring widgets, events, tasks, backups, and
+    migration options in Simple Calendar Pro.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: Manage automatic backups
+    center:
+    - 0.4125
+    - 0.2602
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto backup settings
+    - Backup management
+    - 自动备份管理
+    semantic_type: setting
+  - text: Internal/Download
+    center:
+    - 0.5
+    - 0.3273
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Internal Storage
+    - Download Folder
+    - 内部存储/下载
+    semantic_type: label
+  - text: Export events
+    center:
+    - 0.4954
+    - 0.4842
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save events
+    - Export calendar
+    - 导出事件
+    semantic_type: button
+  - text: Export tasks
+    center:
+    - 0.4954
+    - 0.55
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save tasks
+    - Export to-do
+    - 导出任务
+    semantic_type: button
+  - text: Export past entries too
+    center:
+    - 0.4954
+    - 0.6167
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Include history
+    - Export old data
+    - 也导出过去条目
+    semantic_type: toggle
+  - text: Manage event types
+    center:
+    - 0.4954
+    - 0.6831
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Event categories
+    - Manage labels
+    - 管理事件类型
+    semantic_type: setting
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Accept
+    - 确定
+    semantic_type: button
+  description: Settings dialog for managing automatic backups, exporting data, and
+    configuring event types.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: Allow
+    center:
+    - 0.5
+    - 0.5435
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Grant
+    - Permit
+    - 允许
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.609
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Deny
+    - Reject
+    - 禁止
+    - 不允许
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    - 更改视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    - 选项
+    semantic_type: link
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多
+    - 更多选项
+    semantic_type: button
+  - text: Create a new event
+    center:
+    - 0.4995
+    - 0.194
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add event
+    - New entry
+    - 新建事件
+    - 创建活动
+    semantic_type: button
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.9256
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Add Event
+    - Create Event
+    - 新事件
+    - 添加活动
+    semantic_type: button
+  description: Main calendar screen displaying a permission dialog with Allow/Don't
+    allow options, alongside navigation and action controls for searching, changing
+    views, accessing settings, and creating new events.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_37
+  elements:
+  - text: BROWSE FILES IN OTHER APPS
+    center:
+    - 0.2255
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.3221
+    fixed: false
+    found_at_scroll: 0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+  description: File browser interface for selecting files from other apps, featuring
+    a grid view, recent files, and search functionality.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Export events
+    center:
+    - 0.3199
+    - 0.3356
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - export calendar events
+    - save events
+    - 导出事件
+    semantic_type: button
+  - text: Export tasks
+    center:
+    - 0.4954
+    - 0.5454
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - export to-do items
+    - save tasks
+    - 导出任务
+    semantic_type: button
+  - text: Export past entries too
+    center:
+    - 0.4954
+    - 0.6121
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - include past events
+    - export history
+    - also export old entries
+    - 导出过去的条目
+    semantic_type: toggle
+  - text: Cancel
+    center:
+    - 0.5995
+    - 0.6867
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - abort
+    - dismiss
+    - close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7796
+    - 0.6867
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - confirm
+    - accept
+    - done
+    - 确定
+    semantic_type: button
+  description: Export settings dialog allowing users to select event, task, and past
+    entry export options with Cancel and OK actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: About
+    center:
+    - 0.213
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 关于
+    - 信息
+    - app info
+    semantic_type: menu_item
+  - text: SUPPORT
+    center:
+    - 0.5875
+    - 0.1515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支持
+    - 帮助
+    - support section
+    semantic_type: label
+  - text: Frequently asked questions
+    center:
+    - 0.5875
+    - 0.2148
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - FAQ
+    - 常见问题
+    - help center
+    semantic_type: link
+  - text: hello@simplemobiletools.com
+    center:
+    - 0.5875
+    - 0.2848
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - email
+    - contact email
+    - 邮箱
+    semantic_type: link
+  - text: HELP US
+    center:
+    - 0.5875
+    - 0.3485
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助我们
+    - 贡献
+    - contribute
+    semantic_type: label
+  - text: Contributors
+    center:
+    - 0.5875
+    - 0.4119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 贡献者
+    - developers
+    - credits
+    semantic_type: link
+  - text: Donate
+    center:
+    - 0.5875
+    - 0.4819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 捐赠
+    - 捐款
+    - support us
+    semantic_type: button
+  - text: SOCIAL
+    center:
+    - 0.5875
+    - 0.5456
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 社交
+    - 社区
+    - social media
+    semantic_type: label
+  - text: Facebook
+    center:
+    - 0.5875
+    - 0.609
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - FB
+    - 脸书
+    - facebook page
+    semantic_type: link
+  - text: GitHub
+    center:
+    - 0.5875
+    - 0.679
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - GH
+    - 代码库
+    - github repo
+    semantic_type: link
+  - text: Reddit
+    center:
+    - 0.5875
+    - 0.749
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - reddit community
+    - 论坛
+    semantic_type: link
+  - text: Telegram
+    center:
+    - 0.5875
+    - 0.819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - TG
+    - 电报
+    - telegram group
+    semantic_type: link
+  - text: OTHER
+    center:
+    - 0.5875
+    - 0.8827
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 其他
+    - 更多
+    - misc
+    semantic_type: label
+  - text: Website
+    center:
+    - 0.5875
+    - 0.946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 官网
+    - homepage
+    - site
+    semantic_type: link
+  - text: Privacy policy
+    center:
+    - 0.5875
+    - 0.7219
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 隐私政策
+    - privacy
+    - data policy
+    semantic_type: link
+  - text: Third party licences
+    center:
+    - 0.5875
+    - 0.7919
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 第三方许可
+    - licenses
+    - open source licenses
+    semantic_type: link
+  - text: Made with ❤️ in Slovakia
+    center:
+    - 0.5875
+    - 0.9356
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 斯洛伐克制造
+    - credits
+    - attribution
+    semantic_type: label
+  description: About screen displaying support contact information, contribution options,
+    social media links, and legal policies.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: New Event
+    center:
+    - 0.2644
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Create Event
+    - Add Event
+    - 新建事件
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.9412
+    - 0.0879
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 保存
+    semantic_type: button
+  - text: Title
+    center:
+    - 0.5
+    - 0.165
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Event Name
+    - Subject
+    - 标题
+    semantic_type: input
+  - text: Location
+    center:
+    - 0.4463
+    - 0.2308
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Place
+    - Venue
+    - 地点
+    semantic_type: input
+  - text: Description
+    center:
+    - 0.5
+    - 0.2967
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Details
+    - Notes
+    - 描述
+    semantic_type: input
+  - text: All-day
+    center:
+    - 0.5542
+    - 0.3875
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Full day
+    - 全天
+    semantic_type: toggle
+  - text: UTC
+    center:
+    - 0.5736
+    - 0.5919
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Coordinated Universal Time
+    - Timezone
+    - 时区
+    semantic_type: label
+  - text: 10 minutes before
+    center:
+    - 0.5736
+    - 0.6706
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Reminder time
+    - Alert
+    - 提前10分钟
+    semantic_type: menu_item
+  - text: Add another reminder
+    center:
+    - 0.5736
+    - 0.731
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add reminder
+    - 新增提醒
+    semantic_type: button
+  - text: No repetition
+    center:
+    - 0.5736
+    - 0.8056
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Does not repeat
+    - Never
+    - 不重复
+    semantic_type: menu_item
+  - text: Regular event
+    center:
+    - 0.5639
+    - 0.8769
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Standard event
+    - 普通事件
+    semantic_type: label
+  - text: Event color
+    center:
+    - 0.5032
+    - 0.9473
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Color
+    - Category color
+    - 事件颜色
+    semantic_type: menu_item
+  description: Event creation screen allowing users to input details such as title,
+    location, description, time, reminders, and color for a new calendar event.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: 08:00 AM
+    center:
+    - 0.088
+    - 0.2073
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 8 AM
+    - '8:00'
+    - 上午8点
+    semantic_type: label
+  - text: 09:00 AM
+    center:
+    - 0.088
+    - 0.2727
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 9 AM
+    - '9:00'
+    - 上午9点
+    semantic_type: label
+  - text: 10:00 AM
+    center:
+    - 0.088
+    - 0.3381
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 10 AM
+    - '10:00'
+    - 上午10点
+    semantic_type: label
+  - text: 11:00 AM
+    center:
+    - 0.088
+    - 0.4035
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 11 AM
+    - '11:00'
+    - 上午11点
+    semantic_type: label
+  - text: 12:00 PM
+    center:
+    - 0.088
+    - 0.469
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 12 PM
+    - Noon
+    - 中午12点
+    semantic_type: label
+  - text: 01:00 PM
+    center:
+    - 0.088
+    - 0.5344
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1 PM
+    - '13:00'
+    - 下午1点
+    semantic_type: label
+  - text: 02:00 PM
+    center:
+    - 0.088
+    - 0.5998
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 2 PM
+    - '14:00'
+    - 下午2点
+    semantic_type: label
+  - text: 03:00 PM
+    center:
+    - 0.088
+    - 0.6652
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 3 PM
+    - '15:00'
+    - 下午3点
+    semantic_type: label
+  - text: 04:00 PM
+    center:
+    - 0.088
+    - 0.7306
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 4 PM
+    - '16:00'
+    - 下午4点
+    semantic_type: label
+  - text: 05:00 PM
+    center:
+    - 0.088
+    - 0.796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 5 PM
+    - '17:00'
+    - 下午5点
+    semantic_type: label
+  - text: 06:00 PM
+    center:
+    - 0.088
+    - 0.8615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 6 PM
+    - '18:00'
+    - 下午6点
+    semantic_type: label
+  - text: 07:00 PM
+    center:
+    - 0.088
+    - 0.9269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 7 PM
+    - '19:00'
+    - 下午7点
+    semantic_type: label
+  - text: 08:00 PM
+    center:
+    - 0.088
+    - 0.9667
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 8 PM
+    - '20:00'
+    - 下午8点
+    semantic_type: label
+  - text: 09:00 PM
+    center:
+    - 0.088
+    - 0.7527
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 9 PM
+    - '21:00'
+    - 下午9点
+    semantic_type: label
+  - text: 10:00 PM
+    center:
+    - 0.088
+    - 0.8181
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 10 PM
+    - '22:00'
+    - 下午10点
+    semantic_type: label
+  - text: 11:00 PM
+    center:
+    - 0.088
+    - 0.8835
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 11 PM
+    - '23:00'
+    - 下午11点
+    semantic_type: label
+  description: Daily calendar view displaying hourly time slots from 08:00 AM to 11:00
+    PM with options to search, change view, and access settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_42
+  elements:
+  - text: Disclaimer
+    center:
+    - 0.2792
+    - 0.3927
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Legal Notice
+    - Terms
+    - 免责声明
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.256
+    - 0.63
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 配置
+    - 设置
+    semantic_type: setting
+  - text: OK
+    center:
+    - 0.7796
+    - 0.63
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    - 好
+    semantic_type: button
+  description: A disclaimer dialog in the Settings section requiring user acknowledgment
+    via an OK button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Select time
+    center:
+    - 0.2407
+    - 0.2665
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Choose time
+    - Pick time
+    - 选择时间
+    semantic_type: label
+  - text: ':'
+    center:
+    - 0.4218
+    - 0.3408
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - colon
+    - separator
+    semantic_type: other
+  - text: AM
+    center:
+    - 0.7773
+    - 0.3146
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - ante meridiem
+    - morning
+    - 上午
+    semantic_type: button
+  - text: PM
+    center:
+    - 0.7773
+    - 0.3658
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - post meridiem
+    - afternoon
+    - 下午
+    semantic_type: button
+  - text: Switch to text input mode for the time input.
+    center:
+    - 0.1894
+    - 0.7567
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Keyboard input
+    - Type time
+    - 文本输入
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.6171
+    - 0.7588
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Close
+    - 取消
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8019
+    - 0.7588
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - Done
+    - 确定
+    semantic_type: button
+  description: Time picker dialog allowing the user to select a time with AM/PM options
+    and confirm or cancel the selection.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Collapse
+    center:
+    - 0.0681
+    - 0.0881
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Hide
+    - Minimize
+    - 收起
+    - 折叠
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.525
+    - 0.0877
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: Clear query
+    center:
+    - 0.8458
+    - 0.0877
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Clear search
+    - Reset
+    - 清除
+    - 清空
+    semantic_type: button
+  description: Search interface with a text input field and a clear query button for
+    filtering calendar events.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_45
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: New Event
+    center:
+    - 0.8931
+    - 0.584
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Add event
+    - Create event
+    - 新建事件
+    semantic_type: button
+  description: Main calendar screen featuring a toolbar with search, view options,
+    settings, and a button to create new events.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.3925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Day view
+    - 日视图
+    - 单日
+    semantic_type: tab
+  - text: Weekly view
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Week view
+    - 周视图
+    - 单周
+    semantic_type: tab
+  - text: Monthly view
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Month view
+    - 月视图
+    - 单月
+    semantic_type: tab
+  - text: Monthly and daily view
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Agenda view
+    - 日程列表
+    - 月日混合视图
+    semantic_type: tab
+  - text: Yearly view
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Year view
+    - 年视图
+    - 全年
+    semantic_type: tab
+  - text: Simple event list
+    center:
+    - 0.5
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Event list
+    - 事件列表
+    - 日程清单
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Switch view
+    - 切换视图
+    - 视图选择
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Preferences
+    - 设置
+    - 配置
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - 更多
+    - 三点菜单
+    semantic_type: button
+  description: A menu screen listing various calendar view options, search, settings,
+    and additional actions for navigation.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_47
+  elements:
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Config
+    - 设置
+    semantic_type: setting
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: menu_item
+  - text: 08:00 AM
+    center:
+    - 0.088
+    - 0.2073
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 8 AM
+    - '8:00'
+    - 上午8点
+    semantic_type: label
+  - text: 09:00 AM
+    center:
+    - 0.088
+    - 0.2727
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 9 AM
+    - '9:00'
+    - 上午9点
+    semantic_type: label
+  - text: 10:00 AM
+    center:
+    - 0.088
+    - 0.3381
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 10 AM
+    - '10:00'
+    - 上午10点
+    semantic_type: label
+  - text: 11:00 AM
+    center:
+    - 0.088
+    - 0.4035
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 11 AM
+    - '11:00'
+    - 上午11点
+    semantic_type: label
+  - text: 12:00 PM
+    center:
+    - 0.088
+    - 0.469
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 12 PM
+    - Noon
+    - 中午12点
+    semantic_type: label
+  - text: 01:00 PM
+    center:
+    - 0.088
+    - 0.5344
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 1 PM
+    - '13:00'
+    - 下午1点
+    semantic_type: label
+  - text: 02:00 PM
+    center:
+    - 0.088
+    - 0.5996
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 2 PM
+    - '14:00'
+    - 下午2点
+    semantic_type: label
+  description: Daily calendar view displaying hourly time slots from 08:00 AM to 02:00
+    PM with options to search, change view, and access settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Daily view
+    center:
+    - 0.5
+    - 0.3925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Day view
+    - 日视图
+    - daily
+    semantic_type: tab
+  - text: Weekly view
+    center:
+    - 0.5
+    - 0.4408
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Week view
+    - 周视图
+    - weekly
+    semantic_type: tab
+  - text: Monthly view
+    center:
+    - 0.5
+    - 0.4892
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Month view
+    - 月视图
+    - monthly
+    semantic_type: tab
+  - text: Monthly and daily view
+    center:
+    - 0.5
+    - 0.5375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Agenda view
+    - List view
+    - 日程列表
+    semantic_type: tab
+  - text: Yearly view
+    center:
+    - 0.5
+    - 0.5858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Year view
+    - 年视图
+    - annual
+    semantic_type: tab
+  - text: Simple event list
+    center:
+    - 0.5
+    - 0.6342
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Event list
+    - Agenda
+    - 事件列表
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Find
+    - 搜索
+    - lookup
+    semantic_type: button
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Switch view
+    - View mode
+    - 切换视图
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Preferences
+    - 配置
+    - 设置
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  - text: 08:00 AM
+    center:
+    - 0.088
+    - 0.2073
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 8 AM
+    - '8:00'
+    - 上午8点
+    semantic_type: label
+  - text: 09:00 AM
+    center:
+    - 0.088
+    - 0.2727
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 9 AM
+    - '9:00'
+    - 上午9点
+    semantic_type: label
+  - text: 10:00 AM
+    center:
+    - 0.088
+    - 0.3381
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 10 AM
+    - '10:00'
+    - 上午10点
+    semantic_type: label
+  - text: 11:00 AM
+    center:
+    - 0.088
+    - 0.4035
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 11 AM
+    - '11:00'
+    - 上午11点
+    semantic_type: label
+  - text: 12:00 PM
+    center:
+    - 0.088
+    - 0.469
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 12 PM
+    - Noon
+    - 中午12点
+    semantic_type: label
+  - text: 01:00 PM
+    center:
+    - 0.088
+    - 0.5344
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 1 PM
+    - '13:00'
+    - 下午1点
+    semantic_type: label
+  - text: 02:00 PM
+    center:
+    - 0.088
+    - 0.5998
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 2 PM
+    - '14:00'
+    - 下午2点
+    semantic_type: label
+  - text: 03:00 PM
+    center:
+    - 0.088
+    - 0.6652
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 3 PM
+    - '15:00'
+    - 下午3点
+    semantic_type: label
+  - text: 04:00 PM
+    center:
+    - 0.088
+    - 0.7306
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 4 PM
+    - '16:00'
+    - 下午4点
+    semantic_type: label
+  - text: 05:00 PM
+    center:
+    - 0.088
+    - 0.796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 5 PM
+    - '17:00'
+    - 下午5点
+    semantic_type: label
+  - text: 06:00 PM
+    center:
+    - 0.088
+    - 0.8615
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 6 PM
+    - '18:00'
+    - 下午6点
+    semantic_type: label
+  - text: 07:00 PM
+    center:
+    - 0.088
+    - 0.9269
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 7 PM
+    - '19:00'
+    - 下午7点
+    semantic_type: label
+  - text: 08:00 PM
+    center:
+    - 0.088
+    - 0.9667
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 8 PM
+    - '20:00'
+    - 下午8点
+    semantic_type: label
+  - text: 09:00 PM
+    center:
+    - 0.088
+    - 0.7527
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 9 PM
+    - '21:00'
+    - 下午9点
+    semantic_type: label
+  - text: 10:00 PM
+    center:
+    - 0.088
+    - 0.8181
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 10 PM
+    - '22:00'
+    - 下午10点
+    semantic_type: label
+  - text: 11:00 PM
+    center:
+    - 0.088
+    - 0.8835
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 11 PM
+    - '23:00'
+    - 下午11点
+    semantic_type: label
+  description: Daily calendar view displaying hourly time slots from 08:00 AM to 11:00
+    PM with navigation options for different views and settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_49
+  elements:
+  - text: Go to date
+    center:
+    - 0.612
+    - 0.1406
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Jump to date
+    - Navigate to date
+    - Select date
+    semantic_type: button
+  - text: Print
+    center:
+    - 0.612
+    - 0.1931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Print calendar
+    - Print view
+    semantic_type: button
+  - text: Add holidays
+    center:
+    - 0.612
+    - 0.2456
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Import holidays
+    - Enable holidays
+    - Holiday calendar
+    semantic_type: setting
+  - text: Add contact birthdays
+    center:
+    - 0.612
+    - 0.2981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Contact birthdays
+    - Sync birthdays
+    - Birthday events
+    semantic_type: setting
+  - text: Add contact anniversaries
+    center:
+    - 0.612
+    - 0.3506
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Contact anniversaries
+    - Sync anniversaries
+    - Anniversary events
+    semantic_type: setting
+  - text: Import events from an .ics file
+    center:
+    - 0.612
+    - 0.4031
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Import ICS
+    - Import calendar
+    - Load .ics
+    semantic_type: button
+  - text: Export events to an .ics file
+    center:
+    - 0.612
+    - 0.4556
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Export ICS
+    - Export calendar
+    - Save .ics
+    semantic_type: button
+  - text: About
+    center:
+    - 0.612
+    - 0.5081
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App info
+    - Version
+    - About app
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.3579
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Find event
+    - Lookup
+    - Search bar
+    semantic_type: input
+  - text: Change view
+    center:
+    - 0.6773
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Switch view
+    - View mode
+    - Layout
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.7949
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Preferences
+    - Configuration
+    - Options
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9023
+    - 0.0883
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - Menu
+    - Overflow
+    - Three dots
+    semantic_type: button
+  - text: 08:00 AM
+    center:
+    - 0.088
+    - 0.2073
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 8 AM
+    - '8:00'
+    semantic_type: label
+  - text: 09:00 AM
+    center:
+    - 0.088
+    - 0.2727
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 9 AM
+    - '9:00'
+    semantic_type: label
+  - text: 10:00 AM
+    center:
+    - 0.088
+    - 0.3381
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 10 AM
+    - '10:00'
+    semantic_type: label
+  - text: 11:00 AM
+    center:
+    - 0.088
+    - 0.4035
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 11 AM
+    - '11:00'
+    semantic_type: label
+  - text: 12:00 PM
+    center:
+    - 0.088
+    - 0.469
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 12 PM
+    - Noon
+    - '12:00'
+    semantic_type: label
+  - text: 01:00 PM
+    center:
+    - 0.088
+    - 0.5344
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 1 PM
+    - '13:00'
+    semantic_type: label
+  - text: 02:00 PM
+    center:
+    - 0.088
+    - 0.5998
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 2 PM
+    - '14:00'
+    semantic_type: label
+  - text: 03:00 PM
+    center:
+    - 0.088
+    - 0.6652
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 3 PM
+    - '15:00'
+    semantic_type: label
+  - text: 04:00 PM
+    center:
+    - 0.088
+    - 0.7306
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 4 PM
+    - '16:00'
+    semantic_type: label
+  - text: 05:00 PM
+    center:
+    - 0.088
+    - 0.796
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 5 PM
+    - '17:00'
+    semantic_type: label
+  - text: 06:00 PM
+    center:
+    - 0.088
+    - 0.8615
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 6 PM
+    - '18:00'
+    semantic_type: label
+  - text: 07:00 PM
+    center:
+    - 0.088
+    - 0.9269
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 7 PM
+    - '19:00'
+    semantic_type: label
+  - text: 08:00 PM
+    center:
+    - 0.088
+    - 0.9667
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 8 PM
+    - '20:00'
+    semantic_type: label
+  - text: 09:00 PM
+    center:
+    - 0.088
+    - 0.7527
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 9 PM
+    - '21:00'
+    semantic_type: label
+  - text: 10:00 PM
+    center:
+    - 0.088
+    - 0.8181
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 10 PM
+    - '22:00'
+    semantic_type: label
+  - text: 11:00 PM
+    center:
+    - 0.088
+    - 0.8835
+    fixed: false
+    found_at_scroll: 2
+    aliases:
+    - 11 PM
+    - '23:00'
+    semantic_type: label
+  description: Calendar day view screen displaying hourly time slots from 08:00 AM
+    to 11:00 PM with a menu of options for managing events and settings.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 1402
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 942
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1058
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1290
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1406
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1522
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 201
+    y: 510
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 261
+    y: 666
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 139
+    y: 950
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 223
+    y: 1146
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1477
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1645
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 569
+    y: 1798
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 324
+    y: 2090
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 2293
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 160
+    y: 1040
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 190
+    y: 1854
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 2243
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 152
+    y: 726
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 540
+    y: 929
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 1418
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 292
+    y: 2026
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 756
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 132
+    y: 890
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 378
+    y: 1076
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 858
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 569
+    y: 2350
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 661
+    y: 590
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 661
+    y: 842
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 661
+    y: 968
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 661
+    y: 1094
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 964
+    y: 2222
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1058
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 1402
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 1402
+    wait: 1.5
+  - action: tap
+    x: 820
+    y: 1234
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 964
+    y: 1402
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 1402
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 942
+    wait: 1.5
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 942
+    wait: 1.5
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1058
+    wait: 1.5
+  - action: tap
+    x: 386
+    y: 212
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1058
+    wait: 1.5
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.simplemobiletools.calendar.pro
+    wait: 0.5
+  - action: launch
+    package: com.simplemobiletools.calendar.pro
+    wait: 3.0
+  - action: tap
+    x: 732
+    y: 212
+    wait: 1.5
+  - action: tap
+    x: 540
+    y: 1058
+    wait: 1.5
+  - action: tap
+    x: 974
+    y: 212
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Create a new event or task
+- Switch between calendar views (Month, Week, Day)
+- Search for specific events
+- Configure CalDAV synchronization
+- Customize app theme and colors
+- Manage notification preferences
+- Import or export calendar data
+- Adjust default event settings
+known_limitations:
+- Settings menu contains multiple sub-screens requiring navigation to find specific
+  configurations like widgets or backups
+- Calendar selection is required when creating events if multiple calendars are active

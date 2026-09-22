@@ -1,0 +1,5464 @@
+app: Files
+package: com.google.android.documentsui
+screen_w: 1080
+screen_h: 2400
+screens:
+- id: screen_0
+  description: Main file browsing screen displaying categorized folders like Downloads,
+    Images, and Documents with search and view options.
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 列表视图
+    - list mode
+    - detailed view
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 显示根目录
+    - show storage roots
+    - display drives
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 列表视图
+    - list mode
+    - detailed view
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 显示根目录
+    - show storage roots
+    - display drives
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  description: Main browsing screen of the Files app displaying categorized storage
+    locations like Downloads, Images, and Documents with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 网格视图
+    - grid layout
+    - thumbnails
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 显示根目录
+    - show storage roots
+    - display roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  description: Main browsing screen in the Files app displaying categorized folders
+    like Downloads, Images, and Videos with options for grid view, search, and navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 网格视图
+    - grid layout
+    - thumbnails
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 显示根目录
+    - show storage roots
+    - display roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.1005
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 文件
+    - all files
+    - browse
+    semantic_type: tab
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 最近
+    - recent files
+    - history
+    semantic_type: tab
+  description: Main file browsing screen displaying categorized folders like Downloads,
+    Images, and Videos with options for grid view, search, and navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 图片
+    - photos
+    - pictures
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 文档
+    - files
+    - docs
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_15
+    aliases:
+    - 网格视图
+    - grid layout
+    - thumbnails
+    semantic_type: toggle
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 清除
+    - clear search
+    - delete text
+    semantic_type: button
+  description: Search results screen in the Files app displaying categorized media
+    and document types with options to switch view or clear the query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: New folder
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.3944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_10
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_8
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+  description: File management screen displaying category shortcuts and action menu
+    options for organizing and viewing files.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 图片
+    - photos
+    - pictures
+    - 图像
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 音频
+    - music
+    - sound
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 视频
+    - movies
+    - clips
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 文档
+    - files
+    - docs
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 网格视图
+    - grid layout
+    - thumbnail view
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 显示根目录
+    - show root directories
+    - display roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    - 查询
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    - 更多
+    semantic_type: button
+  description: Main browsing screen of the Files app displaying categorized file groups
+    like Downloads, Images, and Videos with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 列表视图
+    - list mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 显示根目录
+    - show storage roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - ⋮
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.1005
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 文件
+    - all files
+    semantic_type: tab
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 最近
+    - recent files
+    - history
+    semantic_type: tab
+  description: Main file browsing screen displaying categorized folders like Downloads,
+    Images, and Documents with options for list view, search, and navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 搜索
+    - search bar
+    - find files
+    - query
+    semantic_type: input
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 图片
+    - photos
+    - pictures
+    - image files
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 音频
+    - music
+    - sound files
+    - songs
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 视频
+    - movies
+    - clips
+    - video files
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 文档
+    - docs
+    - files
+    - PDFs
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_23
+    aliases:
+    - 列表视图
+    - list mode
+    - detailed view
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - 清除
+    - clear search
+    - reset
+    - delete text
+    semantic_type: button
+  description: Search results screen in the Files app displaying categorized media
+    and document types with options to switch view or clear the query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - new tab
+    - open new
+    - 新建窗口
+    semantic_type: button
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - order by
+    - arrange
+    - 排序方式
+    semantic_type: menu_item
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - choose all
+    - 全选
+    semantic_type: button
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - details
+    - properties
+    - info
+    - 查看详情
+    semantic_type: button
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - display hidden
+    - show invisible
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - downloaded files
+    - 下载
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - photos
+    - pictures
+    - 图片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - music
+    - sound
+    - 音频
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - movies
+    - clips
+    - 视频
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - docs
+    - files
+    - 文档
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - list mode
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_20
+    aliases:
+    - display root directory
+    - show storage roots
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_24
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  description: File management screen displaying categorized folders and offering
+    sorting, selection, and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 列表视图
+    - list mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 显示根目录
+    - show storage roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - three dots
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.1005
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 文件
+    - all files
+    semantic_type: tab
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 最近
+    - recent files
+    - history
+    semantic_type: tab
+  description: Main file browsing screen displaying categorized storage sections like
+    Downloads, Images, and Documents with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Open new window
+    - Create window
+    - 新建窗口
+    semantic_type: button
+  - text: New folder
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Create folder
+    - Add folder
+    - 新建文件夹
+    semantic_type: button
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Sort
+    - Order by
+    - 排序
+    semantic_type: menu_item
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Choose all
+    - 全选
+    semantic_type: button
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Info
+    - Details
+    - Properties
+    - 查看详情
+    semantic_type: button
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.3944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Display hidden files
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - Downloaded files
+    - 下载
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Music
+    - Sound
+    - 音频
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - List mode
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - Display root directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: File management screen displaying categorized folders and offering
+    actions like sorting, selecting, and viewing hidden files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - List mode
+    - Detailed view
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Show storage
+    - Display drives
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - History
+    - Latest
+    - 最近
+    - 近期文件
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 设置
+    semantic_type: button
+  description: Main file browsing screen displaying categorized media types and recent
+    files with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - list mode
+    - detailed view
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - display roots
+    - show root directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    - magnifying glass
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - menu
+    - overflow
+    - three dots
+    - 更多选项
+    - actions
+    semantic_type: button
+  description: Main file browsing screen displaying a list of files and folders with
+    search, root navigation, and additional options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - List mode
+    - 列表视图
+    - 清单模式
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    - 后退
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  description: File browsing screen displaying categories like Images, Audio, Videos,
+    and Documents with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Grid
+    - Thumbnail view
+    - 网格视图
+    - 缩略图
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    - 后退
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Clear search
+    - Delete text
+    - 清除搜索
+    - 清空
+    semantic_type: button
+  description: Search results screen in the Files app displaying categorized media
+    and document types with options to toggle grid view or clear the query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: New folder
+    center:
+    - 0.4995
+    - 0.4385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - Create folder
+    - 新建文件夹
+    - Add directory
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6278
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Cancel
+    - 取消
+    - Dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8185
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - Confirm
+    - 确定
+    - Done
+    semantic_type: button
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 下载
+    - Downloaded files
+    - 下载内容
+    semantic_type: menu_item
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 图片
+    - Photos
+    - Pictures
+    - 图库
+    semantic_type: menu_item
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 音频
+    - Music
+    - Sound
+    - 音乐
+    semantic_type: menu_item
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 视频
+    - Movies
+    - 影片
+    semantic_type: menu_item
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_6
+    aliases:
+    - 文档
+    - Docs
+    - 文件
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - 网格视图
+    - Thumbnail view
+    - Grid layout
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 显示根目录
+    - Show storage roots
+    - Display roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - 搜索
+    - Find
+    - Lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_19
+    aliases:
+    - 更多选项
+    - Menu
+    - Overflow menu
+    - ⋮
+    semantic_type: button
+  description: A dialog for creating a new folder with name input and confirmation
+    buttons, overlaid on the main file browser interface.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_17
+  elements:
+  - text: SORT BY
+    center:
+    - 0.0935
+    - 0.5281
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  description: Sort options menu for organizing files in the Files app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_0
+  - text: Info
+    center:
+    - 0.2185
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Type
+    center:
+    - 0.2866
+    - 0.5119
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Debug info (dev only)
+    center:
+    - 0.5
+    - 0.6252
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: User id
+    center:
+    - 0.2866
+    - 0.6935
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Uri
+    center:
+    - 0.2866
+    - 0.7456
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Document id
+    center:
+    - 0.2866
+    - 0.859
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Raw mimetype
+    center:
+    - 0.2866
+    - 0.911
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Stream types
+    center:
+    - 0.2866
+    - 0.9788
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Raw size (bytes)
+    center:
+    - 0.2866
+    - 0.3402
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Is archive
+    center:
+    - 0.2866
+    - 0.3923
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Is container
+    center:
+    - 0.2866
+    - 0.4965
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Is partial
+    center:
+    - 0.2866
+    - 0.5485
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Is virtual
+    center:
+    - 0.2866
+    - 0.6006
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports create
+    center:
+    - 0.2866
+    - 0.6527
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports delete
+    center:
+    - 0.2866
+    - 0.7048
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports metadata
+    center:
+    - 0.2866
+    - 0.7569
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports move
+    center:
+    - 0.2866
+    - 0.809
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports remove
+    center:
+    - 0.2866
+    - 0.861
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports rename
+    center:
+    - 0.2866
+    - 0.9131
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports settings
+    center:
+    - 0.2866
+    - 0.9652
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports thumbnail
+    center:
+    - 0.2866
+    - 0.9956
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_38
+  - text: Supports weblink
+    center:
+    - 0.2866
+    - 0.8956
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_39
+  - text: Supports write
+    center:
+    - 0.2866
+    - 0.9477
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_39
+  description: Developer debug info screen displaying detailed metadata and capability
+    flags for a specific file or document.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Open new window
+    - Create window
+    - 新建窗口
+    semantic_type: button
+  - text: New folder
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - Create folder
+    - Add folder
+    - 新建文件夹
+    semantic_type: button
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Order by
+    - Arrange
+    - 排序
+    semantic_type: menu_item
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Choose all
+    - 全选
+    semantic_type: button
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Details
+    - Properties
+    - Info
+    - 查看详情
+    semantic_type: button
+  - text: Don’t show hidden files
+    center:
+    - 0.7523
+    - 0.3944
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Hide hidden files
+    - 隐藏隐藏文件
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_0
+    aliases:
+    - Downloaded files
+    - 下载
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Music
+    - Sound
+    - 音频
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Movies
+    - 视频
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - List mode
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - Display root directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: File management screen displaying category shortcuts and action menu
+    options for organizing and viewing files.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 下载
+    - downloaded files
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图片
+    - photos
+    - gallery
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 音频
+    - music
+    - sound
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文档
+    - docs
+    - files
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 网格视图
+    - grid layout
+    - thumbnails
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示根目录
+    - show storage
+    - root directories
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    - ⋮
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.1005
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件
+    - all files
+    - browse
+    semantic_type: tab
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近
+    - recent files
+    - history
+    semantic_type: tab
+  description: Main file browsing screen displaying categorized folders like Downloads,
+    Images, and Videos with options for grid view, search, and navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+  - text: Don’t show hidden files
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+  description: File management screen displaying categorized folders and view options
+    with sorting and selection tools.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Grid
+    - Thumbnail view
+    - 网格视图
+    - 缩略图
+    semantic_type: toggle
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    - 后退
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  description: File browsing screen displaying media and document categories with
+    options to switch to grid view, search, or navigate back.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - List mode
+    - 列表视图
+    - 清单模式
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    - 后退
+    semantic_type: button
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Clear search
+    - Delete text
+    - 清除搜索
+    - 清空
+    semantic_type: button
+  description: Search results screen in the Files app displaying categorized media
+    and document types with options to change view or clear the query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new tab
+    - open new
+    - 新建窗口
+    semantic_type: button
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort
+    - order by
+    - 排序
+    semantic_type: menu_item
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - choose all
+    - 全选
+    semantic_type: button
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - details
+    - properties
+    - info
+    - 详情
+    - 属性
+    semantic_type: button
+  - text: Show hidden files
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - display hidden
+    - show dotfiles
+    - 显示隐藏文件
+    semantic_type: toggle
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - downloaded
+    - 下载
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - photos
+    - pictures
+    - 图片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - music
+    - sound
+    - 音频
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - movies
+    - clips
+    - 视频
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - docs
+    - files
+    - 文档
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - grid
+    - thumbnails
+    - 网格视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - root directory
+    - show root
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - more
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  description: File management screen displaying category shortcuts and view controls
+    with options to sort, select, search, and toggle hidden files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: New folder
+    center:
+    - 0.4995
+    - 0.4385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create folder
+    - 新建文件夹
+    - Add directory
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6278
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    - Dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8185
+    - 0.5946
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - 确定
+    - Done
+    semantic_type: button
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 下载
+    - Downloaded files
+    semantic_type: menu_item
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 图片
+    - Photos
+    - Pictures
+    semantic_type: menu_item
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 音频
+    - Music
+    - Sound files
+    semantic_type: menu_item
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 视频
+    - Movies
+    - Clips
+    semantic_type: menu_item
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 文档
+    - Docs
+    - Files
+    semantic_type: menu_item
+  - text: List view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 列表视图
+    - List mode
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 显示根目录
+    - Show root directories
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 搜索
+    - Find
+    - Lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - Menu
+    - Overflow menu
+    - ⋮
+    semantic_type: button
+  description: A dialog for creating a new folder with options to select the destination
+    category and view settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_26
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - PDFs
+    - 文档
+    - 文件资料
+    semantic_type: tab
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - All Files
+    - Browse
+    - 全部文件
+    - 浏览
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List mode
+    - Detailed view
+    - 列表视图
+    - 详情模式
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Show storage
+    - Display drives
+    - 显示根目录
+    - 显示存储
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - History
+    - Latest
+    - 最近
+    - 历史记录
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Settings
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  description: Main file browsing screen displaying categorized media types and a
+    file list with options for view mode, search, and navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Audio
+    center:
+    - 0.1648
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Songs
+    - 音频
+    semantic_type: tab
+  - text: Images
+    center:
+    - 0.4088
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6606
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8972
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - PDFs
+    - 文档
+    semantic_type: tab
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - All Files
+    - Browse
+    - 文件
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List mode
+    - Detailed view
+    - 列表视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Show storage
+    - Display drives
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - History
+    - Latest
+    - 最近
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    semantic_type: button
+  description: Main browsing screen of the Files app displaying categorized media
+    types and navigation options like Recent and Search.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Latest
+    - Recently used
+    - 最近文件
+    - 近期
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Thumbnail view
+    - 网格视图
+    - 缩略图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Show storage
+    - Display drives
+    - 显示根目录
+    - 显示存储
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - History
+    - Latest
+    - 最近
+    - 历史
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  description: Main file browsing screen displaying categorized media types and recent
+    files in a grid view with search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recently used
+    - Latest files
+    - 最近文件
+    - 近期文件
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Thumbnail view
+    - Grid mode
+    - 网格视图
+    - 缩略图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Show storage
+    - Display drives
+    - 显示根目录
+    - 显示存储
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - History
+    - Latest
+    - 最近
+    - 近期
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Files
+    center:
+    - 0.1005
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - All files
+    - Browse
+    - 文件
+    - 所有文件
+    semantic_type: tab
+  - text: Downloads
+    center:
+    - 0.4083
+    - 0.4515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Downloaded
+    - 下载
+    - 下载内容
+    semantic_type: menu_item
+  description: Main file browsing screen displaying categorized media types and recent
+    files with options to change view, search, and navigate directories.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 图片
+    - photos
+    - pictures
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 音频
+    - music
+    - sound
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 视频
+    - movies
+    - clips
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 文档
+    - docs
+    - files
+    - 文本
+    semantic_type: tab
+  - text: Files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 文件
+    - all files
+    - browse
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 网格视图
+    - grid
+    - tile view
+    - 缩略图
+    semantic_type: toggle
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 清除
+    - clear search
+    - delete text
+    - 清空
+    semantic_type: button
+  description: Search results screen in the Files app displaying categorized media
+    and document types with options to switch view modes or clear the query.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new tab
+    - open new window
+    - 新建窗口
+    semantic_type: button
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort
+    - order by
+    - 排序
+    semantic_type: menu_item
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - choose all
+    - 全选
+    semantic_type: button
+  - text: Don’t show hidden files
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hide hidden files
+    - 隐藏隐藏文件
+    semantic_type: toggle
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - photos
+    - pictures
+    - 图片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - music
+    - sound
+    - 音频
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - movies
+    - clips
+    - 视频
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - docs
+    - files
+    - 文档
+    semantic_type: tab
+  - text: Recent files
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - latest files
+    - 最近文件
+    semantic_type: link
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - grid layout
+    - 网格视图
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - display root directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Recent
+    center:
+    - 0.2514
+    - 0.0794
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - history
+    - latest
+    - 最近
+    semantic_type: tab
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - menu
+    - overflow
+    - 更多选项
+    semantic_type: button
+  description: File browsing screen displaying categorized file types and recent files
+    with options for sorting, selection, and view customization.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Images
+    center:
+    - 0.1051
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Big files
+    - Large downloads
+    - 大文件
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Thumbnail view
+    - 网格视图
+    - 缩略图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Display root directories
+    - 显示根目录
+    - Root folders
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Pictures
+    center:
+    - 0.2463
+    - 0.3173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Images
+    - Photos
+    - 照片
+    - 图片
+    semantic_type: menu_item
+  description: File browsing screen displaying images and large files in a grid view
+    with search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Images
+    center:
+    - 0.1051
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1858
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Big files
+    - 大文件
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Thumbnail view
+    - 网格视图
+    - 缩略图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Display root directories
+    - 显示根目录
+    - Show storage roots
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  - text: Pictures
+    center:
+    - 0.2463
+    - 0.3173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Images
+    - Photos
+    - 图片
+    semantic_type: tab
+  - text: Files
+    center:
+    - 0.1005
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - All files
+    - Browse
+    - 文件
+    - 全部文件
+    semantic_type: tab
+  - text: Recent
+    center:
+    - 0.4083
+    - 0.1452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - History
+    - 最近
+    - 最近使用
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.4083
+    - 0.2677
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4083
+    - 0.329
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sound
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.4083
+    - 0.3902
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - PDFs
+    - 文档
+    - 文件资料
+    semantic_type: tab
+  - text: Downloads
+    center:
+    - 0.4083
+    - 0.4515
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Downloaded files
+    - 下载
+    - 下载内容
+    semantic_type: tab
+  description: Main file browsing screen displaying categories like Images, Videos,
+    and Documents in a grid view with search and navigation options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - lookup
+    semantic_type: input
+  - text: Images
+    center:
+    - 0.4412
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 图片
+    - photos
+    - pictures
+    - 图库
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 网格视图
+    - grid
+    - thumbnail view
+    semantic_type: toggle
+  - text: Clear query
+    center:
+    - 0.9218
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 清除
+    - clear search
+    - delete text
+    - 清空
+    semantic_type: button
+  description: Search results screen for images in the Files app, displaying items
+    in a grid view with options to clear the query or navigate back.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_35
+  elements:
+  - text: New window
+    center:
+    - 0.7523
+    - 0.1319
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new tab
+    - open new
+    - 新建窗口
+    semantic_type: button
+  - text: Sort by...
+    center:
+    - 0.7523
+    - 0.1844
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort
+    - order by
+    - 排序
+    semantic_type: menu_item
+  - text: Select all
+    center:
+    - 0.7523
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - select everything
+    - 全选
+    semantic_type: button
+  - text: Get info
+    center:
+    - 0.7523
+    - 0.2894
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - details
+    - properties
+    - info
+    - 详情
+    - 属性
+    semantic_type: button
+  - text: Don’t show hidden files
+    center:
+    - 0.7523
+    - 0.3419
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hide hidden files
+    - 隐藏隐藏文件
+    semantic_type: toggle
+  - text: Images
+    center:
+    - 0.1051
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - photos
+    - pictures
+    - 图像
+    - 图片
+    semantic_type: tab
+  - text: Large files
+    center:
+    - 0.2
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - big files
+    - 大文件
+    semantic_type: tab
+  - text: This week
+    center:
+    - 0.5
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - recent
+    - 本周
+    semantic_type: tab
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - grid
+    - thumbnails
+    - 网格视图
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - display roots
+    - show directories
+    - 显示根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - find
+    - lookup
+    - 搜索
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - more
+    - menu
+    - ellipsis
+    - 更多选项
+    semantic_type: button
+  - text: Pictures
+    center:
+    - 0.2463
+    - 0.3173
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - images
+    - photos
+    - 图片
+    - 照片
+    semantic_type: tab
+  description: File management screen displaying a grid of images with sorting, selection,
+    and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - Pictures
+    - 图片
+    - 图库
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music
+    - Sounds
+    - 音频
+    - 音乐
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Movies
+    - Clips
+    - 视频
+    - 影片
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1333
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs
+    - Files
+    - 文档
+    - 文件
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8829
+    - 0.1925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List mode
+    - 列表视图
+    - 清单模式
+    semantic_type: button
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    - 后退
+    semantic_type: button
+  - text: Search…
+    center:
+    - 0.5875
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Lookup
+    - 搜索
+    - 查找
+    semantic_type: input
+  description: File category browsing screen with options for Images, Audio, Videos,
+    and Documents, along with search and view controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: New folder
+    center:
+    - 0.4995
+    - 0.4273
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Create folder
+    - 新建文件夹
+    - Add directory
+    semantic_type: button
+  - text: CANCEL
+    center:
+    - 0.6278
+    - 0.6058
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消
+    - Dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8185
+    - 0.6058
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - 确定
+    - Done
+    semantic_type: button
+  - text: Downloads
+    center:
+    - 0.1333
+    - 0.1333
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 下载
+    - Downloaded files
+    semantic_type: menu_item
+  - text: Images
+    center:
+    - 0.1773
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 图片
+    - Photos
+    - Pictures
+    semantic_type: menu_item
+  - text: Audio
+    center:
+    - 0.4222
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 音频
+    - Music
+    - Sound files
+    semantic_type: menu_item
+  - text: Videos
+    center:
+    - 0.6634
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 视频
+    - Movies
+    - Clips
+    semantic_type: menu_item
+  - text: Documents
+    center:
+    - 0.8991
+    - 0.1858
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 文档
+    - Docs
+    - Files
+    semantic_type: menu_item
+  - text: Grid view
+    center:
+    - 0.8829
+    - 0.245
+    fixed: false
+    found_at_scroll: 1
+    aliases:
+    - 网格视图
+    - Thumbnail view
+    - Grid layout
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 显示根目录
+    - Show storage roots
+    - Display root folders
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.8245
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 搜索
+    - Find
+    - Lookup
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0796
+    fixed: true
+    found_at_scroll: 1
+    aliases:
+    - 更多选项
+    - Menu
+    - Overflow menu
+    - ⋮
+    semantic_type: button
+  description: Dialog for creating a new folder with name input and confirmation buttons,
+    overlaid on the main file browsing interface.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    - Go back
+    semantic_type: button
+  - text: Info
+    center:
+    - 0.2185
+    - 0.0794
+    fixed: true
+    found_at_scroll: 0
+    aliases:
+    - Information
+    - Details
+    - About
+    - 详情
+    - 信息
+    semantic_type: button
+  description: File information details screen displaying metadata and properties
+    of a selected file.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0796
+    fixed: false
+    found_at_scroll: 0
+  - text: Info
+    center:
+    - 0.2185
+    - 0.0794
+    fixed: false
+    found_at_scroll: 0
+  - text: Stream types
+    center:
+    - 0.2866
+    - 0.1129
+    fixed: false
+    found_at_scroll: 0
+  - text: Raw size (bytes)
+    center:
+    - 0.2866
+    - 0.1665
+    fixed: false
+    found_at_scroll: 0
+  - text: Is archive
+    center:
+    - 0.2866
+    - 0.2185
+    fixed: false
+    found_at_scroll: 0
+  - text: Is blocked from tree
+    center:
+    - 0.2866
+    - 0.2706
+    fixed: false
+    found_at_scroll: 0
+  - text: Is container
+    center:
+    - 0.2866
+    - 0.3227
+    fixed: false
+    found_at_scroll: 0
+  - text: Is partial
+    center:
+    - 0.2866
+    - 0.3748
+    fixed: false
+    found_at_scroll: 0
+  - text: Is virtual
+    center:
+    - 0.2866
+    - 0.4269
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports create
+    center:
+    - 0.2866
+    - 0.479
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports delete
+    center:
+    - 0.2866
+    - 0.531
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports metadata
+    center:
+    - 0.2866
+    - 0.5831
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports move
+    center:
+    - 0.2866
+    - 0.6352
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports remove
+    center:
+    - 0.2866
+    - 0.6873
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports rename
+    center:
+    - 0.2866
+    - 0.7394
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports settings
+    center:
+    - 0.2866
+    - 0.7915
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports thumbnail
+    center:
+    - 0.2866
+    - 0.8435
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports weblink
+    center:
+    - 0.2866
+    - 0.8956
+    fixed: false
+    found_at_scroll: 0
+  - text: Supports write
+    center:
+    - 0.2866
+    - 0.9477
+    fixed: false
+    found_at_scroll: 0
+  description: Information screen displaying detailed metadata and capability flags
+    for a selected file or directory.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 954
+    y: 588
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 954
+    y: 588
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 954
+    y: 588
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 320
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 954
+    y: 462
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 442
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 568
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 820
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 320
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 954
+    y: 462
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 954
+    y: 588
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 442
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 320
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 320
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 954
+    y: 462
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 144
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 954
+    y: 588
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 74
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 446
+    wait: 1.5
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 890
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 320
+    wait: 1.5
+  - action: tap
+    x: 192
+    y: 320
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 442
+    wait: 1.5
+  - action: tap
+    x: 884
+    y: 1427
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 820
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 310
+    y: 816
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.google.android.documentsui
+    wait: 0.5
+  - action: launch
+    package: com.google.android.documentsui
+    wait: 3.0
+  - action: tap
+    x: 1017
+    y: 191
+    wait: 1.5
+  - action: tap
+    x: 812
+    y: 820
+    wait: 1.5
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: swipe
+    x1: 540
+    y1: 1680
+    x2: 540
+    y2: 480
+    duration: 400
+    wait: 1.0
+  - action: tap
+    x: 310
+    y: 2150
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Browse files by category such as Images, Videos, and Documents
+- Search for specific files or documents
+- Create new folders to organize content
+- Sort files by name, date, or size
+- Toggle between grid and list view modes
+- View hidden files and folders
+- Access recently opened or modified files
+- Select multiple files for batch actions
+known_limitations:
+- Developer debug info screen may appear unexpectedly for specific file types
+- Folder creation requires navigating through overlay dialogs rather than direct inline
+  action
+- Hidden files are not visible by default and require toggling a specific setting
